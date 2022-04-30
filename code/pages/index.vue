@@ -1,38 +1,644 @@
-<!-- Please remove this file from your project -->
 <template>
-  <div class="relative flex items-top justify-center min-h-screen bg-gray-100 sm:items-center sm:pt-0" style="padding: 20px">
-    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.1.2/dist/tailwind.min.css" rel="stylesheet">
-    <div class="max-w-4xl mx-auto sm:px-6 lg:px-8">
-      <a class="flex justify-center pt-8 sm:pt-0" href="https://nuxtjs.org" target="_blank">
-        <svg width="218" height="45" viewBox="0 0 159 30" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M55.5017 6.81866H60.1727L70.0719 22.9912V6.81866H74.3837V29.7345H69.7446L59.8135 13.5955V29.7345H55.5017V6.81866Z" fill="#003543" /> <path d="M93.657 29.7344H89.6389V27.1747C88.7241 28.9761 86.8628 29.9904 84.5113 29.9904C80.7869 29.9904 78.3684 27.3059 78.3684 23.4423V13.2339H82.3865V22.5976C82.3865 24.8566 83.7594 26.4276 85.8171 26.4276C88.0712 26.4276 89.6389 24.6598 89.6389 22.2377V13.2339H93.657V29.7344Z" fill="#003543" /> <path d="M107.64 29.7344L103.784 24.2342L99.9291 29.7344H95.6492L101.596 21.1242L96.1074 13.2339H100.485L103.784 17.9821L107.051 13.2339H111.461L105.94 21.1242L111.886 29.7344H107.64Z" fill="#003543" /> <path d="M120.053 8.25848V13.2339H124.627V16.6063H120.053V24.7974C120.053 25.0725 120.162 25.3363 120.356 25.531C120.55 25.7257 120.813 25.8353 121.087 25.8357H124.627V29.728H121.98C118.386 29.728 116.035 27.6323 116.035 23.9687V16.6095H112.801V13.2339H114.83C115.776 13.2339 116.327 12.6692 116.327 11.7349V8.25848H120.053Z" fill="#003543" /> <path d="M134.756 24.5446V6.81866H139.066V23.1864C139.066 27.6067 136.943 29.7345 133.349 29.7345H128.332V25.8421H133.461C133.804 25.8421 134.134 25.7054 134.377 25.4621C134.619 25.2188 134.756 24.8888 134.756 24.5446Z" fill="#003543" /> <path d="M141.649 22.0409H145.799C146.029 24.6006 147.728 26.2308 150.472 26.2308C152.923 26.2308 154.623 25.2501 154.623 23.2199C154.623 18.3085 142.331 21.7129 142.331 12.9395C142.334 9.17515 145.568 6.55945 150.215 6.55945C155.05 6.55945 158.317 9.34153 158.516 13.6306H154.388C154.193 11.6341 152.632 10.2918 150.207 10.2918C147.953 10.2918 146.548 11.3397 146.548 12.9427C146.548 18.0173 159 14.2226 159 23.1576C159 27.4131 155.504 30 150.474 30C145.279 30 141.882 26.8563 141.654 22.0441" fill="#003543" /> <path d="M24.7203 29.704H41.1008C41.6211 29.7041 42.1322 29.5669 42.5828 29.3061C43.0334 29.0454 43.4075 28.6704 43.6675 28.2188C43.9275 27.7672 44.0643 27.2549 44.0641 26.7335C44.0639 26.2121 43.9266 25.6999 43.6662 25.2485L32.6655 6.15312C32.4055 5.70162 32.0315 5.32667 31.581 5.06598C31.1305 4.8053 30.6195 4.66805 30.0994 4.66805C29.5792 4.66805 29.0682 4.8053 28.6177 5.06598C28.1672 5.32667 27.7932 5.70162 27.5332 6.15312L24.7203 11.039L19.2208 1.48485C18.9606 1.03338 18.5864 0.658493 18.1358 0.397853C17.6852 0.137213 17.1741 0 16.6538 0C16.1336 0 15.6225 0.137213 15.1719 0.397853C14.7213 0.658493 14.3471 1.03338 14.0868 1.48485L0.397874 25.2485C0.137452 25.6999 0.000226653 26.2121 2.8053e-07 26.7335C-0.000226092 27.2549 0.136554 27.7672 0.396584 28.2188C0.656614 28.6704 1.03072 29.0454 1.48129 29.3061C1.93185 29.5669 2.44298 29.7041 2.96326 29.704H13.2456C17.3195 29.704 20.3239 27.9106 22.3912 24.4118L27.4102 15.7008L30.0986 11.039L38.1667 25.0422H27.4102L24.7203 29.704ZM13.0779 25.0374L5.9022 25.0358L16.6586 6.36589L22.0257 15.7008L18.4322 21.9401C17.0593 24.2103 15.4996 25.0374 13.0779 25.0374Z" fill="#00DC82" /></svg>
-      </a>
-      <div class="mt-8 bg-white overflow-hidden shadow sm:rounded-lg p-6">
-        <h2 class="text-2xl leading-7 font-semibold">
-          快速部署一个 Nuxt SSR 应用 test sdsd
-        </h2>
-        <p class="mt-3 text-gray-600">
-          <a style="color: #00B7FF" href="http://www.serverless-devs.com/zh-cn/index.html" target="_blank">Serverless Devs</a> 是一个开源开放的 Serverless 开发者平台，致力于为开发者提供强大的工具链体系。通过该平台，开发者可以一键体验多云 Serverless 产品，极速部署 Serverless 项目。<br>
-        </p>
-        <p class="mt-4 pt-4 text-gray-800 border-t border-dashed">
-          To get started, remove <code class="bg-gray-100 text-sm p-1 rounded border">components/Tutorial.vue</code> and start coding in <code class="bg-gray-100 text-sm p-1 rounded border">pages/index.vue</code>. Have fun!
-        </p>
-      </div>
-      <div style="padding: 20px;font: 14px; ">
-        <div ><h3 style="font-weight: 500; margin: 16px 0 8px 0">步骤一. 准备工作</h3><p style="color: #777">具体步骤请参照 <a style="color: #00B7FF;" href="http://www.serverless-devs.com/zh-cn/docs/installed/cliinstall.html"> Serverless Cli 安装</a></p><h3 style="font-weight: 500; margin: 16px 0 8px 0">步骤二. 初始化应用示例</h3><pre style="color: #777; background-color: #f0f0f0;padding: 8px;">s init nuxt-ssr-app</pre><h3 style="font-weight: 500; margin: 16px 0 8px 0">步骤三. 一键部署</h3><p style="color: #777">进入到项目目录，在命令行执行</p><pre style="color: #777; border: #eee;background-color: #f0f0f0;padding: 8px;">s deploy</pre><h2  style="font-weight: 500; margin: 16px 0 8px 0">帮助文档</h2><ul style="list-style: disc; padding: 0 20px"> <li><a style="color: #00B7FF;" href="https://github.com/Serverless-Devs/docs/blob/master/zh/install.md" target="_blank">开发部署工具 Serverless Devs</a></li><li><a style="color: #00B7FF;" href="https://github.com/Serverless-Devs/docs/blob/master/zh/install.md" target="_blank">工具安装文档</a></li><li><a style="color: #00B7FF;" href="https://github.com/Serverless-Devs/docs/blob/master/zh/command.md" target="_blank">命令行指令文档</a></li><li><a style="color: #00B7FF;" href="https://github.com/Serverless-Devs/docs/blob/master/zh/yaml.md" target="_blank">Yaml 规范文档</a></li></ul></div>
-      </div>
-      <div class="flex justify-center pt-4 space-x-2">
-        <a href="https://github.com/devsapp/nodejs-runtime-framework-application/tree/master/nuxt-ssr-app/src" target="_blank" ><svg
-          class="w-6 h-6 text-gray-600 hover:text-gray-800"
-          xmlns="http://www.w3.org/2000/svg"
-          xmlns:xlink="http://www.w3.org/1999/xlink"
-          aria-hidden="true"
-          role="img"
-          width="32"
-          height="32"
-          preserveAspectRatio="xMidYMid meet"
-          viewBox="0 0 24 24"
-        ><path d="M12 2.247a10 10 0 0 0-3.162 19.487c.5.088.687-.212.687-.475c0-.237-.012-1.025-.012-1.862c-2.513.462-3.163-.613-3.363-1.175a3.636 3.636 0 0 0-1.025-1.413c-.35-.187-.85-.65-.013-.662a2.001 2.001 0 0 1 1.538 1.025a2.137 2.137 0 0 0 2.912.825a2.104 2.104 0 0 1 .638-1.338c-2.225-.25-4.55-1.112-4.55-4.937a3.892 3.892 0 0 1 1.025-2.688a3.594 3.594 0 0 1 .1-2.65s.837-.262 2.75 1.025a9.427 9.427 0 0 1 5 0c1.912-1.3 2.75-1.025 2.75-1.025a3.593 3.593 0 0 1 .1 2.65a3.869 3.869 0 0 1 1.025 2.688c0 3.837-2.338 4.687-4.563 4.937a2.368 2.368 0 0 1 .675 1.85c0 1.338-.012 2.413-.012 2.75c0 .263.187.575.687.475A10.005 10.005 0 0 0 12 2.247z" fill="currentColor" /></svg></a>
+  <div ref="index">
+    <oakHeader :current="0" />
+    <main>
+      <section class="banner">
+        <img src="@/static/banner.png" alt="" />
+      </section>
+      <section class="why-select-oak">
+        <div class="container">
+          <div class="common-title">
+            <div class="name">为什么选择橡树省钱卡</div>
+            <div class="desc">
+              专业团队根据合作方与用户诉求，设计定制产品，并提供专业运营支持服务
+            </div>
+          </div>
+          <div class="wrap">
+            <div class="capacity">
+              <div
+                v-for="(item, index) in list"
+                :key="item"
+                :class="`item ${current === index && 'active'}`"
+                @mouseenter="current = index"
+              >
+                <img :src="require(`@/static/icon${index + 1}.png`)" alt="" />
+                <div>{{ item }}</div>
+              </div>
+            </div>
+            <div v-show="current === 0" class="capacity-content1">
+              <div class="text">
+                <p>
+                  <span>
+                    <img
+                      src="@/static/gou.png"
+                      alt=""
+                    />整合食住行用等全流程权益，</span
+                  >
+                  覆盖类目广，满足用户大部分生活需求。
+                </p>
+
+                <p>
+                  <span>
+                    <img
+                      src="@/static/gou.png"
+                      alt=""
+                    />权益具有高频、强流量、高价值属性，</span
+                  >
+                  利于吸引新用户，提升用户忠诚度。
+                </p>
+
+                <p><img src="@/static/gou.png" alt="" />权益成本更低。</p>
+              </div>
+              <img src="@/static/benefit.png" alt="" />
+            </div>
+            <div v-show="current === 1" class="capacity-content2">
+              <div class="text">
+                <p>
+                  <img
+                    src="@/static/gou.png"
+                    alt=""
+                  />与多家酒店集团、贵宾出行服务商合作，可为用户提供高级酒店会籍匹配，及全球贵宾休息室、快速安检等高端服务。
+                </p>
+                <div class="show-list">
+                  <img src="@/static/co1.png" alt="" />
+                  <img src="@/static/co2.png" alt="" />
+                  <img src="@/static/co3.png" alt="" />
+                </div>
+              </div>
+              <div class="text">
+                <p>
+                  <img
+                    src="@/static/gou.png"
+                    alt=""
+                  />与航空公司合作，支持积分兑换里程、充话费送里程等权益。
+                </p>
+                <div class="show-list">
+                  <img src="@/static/co4.png" alt="" />
+                  <img src="@/static/co5.png" alt="" />
+                  <img src="@/static/co6.png" alt="" />
+                </div>
+              </div>
+            </div>
+            <div v-show="current === 2" class="capacity-content3">
+              <div class="text">
+                <p>
+                  <img src="@/static/gou.png" alt="" />
+                  拥有多家银行服务专业经验，无仓储，无物流，交付快，成本低。
+                </p>
+                <img class="cu1" src="@/static/cu1.png" alt="" />
+              </div>
+              <div class="text">
+                <p>
+                  <img
+                    src="@/static/gou.png"
+                    alt=""
+                  />产品介入支持多种H5/API、兑换码等方式，可一键接入，权益可灵活配置。
+                </p>
+                <img class="cu2" src="@/static/cu2.png" alt="" />
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="plan">
+        <div class="container">
+          <img src="@/static/plan.png" alt="" />
+          <div class="plan-form">
+            <div class="item">
+              <div class="text"><span>*</span>您的姓名：</div>
+              <input
+                type="text"
+                maxlength="10"
+                placeholder="请输入姓名"
+                v-model="name"
+                name=""
+                id="name"
+              />
+              <div class="input-error">{{ name_error }}</div>
+            </div>
+            <div class="item">
+              <div class="text">公司名称：</div>
+              <input
+                type="text"
+                placeholder="请输入公司名称"
+                maxlength="100"
+                v-model="company_name"
+                name=""
+                id="companyName"
+              />
+              <div class="input-error">{{ company_name_error }}</div>
+            </div>
+            <div class="item">
+              <div class="text"><span>*</span>联系电话：</div>
+              <input
+                type="text"
+                placeholder="请输入联系电话"
+                maxlength="30"
+                v-model="phone"
+                name=""
+                id="phone"
+              />
+              <div class="input-error">{{ phone_error }}</div>
+            </div>
+            <div class="item code">
+              <div class="text"><span>*</span>验证码：</div>
+              <input
+                type="text"
+                placeholder="请输入验证码"
+                v-model="code"
+                name=""
+                id="code"
+              />
+              <div class="input-error">{{ code_error }}</div>
+              <div class="get-code" @click="getCode">获取验证码</div>
+            </div>
+            <div class="plan-btn" @click="getPlan">免费获取方案</div>
+          </div>
+        </div>
+      </section>
+      <section class="service-value">
+        <div class="container">
+          <div class="common-title">
+            <div class="name">服务价值</div>
+            <div class="desc">
+              助力企业满足用户对高品质服务的需求，提升拉新促活能力与品牌忠诚度
+            </div>
+          </div>
+          <div class="list">
+            <div
+              v-for="(item, index) in service_value"
+              :key="item.title"
+              :class="`item ${service_value_current === index && 'active'}`"
+              @mouseenter="service_value_current = index"
+              @mouseleave="service_value_current = -1"
+            >
+              <img
+                :src="
+                  service_value_current === index
+                    ? item.icon_selected
+                    : item.icon
+                "
+                alt=""
+              />
+              <div class="name">{{ item.title }}</div>
+              <div>
+                <ul>
+                  <li v-for="i in item.list" :key="i">
+                    {{ i }}
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="client">
+        <div class="container">
+          <div class="common-title">
+            <div class="name">我们服务的行业客户</div>
+          </div>
+          <img src="@/static/client.png" alt="" />
+        </div>
+      </section>
+      <oakForm />
+    </main>
+    <oakFooter />
+    <div :class="`dialog ${showDialog && 'show-dialog'}`">
+      <div class="dialog-bg"></div>
+      <div class="dialog-container">
+        提交成功，稍后会有专门商务联络，谢谢！
+        <div class="close" @click="showDialog = false">✖</div>
       </div>
     </div>
   </div>
 </template>
+
+<script>
+import oakHeader from "../components/header/header";
+import oakFooter from "../components/footer/footer";
+import oakForm from "../components/form/form";
+export default {
+  name: "IndexPage",
+  components: {
+    oakHeader,
+    oakFooter,
+    oakForm,
+  },
+  data() {
+    return {
+      name: "",
+      name_error: "",
+      company_name: "",
+      company_name_error: "",
+      phone: "",
+      phone_error: "",
+      code: "",
+      code_error: "",
+      list: [
+        "一站式权益 低成本 高价值",
+        "独家稀缺权益 提升产品竞争力",
+        "专业服务   灵活定制",
+      ],
+      current: 0,
+      service_value: [
+        {
+          icon: require("@/static/sv_icon0.png"),
+          icon_selected: require("@/static/sv_icon0_selected.png"),
+          title: "活跃",
+          list: [
+            "• 提升用户行为活跃",
+            "• 提升用户交易活跃",
+            "• 延长用户生命周",
+          ],
+        },
+        {
+          icon: require("@/static/sv_icon1.png"),
+          icon_selected: require("@/static/sv_icon1_selected.png"),
+          title: "创收",
+          list: ["• 获得会员费营收", "• 带动主营业务增收"],
+        },
+        {
+          icon: require("@/static/sv_icon2.png"),
+          icon_selected: require("@/static/sv_icon2_selected.png"),
+          title: "客户关怀",
+          list: [
+            "• 通过会员礼，提升品牌价值",
+            "• 提升用户尊贵感",
+            "• 提升用户归属感",
+          ],
+        },
+        {
+          icon: require("@/static/sv_icon3.png"),
+          icon_selected: require("@/static/sv_icon3_selected.png"),
+          title: "用户画像",
+          list: [
+            "• 整合多平台消费者数据",
+            "• 构建画像与标签体系",
+            "• 数据驱动精细化会员运营",
+          ],
+        },
+      ],
+      service_value_current: -1,
+      showDialog: false,
+    };
+  },
+  head() {
+    return {
+      title: "橡树黑卡--值得信赖的会员权益平台",
+      meta: [
+        {
+          hid: "index",
+          name: "description",
+          content:
+            "橡树黑卡为金融、互联网、电商、零售等行业提供强大的用户运营全周期服务，提供积分体系运营、会员营销运营、游戏化运营等方案，400-150-9669。",
+        },
+        {
+          name: "keywords",
+          content:
+            "橡树黑卡，会员权益，会员积分，视频会员，网站会员，app会员，用户运营，SaaS平台",
+        },
+      ],
+    };
+  },
+  mounted() {
+    console.log("index");
+    this.$refs.index.scrollIntoView();
+  },
+  methods: {
+    getCode() {
+      //获取验证码
+    },
+    getPlan() {
+      this.showDialog = true;
+      if (!this.name) {
+        this.name_error = "请填写您的姓名";
+        return;
+      } else {
+        this.name_error = "";
+      }
+      if (!this.phone) {
+        this.phone_error = "请填写您的联系电话";
+        return;
+      } else {
+        if (!/^1([3-9])\d{9}$/.test(this.phone)) {
+          this.phone_error = "请填写正确的联系电话";
+          return;
+        }
+        this.phone_error = "";
+      }
+      if (!this.code) {
+        this.code_error = "请填写验证码";
+        return;
+      } else {
+        this.code_error = "";
+      }
+    },
+  },
+};
+</script>
+
+<style>
+.banner img {
+  width: 100%;
+}
+.why-select-oak {
+  padding: 80px 0 72px 0;
+}
+.common-title {
+  text-align: center;
+}
+.common-title .name {
+  font-size: 30px;
+  color: #333;
+  font-weight: bold;
+}
+.common-title .desc {
+  font-size: 20px;
+  color: #666;
+  margin-top: 10px;
+}
+.why-select-oak .wrap {
+  margin-top: 72px;
+}
+.capacity {
+  display: flex;
+  justify-content: space-between;
+}
+.capacity .item {
+  box-sizing: border-box;
+  width: 32%;
+  border: 1px solid #ebecf1;
+  border-radius: 4px;
+  height: 225px;
+  text-align: center;
+  padding: 12px 20px 0;
+  font-size: 24px;
+  color: #333;
+  font-weight: bold;
+  transition: all 0.3s linear;
+}
+.capacity .item img {
+  margin-bottom: 23px;
+}
+.capacity .item.active {
+  border: 1px solid #ff5001;
+  box-shadow: 0px 0px 20px 0px rgba(153, 153, 153, 0.3);
+  color: #ff5001;
+}
+.capacity-content1 {
+  margin-top: 32px;
+  background-color: #fbfbfb;
+  height: 400px;
+  padding: 0 137px 0 74px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.capacity-content1 .text {
+  line-height: 30px;
+  color: #666666;
+  font-size: 16px;
+}
+.capacity-content1 .text p {
+  padding: 15px 0;
+}
+.capacity-content1 .text span {
+  display: block;
+}
+.capacity-content1 .text img {
+  transform: translate(-4px, 2px);
+}
+.capacity-content2 {
+  margin-top: 32px;
+  background-color: #fbfbfb;
+  height: 400px;
+  padding: 0 34px 0 34px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.capacity-content2 .text {
+  width: 47%;
+}
+.capacity-content2 .text p {
+  height: 60px;
+  line-height: 30px;
+  color: #666666;
+  font-size: 16px;
+}
+.capacity-content2 .text p img {
+  transform: translate(-4px, 2px);
+}
+.show-list {
+  margin-top: 70px;
+  display: flex;
+  justify-content: space-between;
+}
+.show-list img {
+  width: 32%;
+}
+
+.capacity-content3 {
+  margin-top: 32px;
+  background-color: #fbfbfb;
+  height: 400px;
+  padding: 0 76px 0 34px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.capacity-content3 .text {
+  width: 45%;
+}
+.capacity-content3 .text p {
+  line-height: 30px;
+  color: #666666;
+  font-size: 16px;
+}
+.capacity-content3 .text p img {
+  transform: translate(-4px, 2px);
+}
+.capacity-content3 .text .cu1 {
+  margin: 30px auto 0;
+  display: block;
+}
+.capacity-content3 .text .cu2 {
+  margin: 44px auto 0;
+  display: block;
+}
+.plan {
+  background-color: #fbfbfb;
+  padding: 104px 0 66px;
+}
+.plan .container {
+  display: flex;
+  justify-content: space-between;
+}
+.plan img {
+  width: 44%;
+}
+.plan-form .item {
+  margin-top: 30px;
+  display: flex;
+  position: relative;
+}
+.plan-form .item .text {
+  width: 88px;
+  text-align: right;
+  line-height: 50px;
+  font-size: 16px;
+  color: #333;
+}
+.plan-form .item .text span {
+  color: #ff5001;
+}
+.plan-form .item input {
+  width: 520px;
+  height: 50px;
+  background-color: #eee;
+  border: none;
+  text-indent: 10px;
+  font-size: 16px;
+  outline: none;
+}
+.plan-form .item.code input {
+  width: 285px;
+}
+.get-code {
+  width: 117px;
+  height: 40px;
+  background-color: #333;
+  text-align: center;
+  line-height: 40px;
+  color: #fff;
+  font-size: 16px;
+  border-radius: 4px;
+  margin: 5px 0 0 26px;
+  cursor: pointer;
+  transition: all 0.3s linear;
+}
+.get-code:hover {
+  opacity: 0.8;
+}
+.plan-btn {
+  width: 190px;
+  height: 50px;
+  background-color: #333;
+  text-align: center;
+  line-height: 50px;
+  color: #fff;
+  font-size: 16px;
+  border-radius: 4px;
+  margin: 40px 0 0 232px;
+  cursor: pointer;
+  transition: all 0.3s linear;
+}
+.plan-btn:hover {
+  opacity: 0.8;
+}
+.service-value {
+  padding: 72px 0;
+}
+.service-value .list {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 72px;
+}
+.service-value .list .item {
+  width: 21.6%;
+  height: 320px;
+  border: 1px solid #333333;
+  border-radius: 5px;
+  text-align: center;
+  transition: all 0.3s linear;
+}
+.service-value .list .item img {
+  display: block;
+  width: 62px;
+  height: 62px;
+  margin: 33px auto 0;
+}
+.service-value .list .item .name {
+  font-size: 24px;
+  color: #ff5001;
+  font-weight: bold;
+  display: inline-block;
+  border-bottom: 2px solid #ff5001;
+  margin-top: 32px;
+}
+.service-value .list .item ul {
+  display: inline-block;
+  text-align: left;
+  line-height: 30px;
+  color: #666666;
+  font-size: 15px;
+  margin-top: 27px;
+}
+.service-value .list .item.active {
+  background-color: #333;
+}
+.service-value .list .item.active .name {
+  color: #fff;
+}
+.service-value .list .item.active ul {
+  color: #fff;
+}
+.client {
+  padding: 72px 0;
+  background-color: #fbfbfb;
+}
+.client img {
+  margin-top: 72px;
+}
+.input-error {
+  position: absolute;
+  left: 88px;
+  top: 50px;
+  color: #ff5001;
+  font-size: 14px;
+}
+.dialog {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  z-index: 99;
+  left: 0;
+  top: 0;
+  display: none;
+}
+.dialog-bg {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+  background-color: rgba(0, 0, 0, 0.4);
+}
+.dialog-container {
+  background-color: #fff;
+  width: 520px;
+  height: 321px;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 20px;
+  color: #333;
+  border-radius: 4px;
+}
+.dialog-container .close {
+  position: absolute;
+  font-size: 20px;
+  color: #999;
+  right: 10px;
+  top: 10px;
+  line-height: 1;
+  cursor: pointer;
+}
+.show-dialog {
+  display: block;
+}
+</style>
