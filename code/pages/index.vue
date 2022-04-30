@@ -8,7 +8,7 @@
       </a>
       <div class="mt-8 bg-white overflow-hidden shadow sm:rounded-lg p-6">
         <h2 class="text-2xl leading-7 font-semibold">
-          快速部署一个 Nuxt SSR 应用
+          快速部署一个 Nuxt SSR 应用 test sdsd
         </h2>
         <p class="mt-3 text-gray-600">
           <a style="color: #00B7FF" href="http://www.serverless-devs.com/zh-cn/index.html" target="_blank">Serverless Devs</a> 是一个开源开放的 Serverless 开发者平台，致力于为开发者提供强大的工具链体系。通过该平台，开发者可以一键体验多云 Serverless 产品，极速部署 Serverless 项目。<br>
