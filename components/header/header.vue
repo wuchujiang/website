@@ -72,25 +72,19 @@ export default {
             {
               name: "公司介绍",
               type: "nav_about",
-              url:
-                process.env.NODE_ENV === "production"
-                  ? "/about.html"
-                  : "/about",
+              url: "/about",
             },
             {
               name: "联系我们",
               type: "nav_contact",
-              url:
-                process.env.NODE_ENV === "production"
-                  ? "/contact.html"
-                  : "/contact",
+              url: "/contact",
             },
           ],
         },
         {
           name: "加入我们",
           type: "join",
-          url: process.env.NODE_ENV === "production" ? "/join.html" : "/join",
+          url: "/join",
         },
       ],
       url: "/about",
