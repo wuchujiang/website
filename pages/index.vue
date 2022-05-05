@@ -100,8 +100,9 @@
       </section>
       <section class="plan">
         <div class="container">
-          <img src="@/static/plan.png" alt="" />
+          <img src="@/static/img11.png" alt="" />
           <div class="plan-form">
+            <h2>完善信息后 48小时内会有专门的商务人员与您对接</h2>
             <div class="item">
               <div class="text"><span>*</span>您的姓名：</div>
               <input
@@ -337,8 +338,9 @@ export default {
 <style>
 .banner {
   width: 100%;
-  height: 600px;
+  height: 420px;
   background: url("@/static/banner.png") no-repeat center center;
+  background-size: auto 100%;
 }
 .why-select-oak {
   padding: 80px 0 72px 0;
@@ -467,14 +469,20 @@ export default {
 }
 .plan {
   background-color: #fbfbfb;
-  padding: 104px 0 66px;
 }
 .plan .container {
   display: flex;
   justify-content: space-between;
 }
 .plan img {
-  width: 44%;
+  width: 40%;
+}
+.plan-form{
+  padding-top: 50px;
+}
+.plan-form h2{
+  font-size: 24px;
+  color: #333;
 }
 .plan-form .item {
   margin-top: 30px;
@@ -639,5 +647,19 @@ export default {
 }
 .show-dialog {
   display: block;
+}
+@media screen and (max-width:1200px){
+  .banner{
+    height: 450px;
+  }
+  .service-value .list .item{
+    width: 23%;
+  }
+  .capacity .item{
+    font-size: 20px;
+  }
+  .capacity-content1{
+    padding: 0 70px;
+  }
 }
 </style>

@@ -59,7 +59,6 @@
         <img src="@/static/suspend2.png" alt="">
         <div class="text">
           电话咨询
-          <p>400-150-9669</p>
         </div>
         <div class="phone-consult">
           <div class="phone-consult-main">
@@ -172,9 +171,6 @@ export default {
 }
 .suspend .item .text{
   transform: translateY(-10px);
-}
-.suspend .item.item2{
-  height: 90px;
 }
 .online-consult, .phone-consult{
   position: absolute;

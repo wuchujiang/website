@@ -1,7 +1,8 @@
 <template>
-  <section :class="`free-plan ${clearFixed && 'clear-fixed'}`">
+  <section v-if="!hidePlan" :class="`free-plan ${clearFixed && 'clear-fixed'}`">
     <div class="container">
-      <ul>
+      <img class="img" src="@/static/img12.png" alt="">
+      <!-- <ul>
         <li>
           <input v-model="name" placeholder="请输入您的姓名" type="text" />
           <div class="input-error">{{ name_error }}</div>
@@ -23,8 +24,67 @@
           <div class="input-error">{{ code_error }}</div>
           <div class="get-code" @click="getCode">获取验证码</div>
         </li>
-      </ul>
-      <div class="free-get-plan" @click="getPlan">免费获取方案</div>
+      </ul> -->
+      <div class="free-get-plan" @click="showForm = true">免费获取方案</div>
+      <img @click="hidePlan = true" class="img-close" src="@/static/close.png" alt="">
+    </div>
+    <div v-if="showForm" class="form-dialog">
+      <div class="form-dialog-main">
+        <img @click="showForm = false" class="form-dialog-close" src="@/static/close.png" alt="" />
+        <img class="b-img" src="@/static/img11.png" alt="" />
+        <div class="plan-form">
+          <h2>完善信息后 48小时内会有专门的商务人员与您对接</h2>
+          <div class="item">
+            <div class="text"><span>*</span>您的姓名：</div>
+            <input
+              type="text"
+              maxlength="10"
+              placeholder="请输入姓名"
+              v-model="name"
+              name=""
+              id="name"
+            />
+            <div class="input-error">{{ name_error }}</div>
+          </div>
+          <div class="item">
+            <div class="text">公司名称：</div>
+            <input
+              type="text"
+              placeholder="请输入公司名称"
+              maxlength="100"
+              v-model="company_name"
+              name=""
+              id="companyName"
+            />
+            <div class="input-error">{{ company_name_error }}</div>
+          </div>
+          <div class="item">
+            <div class="text"><span>*</span>联系电话：</div>
+            <input
+              type="text"
+              placeholder="请输入联系电话"
+              maxlength="30"
+              v-model="phone"
+              name=""
+              id="phone"
+            />
+            <div class="input-error">{{ phone_error }}</div>
+          </div>
+          <div class="item code">
+            <div class="text"><span>*</span>验证码：</div>
+            <input
+              type="text"
+              placeholder="请输入验证码"
+              v-model="code"
+              name=""
+              id="code"
+            />
+            <div class="input-error">{{ code_error }}</div>
+            <div class="get-code" @click="getCode">获取验证码</div>
+          </div>
+          <div class="plan-btn" @click="getPlan">免费获取方案</div>
+        </div>
+      </div>
     </div>
   </section>
 </template>
@@ -42,6 +102,8 @@ export default {
       code: "",
       code_error: "",
       clearFixed: false,
+      hidePlan: false,
+      showForm: false
     };
   },
   mounted() {
@@ -50,7 +112,7 @@ export default {
       document.addEventListener("scroll", () => {
         const scroll =
           document.documentElement.scrollTop || document.body.scrollTop;
-        let top = scroll + window.innerHeight + 130;
+        let top = scroll + window.innerHeight + 290;
         if (top >= documentHeight && !this.clearFixed) {
           this.clearFixed = true;
         }
@@ -110,13 +172,23 @@ export default {
 .free-plan {
   box-sizing: border-box;
   padding-top: 1px;
-  height: 270px;
-  background: url("../../static/bg.png") no-repeat center;
+  height: 115px;
+  background: linear-gradient(180deg, #FFC71C 0%, #FF960C 100%);
   position: fixed;
   width: 100%;
   left: 0;
   bottom: 0;
   z-index: 50;
+}
+.free-plan .container{
+  padding: 0 100px;
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+}
+.free-plan .img{
+  width: 434px;
+  transform: translateY(-8px);
 }
 .free-plan ul {
   padding: 2px 30px 0;
@@ -160,7 +232,7 @@ export default {
   align-items: center;
   color: #fff;
   font-size: 16px;
-  margin: 28px auto 0;
+  margin: 28px 100px 0 0;
   border-radius: 4px;
   cursor: pointer;
   transition: all 0.3s linear;
@@ -177,5 +249,68 @@ export default {
 }
 .clear-fixed {
   position: relative;
+}
+.img-close{
+  width: 44px;
+  position: absolute;
+  top: 0;
+  right: 100px;
+  cursor: pointer;
+}
+.form-dialog{
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+  z-index: 52;
+  background-color: rgba(0,0,0,.5);
+}
+.form-dialog-main{
+  box-sizing: border-box;
+  position: absolute;
+  width: 1000px;
+  height: 480px;
+  background-color: #fff;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  justify-content: space-between;
+  padding: 0 30px 0 0;
+}
+.form-dialog-main .b-img{
+  width: 440px;
+  height: 480px;
+}
+.form-dialog-main .plan-form{
+  padding-top: 30px;
+}
+.form-dialog-main .plan-form .item input{
+  width: 420px;
+}
+.form-dialog-main .plan-form h2{
+  padding-top: 0;
+  font-size: 22px;
+  text-align: left;
+}
+.form-dialog-main .plan-form .plan-btn{
+  margin: 25px auto 0;
+}
+.form-dialog-close{
+  position: absolute;
+  width: 43px;
+  height: 43px;
+  right: 0;
+  top: 0;
+  cursor: pointer;
+}
+.form-dialog-main .plan-form .item.code input{
+  width: 250px;
+}
+@media screen and (max-width:1200px){
+  .free-plan ul li{
+    width: 430px;
+  }
 }
 </style>

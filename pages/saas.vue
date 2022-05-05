@@ -138,6 +138,7 @@ export default {
   width: 100%;
   height: 430px;
   background: url("@/static/saas-banner.png") no-repeat center center;
+  background-size: auto 100%;
 }
 .saas-tab {
   background-color: #fbfbfb;

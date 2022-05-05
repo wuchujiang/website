@@ -122,6 +122,7 @@ export default {
   width: 100%;
   height: 430px;
   background: url("@/static/operation-banner.png") no-repeat center center;
+  background-size: auto 100%;
 }
 .banner img {
   float: left;

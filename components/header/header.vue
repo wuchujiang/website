@@ -217,4 +217,11 @@ export default {
 .nav_contact:hover {
   background: url("@/static/icon7_selected.png") no-repeat left center;
 }
+
+
+@media screen and (max-width:1200px){
+  .nav ul li{
+    padding: 0 30px;
+  }
+}
 </style>
