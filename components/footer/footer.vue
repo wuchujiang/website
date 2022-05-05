@@ -43,12 +43,12 @@
             <h3>亲爱的用户</h3>
             <p>为了更好的帮您解决问题，请选择您要咨询的会员类型</p>
             <ul>
-              <li><img src="@/static/kh1.png" alt="">省呗</li>
-              <li><img src="@/static/kh2.png" alt="">小赢卡贷</li>
-              <li><img src="@/static/kh3.png" alt="">keep</li>
-              <li><img src="@/static/kh4.png" alt="">榕树贷款</li>
-              <li><img src="@/static/kh5.png" alt="">新橙优品</li>
-              <li><img src="@/static/kh6.png" alt=""></li>
+              <li><a href="https://oakvip.s2.udesk.cn/im_client/?web_plugin_id=24433" target="_blank"><img src="@/static/kh1.png" alt="">省呗</a></li>
+              <li><a href="https://oakvip.s2.udesk.cn/im_client/?web_plugin_id=24433" target="_blank"><img src="@/static/kh2.png" alt="">小赢卡贷</a></li>
+              <li><a href="https://oakvip.s2.udesk.cn/im_client/?web_plugin_id=24433" target="_blank"><img src="@/static/kh3.png" alt="">keep</a></li>
+              <li><a href="https://oakvip.s2.udesk.cn/im_client/?web_plugin_id=24433" target="_blank"><img src="@/static/kh4.png" alt="">榕树贷款</a></li>
+              <li><a href="https://oakvip.s2.udesk.cn/im_client/?web_plugin_id=24433" target="_blank"><img src="@/static/kh5.png" alt="">新橙优品</a></li>
+              <li><a href="https://oakvip.s2.udesk.cn/im_client/?web_plugin_id=24433" target="_blank"><img src="@/static/kh6.png" alt="">其他</a></li>
             </ul>
             <p>如您需要商务合作请联络邮箱：marketing@oakblack.com</p>
             <p>电话：400-150-9669</p>
@@ -153,6 +153,7 @@ export default {
   right: 60px;
   top: -20px;
   border-radius: 5px;
+  display: none;
 }
 .online-consult-main{
   box-sizing: border-box;
@@ -167,8 +168,20 @@ export default {
 }
 .online-consult-main ul{
   display: flex;
+  margin-bottom: 22px;
 }
 .online-consult-main ul li{
   text-align: center;
+}
+.online-consult-main ul li a{
+  color: #333;
+}
+.online-consult-main p {
+  font-size: 14px;
+  color: #666;
+  margin-top: 4px;
+}
+.suspend .item:hover .online-consult{
+  display: block;
 }
 </style>

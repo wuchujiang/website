@@ -2,43 +2,43 @@
   {
     "name": "about",
     "path": "/about",
-    "component": "D:\\\\test\\\\start-nuxt-ssr-do0k\\\\pages\\\\about.vue",
+    "component": "C:\\\\Users\\\\marco\\\\Desktop\\\\OakNewWebsite\\\\pages\\\\about.vue",
     "chunkName": "pages/about",
-    "_name": "_162fa663"
+    "_name": "_61fc1908"
   },
   {
     "name": "contact",
     "path": "/contact",
-    "component": "D:\\\\test\\\\start-nuxt-ssr-do0k\\\\pages\\\\contact.vue",
+    "component": "C:\\\\Users\\\\marco\\\\Desktop\\\\OakNewWebsite\\\\pages\\\\contact.vue",
     "chunkName": "pages/contact",
-    "_name": "_4b5c6df6"
+    "_name": "_5452694a"
   },
   {
     "name": "join",
     "path": "/join",
-    "component": "D:\\\\test\\\\start-nuxt-ssr-do0k\\\\pages\\\\join.vue",
+    "component": "C:\\\\Users\\\\marco\\\\Desktop\\\\OakNewWebsite\\\\pages\\\\join.vue",
     "chunkName": "pages/join",
-    "_name": "_0241bc44"
+    "_name": "_1d79e0ff"
   },
   {
     "name": "operation",
     "path": "/operation",
-    "component": "D:\\\\test\\\\start-nuxt-ssr-do0k\\\\pages\\\\operation.vue",
+    "component": "C:\\\\Users\\\\marco\\\\Desktop\\\\OakNewWebsite\\\\pages\\\\operation.vue",
     "chunkName": "pages/operation",
-    "_name": "_059b4c3d"
+    "_name": "_4a18373c"
   },
   {
     "name": "saas",
     "path": "/saas",
-    "component": "D:\\\\test\\\\start-nuxt-ssr-do0k\\\\pages\\\\saas.vue",
+    "component": "C:\\\\Users\\\\marco\\\\Desktop\\\\OakNewWebsite\\\\pages\\\\saas.vue",
     "chunkName": "pages/saas",
-    "_name": "_919679cc"
+    "_name": "_5b263056"
   },
   {
     "name": "index",
     "path": "/",
-    "component": "D:\\\\test\\\\start-nuxt-ssr-do0k\\\\pages\\\\index.vue",
+    "component": "C:\\\\Users\\\\marco\\\\Desktop\\\\OakNewWebsite\\\\pages\\\\index.vue",
     "chunkName": "pages/index",
-    "_name": "_35e78128"
+    "_name": "_fc981866"
   }
 ]

@@ -4,12 +4,12 @@ import { normalizeURL, decode } from 'ufo'
 import { interopDefault } from './utils'
 import scrollBehavior from './router.scrollBehavior.js'
 
-const _162fa663 = () => interopDefault(import('..\\pages\\about.vue' /* webpackChunkName: "pages/about" */))
-const _4b5c6df6 = () => interopDefault(import('..\\pages\\contact.vue' /* webpackChunkName: "pages/contact" */))
-const _0241bc44 = () => interopDefault(import('..\\pages\\join.vue' /* webpackChunkName: "pages/join" */))
-const _059b4c3d = () => interopDefault(import('..\\pages\\operation.vue' /* webpackChunkName: "pages/operation" */))
-const _919679cc = () => interopDefault(import('..\\pages\\saas.vue' /* webpackChunkName: "pages/saas" */))
-const _35e78128 = () => interopDefault(import('..\\pages\\index.vue' /* webpackChunkName: "pages/index" */))
+const _61fc1908 = () => interopDefault(import('..\\pages\\about.vue' /* webpackChunkName: "pages/about" */))
+const _5452694a = () => interopDefault(import('..\\pages\\contact.vue' /* webpackChunkName: "pages/contact" */))
+const _1d79e0ff = () => interopDefault(import('..\\pages\\join.vue' /* webpackChunkName: "pages/join" */))
+const _4a18373c = () => interopDefault(import('..\\pages\\operation.vue' /* webpackChunkName: "pages/operation" */))
+const _5b263056 = () => interopDefault(import('..\\pages\\saas.vue' /* webpackChunkName: "pages/saas" */))
+const _fc981866 = () => interopDefault(import('..\\pages\\index.vue' /* webpackChunkName: "pages/index" */))
 
 const emptyFn = () => {}
 
@@ -24,27 +24,27 @@ export const routerOptions = {
 
   routes: [{
     path: "/about",
-    component: _162fa663,
+    component: _61fc1908,
     name: "about"
   }, {
     path: "/contact",
-    component: _4b5c6df6,
+    component: _5452694a,
     name: "contact"
   }, {
     path: "/join",
-    component: _0241bc44,
+    component: _1d79e0ff,
     name: "join"
   }, {
     path: "/operation",
-    component: _059b4c3d,
+    component: _4a18373c,
     name: "operation"
   }, {
     path: "/saas",
-    component: _919679cc,
+    component: _5b263056,
     name: "saas"
   }, {
     path: "/",
-    component: _35e78128,
+    component: _fc981866,
     name: "index"
   }],
 
