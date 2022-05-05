@@ -301,7 +301,6 @@ export default {
     };
   },
   mounted() {
-    console.log("index");
     this.$refs.index.scrollIntoView();
   },
   methods: {

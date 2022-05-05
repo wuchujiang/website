@@ -87,7 +87,6 @@ export default {
           url: "/join",
         },
       ],
-      url: "/about",
     };
   },
 };
