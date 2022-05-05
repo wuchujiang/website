@@ -1,5 +1,5 @@
 <template>
-  <header class="header">
+  <header class="header" id="header">
     <div class="container">
       <h1 class="logo">
         <nuxt-link to="/"><img src="@/static/logo.png" alt="" /></nuxt-link>

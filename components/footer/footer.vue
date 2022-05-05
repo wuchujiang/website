@@ -35,7 +35,7 @@
       2018 深圳市橡树黑卡网络科技有限公司 XSHKVIP.COM
     </div>
     <div class="suspend">
-      <div class="item">
+      <div class="item online-hover">
         <img src="@/static/suspend1.png" alt="">
         <div class="text">在线咨询</div>
         <div class="online-consult">
@@ -61,10 +61,20 @@
           电话咨询
           <p>400-150-9669</p>
         </div>
+        <div class="phone-consult">
+          <div class="phone-consult-main">
+            <h4>客服电话：400-150-9669</h4>
+            <h4>客服工作时间：</h4>
+            <p>周一到周五：9：00～20：00</p>
+            <span>(在线和电话)</span>
+            <p>周末或节假日：9：00～20：00</p>
+            <span>(电话)</span>
+          </div>
+        </div>
       </div>
       <div class="item">
         <img src="@/static/suspend3.png" alt="">
-        <div class="text">
+        <div class="text" @click="toTop">
           返回顶部
         </div>
       </div>
@@ -77,6 +87,11 @@ export default {
   data() {
     return {};
   },
+  methods: {
+    toTop() {
+      document.getElementById('#header').scrollIntoView({ behavior: "smooth" });
+    }
+  }
 };
 </script>
 <style>
@@ -126,7 +141,7 @@ export default {
 }
 .suspend{
   position: fixed;
-  width: 62px;
+  width: 80px;
   right: 30px;
   top: 50%;
   transform: translateY(-50%);
@@ -148,9 +163,9 @@ export default {
 .suspend .item.item2{
   height: 90px;
 }
-.online-consult{
+.online-consult, .phone-consult{
   position: absolute;
-  right: 60px;
+  right: 78px;
   top: -20px;
   border-radius: 5px;
   display: none;
@@ -165,23 +180,61 @@ export default {
   text-align: left;
   color: #333;
   font-size: 14px;
+  border-radius: 5px;
 }
 .online-consult-main ul{
   display: flex;
   margin-bottom: 22px;
+  margin-top: 16px;
 }
 .online-consult-main ul li{
   text-align: center;
+  width: 60px;
 }
 .online-consult-main ul li a{
   color: #333;
+}
+.online-consult-main ul li img{
+  width: 40px;
+  height: 40px;
+  display: block;
+  margin: 0 auto 5px;
 }
 .online-consult-main p {
   font-size: 14px;
   color: #666;
   margin-top: 4px;
 }
-.suspend .item:hover .online-consult{
+.online-hover:hover .online-consult{
   display: block;
+}
+.phone-consult-main{
+  box-sizing: border-box;
+  background-color: #fff;
+  box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.1);
+  width: 280px;
+  margin-right: 12px;
+  padding: 18px;
+  text-align: left;
+  color: #333;
+  font-size: 14px;
+  border-radius: 5px;
+}
+
+.item2:hover .phone-consult{
+  display: block;
+}
+.phone-consult h4{
+  margin-bottom: 10px;
+  font-size: 18px;
+}
+.phone-consult p{
+  font-size: 16px;
+  color: #333;
+  margin-top: 10px;
+}
+.phone-consult span{
+  font-size: 14px;
+  color: #666;
 }
 </style>
