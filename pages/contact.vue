@@ -2,16 +2,14 @@
   <div>
     <oakHeader :current="2" />
     <main>
-      <section class="banner">
-        <img src="@/static/about-banner.png" alt="" />
-      </section>
+      <section class="about-banner"></section>
       <section class="contact-main">
         <div class="container">
           <div class="item">
             <img src="@/static/icon11.png" alt="" />
             <h4>在线客服</h4>
             <p>周一到周五：9：00～20：00 (在线和电话)</p>
-            <button>立即联系</button>
+            <button><a href="https://oakvip.s2.udesk.cn/im_client/?web_plugin_id=28877" target="_blank">立即联系</a></button>
           </div>
           <div class="item">
             <img src="@/static/icon11.png" alt="" />
@@ -23,7 +21,7 @@
             <img src="@/static/icon11.png" alt="" />
             <h4>商务合作邮箱</h4>
             <p>marketing@oakblack.com</p>
-            <button>发送邮件</button>
+            <button><a href="mailto:marketing@oakblack.com" target="_blank">发送邮件</a></button>
           </div>
         </div>
       </section>
@@ -161,6 +159,11 @@ export default {
 };
 </script>
 <style>
+.about-banner{
+  width: 100%;
+  height: 430px;
+  background: url("@/static/about-banner.png") no-repeat center center;
+}
 .contact-main {
   padding: 75px 0;
 }
@@ -198,6 +201,15 @@ export default {
   color: #fff;
   margin: 28px auto 0;
   border: none;
+}
+.contact-main .item button a{
+  color: #fff;
+  display: block;
+  width: 154px;
+  height: 42px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 .contact-main .item button.btn {
   background-color: #fff;

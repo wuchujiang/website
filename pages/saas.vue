@@ -2,9 +2,7 @@
   <div ref="saas">
     <oakHeader :current="1" />
     <main>
-      <section class="banner">
-        <img src="@/static/saas-banner.png" alt="" />
-      </section>
+      <section class="saas-banner"></section>
       <section class="saas-tab">
         <div class="container">
           <div
@@ -136,11 +134,10 @@ export default {
 };
 </script>
 <style>
-.banner {
-  overflow: hidden;
-}
-.banner img {
-  float: left;
+.saas-banner{
+  width: 100%;
+  height: 430px;
+  background: url("@/static/saas-banner.png") no-repeat center center;
 }
 .saas-tab {
   background-color: #fbfbfb;

@@ -2,9 +2,7 @@
   <div ref="about">
     <oakHeader :current="2" />
     <main>
-      <section class="banner">
-        <img src="@/static/about-banner.png" alt="" />
-      </section>
+      <section class="about-banner"></section>
       <section class="about-section1">
         <div class="container">
           <div class="common-title">
@@ -151,6 +149,11 @@ export default {
 };
 </script>
 <style>
+.about-banner{
+  width: 100%;
+  height: 430px;
+  background: url("@/static/about-banner.png") no-repeat center center;
+}
 .about-section1 {
   padding: 72px 0;
 }

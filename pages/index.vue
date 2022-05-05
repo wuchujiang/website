@@ -2,9 +2,7 @@
   <div ref="index">
     <oakHeader :current="0" />
     <main>
-      <section class="banner">
-        <img src="@/static/banner.png" alt="" />
-      </section>
+      <section class="banner"></section>
       <section class="why-select-oak">
         <div class="container">
           <div class="common-title">
@@ -337,8 +335,10 @@ export default {
 </script>
 
 <style>
-.banner img {
+.banner {
   width: 100%;
+  height: 600px;
+  background: url("@/static/banner.png") no-repeat center center;
 }
 .why-select-oak {
   padding: 80px 0 72px 0;

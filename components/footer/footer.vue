@@ -31,7 +31,7 @@
       </div>
     </div>
     <div class="copyright">
-      <a href="https://beian.miit.gov.cn/">粤ICP备18120172号</a> Copyright ©
+      <a href="https://beian.miit.gov.cn/" target="_blank">粤ICP备18120172号</a> Copyright ©
       2018 深圳市橡树黑卡网络科技有限公司 XSHKVIP.COM
     </div>
     <div class="suspend">
@@ -72,9 +72,9 @@
           </div>
         </div>
       </div>
-      <div class="item">
+      <div class="item" @click="toTop">
         <img src="@/static/suspend3.png" alt="">
-        <div class="text" @click="toTop">
+        <div class="text">
           返回顶部
         </div>
       </div>
@@ -89,7 +89,18 @@ export default {
   },
   methods: {
     toTop() {
-      document.getElementById('#header').scrollIntoView({ behavior: "smooth" });
+      let scrollToptimer = setInterval(function () {
+        var top = document.body.scrollTop || document.documentElement.scrollTop;
+        var speed = top / 4;
+        if (document.body.scrollTop!=0) {
+            document.body.scrollTop -= speed;
+        }else {
+            document.documentElement.scrollTop -= speed;
+        }
+        if (top == 0) {
+            clearInterval(scrollToptimer);
+        }
+    }, 30);
     }
   }
 };
@@ -145,6 +156,7 @@ export default {
   right: 30px;
   top: 50%;
   transform: translateY(-50%);
+  z-index: 51;
 }
 .suspend .item{
   width: 100%;
@@ -156,6 +168,7 @@ export default {
   color: #fff;
   text-align: center;
   position: relative;
+  cursor: pointer;
 }
 .suspend .item .text{
   transform: translateY(-10px);

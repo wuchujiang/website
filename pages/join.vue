@@ -2,9 +2,7 @@
   <div>
     <oakHeader :current="3" />
     <main>
-      <section class="banner">
-        <img src="@/static/join-banner.png" alt="" />
-      </section>
+      <section class="join-banner"></section>
       <section class="join-main">
         <div class="container">
           <h2>社招岗位</h2>
@@ -186,6 +184,11 @@ export default {
 };
 </script>
 <style>
+.join-banner{
+  width: 100%;
+  height: 430px;
+  background: url("@/static/join-banner.png") no-repeat center center;
+}
 .join-main {
   padding: 72px 0;
 }

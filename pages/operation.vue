@@ -2,9 +2,7 @@
   <div ref="operation">
     <oakHeader :current="1" />
     <main>
-      <section class="banner">
-        <img src="@/static/operation-banner.png" alt="" />
-      </section>
+      <section class="operation-banner"></section>
       <section class="saas-tab">
         <div class="container">
           <div
@@ -120,8 +118,10 @@ export default {
 };
 </script>
 <style>
-.banner {
-  overflow: hidden;
+.operation-banner{
+  width: 100%;
+  height: 430px;
+  background: url("@/static/operation-banner.png") no-repeat center center;
 }
 .banner img {
   float: left;
