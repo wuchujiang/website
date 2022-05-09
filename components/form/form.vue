@@ -2,29 +2,6 @@
   <section v-if="!hidePlan" :class="`free-plan ${clearFixed && 'clear-fixed'}`">
     <div class="container">
       <img class="img" src="@/static/img12.png" alt="">
-      <!-- <ul>
-        <li>
-          <input v-model="name" placeholder="请输入您的姓名" type="text" />
-          <div class="input-error">{{ name_error }}</div>
-        </li>
-        <li>
-          <input
-            v-model="company_name"
-            placeholder="请输入您的联系电话"
-            type="text"
-          />
-          <div class="input-error">{{ company_name_error }}</div>
-        </li>
-        <li>
-          <input v-model="phone" placeholder="请输入您的公司名称" type="text" />
-          <div class="input-error">{{ phone_error }}</div>
-        </li>
-        <li class="li2">
-          <input v-model="code" placeholder="请输入验证码" type="text" />
-          <div class="input-error">{{ code_error }}</div>
-          <div class="get-code" @click="getCode">获取验证码</div>
-        </li>
-      </ul> -->
       <div class="free-get-plan" @click="showForm = true">免费获取方案</div>
       <img @click="hidePlan = true" class="img-close" src="@/static/close.png" alt="">
     </div>
@@ -43,6 +20,7 @@
               v-model="name"
               name=""
               id="name"
+              autocomplete="off"
             />
             <div class="input-error">{{ name_error }}</div>
           </div>
@@ -55,6 +33,7 @@
               v-model="company_name"
               name=""
               id="companyName"
+              autocomplete="off"
             />
             <div class="input-error">{{ company_name_error }}</div>
           </div>
@@ -67,6 +46,7 @@
               v-model="phone"
               name=""
               id="phone"
+              autocomplete="off"
             />
             <div class="input-error">{{ phone_error }}</div>
           </div>
@@ -78,6 +58,7 @@
               v-model="code"
               name=""
               id="code"
+              autocomplete="off"
             />
             <div class="input-error">{{ code_error }}</div>
             <div class="get-code" @click="getCode">获取验证码</div>
@@ -270,7 +251,7 @@ export default {
   box-sizing: border-box;
   position: absolute;
   width: 1000px;
-  height: 480px;
+  height: 515px;
   background-color: #fff;
   left: 50%;
   top: 50%;
@@ -278,9 +259,10 @@ export default {
   display: flex;
   justify-content: space-between;
   padding: 0 30px 0 0;
+  border-radius: 5px;
   .b-img{
-    width: 440px;
-    height: 480px;
+    width: 427px;
+    height: 515px;
   }
   .plan-form{
     padding-top: 30px;

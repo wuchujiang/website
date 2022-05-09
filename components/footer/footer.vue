@@ -6,6 +6,7 @@
         <p>合作电话：400-150-9669</p>
         <p>业务合作：marketing@oakblack.com</p>
         <p>媒体合作：media@oakblack.com</p>
+        <a class='qqkf' target="_blank" href="http://wpa.qq.com/msgrd?v=3&uin=&site=qq&menu=yes">QQ咨询</a>
       </div>
       <div class="r-nav">
         <div class="item">
@@ -161,6 +162,9 @@ export default {
   .left {
     font-size: 14px;
     color: #fff;
+    img{
+      width: 124px;
+    }
     p {
       margin-top: 24px;
     }
@@ -256,7 +260,7 @@ export default {
   padding: 24px 28px;
   text-align: left;
   color: #333;
-  font-size: 14px;
+  font-size: 10px;
   border-radius: 5px;
   ul {
     display: flex;
@@ -317,6 +321,11 @@ export default {
     font-size: 14px;
     color: #666;
   }
+}
+.qqkf{
+  display: block;
+  color: #fff;
+  margin-top: 10px;
 }
 
 .item2:hover .phone-consult {

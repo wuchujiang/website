@@ -9,17 +9,17 @@
           <li
             v-for="(item, index) in nav"
             :key="item.name"
-            :class="{'item': true, 'active': current === index}"
+            :class="{ item: true, active: current === index }"
           >
-            <nuxt-link :to="item.url" :class="{'down': item.second}">{{
+            <nuxt-link :to="item.url" :class="{ down: item.second }">{{
               item.name
             }}</nuxt-link>
             <!-- 二级菜单 -->
             <div :class="`sec_nav ${item.type}`" v-if="item.second">
               <div class="sec_nav-main">
                 <div
-                  :class="`item ${i.type}`"
-                  v-for="i in item.second"
+                  :class="[{item: true, sec_active: sec_current === i.type}, `${i.type}`]"
+                  v-for="(i) in item.second"
                   :key="i.name"
                 >
                   <nuxt-link :to="i.url"><span></span>{{ i.name }}</nuxt-link>
@@ -30,11 +30,9 @@
         </ul>
       </nav>
       <div class="heaedr-r">
-        <div class="phone">
-          400-150-9669
-        </div>
+        <div class="phone">400-150-9669</div>
         <div class="mobile-nav">
-          <img src="@/static/nav.png" alt="">
+          <img src="@/static/nav.png" alt="" />
         </div>
       </div>
     </div>
@@ -43,7 +41,7 @@
 
 <script>
 export default {
-  props: ["current"],
+  props: ["current", "sec_current"],
   data() {
     return {
       nav: [
@@ -187,12 +185,12 @@ export default {
   display: flex;
   align-items: center;
   justify-content: center;
-  a{
+  a {
     display: flex;
     align-items: center;
     width: 100%;
   }
-  span{
+  span {
     display: inline-block;
     width: 24px;
     height: 24px;
@@ -200,7 +198,7 @@ export default {
     margin-right: 10px;
   }
 }
-.about .item{
+.about .item {
   padding: 10px 0 10px 70px;
 }
 .sec_nav .item a {
@@ -233,29 +231,43 @@ export default {
 .nav_contact:hover span {
   background: url("@/static/icon7_selected.png") no-repeat left center;
 }
-.mobile-nav{
+.sec_nav .sec_active > a {
+  color: #ff5a27;
+}
+.nav_saas.sec_active span {
+  background: url("@/static/icon4_selected.png") no-repeat left center;
+}
+.nav_service.sec_active span {
+  background: url("@/static/icon5_selected.png") no-repeat left center;
+}
+.nav_about.sec_active span {
+  background: url("@/static/icon6_selected.png") no-repeat left center;
+}
+.nav_contact.sec_active span {
+  background: url("@/static/icon7_selected.png") no-repeat left center;
+}
+.mobile-nav {
   display: none;
 }
 
-
-@media screen and (max-width:1200px){
-  .nav ul li{
+@media screen and (max-width: 1200px) {
+  .nav ul li {
     padding: 0 30px;
   }
 }
-@media screen and (max-width:1024px){
-  .nav{
+@media screen and (max-width: 1024px) {
+  .nav {
     display: none;
   }
-  .header .container{
+  .header .container {
     display: flex;
     justify-content: space-between;
   }
-  .heaedr-r{
+  .heaedr-r {
     display: flex;
     align-items: center;
   }
-  .mobile-nav{
+  .mobile-nav {
     display: block;
     float: right;
     margin-left: 10px;

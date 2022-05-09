@@ -1,6 +1,6 @@
 <template>
   <div ref="saas">
-    <oakHeader :current="1" />
+    <oakHeader :current="1" sec_current="nav_saas" />
     <main>
       <section class="saas-banner"></section>
       <section class="saas-tab">
@@ -168,14 +168,14 @@ export default {
     padding-top: 88px;
     p {
       font-size: 30px;
-      color: #666;
+      color: #333;
       font-weight: bold;
     }
     ul {
       display: flex;
       margin-top: 40px;
+      justify-content: space-between;
       li {
-        margin-right: 68px;
         text-align: center;
         font-size: 16px;
         color: #333;

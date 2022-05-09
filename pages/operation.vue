@@ -1,6 +1,6 @@
 <template>
   <div ref="operation">
-    <oakHeader :current="1" />
+    <oakHeader :current="1" sec_current="nav_service" />
     <main>
       <section class="operation-banner"></section>
       <section class="saas-tab">

@@ -1,6 +1,6 @@
 <template>
   <div ref="about">
-    <oakHeader :current="2" />
+    <oakHeader :current="2" sec_current="nav_about" />
     <main>
       <section class="about-banner"></section>
       <section class="about-section1">

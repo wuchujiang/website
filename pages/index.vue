@@ -100,6 +100,7 @@
                 v-model="name"
                 name=""
                 id="name"
+                autocomplete="off"
               />
               <div class="input-error">{{ name_error }}</div>
             </div>
@@ -112,6 +113,7 @@
                 v-model="company_name"
                 name=""
                 id="companyName"
+                autocomplete="off"
               />
               <div class="input-error">{{ company_name_error }}</div>
             </div>
@@ -124,6 +126,7 @@
                 v-model="phone"
                 name=""
                 id="phone"
+                autocomplete="off"
               />
               <div class="input-error">{{ phone_error }}</div>
             </div>
@@ -135,6 +138,7 @@
                 v-model="code"
                 name=""
                 id="code"
+                autocomplete="off"
               />
               <div class="get-code" @click="getCode">获取验证码</div>
               <div class="input-error">{{ code_error }}</div>
@@ -191,11 +195,7 @@
     </main>
     <oakFooter />
     <div :class="`dialog ${showDialog && 'show-dialog'}`">
-      <div class="dialog-bg"></div>
-      <div class="dialog-container">
-        提交成功，稍后会有专门商务联络，谢谢！
-        <div class="close" @click="showDialog = false">✖</div>
-      </div>
+      提交成功，稍后会有专门商务联络，谢谢！
     </div>
   </div>
 </template>
@@ -527,50 +527,6 @@ export default {
   top: 50px;
   color: #FF5001;
   font-size: 14px;
-}
-.dialog {
-  position: fixed;
-  width: 100%;
-  height: 100%;
-  z-index: 99;
-  left: 0;
-  top: 0;
-  display: none;
-}
-.dialog-bg {
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  left: 0;
-  top: 0;
-  background-color: rgba(0, 0, 0, 0.4);
-}
-.dialog-container {
-  background-color: #fff;
-  width: 520px;
-  height: 321px;
-  position: absolute;
-  left: 50%;
-  top: 50%;
-  transform: translate(-50%, -50%);
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  font-size: 20px;
-  color: #333;
-  border-radius: 4px;
-}
-.dialog-container .close {
-  position: absolute;
-  font-size: 20px;
-  color: #999;
-  right: 10px;
-  top: 10px;
-  line-height: 1;
-  cursor: pointer;
-}
-.show-dialog {
-  display: block;
 }
 @media screen and (max-width: 1200px) {
   .banner {

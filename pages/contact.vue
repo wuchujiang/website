@@ -1,6 +1,6 @@
 <template>
   <div>
-    <oakHeader :current="2" />
+    <oakHeader :current="2" sec_current="nav_contact" />
     <main>
       <section class="contact-banner"></section>
       <section class="contact-main">
@@ -39,6 +39,7 @@
                 v-model="name"
                 name=""
                 id="name"
+                autocomplete="off"
               />
               <div class="input-error">{{ name_error }}</div>
             </div>
@@ -51,6 +52,7 @@
                 v-model="company_name"
                 name=""
                 id="companyName"
+                autocomplete="off"
               />
               <div class="input-error">{{ company_name_error }}</div>
             </div>
@@ -63,6 +65,7 @@
                 v-model="phone"
                 name=""
                 id="phone"
+                autocomplete="off"
               />
               <div class="input-error">{{ phone_error }}</div>
             </div>
@@ -74,6 +77,7 @@
                 v-model="code"
                 name=""
                 id="code"
+                autocomplete="off"
               />
               <div class="input-error">{{ code_error }}</div>
               <div class="get-code" @click="getCode">获取验证码</div>
@@ -162,7 +166,7 @@ export default {
 .contact-banner{
   width: 100%;
   height: 430px;
-  background: url("@/static/about-banner.png") no-repeat center center;
+  background: url("@/static/contact-banner.png") no-repeat center center;
   background-size: auto 100%;
 }
 .contact-main {
