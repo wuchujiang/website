@@ -6,7 +6,7 @@
       <section class="saas-tab">
         <div class="container">
           <div
-            :class="`item ${current === index && 'active'}`"
+            :class="{'item': true, 'active': current === index}"
             v-for="(item, index) in tab"
             :key="item"
             @click="scrollView(index)"
@@ -30,13 +30,13 @@
                 <li><img src="@/static/icon10.png" alt="" />用户生命周期</li>
               </ul>
             </div>
-            <img src="@/static/img1.png" alt="" />
+            <img class="img1" src="@/static/img1.png" alt="" />
           </div>
         </div>
       </section>
       <div class="section1-2">
         <div class="container">
-          <img src="@/static/img2.png" alt="" />
+          <img class="img2" src="@/static/img2.png" alt="" />
           <div class="text">
             <p>
               橡树整合内外部资源，拥有包括通信服务、娱乐充值、电商购物卡、网络工具、美食卡券、休闲生活、交通出行、车主服务等多平台数千个虚拟服务产品的权益资源。
@@ -53,7 +53,16 @@
           <div class="common-title">
             <div class="name">会员管理后台</div>
           </div>
-          <img src="@/static/img3.png" alt="" />
+          <div class="section2-main">
+            <ul>
+              <li>· 支持快速配置会员上线</li>
+              <li>· 支持批量权益SKU管理</li>
+              <li>· 支持会员卡和权益管理</li>
+              <li>· 支持常见活动快速配置上线</li>
+              <li>· 支持支付方式灵活配置</li>
+            </ul>
+            <img src="@/static/img3.png" alt="" />
+          </div>
         </div>
       </section>
       <section class="section3" ref="section3">
@@ -133,92 +142,96 @@ export default {
   },
 };
 </script>
-<style>
+<style lang="scss" scoped>
 .saas-banner{
   width: 100%;
   height: 430px;
   background: url("@/static/saas-banner.png") no-repeat center center;
   background-size: auto 100%;
 }
-.saas-tab {
-  background-color: #fbfbfb;
-}
-.saas-tab .container {
-  display: flex;
-  justify-content: center;
-}
-.saas-tab .item {
-  width: 257px;
-  height: 60px;
-  background: #333333;
-  border-radius: 30px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  color: #fff;
-  font-size: 16px;
-  margin: 0 40px;
-  cursor: pointer;
-  transition: all 0.3s linear;
-}
-.saas-tab .item.active {
-  background: linear-gradient(180deg, #ff8802 0%, #ff5001 100%);
-}
 .common-title {
   text-align: center;
+  .name {
+    font-size: 30px;
+    color: #333;
+    font-weight: bold;
+  }
 }
-.common-title .name {
-  font-size: 30px;
-  color: #333;
-  font-weight: bold;
+.section1{
+  padding-bottom: 40px;
 }
 .section1-main {
   display: flex;
-  padding: 88px 80px 0;
+  padding: 0 40px 0 80px;
   justify-content: space-between;
-}
-.section1-main .left p {
-  font-size: 30px;
-  color: #666;
-  font-weight: bold;
-}
-.section1-main .left ul {
-  display: flex;
-  margin-top: 40px;
-}
-.section1-main .left ul li {
-  margin-right: 68px;
-  text-align: center;
-  font-size: 16px;
-  color: #333;
-}
-.section1-main .left ul li img {
-  display: block;
-  margin: 0 auto;
+  .left{
+    padding-top: 88px;
+    p {
+      font-size: 30px;
+      color: #666;
+      font-weight: bold;
+    }
+    ul {
+      display: flex;
+      margin-top: 40px;
+      li {
+        margin-right: 68px;
+        text-align: center;
+        font-size: 16px;
+        color: #333;
+        img {
+          display: block;
+          margin: 0 auto;
+        }
+      }
+    }
+  } 
+  .img1{
+    width: 612px;
+  }
 }
 .section1-2 {
   background-color: #fbfbfb;
-  padding: 114px;
-}
-.section1-2 .container {
-  display: flex;
-  justify-content: space-between;
-  padding: 0 80px;
-}
-.section1-2 .text {
-  width: 467px;
-  font-size: 16px;
-  color: #333;
-  line-height: 30px;
-}
-.section1-2 .text p {
-  min-height: 60px;
+  padding: 20px 0 0 0;
+  .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-right: 60px;
+  }
+  .text {
+    width: 467px;
+    font-size: 16px;
+    color: #333;
+    line-height: 30px;
+    p {
+      min-height: 60px;
+    }
+  }
+  .img2{
+    width: 644px;
+  }
 }
 .section2 {
   padding: 72px 0;
-}
-.section2 img {
-  margin-top: 40px;
+  .section2-main{
+    margin-top: 44px;
+    display: flex;
+    align-items: center;
+    ul{
+      width: 40%;
+      padding-left: 200px;
+      li{
+        color: #333;
+        font-size: 16px;
+        line-height: 60px;
+        font-weight: bold;
+      }
+    }
+    img{
+      width: 662px;
+    }
+  }
 }
 .section3 {
   padding: 54px 0 100px;
@@ -227,41 +240,90 @@ export default {
 .section3-main {
   display: flex;
   justify-content: space-between;
-  margin-top: 64px;
-  padding: 0 70px;
+  padding: 0 20px;
+  .right {
+    width: 500px;
+    margin-top: 60px;
+    .item {
+      font-size: 16px;
+      color: #333;
+      position: relative;
+      margin-top: 56px;
+      line-height: 30px;
+      &::before {
+        content: "";
+        position: absolute;
+        width: 33px;
+        height: 2px;
+        background-color: #4A4A4A;
+        left: 0;
+        top: -10px;
+      }
+    }
+  }
+  ul {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 55px;
+    li {
+      height: 46px;
+      border-radius: 4px;
+      font-size: 18px;
+      color: #666;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 0 10px;
+      position: relative;
+      &::after{
+        content: "";
+        position: absolute;
+        width: 100%;
+        left: 0;
+        bottom: 0;
+        height: 2px;
+        background-color: #666;
+      }
+    }
+  }
 }
-.section3-main .right {
-  width: 500px;
-}
-.section3-main ul {
-  display: flex;
-  justify-content: space-between;
-}
-.section3-main ul li {
-  width: 202px;
-  height: 51px;
-  background: #ffa733;
-  border-radius: 4px;
-  font-size: 18px;
-  color: #fff;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-.section3-main .right .item {
-  font-size: 16px;
-  color: #333;
-  position: relative;
-  margin-top: 56px;
-  line-height: 30px;
-}
-.section3-main .right .item::before {
-  content: "";
-  position: absolute;
-  width: 33px;
-  height: 2px;
-  background-color: #ffa733;
-  left: 0;
-  top: -10px;
+@media screen and (max-width:1024px){
+  .saas-banner{
+    height: 300px;
+  }
+  .saas-tab .item{
+    margin: 0 15px;
+  }
+  .section1-main{
+    padding: 50px 30px 0;
+    justify-content: center;
+  }
+  .section1-main > img{
+    display: none;
+  }
+  .section1-2{
+    padding: 30px;
+  }
+  .section1-2 .container{
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 0;
+  }
+  .section1-2 .container > img{
+    max-width: 100%;
+  }
+  .section1-2 .text{
+    margin-top: 30px;
+    width: auto;
+    padding: 0 30px;
+  }
+  .section3-main{
+    padding: 0 30px;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+  .section3-main .right{
+    margin-top: 30px;
+  }
 }
 </style>

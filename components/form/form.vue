@@ -70,7 +70,7 @@
             />
             <div class="input-error">{{ phone_error }}</div>
           </div>
-          <div class="item code">
+          <div class="item">
             <div class="text"><span>*</span>验证码：</div>
             <input
               type="text"
@@ -155,76 +155,76 @@ export default {
   },
 };
 </script>
-<style>
+<style lang="scss" scoped>
 .common-title {
   text-align: center;
-}
-.common-title .name {
-  font-size: 30px;
-  color: #333;
-  font-weight: bold;
-}
-.common-title .desc {
-  font-size: 20px;
-  color: #666;
-  margin-top: 10px;
+  .name {
+    font-size: 30px;
+    color: #333;
+    font-weight: bold;
+  }
+  .desc {
+    font-size: 20px;
+    color: #666;
+    margin-top: 10px;
+  }
 }
 .free-plan {
   box-sizing: border-box;
   padding-top: 1px;
   height: 115px;
-  background: linear-gradient(180deg, #FFC71C 0%, #FF960C 100%);
+  background: rgb(255, 220, 203);
   position: fixed;
   width: 100%;
   left: 0;
   bottom: 0;
   z-index: 50;
-}
-.free-plan .container{
-  padding: 0 100px;
-  display: flex;
-  justify-content: space-between;
-  position: relative;
-}
-.free-plan .img{
-  width: 434px;
-  transform: translateY(-8px);
-}
-.free-plan ul {
-  padding: 2px 30px 0;
-  display: flex;
-  justify-content: space-between;
-  flex-wrap: wrap;
-}
-.free-plan ul li {
-  margin-top: 30px;
-  width: 464px;
-  border-radius: 4px;
-  height: 50px;
-  position: relative;
-}
-.free-plan ul li.li2 {
-  display: flex;
-}
-.free-plan ul li.li2 input {
-  width: 285px;
-}
-.free-plan ul li input {
-  width: 100%;
-  text-indent: 13px;
-  height: 50px;
-  font-size: 16px;
-  color: #333;
-  border: none;
-  border-radius: 4px;
-  background-color: #fff;
-  outline: none;
-}
-.free-plan ul li .input-error {
-  left: 0;
+  .container{
+    padding: 0 100px;
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    .img{
+      width: 469px;
+      transform: translateY(7px);
+    }
+  }
+  ul {
+    padding: 2px 30px 0;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    li {
+      margin-top: 30px;
+      width: 464px;
+      border-radius: 4px;
+      height: 50px;
+      position: relative;
+      input {
+        width: 100%;
+        text-indent: 13px;
+        height: 50px;
+        font-size: 16px;
+        color: #333;
+        border: none;
+        border-radius: 4px;
+        background-color: #fff;
+        outline: none;
+      }
+      .input-error {
+        left: 0;
+      }
+    }
+    .li2 {
+      display: flex;
+      input {
+        width: 285px;
+      }
+    }
+  }
 }
 .free-get-plan {
-  background-color: #333;
+  background-color: #FF5001;
   width: 246px;
   height: 50px;
   display: flex;
@@ -244,7 +244,7 @@ export default {
   position: absolute;
   left: 88px;
   top: 50px;
-  color: #ff0000;
+  color: #FF5001;
   font-size: 14px;
 }
 .clear-fixed {
@@ -278,24 +278,24 @@ export default {
   display: flex;
   justify-content: space-between;
   padding: 0 30px 0 0;
-}
-.form-dialog-main .b-img{
-  width: 440px;
-  height: 480px;
-}
-.form-dialog-main .plan-form{
-  padding-top: 30px;
-}
-.form-dialog-main .plan-form .item input{
-  width: 420px;
-}
-.form-dialog-main .plan-form h2{
-  padding-top: 0;
-  font-size: 22px;
-  text-align: left;
-}
-.form-dialog-main .plan-form .plan-btn{
-  margin: 25px auto 0;
+  .b-img{
+    width: 440px;
+    height: 480px;
+  }
+  .plan-form{
+    padding-top: 30px;
+    h2{
+      padding-top: 0;
+      font-size: 22px;
+      text-align: left;
+    }
+    .item input{
+      width: 420px;
+    }
+    .plan-btn{
+      margin: 25px auto 0;
+    }
+  }
 }
 .form-dialog-close{
   position: absolute;
@@ -311,6 +311,25 @@ export default {
 @media screen and (max-width:1200px){
   .free-plan ul li{
     width: 430px;
+  }
+  .free-get-plan{
+    width: 180px;
+  }
+}
+@media screen and (max-width:1024px){
+  .free-plan .container{
+    padding: 0 40px;
+    height: 115px;
+    align-items: center;
+  }
+  .free-plan .img{
+    width: 300px;
+  }
+  .free-get-plan{
+    margin-top: 0;
+  }
+  .img-close{
+    right: 40px
   }
 }
 </style>

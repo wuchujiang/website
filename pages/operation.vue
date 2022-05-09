@@ -117,7 +117,7 @@ export default {
   },
 };
 </script>
-<style>
+<style lang="scss" scoped>
 .operation-banner{
   width: 100%;
   height: 430px;
@@ -127,37 +127,18 @@ export default {
 .banner img {
   float: left;
 }
-.saas-tab {
-  background-color: #fbfbfb;
-}
-.saas-tab .container {
-  display: flex;
-  justify-content: center;
-}
-.saas-tab .item {
-  width: 257px;
-  height: 60px;
-  background: #333333;
-  border-radius: 30px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  color: #fff;
-  font-size: 16px;
-  margin: 0 40px;
-  cursor: pointer;
-  transition: all 0.3s linear;
-}
-.saas-tab .item.active {
-  background: linear-gradient(180deg, #ff8802 0%, #ff5001 100%);
-}
 .common-title {
   text-align: center;
-}
-.common-title .name {
-  font-size: 30px;
-  color: #333;
-  font-weight: bold;
+  .name {
+    font-size: 30px;
+    color: #333;
+    font-weight: bold;
+  }
+  .des{
+    font-size: 20px;
+    color: #666;
+    margin-top: 10px;
+  }
 }
 .operation-list {
   box-sizing: border-box;
@@ -165,47 +146,82 @@ export default {
   display: flex;
   justify-content: space-between;
   padding: 0 30px;
-}
-.operation-list .item {
-  width: 362px;
-  text-align: center;
-}
-.operation-list .item p {
-  font-size: 16px;
-  color: #333;
-  margin-top: 20px;
-  line-height: 24px;
+  .item {
+    width: 362px;
+    text-align: center;
+    p {
+      font-size: 16px;
+      color: #333;
+      margin-top: 20px;
+      line-height: 24px;
+    }
+  }
 }
 .period {
   background-color: #fbfbfb;
-}
-.period .container {
-  box-sizing: border-box;
-  display: flex;
-  justify-content: space-between;
-  padding: 0 60px;
-  padding-top: 72px;
-}
-.period .text {
-  width: 467px;
-  font-size: 16px;
-  color: #333;
-  line-height: 30px;
-  padding-top: 120px;
-}
-.period .text p {
-  min-height: 60px;
+  .container {
+    box-sizing: border-box;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 60px;
+    padding-top: 72px;
+    .text {
+      width: 467px;
+      font-size: 16px;
+      color: #333;
+      line-height: 30px;
+      p {
+        min-height: 60px;
+      }
+    }
+    img{
+      width: 640px;
+    }
+  }
 }
 .formulate {
   padding: 54px 0 100px;
   background-color: #fff;
-}
-.formulate .common-title .desc {
-  width: 660px;
-  margin: 12px auto 0;
+  .common-title {
+    .desc {
+      width: 660px;
+      margin: 12px auto 0;
+    }
+  }
+  .container{
+    display: flex;
+    justify-content: center;
+  }
+  img{
+    width: 1028px;
+  }
 }
 .formulate-img {
   display: block;
   margin: 72px auto 0;
+}
+@media screen and (max-width:1024px){
+  .operation-banner{
+    height: 300px;
+  }
+  .saas-tab .item{
+    margin: 0 15px;
+  }
+  .common-title .name{
+    font-size: 26px
+  }
+  .operation-list .item{
+    width: 32%;
+  }
+  .period .container{
+    padding: 0 30px;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .period .text{
+    width: auto;
+    padding: 30px 30px 0;
+  }
 }
 </style>

@@ -9,9 +9,9 @@
           <li
             v-for="(item, index) in nav"
             :key="item.name"
-            :class="current === index && 'active'"
+            :class="{'item': true, 'active': current === index}"
           >
-            <nuxt-link :to="item.url" :class="item.second && 'down'">{{
+            <nuxt-link :to="item.url" :class="{'down': item.second}">{{
               item.name
             }}</nuxt-link>
             <!-- 二级菜单 -->
@@ -22,15 +22,20 @@
                   v-for="i in item.second"
                   :key="i.name"
                 >
-                  <nuxt-link :to="i.url">{{ i.name }}</nuxt-link>
+                  <nuxt-link :to="i.url"><span></span>{{ i.name }}</nuxt-link>
                 </div>
               </div>
             </div>
           </li>
         </ul>
       </nav>
-      <div class="phone">
-        <img src="@/static/server.png" alt="" />400-150-9669
+      <div class="heaedr-r">
+        <div class="phone">
+          400-150-9669
+        </div>
+        <div class="mobile-nav">
+          <img src="@/static/nav.png" alt="">
+        </div>
       </div>
     </div>
   </header>
@@ -92,7 +97,7 @@ export default {
 };
 </script>
 
-<style>
+<style lang="scss" scoped>
 .header {
   height: 67px;
   background-color: #fff;
@@ -106,27 +111,27 @@ export default {
   float: left;
   cursor: pointer;
   overflow: hidden;
-}
-.logo img {
-  float: left;
+  img {
+    float: left;
+  }
 }
 .nav {
   float: left;
-}
-.nav ul {
-  display: flex;
-}
-.nav ul li {
-  line-height: 67px;
-  font-size: 16px;
-  color: #666;
-  padding: 0 50px;
-  position: relative;
-  display: flex;
-  align-items: center;
-}
-.nav ul li a {
-  transition: all 0.3s linear;
+  ul {
+    display: flex;
+    li {
+      line-height: 67px;
+      font-size: 16px;
+      color: #666;
+      padding: 0 50px;
+      position: relative;
+      display: flex;
+      align-items: center;
+      a {
+        transition: all 0.3s linear;
+      }
+    }
+  }
 }
 .down {
   padding-right: 14px;
@@ -159,27 +164,44 @@ export default {
   margin-right: 10px;
 }
 .sec_nav {
+  width: 240px;
   position: absolute;
   z-index: 9;
   top: 64px;
   left: 50%;
   transform: translateX(-50%);
-  padding-top: 5px;
+  background-color: #fff;
+  padding: 20px 0;
+  text-align: center;
+  line-height: 1;
   display: none;
 }
-.sec_nav-main {
-  background-color: #fff;
-  border-radius: 4px;
-  padding: 9px 0 16px;
-}
 .sec_nav .item {
-  margin-left: 25px;
+  display: inline-block;
   font-size: 14px;
-  padding-left: 32px;
-  line-height: 24px;
-  margin-top: 10px;
+  height: 50px;
+  padding: 10px 0 10px 50px;
   transition: all 0.3s linear;
   cursor: pointer;
+  line-height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  a{
+    display: flex;
+    align-items: center;
+    width: 100%;
+  }
+  span{
+    display: inline-block;
+    width: 24px;
+    height: 24px;
+    background-size: 100% 100%;
+    margin-right: 10px;
+  }
+}
+.about .item{
+  padding: 10px 0 10px 70px;
 }
 .sec_nav .item a {
   color: #333;
@@ -187,41 +209,56 @@ export default {
 .sec_nav .item:hover a {
   color: #ff5001;
 }
-.product {
-  width: 182px;
-}
-.about {
-  width: 140px;
-}
-.nav_saas {
+.nav_saas span {
   background: url("@/static/icon4.png") no-repeat left center;
 }
-.nav_service {
+.nav_service span {
   background: url("@/static/icon5.png") no-repeat left center;
 }
-.nav_about {
+.nav_about span {
   background: url("@/static/icon6.png") no-repeat left center;
 }
-.nav_contact {
+.nav_contact span {
   background: url("@/static/icon7.png") no-repeat left center;
 }
-.nav_saas:hover {
+.nav_saas:hover span {
   background: url("@/static/icon4_selected.png") no-repeat left center;
 }
-.nav_service:hover {
+.nav_service:hover span {
   background: url("@/static/icon5_selected.png") no-repeat left center;
 }
-.nav_about:hover {
+.nav_about:hover span {
   background: url("@/static/icon6_selected.png") no-repeat left center;
 }
-.nav_contact:hover {
+.nav_contact:hover span {
   background: url("@/static/icon7_selected.png") no-repeat left center;
+}
+.mobile-nav{
+  display: none;
 }
 
 
 @media screen and (max-width:1200px){
   .nav ul li{
     padding: 0 30px;
+  }
+}
+@media screen and (max-width:1024px){
+  .nav{
+    display: none;
+  }
+  .header .container{
+    display: flex;
+    justify-content: space-between;
+  }
+  .heaedr-r{
+    display: flex;
+    align-items: center;
+  }
+  .mobile-nav{
+    display: block;
+    float: right;
+    margin-left: 10px;
   }
 }
 </style>

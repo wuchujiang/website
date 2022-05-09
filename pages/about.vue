@@ -148,12 +148,20 @@ export default {
   },
 };
 </script>
-<style>
+<style lang="scss" scoped>
 .about-banner{
   width: 100%;
   height: 430px;
   background: url("@/static/about-banner.png") no-repeat center center;
   background-size: auto 100%;
+}
+.common-title {
+  text-align: center;
+  .name {
+    font-size: 30px;
+    color: #333;
+    font-weight: bold;
+  }
 }
 .about-section1 {
   padding: 72px 0;
@@ -303,5 +311,26 @@ export default {
 }
 .course-main .list:first-child .item .date span:last-child {
   transform: translateX(7px);
+}
+@media screen and (max-width:1024px){
+  .about-banner{
+    height: 300px;
+  }
+  .about-text img{
+    width: 100%;
+  }
+  .course-main{
+    padding: 0 26px;
+  }
+  .course-main .item{
+    width: 244px;
+  }
+  .course-main .item p{
+    font-size: 14px;
+    line-height: 22px;
+  }
+  .course-main .list:first-child .item .date{
+    font-size: 14px;
+  }
 }
 </style>

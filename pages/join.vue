@@ -10,7 +10,7 @@
           <div class="join-container">
             <div class="left">
               <div
-                :class="`item ${current === index && 'active'}`"
+                :class="{'item': true, 'active': current === index}"
                 v-for="(item, index) in list"
                 :key="item.name"
                 @click="current = index"
@@ -265,5 +265,22 @@ export default {
   font-size: 18px;
   color: #333;
   font-weight: bold;
+}
+@media screen and (max-width:1200px){
+  .join-banner{
+    height: 350px;
+  }
+}
+
+@media screen and (max-width:1024px){
+  .join-banner{
+    height: 300px;
+  }
+  .join-container .left{
+    margin-right: 30px;
+  }
+  .join-container .left .item{
+    width: 255px;
+  }
 }
 </style>

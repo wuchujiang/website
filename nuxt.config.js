@@ -28,7 +28,7 @@ export default {
      ** Global CSS
      */
     css: [
-        'style/index.css'
+        'style/index.scss'
     ],
     /*
      ** Plugins to load before mounting the App
@@ -48,10 +48,6 @@ export default {
      ** Build configuration
      */
     build: {
-        filenames: {
-            app: ({ isDev }) => '[name].js',
-            chunk: ({ isDev }) => '[name].js',
-            css: ({ isDev }) => '[name].js'
-        }
+        extractCSS: true
     }
 }

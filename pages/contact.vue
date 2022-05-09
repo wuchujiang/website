@@ -2,7 +2,7 @@
   <div>
     <oakHeader :current="2" />
     <main>
-      <section class="about-banner"></section>
+      <section class="contact-banner"></section>
       <section class="contact-main">
         <div class="container">
           <div class="item">
@@ -158,8 +158,8 @@ export default {
   },
 };
 </script>
-<style>
-.about-banner{
+<style lang="scss" scoped>
+.contact-banner{
   width: 100%;
   height: 430px;
   background: url("@/static/about-banner.png") no-repeat center center;
@@ -219,74 +219,32 @@ export default {
 .contact-form {
   background-color: #fbfbfb;
   margin-bottom: 72px;
+  .container {
+    display: flex;
+    justify-content: space-between;
+    img{
+      width: 467px;
+    }
+  }
 }
-.contact-form .container {
-  display: flex;
-  justify-content: space-between;
-}
-.plan-form h2 {
-  text-align: center;
-  font-size: 24px;
-  color: #333;
-  padding-top: 58px;
-}
-.plan-form .item {
-  margin-top: 30px;
-  display: flex;
-  position: relative;
-}
-.plan-form .item .text {
-  width: 88px;
-  text-align: right;
-  line-height: 50px;
-  font-size: 16px;
-  color: #333;
-}
-.plan-form .item .text span {
-  color: #ff5001;
-}
-.plan-form .item input {
-  width: 520px;
-  height: 50px;
-  background-color: #eee;
-  border: none;
-  text-indent: 10px;
-  font-size: 16px;
-  outline: none;
-}
-.plan-form .item.code input {
-  width: 285px;
-}
-.get-code {
-  width: 117px;
-  height: 40px;
-  background-color: #333;
-  text-align: center;
-  line-height: 40px;
-  color: #fff;
-  font-size: 16px;
-  border-radius: 4px;
-  margin: 5px 0 0 26px;
-  cursor: pointer;
-  transition: all 0.3s linear;
-}
-.get-code:hover {
-  opacity: 0.8;
-}
-.plan-btn {
-  width: 190px;
-  height: 50px;
-  background-color: #333;
-  text-align: center;
-  line-height: 50px;
-  color: #fff;
-  font-size: 16px;
-  border-radius: 4px;
-  margin: 40px 0 0 232px;
-  cursor: pointer;
-  transition: all 0.3s linear;
-}
-.plan-btn:hover {
-  opacity: 0.8;
+
+@media screen and (max-width:1024px){
+  .contact-banner{
+    height: 300px;
+  }
+  .contact-main .container{
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .contact-main .item{
+    width: 60%;
+    margin-bottom: 20px;
+  }
+  .contact-form .container{
+    justify-content: center;
+  }
+  .contact-form img{
+    display: none;
+  }
 }
 </style>

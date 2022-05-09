@@ -6,7 +6,7 @@
       <section class="why-select-oak">
         <div class="container">
           <div class="common-title">
-            <div class="name">为什么选择橡树省钱卡</div>
+            <div class="name">为什么选择橡树黑卡</div>
             <div class="desc">
               专业团队根据合作方与用户诉求，设计定制产品，并提供专业运营支持服务
             </div>
@@ -25,75 +25,63 @@
             </div>
             <div v-show="current === 0" class="capacity-content1">
               <div class="text">
+                <div class="top">
+                  <h4>一站式权益</h4>
+                  <span>Equity one stop</span>
+                  <h5>低成本 高价值</h5>
+                </div>
                 <p>
-                  <span>
-                    <img
-                      src="@/static/gou.png"
-                      alt=""
-                    />整合食住行用等全流程权益，</span
-                  >
+                  <span> - 整合食住行用等全流程权益，</span>
                   覆盖类目广，满足用户大部分生活需求。
                 </p>
-
                 <p>
-                  <span>
-                    <img
-                      src="@/static/gou.png"
-                      alt=""
-                    />权益具有高频、强流量、高价值属性，</span
-                  >
+                  <span> - 权益具有高频、强流量、高价值属性，</span>
                   利于吸引新用户，提升用户忠诚度。
                 </p>
-
-                <p><img src="@/static/gou.png" alt="" />权益成本更低。</p>
+                <p>- 权益成本更低。</p>
               </div>
               <img src="@/static/benefit.png" alt="" />
             </div>
-            <div v-show="current === 1" class="capacity-content2">
+            <div v-show="current === 1" class="capacity-content1 capacity-content2">
               <div class="text">
-                <p>
-                  <img
-                    src="@/static/gou.png"
-                    alt=""
-                  />与多家酒店集团、贵宾出行服务商合作，可为用户提供高级酒店会籍匹配，及全球贵宾休息室、快速安检等高端服务。
-                </p>
-                <div class="show-list">
-                  <img src="@/static/co1.png" alt="" />
-                  <img src="@/static/co2.png" alt="" />
-                  <img src="@/static/co3.png" alt="" />
+                <div class="top">
+                  <h4>独家权益</h4>
+                  <span>Flexible customization</span>
+                  <h5>权益保障 出行无忧</h5>
                 </div>
-              </div>
-              <div class="text">
                 <p>
-                  <img
-                    src="@/static/gou.png"
-                    alt=""
-                  />与航空公司合作，支持积分兑换里程、充话费送里程等权益。
+                  <span>
+                    -
+                    与多家酒店集团、贵宾出行服务商合作，可为用户提供高级酒</span
+                  >
+                  <span>店会籍匹配，及全球贵宾休息室、快速安检等高端服务。</span>
                 </p>
-                <div class="show-list">
-                  <img src="@/static/co4.png" alt="" />
-                  <img src="@/static/co5.png" alt="" />
-                  <img src="@/static/co6.png" alt="" />
-                </div>
+                <p>
+                  <span>
+                    -
+                    与航空公司合作，支持积分兑换里程、充话费送里程等权益。</span
+                  >
+                </p>
               </div>
+              <img src="@/static/img14.png" alt="" />
             </div>
-            <div v-show="current === 2" class="capacity-content3">
+            <div v-show="current === 2" class="capacity-content1 capacity-content3">
               <div class="text">
+                <div class="top">
+                  <h4>灵活定制</h4>
+                  <span>Flexible customizati</span>
+                  <h5>专业服务 一键接入</h5>
+                </div>
                 <p>
-                  <img src="@/static/gou.png" alt="" />
-                  拥有多家银行服务专业经验，无仓储，无物流，交付快，成本低。
+                  <span> - 拥有多家银行服务专业经验，无仓储，无物</span>
+                  <span>流，交付快，成本低。</span>
                 </p>
-                <img class="cu1" src="@/static/cu1.png" alt="" />
-              </div>
-              <div class="text">
                 <p>
-                  <img
-                    src="@/static/gou.png"
-                    alt=""
-                  />产品介入支持多种H5/API、兑换码等方式，可一键接入，权益可灵活配置。
+                  <span> - 产品介入支持多种H5/API、兑换码等方</span>
+                  <span>式，可一键接入，权益可灵活配置。</span>
                 </p>
-                <img class="cu2" src="@/static/cu2.png" alt="" />
               </div>
+              <img src="@/static/img13.png" alt="" />
             </div>
           </div>
         </div>
@@ -139,7 +127,7 @@
               />
               <div class="input-error">{{ phone_error }}</div>
             </div>
-            <div class="item code">
+            <div class="item">
               <div class="text"><span>*</span>验证码：</div>
               <input
                 type="text"
@@ -148,8 +136,8 @@
                 name=""
                 id="code"
               />
-              <div class="input-error">{{ code_error }}</div>
               <div class="get-code" @click="getCode">获取验证码</div>
+              <div class="input-error">{{ code_error }}</div>
             </div>
             <div class="plan-btn" @click="getPlan">免费获取方案</div>
           </div>
@@ -167,7 +155,7 @@
             <div
               v-for="(item, index) in service_value"
               :key="item.title"
-              :class="`item ${service_value_current === index && 'active'}`"
+              :class="{'item': true, 'active': service_value_current === index}"
               @mouseenter="service_value_current = index"
               @mouseleave="service_value_current = -1"
             >
@@ -301,6 +289,36 @@ export default {
   },
   mounted() {
     this.$refs.index.scrollIntoView();
+    !(function (x) {
+      function w() {
+        var v,
+          u,
+          t,
+          tes,
+          s = x.document,
+          r = s.documentElement,
+          a = r.getBoundingClientRect().width;
+        if (!v && !u) {
+          var n = !!x.navigator.appVersion.match(/AppleWebKit.*Mobile.*/);
+          v = x.devicePixelRatio;
+          tes = x.devicePixelRatio;
+          (v = n ? v : 1), (u = 1 / v);
+        }
+        if (a >= 640) {
+          r.style.fontSize = "40px";
+        } else {
+          if (a <= 320) {
+            r.style.fontSize = "20px";
+          } else {
+            r.style.fontSize = (a / 320) * 20 + "px";
+          }
+        }
+      }
+      x.addEventListener("resize", function () {
+        w();
+      });
+      w();
+    })(window);
   },
   methods: {
     getCode() {
@@ -335,7 +353,7 @@ export default {
 };
 </script>
 
-<style>
+<style lang="scss" scoped>
 .banner {
   width: 100%;
   height: 420px;
@@ -347,16 +365,16 @@ export default {
 }
 .common-title {
   text-align: center;
-}
-.common-title .name {
-  font-size: 30px;
-  color: #333;
-  font-weight: bold;
-}
-.common-title .desc {
-  font-size: 20px;
-  color: #666;
-  margin-top: 10px;
+  .name {
+    font-size: 30px;
+    color: #333;
+    font-weight: bold;
+  }
+  .desc {
+    font-size: 20px;
+    color: #666;
+    margin-top: 10px;
+  }
 }
 .why-select-oak .wrap {
   margin-top: 72px;
@@ -364,71 +382,70 @@ export default {
 .capacity {
   display: flex;
   justify-content: space-between;
-}
-.capacity .item {
-  box-sizing: border-box;
-  width: 32%;
-  border: 1px solid #ebecf1;
-  border-radius: 4px;
-  height: 225px;
-  text-align: center;
-  padding: 12px 20px 0;
-  font-size: 24px;
-  color: #333;
-  font-weight: bold;
-  transition: all 0.3s linear;
-}
-.capacity .item img {
-  margin-bottom: 23px;
-}
-.capacity .item.active {
-  border: 1px solid #ff5001;
-  box-shadow: 0px 0px 20px 0px rgba(153, 153, 153, 0.3);
-  color: #ff5001;
+  .item {
+    box-sizing: border-box;
+    width: 32%;
+    border: 1px solid #ebecf1;
+    border-radius: 4px;
+    height: 225px;
+    text-align: center;
+    padding: 12px 20px 0;
+    font-size: 24px;
+    color: #333;
+    font-weight: bold;
+    transition: all 0.3s linear;
+    img {
+      margin-bottom: 23px;
+    }
+  }
+  .active {
+    border: 1px solid #ff5001;
+    box-shadow: 0px 0px 20px 0px rgba(153, 153, 153, 0.3);
+    color: #ff5001;
+  }
 }
 .capacity-content1 {
   margin-top: 32px;
-  background-color: #fbfbfb;
   height: 400px;
-  padding: 0 137px 0 74px;
+  padding: 0 117px 0 94px;
   display: flex;
   align-items: center;
   justify-content: space-between;
-}
-.capacity-content1 .text {
-  line-height: 30px;
-  color: #666666;
-  font-size: 16px;
-}
-.capacity-content1 .text p {
-  padding: 15px 0;
-}
-.capacity-content1 .text span {
-  display: block;
-}
-.capacity-content1 .text img {
-  transform: translate(-4px, 2px);
+  img {
+    width: 558px;
+  }
+  .text {
+    line-height: 30px;
+    color: #666666;
+    font-size: 16px;
+    .top {
+      font-size: 24px;
+      color: #222;
+      padding-bottom: 10px;
+      span {
+        font-size: 14px;
+        color: #333;
+        line-height: 1;
+      }
+      h5 {
+        font-size: 18px;
+        color: #ff5001;
+      }
+    }
+    p {
+      padding: 15px 0;
+    }
+    span {
+      display: block;
+    }
+  }
 }
 .capacity-content2 {
-  margin-top: 32px;
-  background-color: #fbfbfb;
-  height: 400px;
-  padding: 0 34px 0 34px;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-}
-.capacity-content2 .text {
-  width: 47%;
-}
-.capacity-content2 .text p {
-  height: 60px;
-  line-height: 30px;
-  color: #666666;
-  font-size: 16px;
-}
-.capacity-content2 .text p img {
-  transform: translate(-4px, 2px);
+  padding: 0 94px;
+  img{
+    width: 435px;
+  }
+  
 }
 .show-list {
   margin-top: 70px;
@@ -440,32 +457,10 @@ export default {
 }
 
 .capacity-content3 {
-  margin-top: 32px;
-  background-color: #fbfbfb;
-  height: 400px;
-  padding: 0 76px 0 34px;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-}
-.capacity-content3 .text {
-  width: 45%;
-}
-.capacity-content3 .text p {
-  line-height: 30px;
-  color: #666666;
-  font-size: 16px;
-}
-.capacity-content3 .text p img {
-  transform: translate(-4px, 2px);
-}
-.capacity-content3 .text .cu1 {
-  margin: 30px auto 0;
-  display: block;
-}
-.capacity-content3 .text .cu2 {
-  margin: 44px auto 0;
-  display: block;
+  padding: 0 76px 0 94px;
+  img{
+    width: 640px;
+  }
 }
 .plan {
   background-color: #fbfbfb;
@@ -477,118 +472,46 @@ export default {
 .plan img {
   width: 40%;
 }
-.plan-form{
-  padding-top: 50px;
-}
-.plan-form h2{
-  font-size: 24px;
-  color: #333;
-}
-.plan-form .item {
-  margin-top: 30px;
-  display: flex;
-  position: relative;
-}
-.plan-form .item .text {
-  width: 88px;
-  text-align: right;
-  line-height: 50px;
-  font-size: 16px;
-  color: #333;
-}
-.plan-form .item .text span {
-  color: #ff5001;
-}
-.plan-form .item input {
-  width: 520px;
-  height: 50px;
-  background-color: #eee;
-  border: none;
-  text-indent: 10px;
-  font-size: 16px;
-  outline: none;
-}
-.plan-form .item.code input {
-  width: 285px;
-}
-.get-code {
-  width: 117px;
-  height: 40px;
-  background-color: #333;
-  text-align: center;
-  line-height: 40px;
-  color: #fff;
-  font-size: 16px;
-  border-radius: 4px;
-  margin: 5px 0 0 26px;
-  cursor: pointer;
-  transition: all 0.3s linear;
-}
-.get-code:hover {
-  opacity: 0.8;
-}
-.plan-btn {
-  width: 190px;
-  height: 50px;
-  background-color: #333;
-  text-align: center;
-  line-height: 50px;
-  color: #fff;
-  font-size: 16px;
-  border-radius: 4px;
-  margin: 40px 0 0 232px;
-  cursor: pointer;
-  transition: all 0.3s linear;
-}
-.plan-btn:hover {
-  opacity: 0.8;
-}
 .service-value {
   padding: 72px 0;
-}
-.service-value .list {
-  display: flex;
-  justify-content: space-between;
-  margin-top: 72px;
-}
-.service-value .list .item {
-  width: 21.6%;
-  height: 320px;
-  border: 1px solid #333333;
-  border-radius: 5px;
-  text-align: center;
-  transition: all 0.3s linear;
-}
-.service-value .list .item img {
-  display: block;
-  width: 62px;
-  height: 62px;
-  margin: 33px auto 0;
-}
-.service-value .list .item .name {
-  font-size: 24px;
-  color: #ff5001;
-  font-weight: bold;
-  display: inline-block;
-  border-bottom: 2px solid #ff5001;
-  margin-top: 32px;
-}
-.service-value .list .item ul {
-  display: inline-block;
-  text-align: left;
-  line-height: 30px;
-  color: #666666;
-  font-size: 15px;
-  margin-top: 27px;
-}
-.service-value .list .item.active {
-  background-color: #333;
-}
-.service-value .list .item.active .name {
-  color: #fff;
-}
-.service-value .list .item.active ul {
-  color: #fff;
+  .list {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 72px;
+    .item {
+      width: 21.6%;
+      height: 320px;
+      border: 1px solid #333333;
+      border-radius: 5px;
+      text-align: center;
+      transition: all 0.3s linear;
+      img {
+        display: block;
+        width: 62px;
+        height: 62px;
+        margin: 33px auto 0;
+      }
+      .name {
+        font-size: 24px;
+        color: #ff5001;
+        font-weight: bold;
+        display: inline-block;
+        border-bottom: 2px solid #ff5001;
+        margin-top: 32px;
+      }
+      ul {
+        display: inline-block;
+        text-align: left;
+        line-height: 30px;
+        color: #666666;
+        font-size: 15px;
+        margin-top: 27px;
+      }
+    }
+    .active {
+      border: 1px solid #FF5001;
+    }
+  }
 }
 .client {
   padding: 72px 0;
@@ -596,12 +519,13 @@ export default {
 }
 .client img {
   margin-top: 72px;
+  width: 100%;
 }
 .input-error {
   position: absolute;
   left: 88px;
   top: 50px;
-  color: #ff5001;
+  color: #FF5001;
   font-size: 14px;
 }
 .dialog {
@@ -648,18 +572,59 @@ export default {
 .show-dialog {
   display: block;
 }
-@media screen and (max-width:1200px){
-  .banner{
-    height: 450px;
+@media screen and (max-width: 1200px) {
+  .banner {
+    height: 400px;
   }
-  .service-value .list .item{
+  .service-value .list .item {
     width: 23%;
   }
-  .capacity .item{
-    font-size: 20px;
+  .capacity .item {
+    font-size: 18px;
   }
-  .capacity-content1{
+  .capacity-content1 {
     padding: 0 70px;
+  }
+  .plan-form .item input {
+    width: 440px;
+  }
+  .plan .plan-form h2 {
+    padding-top: 0;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .banner {
+    height: 300px;
+  }
+  .plan img {
+    display: none;
+  }
+  .plan .container {
+    justify-content: center;
+    padding-bottom: 1rem;
+  }
+  .why-select-oak {
+    padding: 50px 0 72px 0;
+  }
+  .common-title .name {
+    font-size: 26px;
+  }
+  .common-title .desc {
+    font-size: 18px;
+  }
+  .capacity-content1 {
+    padding: 0 30px;
+  }
+  .capacity-content1 > img {
+    width: 50%;
+  }
+  .service-value .list {
+    flex-wrap: wrap;
+  }
+  .service-value .list .item {
+    width: 48%;
+    margin-bottom: 20px;
   }
 }
 </style>
