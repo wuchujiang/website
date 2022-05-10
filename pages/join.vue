@@ -1,8 +1,9 @@
 <template>
-  <div>
+  <div v-show="pageShow">
     <oakHeader :current="3" />
     <main>
       <section class="join-banner"></section>
+      <section class="mobile-join-banner"></section>
       <section class="join-main">
         <div class="container">
           <h2>社招岗位</h2>
@@ -38,6 +39,32 @@
               <div class="join-email">{{ list[current].email }}</div>
             </div>
           </div>
+          <div class="mobile-join-container">
+            <div class="item" v-for="(item, index) in list" :key="item.name">
+              <div class="top" @click="showDetail(index)">
+                {{ item.name }}
+                <span>{{ item.address }} &gt;</span>
+              </div>
+              <div class="right" :style="{display: current === index ? 'block' : 'none'}">
+                <h4>职位描述</h4>
+                <ul>
+                  <li v-for="(item, index) in list[index].desc" :key="item">
+                    {{ index + 1 }}.{{ item }}
+                  </li>
+                </ul>
+                <h4>任职资格</h4>
+                <ul>
+                  <li
+                    v-for="(item, index) in list[index].qualification"
+                    :key="item"
+                  >
+                    {{ index + 1 }}.{{ item }}
+                  </li>
+                </ul>
+                <div class="join-email">{{ list[index].email }}</div>
+              </div>
+            </div>
+          </div>
         </div>
       </section>
     </main>
@@ -55,6 +82,7 @@ export default {
   },
   data() {
     return {
+      pageShow: false,
       current: 0,
       list: [
         {
@@ -78,6 +106,7 @@ export default {
             "互联网行业背景优先，有开源项目者优先。",
           ],
           email: "简历发送至  hr@oakblack.com",
+          show: false,
         },
         {
           name: "  系统架构师",
@@ -106,6 +135,7 @@ export default {
             "能针对业务场景进行正确的技术选型，有能力设计大型系统并通过UML、Presentation的形式进行表述。",
           ],
           email: "简历发送至  hr@oakblack.com",
+          show: false,
         },
         {
           name: "测试工程师",
@@ -124,6 +154,7 @@ export default {
             "较强的表达沟通能力、团队合作精神，工作细致、责任心强，较强的逻辑分析总结能力和学习能力。",
           ],
           email: "简历发送至  hr@oakblack.com",
+          show: false,
         },
         {
           name: "数据分析师",
@@ -140,6 +171,7 @@ export default {
             "英文可作为工作语言，有带团队管理经验优先。",
           ],
           email: "简历发送至  hr@oakblack.com",
+          show: false,
         },
         {
           name: "资深风控数据分析专家",
@@ -159,6 +191,7 @@ export default {
             "具备强烈的好奇心与自我驱动力，乐于接受挑战，富有使命感。",
           ],
           email: "简历发送至  hr@oakblack.com",
+          show: false,
         },
       ],
     };
@@ -181,9 +214,17 @@ export default {
       ],
     };
   },
+  mounted() {
+    this.pageShow = true;
+  },
+  methods: {
+    showDetail(index){
+      this.current = index;
+    }
+  }
 };
 </script>
-<style>
+<style lang="scss" scoped>
 .join-banner{
   width: 100%;
   height: 430px;
@@ -266,6 +307,10 @@ export default {
   color: #333;
   font-weight: bold;
 }
+.mobile-join-banner, .mobile-join-container{
+  display: none;
+}
+
 @media screen and (max-width:1200px){
   .join-banner{
     height: 350px;
@@ -281,6 +326,74 @@ export default {
   }
   .join-container .left .item{
     width: 255px;
+  }
+}
+
+@media screen and (max-width:1024px){
+  .join-banner{
+    display: none;
+  }
+  .mobile-join-banner{
+    display: block;
+    height: 152px;
+    background: url("@/static/mobile/join-banner.png") no-repeat center center;
+    background-size: auto 100%;
+  }
+  .join-main{
+    padding-top: 30px;
+    h2{
+      font-size: 16px;
+    }
+    .title{
+      margin-top: 20px;
+    }
+    .join-container{
+      display: none;
+    }
+    .mobile-join-container{
+      display: block;
+      margin-top: 16px;
+      .item{
+        font-size: 12px;
+        color: #333;
+        font-weight: bold;
+        padding: 0 8px;
+        border: 1PX solid #DCDCDC;
+        border-radius: 4px;
+        margin-bottom: 12px;
+        .top{
+          height: 40px;
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+          span{
+            font-weight: normal;
+            color: #999;
+          }
+        }
+        .right{
+          border-top: 1PX solid #DDDDDD;
+          padding-top: 13px;
+          h4{
+            margin-bottom: 8px;
+          }
+          ul{
+            padding-bottom: 20px;
+            li{
+              font-weight: normal;
+              font-size: 12px;
+              color: #666;
+              line-height: 24px;
+            }
+          }
+          .join-email{
+            font-size: 14px;
+            color: #FF5001;
+            padding-bottom: 16px;
+          }
+        }
+      }
+    }
   }
 }
 </style>

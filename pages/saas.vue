@@ -1,5 +1,5 @@
 <template>
-  <div ref="saas">
+  <div ref="saas" v-show="pageShow">
     <oakHeader :current="1" sec_current="nav_saas" />
     <main>
       <section class="saas-banner"></section>
@@ -15,11 +15,24 @@
           </div>
         </div>
       </section>
+      <section class="mobile-second-nav">
+        <ul>
+          <li v-for="item in sec_list" :key="item.title" :class="{active: item.type === 'saas'}"><nuxt-link :to="item.url">{{ item.title }}</nuxt-link></li>
+        </ul>
+      </section>
       <section class="section1" ref="section1">
         <div class="container">
           <div class="common-title">
             <div class="name">数字化会员产品设计</div>
+            <div class="desc">橡树支持对会员设计，及全链路的各项核心数据监控</div>
           </div>
+          <section class="mobile-section1-main">
+            <img src="@/static/mobile/img4.png" alt="">
+            <h4>丰富的权益资源</h4>
+            <p>橡树整合内外部资源，拥有多平台数千个虚拟服务产品的权益资源。</p>
+            <img src="@/static/mobile/img5.png" alt="">
+            <p>通过SasS运营赋能的方式快速、定制化输出，可广泛应用于用户生活的不同场景，发挥成本和规模交易的优势，助力客户促活，提升交易量。</p>
+          </section>
           <div class="section1-main">
             <div class="left">
               <p>橡树支持对会员设计</p>
@@ -52,6 +65,7 @@
         <div class="container">
           <div class="common-title">
             <div class="name">会员管理后台</div>
+            <div class="desc">橡树支持对会员设计，及全链路的各项核心数据监控</div>
           </div>
           <div class="section2-main">
             <ul>
@@ -63,15 +77,20 @@
             </ul>
             <img src="@/static/img3.png" alt="" />
           </div>
+          <div class="mobile-section2-main">
+            <img src="@/static/mobile/img6.png" alt="">
+          </div>
         </div>
       </section>
       <section class="section3" ref="section3">
         <div class="container">
           <div class="common-title">
             <div class="name">敏捷高效的技术能力</div>
+            <div class="desc">持续迭代  快速上线</div>
           </div>
           <div class="section3-main">
             <img src="@/static/img4.png" alt="" />
+            <img class="mobile-img" src="@/static/mobile/img7.png" alt="" />
             <div class="right">
               <ul>
                 <li>快速上线</li>
@@ -111,6 +130,11 @@ export default {
     return {
       tab: ["数字化会员产品设计", "会员管理后台", "敏捷高效的技术能力"],
       current: 0,
+      pageShow: false,
+      sec_list: [
+        {title: '会员SaaS服务', url: "/saas", type: 'saas'},
+        {title: '精细化运营服务', url: "/operation", type: 'operation'}
+      ]
     };
   },
   head() {
@@ -133,6 +157,7 @@ export default {
   },
   mounted() {
     this.$refs.saas.scrollIntoView();
+    this.pageShow = true;
   },
   methods: {
     scrollView(index) {
@@ -155,6 +180,9 @@ export default {
     font-size: 30px;
     color: #333;
     font-weight: bold;
+  }
+  .desc{
+    display: none;
   }
 }
 .section1{
@@ -287,6 +315,10 @@ export default {
     }
   }
 }
+.mobile-section2-main, .mobile-section1-main, .mobile-img{
+  display: none;
+}
+
 @media screen and (max-width:1024px){
   .saas-banner{
     height: 300px;
@@ -298,8 +330,17 @@ export default {
     padding: 50px 30px 0;
     justify-content: center;
   }
-  .section1-main > img{
-    display: none;
+  .section1-main {
+    .left{
+      padding-top: 0;
+      p{
+        font-size: 24px;
+      }
+    }
+    flex-wrap: wrap;
+    .img1{
+      width: 500px;
+    }
   }
   .section1-2{
     padding: 30px;
@@ -317,6 +358,14 @@ export default {
     width: auto;
     padding: 0 30px;
   }
+  .section2{
+    .section2-main{
+      flex-wrap: wrap;
+      ul{
+        width: 100%;
+      }
+    }
+  }
   .section3-main{
     padding: 0 30px;
     justify-content: center;
@@ -324,6 +373,95 @@ export default {
   }
   .section3-main .right{
     margin-top: 30px;
+  }
+}
+
+@media screen and (max-width:640px){
+  .saas-banner{
+    display: none;
+  }
+  .section1{
+    padding-top: 42px;
+  }
+  .common-title {
+    text-align: left;
+    .name {
+      font-size: 16px;
+      color: #333;
+    }
+    .desc {
+      display: block;
+      font-size: 12px;
+      margin-top: 8px;
+      color: #666;
+    }
+  }
+  .section1-main, .section1-2{
+    display: none;
+  }
+  .mobile-section1-main{
+    color: #666;
+    display: block;
+    img{
+      display: block;
+      margin: 24px auto;
+    }
+    h4{
+      font-size: 14px;
+      padding: 0 14px 10px;
+    }
+    p{
+      font-size: 12px;
+      padding: 0 14px;
+    }
+  }
+  .section2{
+    background-color: #FBFBFB;
+    padding: 35px 0 24px;
+  }
+  .section2 .section2-main{
+    display: none;
+  }
+  .mobile-section2-main{
+    display: block;
+    margin-top: 20px;
+  }
+  .section3{
+    padding-bottom: 44px;
+  }
+  .section3-main{
+    padding: 0;
+    margin-top: 16px;
+    img{
+      display: none;
+    }
+    .mobile-img{
+      display: block;
+      width: 292px;
+      margin: 0 auto;
+    }
+    .right{
+      .item{
+        font-size: 12px;
+        color: #666;
+        line-height: 24px;
+        margin-top: 0;
+        letter-spacing: 2px;
+        text-indent: 1.2em;
+        &::before{
+          display: none;
+        }
+        &::after{
+          content: "·";
+          position: absolute;
+          left: -10px;
+          top: 0;
+        }
+      }
+    }
+    ul{
+      display: none;
+    }
   }
 }
 </style>

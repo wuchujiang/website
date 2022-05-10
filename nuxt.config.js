@@ -43,11 +43,18 @@ export default {
     /*
      ** Nuxt.js modules
      */
-    modules: [],
+    modules: [
+        '@nuxtjs/axios',
+    ],
     /*
      ** Build configuration
      */
     build: {
-        extractCSS: true
+        extractCSS: true,
+        postcss: [
+            require('postcss-px2rem')({
+                remUnit: 23.4375
+            })
+        ],
     }
 }

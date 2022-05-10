@@ -1,12 +1,18 @@
 <template>
-  <div ref="about">
+  <div ref="about" v-show="pageShow">
     <oakHeader :current="2" sec_current="nav_about" />
     <main>
       <section class="about-banner"></section>
+      <section class="mobile-second-nav">
+        <ul>
+          <li v-for="item in sec_list" :key="item.title" :class="{active: item.type === 'about'}"><nuxt-link :to="item.url">{{ item.title }}</nuxt-link></li>
+        </ul>
+      </section>
       <section class="about-section1">
         <div class="container">
           <div class="common-title">
             <div class="name">关于我们</div>
+            <div class="desc">助力企业构建会员体系实现活跃与创收</div>
           </div>
           <div class="about-text">
             <p>橡树黑卡成立于2018年，</p>
@@ -27,6 +33,7 @@
               目前公司业务正处于高速发展中，求才若渴，有广阔的成长和发展空间，我们迫切的需要优秀的你来加入，与公司共同成长进步！
             </p>
             <img src="@/static/img10.png" alt="" />
+            <img class="mobile-img" src="@/static/mobile/img13.png" alt="" />
           </div>
         </div>
       </section>
@@ -34,6 +41,7 @@
         <div class="container">
           <div class="common-title">
             <div class="name">公司历程</div>
+            <div class="desc">针对性地输出客户权益套餐，满足用户在不同生活场景下的需求，高频使用产品，增加用户黏性，提高用户留存率，进而提升LTV。</div>
           </div>
         </div>
         <div class="course-main container">
@@ -104,6 +112,9 @@
             </div>
           </div>
         </div>
+        <div class="mobile-course-main">
+          <img src="@/static/mobile/img14.png" alt="" />
+        </div>
       </section>
       <oakForm />
     </main>
@@ -123,7 +134,13 @@ export default {
     oakForm,
   },
   data() {
-    return {};
+    return {
+      pageShow: false,
+      sec_list: [
+        {title: '公司介绍', url: "/about", type: 'about'},
+        {title: '联系我们', url: "/contact", type: 'contact'}
+      ]
+    };
   },
   head() {
     return {
@@ -145,6 +162,7 @@ export default {
   },
   mounted() {
     this.$refs.about.scrollIntoView();
+    this.pageShow = true;
   },
 };
 </script>
@@ -312,6 +330,16 @@ export default {
 .course-main .list:first-child .item .date span:last-child {
   transform: translateX(7px);
 }
+.mobile-img, .mobile-course-main{
+  display: none;
+}
+.course{
+  .common-title{
+    .desc{
+      display: none;
+    }
+  }
+}
 @media screen and (max-width:1024px){
   .about-banner{
     height: 300px;
@@ -331,6 +359,63 @@ export default {
   }
   .course-main .list:first-child .item .date{
     font-size: 14px;
+  }
+}
+
+@media screen and (max-width:640px){
+  .about-banner{
+    display: none;
+  }
+  .common-title {
+    text-align: left;
+    .name {
+      font-size: 16px;
+      color: #333;
+    }
+    .desc {
+      display: block;
+      font-size: 12px;
+      margin-top: 8px;
+      color: #666;
+    }
+  }
+  .about-section1{
+    padding-top: 48px;
+    padding-bottom: 50px;
+    .about-text{
+      margin-top: 14px;
+    }
+    p{
+      font-size: 12px;
+      color: #333;
+      line-height: 24px;
+      min-height: 0;
+    }
+    img{
+      display: none;
+    }
+    .mobile-img{
+      display: block;
+    }
+  }
+  .course{
+    padding-top: 35px;
+    padding-bottom: 30px;
+    .common-title{
+      .desc{
+        display: block;
+      }
+    }
+    .course-main{
+      margin-top: 24px;
+    }
+  }
+  .course-main{
+    display: none;
+  }
+  .mobile-course-main{
+    display: block;
+    margin: 10px 0 0 10px;
   }
 }
 </style>

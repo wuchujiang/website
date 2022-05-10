@@ -32,8 +32,8 @@
       </div>
     </div>
     <div class="copyright">
-      <a href="https://beian.miit.gov.cn/" target="_blank">粤ICP备18120172号</a>
-      Copyright © 2018 深圳市橡树黑卡网络科技有限公司 XSHKVIP.COM
+      <span><a href="https://beian.miit.gov.cn/" target="_blank">粤ICP备18120172号</a>
+      Copyright © 2018</span> 深圳市橡树黑卡网络科技有限公司 XSHKVIP.COM
     </div>
     <div class="suspend">
       <div class="item online-hover">
@@ -47,42 +47,42 @@
                 <a
                   href="https://oakvip.s2.udesk.cn/im_client/?web_plugin_id=24433"
                   target="_blank"
-                  ><img src="@/static/kh1.png" alt="" />省呗</a
+                  ><img src="@/static/kh1.png" alt="" /><span>省呗</span></a
                 >
               </li>
               <li>
                 <a
                   href="https://oakvip.s2.udesk.cn/im_client/?web_plugin_id=24433"
                   target="_blank"
-                  ><img src="@/static/kh2.png" alt="" />小赢卡贷</a
+                  ><img src="@/static/kh2.png" alt="" /><span>小赢卡贷</span></a
                 >
               </li>
               <li>
                 <a
                   href="https://oakvip.s2.udesk.cn/im_client/?web_plugin_id=24433"
                   target="_blank"
-                  ><img src="@/static/kh3.png" alt="" />keep</a
+                  ><img src="@/static/kh3.png" alt="" /><span>keep</span></a
                 >
               </li>
               <li>
                 <a
                   href="https://oakvip.s2.udesk.cn/im_client/?web_plugin_id=24433"
                   target="_blank"
-                  ><img src="@/static/kh4.png" alt="" />榕树贷款</a
+                  ><img src="@/static/kh4.png" alt="" /><span>榕树贷款</span></a
                 >
               </li>
               <li>
                 <a
                   href="https://oakvip.s2.udesk.cn/im_client/?web_plugin_id=24433"
                   target="_blank"
-                  ><img src="@/static/kh5.png" alt="" />新橙优品</a
+                  ><img src="@/static/kh5.png" alt="" /><span>新橙优品</span></a
                 >
               </li>
               <li>
                 <a
                   href="https://oakvip.s2.udesk.cn/im_client/?web_plugin_id=24433"
                   target="_blank"
-                  ><img src="@/static/kh6.png" alt="" />其他</a
+                  ><img src="@/static/kh6.png" alt="" /><span>其他</span></a
                 >
               </li>
             </ul>
@@ -132,6 +132,36 @@ export default {
         this.showBackTop = false;
       }
     });
+    !(function (x) {
+      function w() {
+        var v,
+          u,
+          t,
+          tes,
+          s = x.document,
+          r = s.documentElement,
+          a = r.getBoundingClientRect().width;
+        if (!v && !u) {
+          var n = !!x.navigator.appVersion.match(/AppleWebKit.*Mobile.*/);
+          v = x.devicePixelRatio;
+          tes = x.devicePixelRatio;
+          (v = n ? v : 1), (u = 1 / v);
+        }
+        if (a >= 640) {
+          r.style.fontSize = "23.4375px";
+        } else {
+          if (a <= 320) {
+            r.style.fontSize = "23.4375px";
+          } else {
+            r.style.fontSize = (a / 320) * 20 + "px";
+          }
+        }
+      }
+      x.addEventListener("resize", function () {
+        w();
+      });
+      w();
+    })(window);
   },
   methods: {
     toTop() {
@@ -350,6 +380,110 @@ export default {
   }
   .r-nav .item {
     margin-left: 0;
+  }
+}
+
+@media screen and (max-width: 640px) {
+  .footer{
+    padding: 0;
+    .container{
+      flex-wrap: wrap-reverse;
+    }
+    .left{
+      padding-top: 30px;
+      img{
+        width: 90px;
+        margin-bottom: 16px;
+      }
+      p{
+        line-height: 24px;
+        margin-top: 0;
+        font-size: 12px;
+      }
+    }
+  }
+  .r-nav{
+    margin-top: 28px;
+    padding-bottom: 30px;
+    border-bottom: 1PX solid #666;
+    .item{
+      h2{
+        font-size: 15px;
+      }
+      ul {
+        margin-top: 10px;
+        li {
+          font-size: 12px;
+          margin-top: 6px;
+        }
+      }
+    }
+  }
+  .copyright{
+    margin-top: 40px;
+    padding-bottom: 44px;
+    font-size: 12px;
+    span{
+      display: block;
+    }
+  }
+  .suspend{
+    right: 12px;
+    width: 44px;
+    top: 70%;
+    .item{
+      img{
+        width: 20px;
+        height: 20px;
+      }
+    }
+  }
+  .online-consult{
+    right: 44px;
+    width: 148px;
+  }
+  .online-consult-main{
+    width: 138px;
+    padding: 10px;
+    h3{
+      font-size: 8px;
+    }
+    p{
+      font-size: 8px;
+    }
+    ul {
+      flex-wrap: wrap;
+      margin: 10px 0;
+      li{
+        width: 33.33%;
+        span{
+          display: none;
+        }
+        img{
+          width: 30px !important;
+          height: 30px !important;
+        }
+      }
+    }
+  }
+  .phone-consult{
+    right: 44px;
+  }
+  .phone-consult-main{
+    width: 138px;
+    padding: 10px;
+    h4{
+      font-size: 12px;
+      margin-bottom: 6px;
+      span{
+        font-size: 12px;
+        margin-top: 0;
+      }
+    }
+    p{
+      font-size: 10px;
+      margin-top: 5px;
+    }
   }
 }
 </style>

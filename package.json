@@ -9,8 +9,12 @@
         "generate": "nuxt generate"
     },
     "dependencies": {
+        "@nuxtjs/axios": "^5.13.6",
         "core-js": "^3.19.3",
+        "jsrsasign": "^10.5.20",
+        "lodash.pickby": "^4.6.0",
         "nuxt": "^2.15.8",
+        "qs": "^6.10.3",
         "vue": "^2.6.14",
         "vue-server-renderer": "^2.6.14",
         "vue-template-compiler": "^2.6.14",
@@ -18,6 +22,7 @@
     },
     "devDependencies": {
         "node-sass": "^4.14.1",
+        "postcss-px2rem": "^0.3.0",
         "sass-loader": "^7.3.1"
     }
 }

@@ -10,6 +10,26 @@
         <img @click="showForm = false" class="form-dialog-close" src="@/static/close.png" alt="" />
         <img class="b-img" src="@/static/img11.png" alt="" />
         <div class="plan-form">
+          <div class="mobile-top">
+            <h4>这些企业都已免费获得定制会员方案</h4>
+            <ul>
+              <li>
+                <img src="@/static/kh1.png" alt="" />省呗
+              </li>
+              <li>
+                <img src="@/static/kh2.png" alt="" />小赢卡贷
+              </li>
+              <li>
+                <img src="@/static/kh3.png" alt="" />keep
+              </li>
+              <li>
+                <img src="@/static/kh4.png" alt="" />榕树贷款
+              </li>
+              <li>
+                <img src="@/static/kh5.png" alt="" />新橙优品
+              </li>
+            </ul>
+          </div>
           <h2>完善信息后 48小时内会有专门的商务人员与您对接</h2>
           <div class="item">
             <div class="text"><span>*</span>您的姓名：</div>
@@ -88,12 +108,16 @@ export default {
     };
   },
   mounted() {
+    let footer_height = 290;
+    if(window.innerWidth < 641) {
+      footer_height = 400;
+    }
     const timer = setTimeout(() => {
       const documentHeight = document.body.scrollHeight;
       document.addEventListener("scroll", () => {
         const scroll =
           document.documentElement.scrollTop || document.body.scrollTop;
-        let top = scroll + window.innerHeight + 290;
+        let top = scroll + window.innerHeight + footer_height;
         if (top >= documentHeight && !this.clearFixed) {
           this.clearFixed = true;
         }
@@ -312,6 +336,85 @@ export default {
   }
   .img-close{
     right: 40px
+  }
+}
+@media screen and (max-width:640px){
+  .free-plan{
+    height: 66px;
+    .container{
+      padding: 0 12px;
+      height: 66px;
+      img{
+        width: 200px !important;
+        transform: translateY(0) !important;
+      }
+      .img-close{
+        width: 30px !important;
+        height: 30px;
+        right: 0;
+      }
+    }
+  }
+  .free-get-plan{
+    width: 108px;
+    height: 26px;
+    margin-right: 24px;
+    font-size: 12px;
+  }
+  .form-dialog-main{
+    width: 360px;
+    height: 530px;
+    padding: 0 12px;
+    background-color: #FBFBFB;
+    .b-img{
+      display: none;
+    }
+    .plan-form{
+      h2{
+        font-size: 14px;
+        margin-top: 24px;
+      }
+      .item{
+        margin-top: 24px;
+        .text{
+          width: 130px;
+          font-size: 14px;
+        }
+        .input-error{
+          font-size: 12px;
+          left: 80px;
+          top: 42px;
+        }
+      }
+      .mobile-top{
+        display: block;
+        width: 100%;
+        h4{
+          font-size: 16px;
+          color: #333;
+        }
+        ul{
+          display: flex;
+          justify-content: space-between;
+          margin-top: 24px;
+          padding: 0;
+          li{
+            font-size: 12px;
+            color: #999;
+            text-align: center;
+            margin-top: 0;
+            width: 20%;
+            height: auto;
+            img{
+              display: block;
+              width: 44px;
+              height: 44px;
+              margin: 0 auto 10px;
+            }
+          }
+        }
+      }
+    }
   }
 }
 </style>

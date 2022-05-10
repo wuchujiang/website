@@ -66,6 +66,14 @@ a {
   }
 }
 
+.input-error {
+  position: absolute;
+  left: 88px;
+  top: 50px;
+  color: #FF5001;
+  font-size: 14px;
+}
+
 .get-code {
   width: 146px;
   height: 50px;
@@ -177,5 +185,109 @@ a {
   100%{
     opacity: 0;
     display: none;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .plan-btn{
+    margin: 40px auto 0;
+  }
+  .plan-form .item input {
+    width: 440px;
+  }
+  .plan .plan-form h2 {
+    padding-top: 0;
+  }
+}
+
+@media screen and (max-width:640px){
+  .plan-form .item input{
+    width: 1px;
+  }
+  .container{
+    padding: 0 12px;
+  }
+  .plan-form{
+    padding-top: 26px;
+    width: 100%;
+    h2{
+      font-size: 14px;
+      text-align: left;
+    }
+    .item{
+      height: 40px;
+      margin-top: 24px;
+      .text{
+        width: 78px;
+        font-size: 14px;
+        line-height: 40px;
+      }
+      input{
+        flex-grow: 1;
+        height: 40px;
+        font-size: 14px;
+        background-color: #fff;
+        border: 1px solid #DDDDDD;
+        border-radius: 4px;
+      }
+    }
+  }
+  .input-error{
+    top: 42px;
+    font-size: 12px;
+    left: 78px;
+  }
+  .get-code{
+    width: 88px;
+    height: 40px;
+    line-height: 40px;
+    font-size: 12px;
+    &::before{
+      height: 24px;
+      top: 8px;
+      background-color: #ddd;
+    }
+  }
+  .plan-btn{
+    width: 100%;
+    height: 40px;
+    margin: 22px auto 0;
+    background-color: #FF5001;
+    line-height: 40px;
+    font-size: 14px;
+  }
+  .saas-tab{
+    display: none;
+  }
+  .mobile-second-nav{
+    ul{
+      display: flex;
+      border-bottom: 1PX solid #DFDFDF;
+      li{
+        width: 50%;
+        font-size: 12px;
+        text-align: center;
+        line-height: 36px;
+        font-weight: bold;
+        a{
+          color: #222;
+        }
+      }
+      .active{
+        position: relative;
+        a{
+          color: #FF5001;
+        }
+        &::after{
+          content: "";
+          position: absolute;
+          width: 100%;
+          height: 2PX;
+          left: 0;
+          bottom: -1px;
+          background-color: #FF5001;
+        }
+      }
+    }
   }
 }

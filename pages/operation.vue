@@ -1,5 +1,5 @@
 <template>
-  <div ref="operation">
+  <div ref="operation" v-show="pageShow">
     <oakHeader :current="1" sec_current="nav_service" />
     <main>
       <section class="operation-banner"></section>
@@ -14,6 +14,11 @@
             {{ item }}
           </div>
         </div>
+      </section>
+      <section class="mobile-second-nav">
+        <ul>
+          <li v-for="item in sec_list" :key="item.title" :class="{active: item.type === 'operation'}"><nuxt-link :to="item.url">{{ item.title }}</nuxt-link></li>
+        </ul>
       </section>
       <section class="section1" ref="section1">
         <div class="common-title">
@@ -36,10 +41,16 @@
             <p>会员权益体系<br />帮助客户增收变现</p>
           </div>
         </div>
+        <div class="mobile-operation-list">
+          <img src="@/static/mobile/img8.png" alt="" />
+        </div>
       </section>
       <section class="section2 period" ref="section2">
         <div class="common-title">
           <div class="name">用户生命周期管理</div>
+          <div class="desc">
+            针对性地输出客户权益套餐，满足用户在不同生活场景下的需求，高频使用产品，增加用户黏性，提高用户留存率，进而提升LTV。
+          </div>
         </div>
         <div class="container">
           <div class="text">
@@ -53,6 +64,10 @@
           </div>
           <img src="@/static/img8.png" alt="" />
         </div>
+        <div class="mobile-section2-main">
+          <img src="@/static/mobile/img11.png" alt="" />
+          <p>针对客户需要，可以制定的分级式套餐组合，拉动向上销售，提高购买率，从而实现ARPU值提升。</p>
+        </div>
       </section>
       <section class="formulate" ref="section3">
         <div class="common-title">
@@ -63,6 +78,7 @@
         </div>
         <div class="container">
           <img class="formulate-img" src="@/static/img9.png" alt="" />
+          <img class="mobile-formulate-img" src="@/static/mobile/img12.png" alt="" />
         </div>
       </section>
       <oakForm />
@@ -86,6 +102,11 @@ export default {
     return {
       tab: ["全方位会员体系制定", "用户生命周期管理", "用户分层及策略制定"],
       current: 0,
+      pageShow: false,
+      sec_list: [
+        {title: '会员SaaS服务', url: "/saas", type: 'saas'},
+        {title: '精细化运营服务', url: "/operation", type: 'operation'}
+      ]
     };
   },
   head() {
@@ -108,6 +129,7 @@ export default {
   },
   mounted() {
     this.$refs.operation.scrollIntoView();
+    this.pageShow = true;
   },
   methods: {
     scrollView(index) {
@@ -201,6 +223,18 @@ export default {
   display: block;
   margin: 72px auto 0;
 }
+.section2{
+  .common-title{
+    .desc{
+      display: none;
+    }
+  }
+}
+.mobile-formulate-img{
+  display: none;
+}
+
+
 @media screen and (max-width:1024px){
   .operation-banner{
     height: 300px;
@@ -222,6 +256,75 @@ export default {
   .period .text{
     width: auto;
     padding: 30px 30px 0;
+  }
+}
+
+@media screen and (max-width:640px){
+  .operation-banner{
+    display: none;
+  }
+  .common-title {
+    text-align: left;
+    .name {
+      font-size: 16px;
+      color: #333;
+    }
+    .desc {
+      display: block;
+      font-size: 12px;
+      margin-top: 8px;
+      color: #666;
+    }
+  }
+  .section1{
+    padding: 42px 12px;
+  }
+  .operation-list{
+    display: none;
+  }
+  .mobile-operation-list{
+    margin-top: 13px;
+  }
+  .section2{
+    padding: 35px 12px;
+    background-color: #FBFBFB;
+    .common-title{
+      .desc{
+        display: block;
+      }
+    }
+    .container{
+      display: none;
+    }
+    .mobile-section2-main{
+      display: block;
+      img{
+        display: block;
+        width: 188px;
+        margin: 22px auto 0;
+      }
+      p{
+        font-size: 12px;
+        color: #666;
+        line-height: 20px;
+        margin-top: 18px;
+      }
+    }
+  }
+  .formulate{
+    padding: 78px 12px 44px;
+    .common-title{
+      .desc{
+        width: auto;
+      }
+    }
+    .formulate-img{
+      display: none;
+    }
+    .mobile-formulate-img{
+      display: block;
+      margin-top: 24px;
+    }
   }
 }
 </style>

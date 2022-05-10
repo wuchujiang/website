@@ -1,5 +1,5 @@
 <template>
-  <div ref="index">
+  <div ref="index" v-show="pageShow">
     <oakHeader :current="0" />
     <main>
       <section class="banner"></section>
@@ -20,7 +20,7 @@
                 @mouseenter="current = index"
               >
                 <img :src="require(`@/static/icon${index + 1}.png`)" alt="" />
-                <div>{{ item }}</div>
+                <div v-html="item"></div>
               </div>
             </div>
             <div v-show="current === 0" class="capacity-content1">
@@ -41,6 +41,7 @@
                 <p>- 权益成本更低。</p>
               </div>
               <img src="@/static/benefit.png" alt="" />
+              <img class="mobile-img" src="@/static/mobile/benefit.png" alt="" />
             </div>
             <div v-show="current === 1" class="capacity-content1 capacity-content2">
               <div class="text">
@@ -64,6 +65,7 @@
                 </p>
               </div>
               <img src="@/static/img14.png" alt="" />
+              <img class="mobile-img" src="@/static/mobile/img1.png" alt="" />
             </div>
             <div v-show="current === 2" class="capacity-content1 capacity-content3">
               <div class="text">
@@ -82,6 +84,7 @@
                 </p>
               </div>
               <img src="@/static/img13.png" alt="" />
+              <img class="mobile-img" src="@/static/mobile/img2.png" alt="" />
             </div>
           </div>
         </div>
@@ -89,6 +92,26 @@
       <section class="plan">
         <div class="container">
           <img src="@/static/img11.png" alt="" />
+          <div class="mobile-top">
+            <h4>这些企业都已免费获得定制会员方案</h4>
+            <ul>
+              <li>
+                <img src="@/static/kh1.png" alt="" />省呗
+              </li>
+              <li>
+                <img src="@/static/kh2.png" alt="" />小赢卡贷
+              </li>
+              <li>
+                <img src="@/static/kh3.png" alt="" />keep
+              </li>
+              <li>
+                <img src="@/static/kh4.png" alt="" />榕树贷款
+              </li>
+              <li>
+                <img src="@/static/kh5.png" alt="" />新橙优品
+              </li>
+            </ul>
+          </div>
           <div class="plan-form">
             <h2>完善信息后 48小时内会有专门的商务人员与您对接</h2>
             <div class="item">
@@ -187,8 +210,10 @@
         <div class="container">
           <div class="common-title">
             <div class="name">我们服务的行业客户</div>
+            <div class="desc">助力企业满足用户对高品质服务的需求，提升拉新促活能力与品牌忠诚度</div>
           </div>
           <img src="@/static/client.png" alt="" />
+          <img class="mobile-kh" src="@/static/mobile/img3.png" alt="" />
         </div>
       </section>
       <oakForm />
@@ -204,6 +229,7 @@
 import oakHeader from "../components/header/header";
 import oakFooter from "../components/footer/footer";
 import oakForm from "../components/form/form";
+import { register, officialWebsite } from '../utils/api'
 export default {
   name: "IndexPage",
   components: {
@@ -213,6 +239,7 @@ export default {
   },
   data() {
     return {
+      pageShow: false,
       name: "",
       name_error: "",
       company_name: "",
@@ -222,9 +249,9 @@ export default {
       code: "",
       code_error: "",
       list: [
-        "一站式权益 低成本 高价值",
-        "独家稀缺权益 提升产品竞争力",
-        "专业服务   灵活定制",
+        "<span>一站式权益</span> 低成本 高价值",
+        "<span>独家稀缺权益</span> 提升产品竞争力",
+        "<span>专业服务</span>   灵活定制",
       ],
       current: 0,
       service_value: [
@@ -289,43 +316,27 @@ export default {
   },
   mounted() {
     this.$refs.index.scrollIntoView();
-    !(function (x) {
-      function w() {
-        var v,
-          u,
-          t,
-          tes,
-          s = x.document,
-          r = s.documentElement,
-          a = r.getBoundingClientRect().width;
-        if (!v && !u) {
-          var n = !!x.navigator.appVersion.match(/AppleWebKit.*Mobile.*/);
-          v = x.devicePixelRatio;
-          tes = x.devicePixelRatio;
-          (v = n ? v : 1), (u = 1 / v);
-        }
-        if (a >= 640) {
-          r.style.fontSize = "40px";
-        } else {
-          if (a <= 320) {
-            r.style.fontSize = "20px";
-          } else {
-            r.style.fontSize = (a / 320) * 20 + "px";
-          }
-        }
-      }
-      x.addEventListener("resize", function () {
-        w();
-      });
-      w();
-    })(window);
+    this.pageShow = true;
   },
   methods: {
     getCode() {
       //获取验证码
+      if(!this.phone){
+        this.phone_error = "请填写您的联系电话";
+        return;
+      }
+      if (!/^1([3-9])\d{9}$/.test(this.phone)) {
+        this.phone_error = "请填写正确的联系电话";
+        return;
+      }
+      register(this.$axios, {
+        phone_number: this.phone,
+        app_name: "橡树黑卡",
+      }).then(res => {
+        this.session_code = res.session_code;
+      });
     },
     getPlan() {
-      this.showDialog = true;
       if (!this.name) {
         this.name_error = "请填写您的姓名";
         return;
@@ -348,6 +359,15 @@ export default {
       } else {
         this.code_error = "";
       }
+      officialWebsite(this.$axios, {
+        name: this.name,
+        phone_number: this.phone,
+        company: this.company_name,
+        otp: this.code,
+        session_code: this.session_code
+      }).then(res => {
+        this.showDialog = true;
+      })
     },
   },
 };
@@ -496,7 +516,7 @@ export default {
         color: #ff5001;
         font-weight: bold;
         display: inline-block;
-        border-bottom: 2px solid #ff5001;
+        border-bottom: 1PX solid #ff5001;
         margin-top: 32px;
       }
       ul {
@@ -516,17 +536,18 @@ export default {
 .client {
   padding: 72px 0;
   background-color: #fbfbfb;
+  .common-title{
+    .desc{
+      display: none;
+    }
+  }
 }
 .client img {
   margin-top: 72px;
   width: 100%;
 }
-.input-error {
-  position: absolute;
-  left: 88px;
-  top: 50px;
-  color: #FF5001;
-  font-size: 14px;
+.mobile-img, .mobile-top{
+  display: none;
 }
 @media screen and (max-width: 1200px) {
   .banner {
@@ -540,12 +561,6 @@ export default {
   }
   .capacity-content1 {
     padding: 0 70px;
-  }
-  .plan-form .item input {
-    width: 440px;
-  }
-  .plan .plan-form h2 {
-    padding-top: 0;
   }
 }
 
@@ -581,6 +596,150 @@ export default {
   .service-value .list .item {
     width: 48%;
     margin-bottom: 20px;
+  }
+}
+@media screen and (max-width: 640px) {
+  .banner{
+    height: 200px;
+    background: url("@/static/mobile/banner.png") no-repeat center center;
+    background-size: auto 100%;
+  }
+  .why-select-oak{
+    padding: 30px 0 40px;
+    .wrap{
+      margin-top: 16px;
+    }
+  }
+  .common-title {
+    text-align: left;
+    .name {
+      font-size: 16px;
+    }
+    .desc {
+      font-size: 12px;
+      margin-top: 8px;
+    }
+  }
+  .capacity{
+    .item{
+      height: 160px;
+      padding: 20px 0 0;
+      font-size: 12px;
+      font-weight: normal;
+      span{
+        font-size: 32px;
+        display: block;
+      }
+      img{
+        width: 65px;
+        margin-bottom: 22px;
+      }
+    }
+    .active{
+      color: #333;
+    }
+  }
+  .capacity-content1{
+    flex-wrap: wrap-reverse;
+    padding: 16px 15px 10px;
+    border: 1PX solid #EBECF1;
+    margin-top: 8px;
+    height: 250px;
+    img{
+      display: none;
+    }
+    .mobile-img{
+      display: block;
+      width: 100%;
+      margin-bottom: 10px;
+    }
+    .text{
+      font-size: 12px;
+      color: #666;
+      .top{
+        display: none;
+      }
+      p{
+        line-height: 20px;
+        padding: 4px 0;
+        span{
+          display: inline;
+        }
+      }
+    }
+  }
+  .plan .container{
+    flex-wrap: wrap;
+  }
+  .mobile-top{
+    padding-top: 24px;
+    display: block;
+    width: 100%;
+    h4{
+      font-size: 16px;
+      color: #333;
+    }
+    ul{
+      display: flex;
+      justify-content: space-between;
+      margin-top: 24px;
+      li{
+        font-size: 12px;
+        color: #999;
+        text-align: center;
+        img{
+          display: block;
+          width: 44px;
+          height: 44px;
+          margin-bottom: 10px;
+        }
+      }
+    }
+  }
+  .service-value{
+    padding-bottom: 30px;
+    .list{
+      margin-top: 15px;
+      .item{
+        width: 49%;
+        height: 200px;
+        border: 1PX solid #999;
+        overflow: hidden;
+        margin-bottom: 8px;
+        img{
+          width: 48px;
+          height: 48px;
+          margin-top: 24px;
+        }
+        .name{
+          margin-top: 20px;
+          font-size: 16px;
+          border-bottom: none;
+        }
+        ul{
+          margin-top: 10px;
+          color: #333;
+          font-size: 12px;
+          line-height: 20px;
+        }
+      }
+    }
+  }
+  .client{
+    background-color: #fff;
+    padding: 30px 0;
+    .common-title{
+      .desc{
+        display: block;
+      }
+    }
+    img{
+      display: none;
+    }
+    .mobile-kh{
+      display: block;
+      margin-top: 16px;
+    }
   }
 }
 </style>

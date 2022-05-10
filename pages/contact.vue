@@ -1,26 +1,35 @@
 <template>
-  <div>
+  <div v-show="pageShow">
     <oakHeader :current="2" sec_current="nav_contact" />
     <main>
       <section class="contact-banner"></section>
+      <section class="mobile-second-nav">
+        <ul>
+          <li v-for="item in sec_list" :key="item.title" :class="{active: item.type === 'contact'}"><nuxt-link :to="item.url">{{ item.title }}</nuxt-link></li>
+        </ul>
+      </section>
       <section class="contact-main">
+        <div class="common-title">
+          <div class="name">联系方式</div>
+          <div class="desc">您可以通过以下方式联系我们</div>
+        </div>
         <div class="container">
           <div class="item">
             <img src="@/static/icon11.png" alt="" />
             <h4>在线客服</h4>
-            <p>周一到周五：9：00～20：00 (在线和电话)</p>
+            <p>周一到周五：<span>9：00～20：00</span> (在线和电话)</p>
             <button><a href="https://oakvip.s2.udesk.cn/im_client/?web_plugin_id=28877" target="_blank">立即联系</a></button>
           </div>
           <div class="item">
             <img src="@/static/icon11.png" alt="" />
             <h4>电话咨询</h4>
-            <p>周末或节假日：9：00～20：00 (电话)</p>
+            <p>周末或节假日：<span>9：00～20：00</span> (电话)</p>
             <button class="btn">400-150-9669</button>
           </div>
           <div class="item">
             <img src="@/static/icon11.png" alt="" />
             <h4>商务合作邮箱</h4>
-            <p>marketing@oakblack.com</p>
+            <p>marketing<span>@oakblack.com</span></p>
             <button><a href="mailto:marketing@oakblack.com" target="_blank">发送邮件</a></button>
           </div>
         </div>
@@ -28,6 +37,26 @@
       <section class="contact-form">
         <div class="container">
           <img src="@/static/img11.png" alt="" />
+          <div class="mobile-top">
+            <h4>这些企业都已免费获得定制会员方案</h4>
+            <ul>
+              <li>
+                <img src="@/static/kh1.png" alt="" />省呗
+              </li>
+              <li>
+                <img src="@/static/kh2.png" alt="" />小赢卡贷
+              </li>
+              <li>
+                <img src="@/static/kh3.png" alt="" />keep
+              </li>
+              <li>
+                <img src="@/static/kh4.png" alt="" />榕树贷款
+              </li>
+              <li>
+                <img src="@/static/kh5.png" alt="" />新橙优品
+              </li>
+            </ul>
+          </div>
           <div class="plan-form">
             <h2>完善信息后会有专门的商务人员与您对接</h2>
             <div class="item">
@@ -110,6 +139,11 @@ export default {
       phone_error: "",
       code: "",
       code_error: "",
+      pageShow: false,
+      sec_list: [
+        {title: '公司介绍', url: "/about", type: 'about'},
+        {title: '联系我们', url: "/contact", type: 'contact'}
+      ]
     };
   },
   head() {
@@ -129,6 +163,9 @@ export default {
         },
       ],
     };
+  },
+  mounted() {
+    this.pageShow = true;
   },
   methods: {
     getCode() {
@@ -231,6 +268,9 @@ export default {
     }
   }
 }
+.mobile-top, .common-title, .mobile-second-nav{
+  display: none;
+}
 
 @media screen and (max-width:1024px){
   .contact-banner{
@@ -238,7 +278,6 @@ export default {
   }
   .contact-main .container{
     flex-wrap: wrap;
-    justify-content: center;
   }
   .contact-main .item{
     width: 60%;
@@ -249,6 +288,97 @@ export default {
   }
   .contact-form img{
     display: none;
+  }
+}
+@media screen and (max-width:1024px){
+  .contact-banner{
+    display: none;
+  }
+  .contact-form{ 
+    .container{
+      flex-wrap: wrap;
+      .mobile-top{
+        padding-top: 24px;
+        display: block;
+        width: 100%;
+        h4{
+          font-size: 16px;
+          color: #333;
+        }
+        ul{
+          display: flex;
+          justify-content: space-between;
+          margin-top: 24px;
+          li{
+            font-size: 12px;
+            color: #999;
+            text-align: center;
+            img{
+              display: block;
+              width: 44px;
+              height: 44px;
+              margin-bottom: 10px;
+            }
+          }
+        }
+      }
+    }
+  }
+  .contact-main{
+    padding: 60px 12px 40px;
+    .container{
+      padding: 0;
+      margin-top: 14px;
+      .item{
+        width: 32%;
+        justify-content: space-between;
+        background-color: #fff;
+        color: #333;
+        border: 1PX solid #666;
+        border-radius: 6px;
+        height: 160px;
+        padding: 0;
+        margin-bottom: 0;
+        button{
+          display: none;
+        }
+        img{
+          width: 30px;
+          height: 30px;
+          margin: 18px auto 0;
+        }
+        h4{
+          font-size: 12px;
+          margin-top: 6px;
+        }
+        p{
+          font-size: 12px;
+          padding: 0 12px;
+          span{
+            display: block;
+          }
+        }
+      }
+    }
+  }
+  .common-title {
+    display: block;
+    text-align: left;
+    .name {
+      font-size: 16px;
+      color: #333;
+      font-weight: bold;
+    }
+    .desc {
+      display: block;
+      font-size: 12px;
+      margin-top: 8px;
+      color: #666;
+    }
+  }
+  .contact-form{
+    padding: 1px 12px 0;
+    margin-bottom: 40px;
   }
 }
 </style>

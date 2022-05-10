@@ -33,6 +33,29 @@
         <div class="phone">400-150-9669</div>
         <div class="mobile-nav">
           <img src="@/static/nav.png" alt="" />
+          <ul>
+            <li
+              v-for="(item, index) in nav"
+              :key="item.name"
+              :class="{ item: true, active: current === index }"
+            >
+              <nuxt-link :to="item.url" :class="{ down: item.second }">{{
+                item.name
+              }}</nuxt-link>
+              <!-- 二级菜单 -->
+              <div :class="`sec_nav ${item.type}`" v-if="item.second">
+                <div class="sec_nav-main">
+                  <div
+                    :class="[{item: true, sec_active: sec_current === i.type}, `${i.type}`]"
+                    v-for="(i) in item.second"
+                    :key="i.name"
+                  >
+                    <nuxt-link :to="i.url"><span></span>{{ i.name }}</nuxt-link>
+                  </div>
+                </div>
+              </div>
+            </li>
+          </ul>
         </div>
       </div>
     </div>
@@ -130,6 +153,91 @@ export default {
       }
     }
   }
+  .sec_nav {
+    width: 240px;
+    position: absolute;
+    z-index: 9;
+    top: 64px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #fff;
+    padding: 20px 0;
+    text-align: center;
+    line-height: 1;
+    display: none;
+  }
+  .sec_nav .item {
+    display: inline-block;
+    font-size: 14px;
+    height: 50px;
+    padding: 10px 0 10px 50px;
+    transition: all 0.3s linear;
+    cursor: pointer;
+    line-height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    a {
+      display: flex;
+      align-items: center;
+      width: 100%;
+    }
+    span {
+      display: inline-block;
+      width: 24px;
+      height: 24px;
+      background-size: 100% 100%;
+      margin-right: 10px;
+    }
+  }
+  .about .item {
+    padding: 10px 0 10px 70px;
+  }
+  .sec_nav .item a {
+    color: #333;
+  }
+  .sec_nav .item:hover a {
+    color: #ff5001;
+  }
+  .nav_saas span {
+    background: url("@/static/icon4.png") no-repeat left center;
+  }
+  .nav_service span {
+    background: url("@/static/icon5.png") no-repeat left center;
+  }
+  .nav_about span {
+    background: url("@/static/icon6.png") no-repeat left center;
+  }
+  .nav_contact span {
+    background: url("@/static/icon7.png") no-repeat left center;
+  }
+  .nav_saas:hover span {
+    background: url("@/static/icon4_selected.png") no-repeat left center;
+  }
+  .nav_service:hover span {
+    background: url("@/static/icon5_selected.png") no-repeat left center;
+  }
+  .nav_about:hover span {
+    background: url("@/static/icon6_selected.png") no-repeat left center;
+  }
+  .nav_contact:hover span {
+    background: url("@/static/icon7_selected.png") no-repeat left center;
+  }
+  .sec_nav .sec_active > a {
+    color: #ff5a27;
+  }
+  .nav_saas.sec_active span {
+    background: url("@/static/icon4_selected.png") no-repeat left center;
+  }
+  .nav_service.sec_active span {
+    background: url("@/static/icon5_selected.png") no-repeat left center;
+  }
+  .nav_about.sec_active span {
+    background: url("@/static/icon6_selected.png") no-repeat left center;
+  }
+  .nav_contact.sec_active span {
+    background: url("@/static/icon7_selected.png") no-repeat left center;
+  }
 }
 .down {
   padding-right: 14px;
@@ -161,91 +269,6 @@ export default {
 .phone img {
   margin-right: 10px;
 }
-.sec_nav {
-  width: 240px;
-  position: absolute;
-  z-index: 9;
-  top: 64px;
-  left: 50%;
-  transform: translateX(-50%);
-  background-color: #fff;
-  padding: 20px 0;
-  text-align: center;
-  line-height: 1;
-  display: none;
-}
-.sec_nav .item {
-  display: inline-block;
-  font-size: 14px;
-  height: 50px;
-  padding: 10px 0 10px 50px;
-  transition: all 0.3s linear;
-  cursor: pointer;
-  line-height: 50px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  a {
-    display: flex;
-    align-items: center;
-    width: 100%;
-  }
-  span {
-    display: inline-block;
-    width: 24px;
-    height: 24px;
-    background-size: 100% 100%;
-    margin-right: 10px;
-  }
-}
-.about .item {
-  padding: 10px 0 10px 70px;
-}
-.sec_nav .item a {
-  color: #333;
-}
-.sec_nav .item:hover a {
-  color: #ff5001;
-}
-.nav_saas span {
-  background: url("@/static/icon4.png") no-repeat left center;
-}
-.nav_service span {
-  background: url("@/static/icon5.png") no-repeat left center;
-}
-.nav_about span {
-  background: url("@/static/icon6.png") no-repeat left center;
-}
-.nav_contact span {
-  background: url("@/static/icon7.png") no-repeat left center;
-}
-.nav_saas:hover span {
-  background: url("@/static/icon4_selected.png") no-repeat left center;
-}
-.nav_service:hover span {
-  background: url("@/static/icon5_selected.png") no-repeat left center;
-}
-.nav_about:hover span {
-  background: url("@/static/icon6_selected.png") no-repeat left center;
-}
-.nav_contact:hover span {
-  background: url("@/static/icon7_selected.png") no-repeat left center;
-}
-.sec_nav .sec_active > a {
-  color: #ff5a27;
-}
-.nav_saas.sec_active span {
-  background: url("@/static/icon4_selected.png") no-repeat left center;
-}
-.nav_service.sec_active span {
-  background: url("@/static/icon5_selected.png") no-repeat left center;
-}
-.nav_about.sec_active span {
-  background: url("@/static/icon6_selected.png") no-repeat left center;
-}
-.nav_contact.sec_active span {
-  background: url("@/static/icon7_selected.png") no-repeat left center;
-}
 .mobile-nav {
   display: none;
 }
@@ -271,6 +294,77 @@ export default {
     display: block;
     float: right;
     margin-left: 10px;
+    position: relative;
+    ul{
+      box-sizing: border-box;
+      width: 170px;
+      position: absolute;
+      right: 0;
+      top: 100%;
+      background-color: #fff;
+      padding: 24px 12px;
+      font-size: 12px;
+    }
+  }
+}
+@media screen and (max-width: 640px) {
+  .header{
+    height: 42px;
+    .container{
+      height: 42px;
+      padding: 0 12px;
+    }
+  }
+  .logo{
+    width: auto;
+    height: 18px;
+    margin-top: 12px;
+    img{
+      height: 18px;
+    }
+  }
+  .phone{
+    font-size: 12px;
+  }
+  .mobile-nav:hover ul{
+    display: block;
+  }
+  .mobile-nav{
+    width: 18px;
+    position: relative;
+    z-index: 9;
+    ul {
+      display: none;
+      border: 1PX solid #EBECF1;
+      border-radius: 4px;
+      li{
+        border-bottom: 1PX solid #979797;
+        line-height: 24px;
+        &:last-child{
+          border-bottom: none;
+        }
+      }
+    }
+    .sec_nav{
+      .item{
+        padding-left: 22px;
+        position: relative;
+        &::before{
+          content: "·";
+          position: absolute;
+          left: 14px;
+          top: 0;
+          color: #666;
+        }
+        a{
+          color: #666;
+        }
+      }
+    }
+  }
+  .down{
+    padding-right: 0;
+    background: none;
   }
 }
 </style>
