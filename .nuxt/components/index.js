@@ -1,6 +1,6 @@
-export const Footer = () => import('../..\\components\\footer\\footer.vue' /* webpackChunkName: "components/footer" */).then(c => wrapFunctional(c.default || c))
-export const Form = () => import('../..\\components\\form\\form.vue' /* webpackChunkName: "components/form" */).then(c => wrapFunctional(c.default || c))
-export const Header = () => import('../..\\components\\header\\header.vue' /* webpackChunkName: "components/header" */).then(c => wrapFunctional(c.default || c))
+export { default as Footer } from '../..\\components\\footer\\footer.vue'
+export { default as Form } from '../..\\components\\form\\form.vue'
+export { default as Header } from '../..\\components\\header\\header.vue'
 
 // nuxt/nuxt.js#8607
 function wrapFunctional(options) {
