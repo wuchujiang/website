@@ -48,6 +48,7 @@
       </section>
       <section class="section2 period" ref="section2">
         <div class="common-title">
+          <div class="en">life cycle</div>
           <div class="name">用户生命周期管理</div>
           <div class="desc">
             针对性地输出客户权益套餐，满足用户在不同生活场景下的需求，高频使用产品，增加用户黏性，提高用户留存率，进而提升LTV。
@@ -72,6 +73,7 @@
       </section>
       <section class="formulate" ref="section3">
         <div class="common-title">
+          <div class="en">Technical </div>
           <div class="name">用户分层及策略制定</div>
           <div class="desc">
             多平台整合的销售数据和专业的运营团队，可帮助客户构建用户画像，结合用户标签和消费场景，对用户进行科学化、系统化的分层并制定相应策略。

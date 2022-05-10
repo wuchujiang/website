@@ -6,6 +6,7 @@
       <section class="why-select-oak">
         <div class="container">
           <div class="common-title">
+            <div class="en">WHY</div>
             <div class="name">为什么选择橡树黑卡</div>
             <div class="desc">
               专业团队根据合作方与用户诉求，设计定制产品，并提供专业运营支持服务
@@ -173,6 +174,7 @@
       <section class="service-value">
         <div class="container">
           <div class="common-title">
+            <div class="en">VALUE</div>
             <div class="name">服务价值</div>
             <div class="desc">
               助力企业满足用户对高品质服务的需求，提升拉新促活能力与品牌忠诚度
@@ -209,6 +211,7 @@
       <section class="client">
         <div class="container">
           <div class="common-title">
+            <div class="en">CLIENT</div>
             <div class="name">我们服务的行业客户</div>
             <div class="desc">助力企业满足用户对高品质服务的需求，提升拉新促活能力与品牌忠诚度</div>
           </div>

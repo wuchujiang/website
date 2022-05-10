@@ -23,6 +23,7 @@
       <section class="section1" ref="section1">
         <div class="container">
           <div class="common-title">
+            <div class="en">digitization</div>
             <div class="name">数字化会员产品设计</div>
             <div class="desc">橡树支持对会员设计，及全链路的各项核心数据监控</div>
           </div>
@@ -64,6 +65,7 @@
       <section class="section2" ref="section2">
         <div class="container">
           <div class="common-title">
+            <div class="en">backstage</div>
             <div class="name">会员管理后台</div>
             <div class="desc">橡树支持对会员设计，及全链路的各项核心数据监控</div>
           </div>
@@ -85,6 +87,7 @@
       <section class="section3" ref="section3">
         <div class="container">
           <div class="common-title">
+            <div class="en">Technical </div>
             <div class="name">敏捷高效的技术能力</div>
             <div class="desc">持续迭代  快速上线</div>
           </div>

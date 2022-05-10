@@ -11,6 +11,7 @@
       <section class="about-section1">
         <div class="container">
           <div class="common-title">
+          <div class="en">about </div>
             <div class="name">关于我们</div>
             <div class="desc">助力企业构建会员体系实现活跃与创收</div>
           </div>
@@ -40,6 +41,7 @@
       <section class="course">
         <div class="container">
           <div class="common-title">
+          <div class="en">history </div>
             <div class="name">公司历程</div>
             <div class="desc">针对性地输出客户权益套餐，满足用户在不同生活场景下的需求，高频使用产品，增加用户黏性，提高用户留存率，进而提升LTV。</div>
           </div>

@@ -10,6 +10,7 @@
       </section>
       <section class="contact-main">
         <div class="common-title">
+          <div class="en">contact </div>
           <div class="name">联系方式</div>
           <div class="desc">您可以通过以下方式联系我们</div>
         </div>
