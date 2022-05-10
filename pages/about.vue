@@ -340,6 +340,9 @@ export default {
     }
   }
 }
+.mobile-second-nav{
+  display: none;
+}
 @media screen and (max-width:1024px){
   .about-banner{
     height: 300px;
@@ -416,6 +419,9 @@ export default {
   .mobile-course-main{
     display: block;
     margin: 10px 0 0 10px;
+  }
+  .mobile-second-nav{
+    display: block;
   }
 }
 </style>

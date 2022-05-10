@@ -22,6 +22,7 @@
       </section>
       <section class="section1" ref="section1">
         <div class="common-title">
+          <div class="en">system</div>
           <div class="name">全方位会员体系制定</div>
           <div class="desc">
             根据客户需求和产品属性，可针对性地定制输出多种会员体系方案
@@ -230,7 +231,7 @@ export default {
     }
   }
 }
-.mobile-formulate-img{
+.mobile-formulate-img, .mobile-second-nav, .mobile-operation-list, .mobile-section2-main{
   display: none;
 }
 
@@ -283,6 +284,7 @@ export default {
     display: none;
   }
   .mobile-operation-list{
+    display: block;
     margin-top: 13px;
   }
   .section2{
@@ -325,6 +327,9 @@ export default {
       display: block;
       margin-top: 24px;
     }
+  }
+  .mobile-second-nav{
+    display: block;
   }
 }
 </style>

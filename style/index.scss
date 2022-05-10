@@ -187,6 +187,25 @@ a {
     display: none;
   }
 }
+.common-title{
+  position: relative;
+  .en{
+    font-size: 32px;
+    background: linear-gradient(180deg, #EEEEEE 0%, rgba(216, 216, 216, 0) 100%);
+    -webkit-background-clip: text;
+    color: transparent;
+    text-transform: uppercase;
+    font-weight: bold;
+    position: absolute;
+    left: 0;
+    top: -22px;
+    display: none;
+  }
+  .name{
+    position: relative;
+    z-index: 2;
+  }
+}
 
 @media screen and (max-width: 1024px) {
   .plan-btn{
@@ -288,6 +307,11 @@ a {
           background-color: #FF5001;
         }
       }
+    }
+  }
+  .common-title{
+    .en{
+      display: block;
     }
   }
 }

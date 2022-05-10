@@ -546,7 +546,7 @@ export default {
   margin-top: 72px;
   width: 100%;
 }
-.mobile-img, .mobile-top{
+.mobile-img, .mobile-top, .mobile-kh{
   display: none;
 }
 @media screen and (max-width: 1200px) {

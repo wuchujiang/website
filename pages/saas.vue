@@ -315,7 +315,7 @@ export default {
     }
   }
 }
-.mobile-section2-main, .mobile-section1-main, .mobile-img{
+.mobile-section2-main, .mobile-section1-main, .mobile-img, .mobile-second-nav{
   display: none;
 }
 
@@ -462,6 +462,9 @@ export default {
     ul{
       display: none;
     }
+  }
+  .mobile-second-nav{
+    display: block;
   }
 }
 </style>
