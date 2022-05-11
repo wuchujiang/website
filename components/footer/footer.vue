@@ -101,6 +101,85 @@
         <img src="@/static/suspend3.png" alt="" />
       </div>
     </div>
+    <div class="suspend mobile-suspend">
+      <div class="item" @click="show2">
+        <img src="@/static/suspend1.png" alt="" />
+        <div class="online-consult show-online-consult" v-if="show_online">
+          <div class="online-consult-main">
+            <h3>亲爱的用户</h3>
+            <p>为了更好的帮您解决问题，请选择您要咨询的会员类型</p>
+            <ul>
+              <li>
+                <a
+                  href="https://oakvip.s2.udesk.cn/im_client/?web_plugin_id=24433"
+                  target="_blank"
+                  ><img src="@/static/kh1.png" alt="" /><span>省呗</span></a
+                >
+              </li>
+              <li>
+                <a
+                  href="https://oakvip.s2.udesk.cn/im_client/?web_plugin_id=24433"
+                  target="_blank"
+                  ><img src="@/static/kh2.png" alt="" /><span>小赢卡贷</span></a
+                >
+              </li>
+              <li>
+                <a
+                  href="https://oakvip.s2.udesk.cn/im_client/?web_plugin_id=24433"
+                  target="_blank"
+                  ><img src="@/static/kh3.png" alt="" /><span>keep</span></a
+                >
+              </li>
+              <li>
+                <a
+                  href="https://oakvip.s2.udesk.cn/im_client/?web_plugin_id=24433"
+                  target="_blank"
+                  ><img src="@/static/kh4.png" alt="" /><span>榕树贷款</span></a
+                >
+              </li>
+              <li>
+                <a
+                  href="https://oakvip.s2.udesk.cn/im_client/?web_plugin_id=24433"
+                  target="_blank"
+                  ><img src="@/static/kh5.png" alt="" /><span>新橙优品</span></a
+                >
+              </li>
+              <li>
+                <a
+                  href="https://oakvip.s2.udesk.cn/im_client/?web_plugin_id=24433"
+                  target="_blank"
+                  ><img src="@/static/kh6.png" alt="" /><span>其他</span></a
+                >
+              </li>
+            </ul>
+            <p>
+              如您需要商务合作请联络邮箱：<a
+                href="mailto:marketing@oakblack.com"
+                target="_blank"
+                ><span>marketing@oakblack.com</span></a
+              >
+            </p>
+            <p>电话：400-150-9669</p>
+          </div>
+        </div>
+      </div>
+      <div class="item">
+        <img @click="show1" src="@/static/suspend2.png" alt="" />
+        <div class="phone-consult show-phone-consult" v-if="show_phone_consult">
+          <div class="phone-consult-main">
+            <h4><a href="tel:400-150-9669">客服电话<span>400-150-9669</span></a></h4>
+            <h4>客服工作时间</h4>
+            <p>周一到周五：9：00～20：00（在线和电话）</p>
+            <p>周末或节假日：9：00～20：00（电话）</p>
+          </div>
+        </div>
+      </div>
+      <div v-if="showBackTop" class="item" @click="toTop">
+        <img src="@/static/suspend3.png" alt="" />
+      </div>
+    </div>
+    <div class="shadow" v-if="show_online" @click="show_online = false"></div>
+    <div class="shadow2" v-if="show_phone_consult" @click="show_phone_consult = false"></div>
   </footer>
 </template>
 
@@ -110,6 +189,8 @@ export default {
   data() {
     return {
       showBackTop: false,
+      show_online: false,
+      show_phone_consult: false,
       nav: [
         {
           name: '产品服务',
@@ -190,6 +271,14 @@ export default {
         }
       }, 30);
     },
+    show1() {
+      this.show_phone_consult = !this.show_phone_consult;
+      this.show_online = false;
+    },
+    show2() {
+      this.show_online = !this.show_online;
+      this.show_phone_consult = false;
+    }
   },
 };
 </script>
@@ -374,6 +463,17 @@ export default {
   margin-top: 10px;
 }
 
+.shadow{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+}
+.mobile-suspend{
+  display: none;
+}
+
 .item2:hover .phone-consult {
   display: block;
 }
@@ -501,12 +601,30 @@ export default {
       margin-top: 5px;
     }
   }
-  .shadow{
-    position: absolute;
+  .suspend{
+    display: none;
+  }
+  .mobile-suspend{
+    display: block;
+    .shadow{
+      position: fixed;
+      width: 100%;
+      height: 100%;
+      left: 0;
+      top: 0;
+      z-index: 50;
+    }
+  }
+  .shadow2{
+    position: fixed;
     width: 100%;
     height: 100%;
     left: 0;
     top: 0;
+    z-index: 50;
+  }
+  .show-online-consult, .show-phone-consult{
+    display: block;
   }
 }
 </style>
