@@ -18,6 +18,9 @@ export default {
         link: [
             { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' },
             { rel: 'stylesheet', href: 'https://cdn.jsdelivr.net/npm/vant@3/lib/index.css' }
+        ],
+        script: [
+            {src: "https://hm.baidu.com/hm.js?62ef9a621a0d708d7d4206706dedb23c"}
         ]
     },
 

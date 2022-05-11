@@ -255,13 +255,6 @@ export default {
       });
       w();
     })(window);
-    var _hmt = _hmt || [];
-    (function() {
-      var hm = document.createElement("script");
-      hm.src = "https://hm.baidu.com/hm.js?62ef9a621a0d708d7d4206706dedb23c";
-      var s = document.getElementsByTagName("script")[0]; 
-      s.parentNode.insertBefore(hm, s);
-    })();
   },
   methods: {
     toTop() {

@@ -2272,8 +2272,10 @@ async function createApp(ssrContext, config = {}) {
         "rel": "stylesheet",
         "href": "https:\u002F\u002Fcdn.jsdelivr.net\u002Fnpm\u002Fvant@3\u002Flib\u002Findex.css"
       }],
-      "style": [],
-      "script": []
+      "script": [{
+        "src": "https:\u002F\u002Fhm.baidu.com\u002Fhm.js?62ef9a621a0d708d7d4206706dedb23c"
+      }],
+      "style": []
     },
     router,
     nuxt: {
