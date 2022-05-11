@@ -450,5 +450,8 @@ export default {
     padding: 1px 12px 0;
     margin-bottom: 40px;
   }
+  .mobile-second-nav{
+    display: block;
+  }
 }
 </style>

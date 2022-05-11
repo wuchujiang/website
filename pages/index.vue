@@ -347,7 +347,6 @@ export default {
     }
   },
   mounted() {
-    this.$refs.index.scrollIntoView();
     this.pageShow = true;
   },
   methods: {

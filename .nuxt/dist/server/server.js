@@ -414,9 +414,9 @@ __webpack_require__.r(__webpack_exports__);
 // NAMESPACE OBJECT: ./.nuxt/components/index.js
 var components_namespaceObject = {};
 __webpack_require__.r(components_namespaceObject);
-__webpack_require__.d(components_namespaceObject, "Footer", function() { return Footer; });
-__webpack_require__.d(components_namespaceObject, "Form", function() { return Form; });
 __webpack_require__.d(components_namespaceObject, "Header", function() { return Header; });
+__webpack_require__.d(components_namespaceObject, "Form", function() { return Form; });
+__webpack_require__.d(components_namespaceObject, "Footer", function() { return Footer; });
 
 // EXTERNAL MODULE: external "vue"
 var external_vue_ = __webpack_require__(0);
@@ -1129,74 +1129,11 @@ var external_vue_router_ = __webpack_require__(6);
 var external_vue_router_default = /*#__PURE__*/__webpack_require__.n(external_vue_router_);
 
 // CONCATENATED MODULE: ./.nuxt/router.scrollBehavior.js
-
-
-if (false) {}
-
-function shouldScrollToTop(route) {
-  const Pages = getMatchedComponents(route);
-
-  if (Pages.length === 1) {
-    const {
-      options = {}
-    } = Pages[0];
-    return options.scrollToTop !== false;
-  }
-
-  return Pages.some(({
-    options
-  }) => options && options.scrollToTop);
-}
-
-/* harmony default export */ var router_scrollBehavior = (function (to, from, savedPosition) {
-  // If the returned position is falsy or an empty object, will retain current scroll position
-  let position = false;
-  const isRouteChanged = to !== from; // savedPosition is only available for popstate navigations (back button)
-
-  if (savedPosition) {
-    position = savedPosition;
-  } else if (isRouteChanged && shouldScrollToTop(to)) {
-    position = {
-      x: 0,
-      y: 0
-    };
-  }
-
-  const nuxt = window.$nuxt;
-
-  if ( // Initial load (vuejs/vue-router#3199)
-  !isRouteChanged || // Route hash changes
-  to.path === from.path && to.hash !== from.hash) {
-    nuxt.$nextTick(() => nuxt.$emit('triggerScroll'));
-  }
-
-  return new Promise(resolve => {
-    // wait for the out transition to complete (if necessary)
-    nuxt.$once('triggerScroll', () => {
-      // coords will be used if no selector is provided,
-      // or if the selector didn't match any element.
-      if (to.hash) {
-        let hash = to.hash; // CSS.escape() is not supported with IE and Edge.
-
-        if (typeof window.CSS !== 'undefined' && typeof window.CSS.escape !== 'undefined') {
-          hash = '#' + window.CSS.escape(hash.substr(1));
-        }
-
-        try {
-          if (document.querySelector(hash)) {
-            // scroll to anchor by returning the selector
-            position = {
-              selector: hash
-            };
-          }
-        } catch (e) {
-          console.warn('Failed to save scroll position. Please add CSS.escape() polyfill (https://github.com/mathiasbynens/CSS.escape).');
-        }
-      }
-
-      resolve(position);
-    });
-  });
+/* harmony default export */ var router_scrollBehavior = (function (to, from) {
+  return {
+    x: 0,
+    y: 0
+  };
 });
 // CONCATENATED MODULE: ./.nuxt/router.js
 
@@ -1971,9 +1908,9 @@ const layouts = {
   }
 });
 // CONCATENATED MODULE: ./.nuxt/components/index.js
-const Footer = () => __webpack_require__.e(/* import() | components/footer */ 1).then(__webpack_require__.bind(null, 30)).then(c => wrapFunctional(c.default || c));
+const Header = () => __webpack_require__.e(/* import() | components/header */ 3).then(__webpack_require__.bind(null, 29)).then(c => wrapFunctional(c.default || c));
 const Form = () => __webpack_require__.e(/* import() | components/form */ 2).then(__webpack_require__.bind(null, 48)).then(c => wrapFunctional(c.default || c));
-const Header = () => __webpack_require__.e(/* import() | components/header */ 3).then(__webpack_require__.bind(null, 29)).then(c => wrapFunctional(c.default || c)); // nuxt/nuxt.js#8607
+const Footer = () => __webpack_require__.e(/* import() | components/footer */ 1).then(__webpack_require__.bind(null, 30)).then(c => wrapFunctional(c.default || c)); // nuxt/nuxt.js#8607
 
 function wrapFunctional(options) {
   if (!options || !options.functional) {
@@ -2220,6 +2157,10 @@ const setupProgress = axios => {
   ctx.$axios = axios;
   inject('axios', axios);
 });
+// CONCATENATED MODULE: ./plugins/userAuth.js
+/* harmony default export */ var userAuth = (context => {
+  if (false) {}
+});
 // CONCATENATED MODULE: ./.nuxt/index.js
 
 
@@ -2236,6 +2177,8 @@ const setupProgress = axios => {
  // Source: .\\components\\plugin.js (mode: 'all')
 
  // Source: .\\axios.js (mode: 'all')
+
+ // Source: ..\\plugins\\userAuth (mode: 'all')
 // Component: <ClientOnly>
 
 external_vue_default.a.component(external_vue_client_only_default.a.name, external_vue_client_only_default.a); // TODO: Remove in Nuxt 3: <NoSsr>
@@ -2439,6 +2382,10 @@ async function createApp(ssrContext, config = {}) {
 
   if (typeof _nuxt_axios === 'function') {
     await _nuxt_axios(app.context, inject);
+  }
+
+  if (typeof userAuth === 'function') {
+    await userAuth(app.context, inject);
   } // Lock enablePreview in context
 
 

@@ -45,7 +45,7 @@
                 {{ item.name }}
                 <span>{{ item.address }} &gt;</span>
               </div>
-              <div class="right" :style="{display: current === index ? 'block' : 'none'}">
+              <div class="right" v-if="item.show">
                 <h4>职位描述</h4>
                 <ul>
                   <li v-for="(item, index) in list[index].desc" :key="item">
@@ -219,7 +219,9 @@ export default {
   },
   methods: {
     showDetail(index){
-      this.current = index;
+      const arr = this.list;
+      arr[index].show = !arr[index].show;
+      this.list = arr;
     }
   }
 };

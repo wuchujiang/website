@@ -25,7 +25,6 @@ function encrypt(option, method, accept, contentType) {
     _Url = option.url
   }
   var stringToSign = method.toUpperCase() + "\n" + accept + "\n" + "\n" + (contentType || '') + "\n" + "\n" + _Headers + _Url;
-console.log(stringToSign)
   var hmacSha256 = CryptoJS.HmacSHA256(stringToSign, secret);
   var hashInBase64 = CryptoJS.enc.Base64.stringify(hmacSha256);
   return { hashInBase64 };

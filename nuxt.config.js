@@ -20,6 +20,11 @@ export default {
         ]
     },
 
+    router: {
+        scrollBehavior (to, from) {
+            return { x: 0, y: 0 }
+        }
+    },
     /*
      ** Customize the progress-bar color
      */
@@ -33,7 +38,9 @@ export default {
     /*
      ** Plugins to load before mounting the App
      */
-    plugins: [],
+    plugins: [
+        '@/plugins/userAuth'
+    ],
     /*
      ** Nuxt.js dev-modules
      */

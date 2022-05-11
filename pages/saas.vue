@@ -159,7 +159,6 @@ export default {
     };
   },
   mounted() {
-    this.$refs.saas.scrollIntoView();
     this.pageShow = true;
   },
   methods: {

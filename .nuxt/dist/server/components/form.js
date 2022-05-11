@@ -120,7 +120,6 @@ function encrypt(option, method, accept, contentType) {
 
   var stringToSign = method.toUpperCase() + "\n" + accept + "\n" + "\n" + (contentType || '') + "\n" + "\n" + _Headers + _Url;
 
-  console.log(stringToSign);
   var hmacSha256 = external_jsrsasign_["CryptoJS"].HmacSHA256(stringToSign, secret);
   var hashInBase64 = external_jsrsasign_["CryptoJS"].enc.Base64.stringify(hmacSha256);
   return {

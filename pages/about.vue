@@ -163,7 +163,6 @@ export default {
     };
   },
   mounted() {
-    this.$refs.about.scrollIntoView();
     this.pageShow = true;
   },
 };

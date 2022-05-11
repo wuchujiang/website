@@ -131,7 +131,6 @@ export default {
     };
   },
   mounted() {
-    this.$refs.operation.scrollIntoView();
     this.pageShow = true;
   },
   methods: {
