@@ -1,5 +1,5 @@
 <template>
-  <section v-if="!hidePlan" :class="`free-plan ${clearFixed && 'clear-fixed'}`">
+  <section v-if="!hidePlan" :class="`free-plan ${clearFixed && 'clear-fixed'}`" :style="{zIndex: showForm ? 99 : 50}">
     <div class="container">
       <img class="img" src="@/static/img12.png" alt="">
       <div class="free-get-plan" @click="showForm = true">免费获取方案</div>

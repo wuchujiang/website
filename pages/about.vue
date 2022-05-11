@@ -332,7 +332,7 @@ export default {
 .course-main .list:first-child .item .date span:last-child {
   transform: translateX(7px);
 }
-.mobile-img, .mobile-course-main{
+.about-text img.mobile-img, .mobile-course-main{
   display: none;
 }
 .course{
@@ -342,7 +342,7 @@ export default {
     }
   }
 }
-.mobile-second-nav, .mobile-img{
+.mobile-second-nav{
   display: none;
 }
 @media screen and (max-width:1024px){
@@ -399,10 +399,10 @@ export default {
     img{
       display: none;
     }
-    .mobile-img{
+  }
+  .about-text img.mobile-img{
       display: block;
     }
-  }
   .course{
     padding-top: 35px;
     padding-bottom: 30px;
