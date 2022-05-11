@@ -312,6 +312,9 @@ export default {
   border-radius: 4px;
   text-align: center;
   color: #fff;
+  a{
+    color: #fff;
+  }
 }
 .contact-main .item h4 {
   font-size: 16px;
