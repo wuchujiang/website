@@ -81,7 +81,8 @@
               autocomplete="off"
             />
             <div class="input-error">{{ code_error }}</div>
-            <div class="get-code" @click="getCode">获取验证码</div>
+            <div class="get-code" v-if="!codeText" @click="getCode">获取验证码</div>
+            <div class="get-code code-disable" v-else>{{ codeText }}</div>
           </div>
           <div class="plan-btn" @click="getPlan">免费获取方案</div>
         </div>
@@ -91,9 +92,12 @@
 </template>
 
 <script>
+import { register, officialWebsite } from '../../utils/api'
 export default {
   data() {
     return {
+      codeText: '',
+      num: 60,
       name: "",
       name_error: "",
       company_name: "",
@@ -131,6 +135,21 @@ export default {
   methods: {
     getCode() {
       //获取验证码
+      if(!this.phone){
+        this.phone_error = "请填写您的联系电话";
+        return;
+      }
+      if (!/^1([3-9])\d{9}$/.test(this.phone)) {
+        this.phone_error = "请填写正确的联系电话";
+        return;
+      }
+      register(this.$axios, {
+        phone_number: this.phone,
+        app_name: "橡树黑卡",
+      }).then(res => {
+        this.session_code = res.session_code;
+        this.timer();
+      });
     },
     getPlan() {
       if (!this.name) {
@@ -155,8 +174,31 @@ export default {
       } else {
         this.code_error = "";
       }
-      this.showDialog = true;
+      officialWebsite(this.$axios, {
+        name: this.name,
+        phone_number: this.phone,
+        company: this.company_name,
+        otp: this.code,
+        session_code: this.session_code
+      }).then(() => {
+        this.showDialog = true;
+        this.phone = '';
+        this.company_name = '';
+        this.code = '';
+        this.name = '';
+      })
     },
+    timer() {
+      let time = setInterval(() => {
+        this.num--;
+        this.codeText = `${this.num}s后重新获取`
+        if(this.num <= 0){
+          clearInterval(time);
+          this.codeText = '';
+          this.num = 60;
+        }
+      }, 1000)
+    }
   },
 };
 </script>

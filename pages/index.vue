@@ -387,6 +387,7 @@ export default {
         if(this.num <= 0){
           clearInterval(time);
           this.codeText = '';
+          this.num = 60;
         }
       }, 1000)
     }
