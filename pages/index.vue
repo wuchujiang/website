@@ -320,6 +320,32 @@ export default {
       ],
     };
   },
+  watch: {
+    name: {
+      handler: function () {
+        if(this.name){
+          this.name_error = '';
+        }
+      },
+      immediate: true,
+    },
+    phone: {
+      handler: function () {
+        if(this.phone){
+          this.phone_error = '';
+        }
+      },
+      immediate: true,
+    },
+    code: {
+      handler: function () {
+        if(this.code){
+          this.code_error = '';
+        }
+      },
+      immediate: true,
+    }
+  },
   mounted() {
     this.$refs.index.scrollIntoView();
     this.pageShow = true;
