@@ -372,8 +372,12 @@ export default {
         company: this.company_name,
         otp: this.code,
         session_code: this.session_code
-      }).then(res => {
+      }).then(() => {
         this.showDialog = true;
+        this.phone = '';
+        this.company_name = '';
+        this.code = '';
+        this.name = '';
       })
     },
     timer() {
