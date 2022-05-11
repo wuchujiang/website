@@ -443,7 +443,7 @@ export default {
     .mobile-img{
       display: block;
       width: 292px;
-      height: 584px !important;
+      height: 292px !important;
       margin: 0 auto;
     }
     .right{
