@@ -3,36 +3,42 @@
     "name": "about",
     "path": "/about",
     "component": "C:\\\\Users\\\\marco\\\\Desktop\\\\OakNewWebsite\\\\pages\\\\about.vue",
-    "chunkName": "pages/about"
+    "chunkName": "pages/about",
+    "_name": "_61fc1908"
   },
   {
     "name": "contact",
     "path": "/contact",
     "component": "C:\\\\Users\\\\marco\\\\Desktop\\\\OakNewWebsite\\\\pages\\\\contact.vue",
-    "chunkName": "pages/contact"
+    "chunkName": "pages/contact",
+    "_name": "_5452694a"
   },
   {
     "name": "join",
     "path": "/join",
     "component": "C:\\\\Users\\\\marco\\\\Desktop\\\\OakNewWebsite\\\\pages\\\\join.vue",
-    "chunkName": "pages/join"
+    "chunkName": "pages/join",
+    "_name": "_1d79e0ff"
   },
   {
     "name": "operation",
     "path": "/operation",
     "component": "C:\\\\Users\\\\marco\\\\Desktop\\\\OakNewWebsite\\\\pages\\\\operation.vue",
-    "chunkName": "pages/operation"
+    "chunkName": "pages/operation",
+    "_name": "_4a18373c"
   },
   {
     "name": "saas",
     "path": "/saas",
     "component": "C:\\\\Users\\\\marco\\\\Desktop\\\\OakNewWebsite\\\\pages\\\\saas.vue",
-    "chunkName": "pages/saas"
+    "chunkName": "pages/saas",
+    "_name": "_5b263056"
   },
   {
     "name": "index",
     "path": "/",
     "component": "C:\\\\Users\\\\marco\\\\Desktop\\\\OakNewWebsite\\\\pages\\\\index.vue",
-    "chunkName": "pages/index"
+    "chunkName": "pages/index",
+    "_name": "_fc981866"
   }
 ]
