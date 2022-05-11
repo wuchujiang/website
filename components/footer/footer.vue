@@ -9,24 +9,12 @@
         <a class='qqkf' target="_blank" href="http://wpa.qq.com/msgrd?v=3&uin=&site=qq&menu=yes">QQ咨询</a>
       </div>
       <div class="r-nav">
-        <div class="item">
-          <h2>产品服务</h2>
+        <div class="item" v-for="(item) in nav" :key="item.name">
+          <h2>{{ item.name }}</h2>
           <ul>
-            <li><nuxt-link to="/saas">会员SAAS服务</nuxt-link></li>
-            <li><nuxt-link to="/operation">精细化运营服务</nuxt-link></li>
-          </ul>
-        </div>
-        <div class="item">
-          <h2>关于我们</h2>
-          <ul>
-            <li><nuxt-link to="/about">公司介绍</nuxt-link></li>
-            <li><nuxt-link to="/contact">联系我们</nuxt-link></li>
-          </ul>
-        </div>
-        <div class="item">
-          <h2>加入我们</h2>
-          <ul>
-            <li><nuxt-link to="/join">招聘职位</nuxt-link></li>
+            <li v-for="(i) in item.sec_list" :key="i.name">
+              <nuxt-link :to="i.url">{{ i.name }}</nuxt-link>
+            </li>
           </ul>
         </div>
       </div>
@@ -120,6 +108,28 @@ export default {
   data() {
     return {
       showBackTop: false,
+      nav: [
+        {
+          name: '产品服务',
+          sec_list: [
+            {name: '会员SAAS服务', type: 'saas', url: '/saas'},
+            {name: '精细化运营服务', type: 'operation', url: '/operation'},
+          ]
+        },
+        {
+          name: '关于我们',
+          sec_list: [
+            {name: '公司介绍', type: 'about', url: '/about'},
+            {name: '联系我们', type: 'contact', url: '/contact'},
+          ]
+        },
+        {
+          name: '加入我们',
+          sec_list: [
+            {name: '招聘职位', type: 'join', url: '/join'},
+          ]
+        }
+      ]
     };
   },
   mounted() {

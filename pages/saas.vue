@@ -99,11 +99,14 @@
                 <li>快速上线</li>
                 <li>持续迭代</li>
               </ul>
+              <div class="jishu">
+                <div>3384次提交</div>     <div>306个分支</div>    <div>148个标签</div>
+              </div>
               <div class="item">
                 开发图案经验丰富，累计开发上线50+项目，近一年上线20+项目
               </div>
               <div class="item">
-                项目采用敏捷开发流程，每周迭代发版次数达1-2次，，近一年累计发版次数100+
+                项目采用敏捷开发流程，每周迭代发版次数达1-2次，近一年累计发版次数100+
               </div>
               <div class="item">
                 系统模块可复用性强，采用微服务模式+中台模式开发
@@ -467,6 +470,14 @@ export default {
   }
   .mobile-second-nav{
     display: block;
+  }
+  .jishu{
+    display: flex;
+    justify-content: space-between;
+    font-size: 14px;
+    color: #FF5001;
+    font-weight: bold;
+    padding: 0 40px 20px;
   }
 }
 </style>
