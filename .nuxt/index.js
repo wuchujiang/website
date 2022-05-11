@@ -15,6 +15,7 @@ import { setContext, getLocation, getRouteData, normalizeError } from './utils'
 import nuxt_plugin_plugin_05155e26 from 'nuxt_plugin_plugin_05155e26' // Source: .\\components\\plugin.js (mode: 'all')
 import nuxt_plugin_axios_74fc5b49 from 'nuxt_plugin_axios_74fc5b49' // Source: .\\axios.js (mode: 'all')
 import nuxt_plugin_userAuth_47d7e207 from 'nuxt_plugin_userAuth_47d7e207' // Source: ..\\plugins\\userAuth (mode: 'all')
+import nuxt_plugin_vantui_6b945fbc from 'nuxt_plugin_vantui_6b945fbc' // Source: ..\\plugins\\vant-ui (mode: 'all')
 
 // Component: <ClientOnly>
 Vue.component(ClientOnly.name, ClientOnly)
@@ -64,7 +65,7 @@ async function createApp(ssrContext, config = {}) {
   // here we inject the router and store to all child components,
   // making them available everywhere as `this.$router` and `this.$store`.
   const app = {
-    head: {"title":"橡树黑卡","htmlAttrs":{"lang":"en"},"meta":[{"charset":"utf-8"},{"name":"viewport","content":"width=device-width, initial-scale=1"},{"hid":"description","name":"description","content":""},{"name":"format-detection","content":"telephone=no"}],"link":[{"rel":"icon","type":"image\u002Fx-icon","href":"\u002Ffavicon.ico"}],"style":[],"script":[]},
+    head: {"title":"橡树黑卡","htmlAttrs":{"lang":"en"},"meta":[{"charset":"utf-8"},{"name":"viewport","content":"width=device-width, initial-scale=1"},{"hid":"description","name":"description","content":""},{"name":"format-detection","content":"telephone=no"}],"link":[{"rel":"icon","type":"image\u002Fx-icon","href":"\u002Ffavicon.ico"},{"rel":"stylesheet","href":"https:\u002F\u002Fcdn.jsdelivr.net\u002Fnpm\u002Fvant@3\u002Flib\u002Findex.css"}],"style":[],"script":[]},
 
     router,
     nuxt: {
@@ -188,6 +189,10 @@ async function createApp(ssrContext, config = {}) {
 
   if (typeof nuxt_plugin_userAuth_47d7e207 === 'function') {
     await nuxt_plugin_userAuth_47d7e207(app.context, inject)
+  }
+
+  if (typeof nuxt_plugin_vantui_6b945fbc === 'function') {
+    await nuxt_plugin_vantui_6b945fbc(app.context, inject)
   }
 
   // Lock enablePreview in context

@@ -93,6 +93,7 @@
 
 <script>
 import { register, officialWebsite } from '../../utils/api'
+import { Toast } from 'vant'
 export default {
   data() {
     return {
@@ -169,10 +170,15 @@ export default {
         this.phone_error = "请填写正确的联系电话";
         return;
       }
+      Toast.loading({
+        message: '加载中...',
+        forbidClick: true,
+      });
       register(this.$axios, {
         phone_number: this.phone,
         app_name: "橡树黑卡",
       }).then(res => {
+        Toast.clear();
         this.session_code = res.session_code;
         this.timer();
       });
@@ -200,6 +206,14 @@ export default {
       } else {
         this.code_error = "";
       }
+      if(!this.session_code){
+        Toast('请先获取验证码');
+        return;
+      }
+      Toast.loading({
+        message: '加载中...',
+        forbidClick: true,
+      });
       officialWebsite(this.$axios, {
         name: this.name,
         phone_number: this.phone,
@@ -207,7 +221,8 @@ export default {
         otp: this.code,
         session_code: this.session_code
       }).then(() => {
-        this.showDialog = true;
+        Toast.clear();
+        Toast('提交成功，稍后会有专门商务联络，谢谢！');
         this.phone = '';
         this.company_name = '';
         this.code = '';

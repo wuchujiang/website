@@ -32,8 +32,10 @@
       <div class="heaedr-r">
         <div class="phone">400-150-9669</div>
         <div class="mobile-nav">
-          <img src="@/static/nav.png" alt="" />
-          <ul>
+          <img @click="showNav = !showNav" src="@/static/nav.png" alt="" />
+          <div class="nav-shadow" v-if="showNav" @click="showNav = false"></div>
+          <ul v-if="showNav">
+            <img @click="showNav = false" class="close2" src="@/static/close2.png" alt="">
             <li
               v-for="(item, index) in nav"
               :key="item.name"
@@ -67,6 +69,7 @@ export default {
   props: ["current", "sec_current"],
   data() {
     return {
+      showNav: false,
       nav: [
         {
           name: "首页",
@@ -302,7 +305,7 @@ export default {
       right: 0;
       top: 100%;
       background-color: #fff;
-      padding: 24px 12px;
+      padding: 16px 12px;
       font-size: 12px;
     }
   }
@@ -326,29 +329,33 @@ export default {
   .phone{
     font-size: 12px;
   }
-  .mobile-nav:hover ul{
-    display: block;
-  }
   .mobile-nav{
     width: 18px;
     position: relative;
-    z-index: 9;
+    z-index: 59;
     ul {
-      display: none;
       border: 1PX solid #EBECF1;
       border-radius: 4px;
+      z-index: 56;
       li{
         border-bottom: 1PX solid #979797;
-        line-height: 24px;
+        font-weight: bold;
+        padding: 11px 0;
         &:last-child{
           border-bottom: none;
+        }
+        a{
+          display: block;
         }
       }
     }
     .sec_nav{
+      margin-top: 8px;
+      font-weight: normal;
       .item{
         padding-left: 22px;
         position: relative;
+        line-height: 24px;
         &::before{
           content: "·";
           position: absolute;
@@ -365,6 +372,21 @@ export default {
   .down{
     padding-right: 0;
     background: none;
+  }
+  .close2{
+    position: absolute;
+    right: 6px;
+    top: 6px;
+    width: 20px;
+    height: 20px;
+  }
+  .nav-shadow{
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    z-index: 55;
   }
 }
 </style>

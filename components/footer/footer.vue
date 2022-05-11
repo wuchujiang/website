@@ -90,7 +90,7 @@
         <img src="@/static/suspend2.png" alt="" />
         <div class="phone-consult">
           <div class="phone-consult-main">
-            <h4>客服电话<span>400-150-9669</span></h4>
+            <h4><a href="tel:400-150-9669">客服电话<span>400-150-9669</span></a></h4>
             <h4>客服工作时间</h4>
             <p>周一到周五：9：00～20：00（在线和电话）</p>
             <p>周末或节假日：9：00～20：00（电话）</p>
@@ -348,6 +348,9 @@ export default {
   h4 {
     margin-bottom: 10px;
     font-size: 18px;
+    a{
+      color: #333;
+    }
     span {
       display: block;
       margin-top: 10px;
@@ -453,10 +456,10 @@ export default {
   }
   .online-consult{
     right: 44px;
-    width: 148px;
+    width: 168px;
   }
   .online-consult-main{
-    width: 138px;
+    width: 158px;
     padding: 10px;
     h3{
       font-size: 8px;

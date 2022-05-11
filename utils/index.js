@@ -2,6 +2,7 @@ import qs from 'qs';
 import pickBy from 'lodash.pickby';
 import { CryptoJS } from 'jsrsasign';
 import { key, secret, baseUrl } from './config.js';
+import { Toast } from 'vant'
 
 const contentType = 'application/x-www-form-urlencoded';
 
@@ -60,6 +61,8 @@ export default (that, params) => {
 
   return instance(params).then(response => {
     if (response.data?.ok === false) {
+      Toast.clear();
+      Toast(response.data.msg || '网络繁忙');
       return Promise.reject(response.data)
     }
     return response.data;

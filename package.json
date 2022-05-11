@@ -14,12 +14,13 @@
         "jsrsasign": "^10.5.20",
         "lodash.pickby": "^4.6.0",
         "nuxt": "^2.15.8",
+        "postcss-px2rem": "^0.3.0",
         "qs": "^6.10.3",
+        "vant": "^2.12.47",
         "vue": "^2.6.14",
         "vue-server-renderer": "^2.6.14",
         "vue-template-compiler": "^2.6.14",
-        "webpack": "^4.46.0",
-        "postcss-px2rem": "^0.3.0"
+        "webpack": "^4.46.0"
     },
     "devDependencies": {
         "node-sass": "^4.14.1",

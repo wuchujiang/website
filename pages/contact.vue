@@ -16,22 +16,28 @@
         </div>
         <div class="container">
           <div class="item">
-            <img src="@/static/icon11.png" alt="" />
-            <h4>在线客服</h4>
-            <p>周一到周五：<span>9：00～20：00</span> (在线和电话)</p>
-            <button><a href="https://oakvip.s2.udesk.cn/im_client/?web_plugin_id=28877" target="_blank">立即联系</a></button>
+            <a href="https://oakvip.s2.udesk.cn/im_client/?web_plugin_id=28877" target="_blank">
+              <img src="@/static/icon11.png" alt="" />
+              <h4>在线客服</h4>
+              <p>周一到周五：<span>9：00～20：00</span> (在线和电话)</p>
+              <button>立即联系</button>
+            </a>
           </div>
           <div class="item">
-            <img src="@/static/icon12.png" alt="" />
-            <h4>电话咨询</h4>
-            <p>周末或节假日：<span>9：00～20：00</span> (电话)</p>
-            <button class="btn">400-150-9669</button>
+            <a href="tel:400-150-9669">
+              <img src="@/static/icon12.png" alt="" />
+              <h4>电话咨询</h4>
+              <p>周末或节假日：<span>9：00～20：00</span> (电话)</p>
+              <button class="btn">400-150-9669</button>
+            </a>
           </div>
           <div class="item">
-            <img src="@/static/icon13.png" alt="" />
-            <h4>商务合作邮箱</h4>
-            <p>marketing<span>@oakblack.com</span></p>
-            <button><a href="mailto:marketing@oakblack.com" target="_blank">发送邮件</a></button>
+            <a href="mailto:marketing@oakblack.com" target="_blank">
+              <img src="@/static/icon13.png" alt="" />
+              <h4>商务合作邮箱</h4>
+              <p class="color">marketing<span>@oakblack.com</span></p>
+              <button>发送邮件</button>
+            </a>
           </div>
         </div>
       </section>
@@ -126,6 +132,7 @@
 import oakHeader from "../components/header/header";
 import oakFooter from "../components/footer/footer";
 import { register, officialWebsite } from '../utils/api'
+import { Toast } from 'vant'
 export default {
   name: "contact",
   components: {
@@ -209,16 +216,20 @@ export default {
         this.phone_error = "请填写正确的联系电话";
         return;
       }
+      Toast.loading({
+        message: '加载中...',
+        forbidClick: true,
+      });
       register(this.$axios, {
         phone_number: this.phone,
         app_name: "橡树黑卡",
       }).then(res => {
+        Toast.clear();
         this.session_code = res.session_code;
         this.timer();
       });
     },
     getPlan() {
-      this.showDialog = true;
       if (!this.name) {
         this.name_error = "请填写您的姓名";
         return;
@@ -241,6 +252,14 @@ export default {
       } else {
         this.code_error = "";
       }
+      if(!this.session_code){
+        Toast('请先获取验证码');
+        return;
+      }
+      Toast.loading({
+        message: '加载中...',
+        forbidClick: true,
+      });
       officialWebsite(this.$axios, {
         name: this.name,
         phone_number: this.phone,
@@ -248,7 +267,8 @@ export default {
         otp: this.code,
         session_code: this.session_code
       }).then(() => {
-        this.showDialog = true;
+        Toast.clear();
+        Toast('提交成功，稍后会有专门商务联络，谢谢！');
         this.phone = '';
         this.company_name = '';
         this.code = '';
@@ -409,6 +429,9 @@ export default {
         height: 160px;
         padding: 0;
         margin-bottom: 0;
+        a{
+          color: #333;
+        }
         button{
           display: none;
         }
@@ -427,6 +450,9 @@ export default {
           span{
             display: block;
           }
+        }
+        .color{
+          color: #FF5001;
         }
       }
     }
