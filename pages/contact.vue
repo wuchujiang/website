@@ -125,6 +125,7 @@
 <script>
 import oakHeader from "../components/header/header";
 import oakFooter from "../components/footer/footer";
+import { register, officialWebsite } from '../utils/api'
 export default {
   name: "contact",
   components: {
