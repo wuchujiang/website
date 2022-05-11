@@ -117,7 +117,7 @@
       </section>
       <oakForm />
     </main>
-    <oakFooter />
+    <oakFooter type="saas" />
   </div>
 </template>
 

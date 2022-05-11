@@ -116,7 +116,7 @@
       </section>
       <oakForm />
     </main>
-    <oakFooter />
+    <oakFooter type="about" />
   </div>
 </template>
 

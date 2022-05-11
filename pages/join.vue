@@ -68,7 +68,7 @@
         </div>
       </section>
     </main>
-    <oakFooter />
+    <oakFooter type="join" />
   </div>
 </template>
 <script>

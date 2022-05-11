@@ -14,6 +14,7 @@
           <ul>
             <li v-for="(i) in item.sec_list" :key="i.name">
               <nuxt-link :to="i.url">{{ i.name }}</nuxt-link>
+              <div class="shadow" @click="toTop" v-if="type === i.type"></div>
             </li>
           </ul>
         </div>
@@ -105,6 +106,7 @@
 
 <script>
 export default {
+  props: ["type"],
   data() {
     return {
       showBackTop: false,
@@ -221,6 +223,7 @@ export default {
     ul li {
       margin-top: 22px;
       font-size: 14px;
+      position: relative;
       a {
         color: #fff;
         transition: all 0.3s linear;
@@ -494,6 +497,13 @@ export default {
       font-size: 10px;
       margin-top: 5px;
     }
+  }
+  .shadow{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
   }
 }
 </style>

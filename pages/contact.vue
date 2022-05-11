@@ -118,7 +118,7 @@
         </div>
       </section>
     </main>
-    <oakFooter />
+    <oakFooter type="contact" />
   </div>
 </template>
 

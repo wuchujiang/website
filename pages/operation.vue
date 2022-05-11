@@ -86,7 +86,7 @@
       </section>
       <oakForm />
     </main>
-    <oakFooter />
+    <oakFooter type="operation" />
   </div>
 </template>
 
