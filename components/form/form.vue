@@ -314,6 +314,9 @@ export default {
 .form-dialog-main .plan-form .item.code input{
   width: 250px;
 }
+.mobile-top{
+  display: none;
+}
 @media screen and (max-width:1200px){
   .free-plan ul li{
     width: 430px;
