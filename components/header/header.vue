@@ -39,7 +39,7 @@
             <li
               v-for="(item, index) in nav"
               :key="item.name"
-              :class="{ item: true, active: current === index }"
+              :class="{ item: true, active: current === index && !item.second}"
             >
               <nuxt-link :to="item.url" :class="{ down: item.second }">{{
                 item.name
@@ -348,6 +348,9 @@ export default {
           display: block;
         }
       }
+      .active > a {
+        color: #ff5a27;
+      }
     }
     .sec_nav{
       margin-top: 8px;
@@ -367,6 +370,9 @@ export default {
           color: #666;
         }
       }
+    }
+    .sec_nav .sec_active > a {
+      color: #ff5a27;
     }
   }
   .down{

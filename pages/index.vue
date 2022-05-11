@@ -23,6 +23,15 @@
                 <img :src="require(`@/static/icon${index + 1}.png`)" alt="" />
                 <div v-html="item"></div>
               </div>
+              <div
+                v-for="(item, index) in list2"
+                :key="item"
+                :class="`item mobile-item ${current === index && 'active'}`"
+                @mouseenter="current = index"
+              >
+                <img :src="require(`@/static/icon${index + 1}.png`)" alt="" />
+                <div v-html="item"></div>
+              </div>
             </div>
             <div v-show="current === 0" class="capacity-content1">
               <div class="text">
@@ -256,6 +265,11 @@ export default {
         "<span>一站式权益</span> 低成本 高价值",
         "<span>独家稀缺权益</span> 提升产品竞争力",
         "<span>专业服务</span>   灵活定制",
+      ],
+      list2: [
+        "<span style='display:block'>一站式权益</span> 低成本 高价值",
+        "<span style='display:block'>独家稀缺权益</span> 提升产品竞争力",
+        "<span style='display:block'>专业服务</span>   灵活定制",
       ],
       current: 0,
       service_value: [
@@ -605,7 +619,7 @@ export default {
   margin-top: 72px;
   width: 100%;
 }
-.mobile-img, .mobile-top, .mobile-kh{
+.mobile-img, .mobile-top, .mobile-kh, .mobile-item{
   display: none;
 }
 @media screen and (max-width: 1200px) {
@@ -685,6 +699,7 @@ export default {
       padding: 20px 0 0;
       font-size: 12px;
       font-weight: normal;
+      display: none;
       span{
         font-size: 32px;
         display: block;
@@ -693,6 +708,9 @@ export default {
         width: 65px;
         margin-bottom: 22px;
       }
+    }
+    .mobile-item{
+      display: block;
     }
     .active{
       color: #333;
