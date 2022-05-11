@@ -320,7 +320,7 @@ export default {
     }
   }
 }
-.mobile-section2-main, .mobile-section1-main, .mobile-img, .mobile-second-nav{
+.mobile-section2-main, .mobile-section1-main, .mobile-img, .mobile-second-nav, .jishu{
   display: none;
 }
 
@@ -473,6 +473,7 @@ export default {
     display: block;
   }
   .jishu{
+    display: block;
     display: flex;
     justify-content: space-between;
     font-size: 14px;
