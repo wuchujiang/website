@@ -22,13 +22,13 @@
             <button><a href="https://oakvip.s2.udesk.cn/im_client/?web_plugin_id=28877" target="_blank">立即联系</a></button>
           </div>
           <div class="item">
-            <img src="@/static/icon11.png" alt="" />
+            <img src="@/static/icon12.png" alt="" />
             <h4>电话咨询</h4>
             <p>周末或节假日：<span>9：00～20：00</span> (电话)</p>
             <button class="btn">400-150-9669</button>
           </div>
           <div class="item">
-            <img src="@/static/icon11.png" alt="" />
+            <img src="@/static/icon13.png" alt="" />
             <h4>商务合作邮箱</h4>
             <p>marketing<span>@oakblack.com</span></p>
             <button><a href="mailto:marketing@oakblack.com" target="_blank">发送邮件</a></button>

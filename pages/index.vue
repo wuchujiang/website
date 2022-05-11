@@ -164,7 +164,8 @@
                 id="code"
                 autocomplete="off"
               />
-              <div class="get-code" @click="getCode">获取验证码</div>
+              <div class="get-code" v-if="!codeText" @click="getCode">获取验证码</div>
+              <div class="get-code code-disable" v-else>{{ codeText }}</div>
               <div class="input-error">{{ code_error }}</div>
             </div>
             <div class="plan-btn" @click="getPlan">免费获取方案</div>
@@ -243,6 +244,8 @@ export default {
   data() {
     return {
       pageShow: false,
+      codeText: '',
+      num: 60,
       name: "",
       name_error: "",
       company_name: "",
@@ -337,6 +340,7 @@ export default {
         app_name: "橡树黑卡",
       }).then(res => {
         this.session_code = res.session_code;
+        this.timer();
       });
     },
     getPlan() {
@@ -372,6 +376,16 @@ export default {
         this.showDialog = true;
       })
     },
+    timer() {
+      let time = setInterval(() => {
+        this.num--;
+        this.codeText = `${this.num}s后重新获取`
+        if(this.num <= 0){
+          clearInterval(time);
+          this.codeText = '';
+        }
+      }, 1000)
+    }
   },
 };
 </script>

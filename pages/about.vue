@@ -342,7 +342,7 @@ export default {
     }
   }
 }
-.mobile-second-nav{
+.mobile-second-nav, .mobile-img{
   display: none;
 }
 @media screen and (max-width:1024px){
