@@ -51,9 +51,16 @@
                 <p>- 权益成本更低。</p>
               </div>
               <img src="@/static/benefit.png" alt="" />
-              <img class="mobile-img" src="@/static/mobile/benefit.png" alt="" />
+              <img
+                class="mobile-img"
+                src="@/static/mobile/benefit.png"
+                alt=""
+              />
             </div>
-            <div v-show="current === 1" class="capacity-content1 capacity-content2">
+            <div
+              v-show="current === 1"
+              class="capacity-content1 capacity-content2"
+            >
               <div class="text">
                 <div class="top">
                   <h4>独家权益</h4>
@@ -65,7 +72,9 @@
                     -
                     与多家酒店集团、贵宾出行服务商合作，可为用户提供高级酒</span
                   >
-                  <span>店会籍匹配，及全球贵宾休息室、快速安检等高端服务。</span>
+                  <span
+                    >店会籍匹配，及全球贵宾休息室、快速安检等高端服务。</span
+                  >
                 </p>
                 <p>
                   <span>
@@ -77,7 +86,10 @@
               <img src="@/static/img14.png" alt="" />
               <img class="mobile-img" src="@/static/mobile/img1.png" alt="" />
             </div>
-            <div v-show="current === 2" class="capacity-content1 capacity-content3">
+            <div
+              v-show="current === 2"
+              class="capacity-content1 capacity-content3"
+            >
               <div class="text">
                 <div class="top">
                   <h4>灵活定制</h4>
@@ -105,21 +117,11 @@
           <div class="mobile-top">
             <h4>这些企业都已免费获得定制会员方案</h4>
             <ul>
-              <li>
-                <img src="@/static/kh1.png" alt="" />省呗
-              </li>
-              <li>
-                <img src="@/static/kh2.png" alt="" />小赢卡贷
-              </li>
-              <li>
-                <img src="@/static/kh3.png" alt="" />keep
-              </li>
-              <li>
-                <img src="@/static/kh4.png" alt="" />榕树贷款
-              </li>
-              <li>
-                <img src="@/static/kh5.png" alt="" />新橙优品
-              </li>
+              <li><img src="@/static/kh1.png" alt="" />省呗</li>
+              <li><img src="@/static/kh5.png" alt="" />我来数科</li>
+              <li><img src="@/static/kh3.png" alt="" />keep</li>
+              <li><img src="@/static/kh4.png" alt="" />榕树贷款</li>
+              <li><img src="@/static/kh7.png" alt="" />新橙优品</li>
             </ul>
           </div>
           <div class="plan-form">
@@ -173,7 +175,9 @@
                 id="code"
                 autocomplete="off"
               />
-              <div class="get-code" v-if="!codeText" @click="getCode">获取验证码</div>
+              <div class="get-code" v-if="!codeText" @click="getCode">
+                获取验证码
+              </div>
               <div class="get-code code-disable" v-else>{{ codeText }}</div>
               <div class="input-error">{{ code_error }}</div>
             </div>
@@ -194,7 +198,7 @@
             <div
               v-for="(item, index) in service_value"
               :key="item.title"
-              :class="{'item': true, 'active': service_value_current === index}"
+              :class="{ item: true, active: service_value_current === index }"
               @mouseenter="service_value_current = index"
               @mouseleave="service_value_current = -1"
             >
@@ -223,7 +227,9 @@
           <div class="common-title">
             <div class="en">CLIENT</div>
             <div class="name">我们服务的行业客户</div>
-            <div class="desc">助力企业满足用户对高品质服务的需求，提升拉新促活能力与品牌忠诚度</div>
+            <div class="desc">
+              助力企业满足用户对高品质服务的需求，提升拉新促活能力与品牌忠诚度
+            </div>
           </div>
           <img src="@/static/client.png" alt="" />
           <img class="mobile-kh" src="@/static/mobile/img3.png" alt="" />
@@ -239,8 +245,8 @@
 import oakHeader from "../components/header/header";
 import oakFooter from "../components/footer/footer";
 import oakForm from "../components/form/form";
-import { register, officialWebsite } from '../utils/api'
-import { Toast } from 'vant'
+import { register, officialWebsite } from "../utils/api";
+import { Toast } from "vant";
 export default {
   name: "IndexPage",
   components: {
@@ -251,7 +257,7 @@ export default {
   data() {
     return {
       pageShow: false,
-      codeText: '',
+      codeText: "",
       num: 60,
       name: "",
       name_error: "",
@@ -335,28 +341,28 @@ export default {
   watch: {
     name: {
       handler: function () {
-        if(this.name){
-          this.name_error = '';
+        if (this.name) {
+          this.name_error = "";
         }
       },
       immediate: true,
     },
     phone: {
       handler: function () {
-        if(this.phone){
-          this.phone_error = '';
+        if (this.phone) {
+          this.phone_error = "";
         }
       },
       immediate: true,
     },
     code: {
       handler: function () {
-        if(this.code){
-          this.code_error = '';
+        if (this.code) {
+          this.code_error = "";
         }
       },
       immediate: true,
-    }
+    },
   },
   mounted() {
     this.pageShow = true;
@@ -364,7 +370,7 @@ export default {
   methods: {
     getCode() {
       //获取验证码
-      if(!this.phone){
+      if (!this.phone) {
         this.phone_error = "请填写您的联系电话";
         return;
       }
@@ -373,13 +379,13 @@ export default {
         return;
       }
       Toast.loading({
-        message: '加载中...',
+        message: "加载中...",
         forbidClick: true,
       });
       register(this.$axios, {
         phone_number: this.phone,
         app_name: "橡树黑卡",
-      }).then(res => {
+      }).then((res) => {
         Toast.clear();
         this.session_code = res.session_code;
         this.timer();
@@ -408,12 +414,12 @@ export default {
       } else {
         this.code_error = "";
       }
-      if(!this.session_code){
-        Toast('请先获取验证码');
+      if (!this.session_code) {
+        Toast("请先获取验证码");
         return;
       }
       Toast.loading({
-        message: '加载中...',
+        message: "加载中...",
         forbidClick: true,
       });
       officialWebsite(this.$axios, {
@@ -421,27 +427,27 @@ export default {
         phone_number: this.phone,
         company: this.company_name,
         otp: this.code,
-        session_code: this.session_code
+        session_code: this.session_code,
       }).then(() => {
         Toast.clear();
-        Toast('提交成功，稍后会有专门商务联络，谢谢！');
-        this.phone = '';
-        this.company_name = '';
-        this.code = '';
-        this.name = '';
-      })
+        Toast("提交成功，稍后会有专门商务联络，谢谢！");
+        this.phone = "";
+        this.company_name = "";
+        this.code = "";
+        this.name = "";
+      });
     },
     timer() {
       let time = setInterval(() => {
         this.num--;
-        this.codeText = `${this.num}s后重新获取`
-        if(this.num <= 0){
+        this.codeText = `${this.num}s后重新获取`;
+        if (this.num <= 0) {
           clearInterval(time);
-          this.codeText = '';
+          this.codeText = "";
           this.num = 60;
         }
-      }, 1000)
-    }
+      }, 1000);
+    },
   },
 };
 </script>
@@ -535,10 +541,9 @@ export default {
 }
 .capacity-content2 {
   padding: 0 94px;
-  img{
+  img {
     width: 435px;
   }
-  
 }
 .show-list {
   margin-top: 70px;
@@ -551,7 +556,7 @@ export default {
 
 .capacity-content3 {
   padding: 0 76px 0 94px;
-  img{
+  img {
     width: 640px;
   }
 }
@@ -590,7 +595,7 @@ export default {
         color: #ff5001;
         font-weight: bold;
         display: inline-block;
-        border-bottom: 1PX solid #ff5001;
+        border-bottom: 1px solid #ff5001;
         margin-top: 32px;
       }
       ul {
@@ -603,15 +608,15 @@ export default {
       }
     }
     .active {
-      border: 1px solid #FF5001;
+      border: 1px solid #ff5001;
     }
   }
 }
 .client {
   padding: 72px 0;
   background-color: #fbfbfb;
-  .common-title{
-    .desc{
+  .common-title {
+    .desc {
       display: none;
     }
   }
@@ -620,7 +625,10 @@ export default {
   margin-top: 72px;
   width: 100%;
 }
-.mobile-img, .mobile-top, .mobile-kh, .mobile-item{
+.mobile-img,
+.mobile-top,
+.mobile-kh,
+.mobile-item {
   display: none;
 }
 @media screen and (max-width: 1200px) {
@@ -673,14 +681,14 @@ export default {
   }
 }
 @media screen and (max-width: 640px) {
-  .banner{
+  .banner {
     height: 200px;
     background: url("@/static/mobile/banner.png") no-repeat center center;
     background-size: auto 100%;
   }
-  .why-select-oak{
+  .why-select-oak {
     padding: 30px 0 40px;
-    .wrap{
+    .wrap {
       margin-top: 16px;
     }
   }
@@ -694,78 +702,78 @@ export default {
       margin-top: 8px;
     }
   }
-  .capacity{
-    .item{
+  .capacity {
+    .item {
       height: 160px;
       padding: 20px 0 0;
       font-size: 12px;
       font-weight: normal;
       display: none;
-      span{
+      span {
         font-size: 32px;
         display: block;
       }
-      img{
+      img {
         width: 65px;
         margin-bottom: 22px;
       }
     }
-    .mobile-item{
+    .mobile-item {
       display: block;
     }
-    .active{
+    .active {
       color: #333;
     }
   }
-  .capacity-content1{
+  .capacity-content1 {
     flex-wrap: wrap-reverse;
     padding: 16px 15px 10px;
-    border: 1PX solid #EBECF1;
+    border: 1px solid #ebecf1;
     margin-top: 8px;
     height: 250px;
-    img{
+    img {
       display: none;
     }
-    .mobile-img{
+    .mobile-img {
       display: block;
       width: 100%;
       margin-bottom: 10px;
     }
-    .text{
+    .text {
       font-size: 12px;
       color: #666;
-      .top{
+      .top {
         display: none;
       }
-      p{
+      p {
         line-height: 20px;
         padding: 4px 0;
-        span{
+        span {
           display: inline;
         }
       }
     }
   }
-  .plan .container{
+  .plan .container {
     flex-wrap: wrap;
   }
-  .mobile-top{
+  .mobile-top {
     padding-top: 24px;
     display: block;
     width: 100%;
-    h4{
+    h4 {
       font-size: 16px;
       color: #333;
     }
-    ul{
+    ul {
       display: flex;
       justify-content: space-between;
       margin-top: 24px;
-      li{
+      li {
         font-size: 12px;
         color: #999;
         text-align: center;
-        img{
+        img {
           display: block;
           width: 44px;
           height: 44px;
@@ -774,27 +782,27 @@ export default {
       }
     }
   }
-  .service-value{
+  .service-value {
     padding-bottom: 30px;
-    .list{
+    .list {
       margin-top: 15px;
-      .item{
+      .item {
         width: 49%;
         height: 200px;
-        border: 1PX solid #999;
+        border: 1px solid #999;
         overflow: hidden;
         margin-bottom: 8px;
-        img{
+        img {
           width: 48px;
           height: 48px;
           margin-top: 24px;
         }
-        .name{
+        .name {
           margin-top: 20px;
           font-size: 16px;
           border-bottom: none;
         }
-        ul{
+        ul {
           margin-top: 10px;
           color: #333;
           font-size: 12px;
@@ -803,18 +811,18 @@ export default {
       }
     }
   }
-  .client{
+  .client {
     background-color: #fff;
     padding: 30px 0;
-    .common-title{
-      .desc{
+    .common-title {
+      .desc {
         display: block;
       }
     }
-    img{
+    img {
       display: none;
     }
-    .mobile-kh{
+    .mobile-kh {
       display: block;
       margin-top: 16px;
     }

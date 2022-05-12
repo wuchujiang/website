@@ -1,33 +1,37 @@
 <template>
-  <section v-if="!hidePlan" :class="`free-plan ${clearFixed && 'clear-fixed'}`" :style="{zIndex: showForm ? 99 : 50}">
+  <section
+    v-if="!hidePlan"
+    :class="`free-plan ${clearFixed && 'clear-fixed'}`"
+    :style="{ zIndex: showForm ? 99 : 50 }"
+  >
     <div class="container">
-      <img class="img" src="@/static/img12.png" alt="">
+      <img class="img" src="@/static/img12.png" alt="" />
       <div class="free-get-plan" @click="showForm = true">免费获取方案</div>
-      <img @click="hidePlan = true" class="img-close" src="@/static/close.png" alt="">
+      <img
+        @click="hidePlan = true"
+        class="img-close"
+        src="@/static/close.png"
+        alt=""
+      />
     </div>
     <div v-if="showForm" class="form-dialog">
       <div class="form-dialog-main">
-        <img @click="showForm = false" class="form-dialog-close" src="@/static/close.png" alt="" />
+        <img
+          @click="showForm = false"
+          class="form-dialog-close"
+          src="@/static/close.png"
+          alt=""
+        />
         <img class="b-img" src="@/static/img11.png" alt="" />
         <div class="plan-form">
           <div class="mobile-top">
             <h4>这些企业都已免费获得定制会员方案</h4>
             <ul>
-              <li>
-                <img src="@/static/kh1.png" alt="" />省呗
-              </li>
-              <li>
-                <img src="@/static/kh2.png" alt="" />小赢卡贷
-              </li>
-              <li>
-                <img src="@/static/kh3.png" alt="" />keep
-              </li>
-              <li>
-                <img src="@/static/kh4.png" alt="" />榕树贷款
-              </li>
-              <li>
-                <img src="@/static/kh5.png" alt="" />新橙优品
-              </li>
+              <li><img src="@/static/kh1.png" alt="" />省呗</li>
+              <li><img src="@/static/kh5.png" alt="" />我来数科</li>
+              <li><img src="@/static/kh3.png" alt="" />keep</li>
+              <li><img src="@/static/kh4.png" alt="" />榕树贷款</li>
+              <li><img src="@/static/kh7.png" alt="" />新橙优品</li>
             </ul>
           </div>
           <h2>完善信息后 48小时内会有专门的商务人员与您对接</h2>
@@ -81,7 +85,9 @@
               autocomplete="off"
             />
             <div class="input-error">{{ code_error }}</div>
-            <div class="get-code" v-if="!codeText" @click="getCode">获取验证码</div>
+            <div class="get-code" v-if="!codeText" @click="getCode">
+              获取验证码
+            </div>
             <div class="get-code code-disable" v-else>{{ codeText }}</div>
           </div>
           <div class="plan-btn" @click="getPlan">免费获取方案</div>
@@ -92,12 +98,12 @@
 </template>
 
 <script>
-import { register, officialWebsite } from '../../utils/api'
-import { Toast } from 'vant'
+import { register, officialWebsite } from "../../utils/api";
+import { Toast } from "vant";
 export default {
   data() {
     return {
-      codeText: '',
+      codeText: "",
       num: 60,
       name: "",
       name_error: "",
@@ -109,12 +115,12 @@ export default {
       code_error: "",
       clearFixed: false,
       hidePlan: false,
-      showForm: false
+      showForm: false,
     };
   },
   mounted() {
     let footer_height = 290;
-    if(window.innerWidth < 641) {
+    if (window.innerWidth < 641) {
       footer_height = 400;
     }
     const timer = setTimeout(() => {
@@ -136,33 +142,33 @@ export default {
   watch: {
     name: {
       handler: function () {
-        if(this.name){
-          this.name_error = '';
+        if (this.name) {
+          this.name_error = "";
         }
       },
       immediate: true,
     },
     phone: {
       handler: function () {
-        if(this.phone){
-          this.phone_error = '';
+        if (this.phone) {
+          this.phone_error = "";
         }
       },
       immediate: true,
     },
     code: {
       handler: function () {
-        if(this.code){
-          this.code_error = '';
+        if (this.code) {
+          this.code_error = "";
         }
       },
       immediate: true,
-    }
+    },
   },
   methods: {
     getCode() {
       //获取验证码
-      if(!this.phone){
+      if (!this.phone) {
         this.phone_error = "请填写您的联系电话";
         return;
       }
@@ -171,13 +177,13 @@ export default {
         return;
       }
       Toast.loading({
-        message: '加载中...',
+        message: "加载中...",
         forbidClick: true,
       });
       register(this.$axios, {
         phone_number: this.phone,
         app_name: "橡树黑卡",
-      }).then(res => {
+      }).then((res) => {
         Toast.clear();
         this.session_code = res.session_code;
         this.timer();
@@ -206,12 +212,12 @@ export default {
       } else {
         this.code_error = "";
       }
-      if(!this.session_code){
-        Toast('请先获取验证码');
+      if (!this.session_code) {
+        Toast("请先获取验证码");
         return;
       }
       Toast.loading({
-        message: '加载中...',
+        message: "加载中...",
         forbidClick: true,
       });
       officialWebsite(this.$axios, {
@@ -219,27 +225,27 @@ export default {
         phone_number: this.phone,
         company: this.company_name,
         otp: this.code,
-        session_code: this.session_code
+        session_code: this.session_code,
       }).then(() => {
         Toast.clear();
-        Toast('提交成功，稍后会有专门商务联络，谢谢！');
-        this.phone = '';
-        this.company_name = '';
-        this.code = '';
-        this.name = '';
-      })
+        Toast("提交成功，稍后会有专门商务联络，谢谢！");
+        this.phone = "";
+        this.company_name = "";
+        this.code = "";
+        this.name = "";
+      });
     },
     timer() {
       let time = setInterval(() => {
         this.num--;
-        this.codeText = `${this.num}s后重新获取`
-        if(this.num <= 0){
+        this.codeText = `${this.num}s后重新获取`;
+        if (this.num <= 0) {
           clearInterval(time);
-          this.codeText = '';
+          this.codeText = "";
           this.num = 60;
         }
-      }, 1000)
-    }
+      }, 1000);
+    },
   },
 };
 </script>
@@ -267,13 +273,13 @@ export default {
   left: 0;
   bottom: 0;
   z-index: 50;
-  .container{
+  .container {
     padding: 0 100px;
     display: flex;
     justify-content: space-between;
     align-items: center;
     position: relative;
-    .img{
+    .img {
       width: 469px;
       transform: translateY(7px);
     }
@@ -313,7 +319,7 @@ export default {
   }
 }
 .free-get-plan {
-  background-color: #FF5001;
+  background-color: #ff5001;
   width: 246px;
   height: 50px;
   display: flex;
@@ -333,29 +339,29 @@ export default {
   position: absolute;
   left: 88px;
   top: 50px;
-  color: #FF5001;
+  color: #ff5001;
   font-size: 14px;
 }
 .clear-fixed {
   position: relative;
 }
-.img-close{
+.img-close {
   width: 44px;
   position: absolute;
   top: 0;
   right: 100px;
   cursor: pointer;
 }
-.form-dialog{
+.form-dialog {
   position: fixed;
   width: 100%;
   height: 100%;
   left: 0;
   top: 0;
   z-index: 52;
-  background-color: rgba(0,0,0,.5);
+  background-color: rgba(0, 0, 0, 0.5);
 }
-.form-dialog-main{
+.form-dialog-main {
   box-sizing: border-box;
   position: absolute;
   width: 1000px;
@@ -368,26 +374,26 @@ export default {
   justify-content: space-between;
   padding: 0 30px 0 0;
   border-radius: 5px;
-  .b-img{
+  .b-img {
     width: 427px;
     height: 515px;
   }
-  .plan-form{
+  .plan-form {
     padding-top: 30px;
-    h2{
+    h2 {
       padding-top: 0;
       font-size: 22px;
       text-align: left;
     }
-    .item input{
+    .item input {
       width: 420px;
     }
-    .plan-btn{
+    .plan-btn {
       margin: 25px auto 0;
     }
   }
 }
-.form-dialog-close{
+.form-dialog-close {
   position: absolute;
   width: 43px;
   height: 43px;
@@ -395,104 +401,104 @@ export default {
   top: 0;
   cursor: pointer;
 }
-.form-dialog-main .plan-form .item.code input{
+.form-dialog-main .plan-form .item.code input {
   width: 250px;
 }
-.mobile-top{
+.mobile-top {
   display: none;
 }
-@media screen and (max-width:1200px){
-  .free-plan ul li{
+@media screen and (max-width: 1200px) {
+  .free-plan ul li {
     width: 430px;
   }
-  .free-get-plan{
+  .free-get-plan {
     width: 180px;
   }
 }
-@media screen and (max-width:1024px){
-  .free-plan .container{
+@media screen and (max-width: 1024px) {
+  .free-plan .container {
     padding: 0 40px;
     height: 115px;
     align-items: center;
   }
-  .free-plan .img{
+  .free-plan .img {
     width: 300px;
   }
-  .free-get-plan{
+  .free-get-plan {
     margin-top: 0;
   }
-  .img-close{
-    right: 40px
+  .img-close {
+    right: 40px;
   }
 }
-@media screen and (max-width:640px){
-  .free-plan{
+@media screen and (max-width: 640px) {
+  .free-plan {
     height: 66px;
-    .container{
+    .container {
       padding: 0 12px;
       height: 66px;
-      img{
+      img {
         width: 200px !important;
         transform: translateY(0) !important;
       }
-      .img-close{
+      .img-close {
         width: 30px !important;
         height: 30px;
         right: 0;
       }
     }
   }
-  .free-get-plan{
+  .free-get-plan {
     width: 108px;
     height: 26px;
     margin-right: 24px;
     font-size: 12px;
   }
-  .form-dialog-main{
+  .form-dialog-main {
     width: 360px;
     height: 530px;
     padding: 0 12px;
-    background-color: #FBFBFB;
-    .b-img{
+    background-color: #fbfbfb;
+    .b-img {
       display: none;
     }
-    .plan-form{
-      h2{
+    .plan-form {
+      h2 {
         font-size: 14px;
         margin-top: 24px;
       }
-      .item{
+      .item {
         margin-top: 24px;
-        .text{
+        .text {
           width: 130px;
           font-size: 14px;
         }
-        .input-error{
+        .input-error {
           font-size: 12px;
           left: 80px;
           top: 42px;
         }
       }
-      .mobile-top{
+      .mobile-top {
         display: block;
         width: 100%;
-        h4{
+        h4 {
           font-size: 16px;
           color: #333;
         }
-        ul{
+        ul {
           display: flex;
           justify-content: space-between;
           margin-top: 24px;
           padding: 0;
-          li{
+          li {
             font-size: 12px;
             color: #999;
             text-align: center;
             margin-top: 0;
             width: 20%;
             height: auto;
-            img{
+            img {
               display: block;
               width: 44px;
               height: 44px;

@@ -651,13 +651,13 @@ __webpack_require__.r(__webpack_exports__);
 /* 43 */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__.p + "img/img11.bb54f33.png";
+module.exports = __webpack_require__.p + "img/img11.f4fa7ed.png";
 
 /***/ }),
 /* 44 */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__.p + "img/kh2.d1d86ba.png";
+module.exports = __webpack_require__.p + "img/kh7.2b8b3b8.png";
 
 /***/ }),
 /* 45 */
@@ -3249,9 +3249,9 @@ module.exports = __webpack_require__.p + "img/img12.e3e0f3d.png";
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony import */ var _node_modules_css_loader_dist_cjs_js_ref_7_oneOf_1_0_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_postcss_loader_src_index_js_ref_7_oneOf_1_1_node_modules_sass_loader_dist_cjs_js_ref_7_oneOf_1_2_node_modules_nuxt_components_dist_loader_js_ref_0_0_node_modules_vue_loader_lib_index_js_vue_loader_options_form_vue_vue_type_style_index_0_id_9e34d7e8_lang_scss_scoped_true___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(36);
-/* harmony import */ var _node_modules_css_loader_dist_cjs_js_ref_7_oneOf_1_0_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_postcss_loader_src_index_js_ref_7_oneOf_1_1_node_modules_sass_loader_dist_cjs_js_ref_7_oneOf_1_2_node_modules_nuxt_components_dist_loader_js_ref_0_0_node_modules_vue_loader_lib_index_js_vue_loader_options_form_vue_vue_type_style_index_0_id_9e34d7e8_lang_scss_scoped_true___WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_node_modules_css_loader_dist_cjs_js_ref_7_oneOf_1_0_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_postcss_loader_src_index_js_ref_7_oneOf_1_1_node_modules_sass_loader_dist_cjs_js_ref_7_oneOf_1_2_node_modules_nuxt_components_dist_loader_js_ref_0_0_node_modules_vue_loader_lib_index_js_vue_loader_options_form_vue_vue_type_style_index_0_id_9e34d7e8_lang_scss_scoped_true___WEBPACK_IMPORTED_MODULE_0__);
-/* harmony reexport (unknown) */ for(var __WEBPACK_IMPORT_KEY__ in _node_modules_css_loader_dist_cjs_js_ref_7_oneOf_1_0_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_postcss_loader_src_index_js_ref_7_oneOf_1_1_node_modules_sass_loader_dist_cjs_js_ref_7_oneOf_1_2_node_modules_nuxt_components_dist_loader_js_ref_0_0_node_modules_vue_loader_lib_index_js_vue_loader_options_form_vue_vue_type_style_index_0_id_9e34d7e8_lang_scss_scoped_true___WEBPACK_IMPORTED_MODULE_0__) if(["default"].indexOf(__WEBPACK_IMPORT_KEY__) < 0) (function(key) { __webpack_require__.d(__webpack_exports__, key, function() { return _node_modules_css_loader_dist_cjs_js_ref_7_oneOf_1_0_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_postcss_loader_src_index_js_ref_7_oneOf_1_1_node_modules_sass_loader_dist_cjs_js_ref_7_oneOf_1_2_node_modules_nuxt_components_dist_loader_js_ref_0_0_node_modules_vue_loader_lib_index_js_vue_loader_options_form_vue_vue_type_style_index_0_id_9e34d7e8_lang_scss_scoped_true___WEBPACK_IMPORTED_MODULE_0__[key]; }) }(__WEBPACK_IMPORT_KEY__));
+/* harmony import */ var _node_modules_css_loader_dist_cjs_js_ref_7_oneOf_1_0_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_postcss_loader_src_index_js_ref_7_oneOf_1_1_node_modules_sass_loader_dist_cjs_js_ref_7_oneOf_1_2_node_modules_nuxt_components_dist_loader_js_ref_0_0_node_modules_vue_loader_lib_index_js_vue_loader_options_form_vue_vue_type_style_index_0_id_247fb724_lang_scss_scoped_true___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(36);
+/* harmony import */ var _node_modules_css_loader_dist_cjs_js_ref_7_oneOf_1_0_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_postcss_loader_src_index_js_ref_7_oneOf_1_1_node_modules_sass_loader_dist_cjs_js_ref_7_oneOf_1_2_node_modules_nuxt_components_dist_loader_js_ref_0_0_node_modules_vue_loader_lib_index_js_vue_loader_options_form_vue_vue_type_style_index_0_id_247fb724_lang_scss_scoped_true___WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_node_modules_css_loader_dist_cjs_js_ref_7_oneOf_1_0_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_postcss_loader_src_index_js_ref_7_oneOf_1_1_node_modules_sass_loader_dist_cjs_js_ref_7_oneOf_1_2_node_modules_nuxt_components_dist_loader_js_ref_0_0_node_modules_vue_loader_lib_index_js_vue_loader_options_form_vue_vue_type_style_index_0_id_247fb724_lang_scss_scoped_true___WEBPACK_IMPORTED_MODULE_0__);
+/* harmony reexport (unknown) */ for(var __WEBPACK_IMPORT_KEY__ in _node_modules_css_loader_dist_cjs_js_ref_7_oneOf_1_0_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_postcss_loader_src_index_js_ref_7_oneOf_1_1_node_modules_sass_loader_dist_cjs_js_ref_7_oneOf_1_2_node_modules_nuxt_components_dist_loader_js_ref_0_0_node_modules_vue_loader_lib_index_js_vue_loader_options_form_vue_vue_type_style_index_0_id_247fb724_lang_scss_scoped_true___WEBPACK_IMPORTED_MODULE_0__) if(["default"].indexOf(__WEBPACK_IMPORT_KEY__) < 0) (function(key) { __webpack_require__.d(__webpack_exports__, key, function() { return _node_modules_css_loader_dist_cjs_js_ref_7_oneOf_1_0_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_postcss_loader_src_index_js_ref_7_oneOf_1_1_node_modules_sass_loader_dist_cjs_js_ref_7_oneOf_1_2_node_modules_nuxt_components_dist_loader_js_ref_0_0_node_modules_vue_loader_lib_index_js_vue_loader_options_form_vue_vue_type_style_index_0_id_247fb724_lang_scss_scoped_true___WEBPACK_IMPORTED_MODULE_0__[key]; }) }(__WEBPACK_IMPORT_KEY__));
 
 
 /***/ }),
@@ -3262,12 +3262,12 @@ __webpack_require__.r(__webpack_exports__);
 // ESM COMPAT FLAG
 __webpack_require__.r(__webpack_exports__);
 
-// CONCATENATED MODULE: ./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/@nuxt/components/dist/loader.js??ref--0-0!./node_modules/vue-loader/lib??vue-loader-options!./components/form/form.vue?vue&type=template&id=9e34d7e8&scoped=true&
-var render = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return (!_vm.hidePlan)?_c('section',{class:("free-plan " + (_vm.clearFixed && 'clear-fixed')),style:({zIndex: _vm.showForm ? 99 : 50})},[_vm._ssrNode("<div class=\"container\" data-v-9e34d7e8><img"+(_vm._ssrAttr("src",__webpack_require__(48)))+" alt class=\"img\" data-v-9e34d7e8> <div class=\"free-get-plan\" data-v-9e34d7e8>免费获取方案</div> <img"+(_vm._ssrAttr("src",__webpack_require__(35)))+" alt class=\"img-close\" data-v-9e34d7e8></div> "+((_vm.showForm)?("<div class=\"form-dialog\" data-v-9e34d7e8><div class=\"form-dialog-main\" data-v-9e34d7e8><img"+(_vm._ssrAttr("src",__webpack_require__(35)))+" alt class=\"form-dialog-close\" data-v-9e34d7e8> <img"+(_vm._ssrAttr("src",__webpack_require__(43)))+" alt class=\"b-img\" data-v-9e34d7e8> <div class=\"plan-form\" data-v-9e34d7e8><div class=\"mobile-top\" data-v-9e34d7e8><h4 data-v-9e34d7e8>这些企业都已免费获得定制会员方案</h4> <ul data-v-9e34d7e8><li data-v-9e34d7e8><img"+(_vm._ssrAttr("src",__webpack_require__(23)))+" alt data-v-9e34d7e8>省呗\n            </li> <li data-v-9e34d7e8><img"+(_vm._ssrAttr("src",__webpack_require__(44)))+" alt data-v-9e34d7e8>小赢卡贷\n            </li> <li data-v-9e34d7e8><img"+(_vm._ssrAttr("src",__webpack_require__(24)))+" alt data-v-9e34d7e8>keep\n            </li> <li data-v-9e34d7e8><img"+(_vm._ssrAttr("src",__webpack_require__(25)))+" alt data-v-9e34d7e8>榕树贷款\n            </li> <li data-v-9e34d7e8><img"+(_vm._ssrAttr("src",__webpack_require__(26)))+" alt data-v-9e34d7e8>新橙优品\n            </li></ul></div> <h2 data-v-9e34d7e8>完善信息后 48小时内会有专门的商务人员与您对接</h2> <div class=\"item\" data-v-9e34d7e8><div class=\"text\" data-v-9e34d7e8><span data-v-9e34d7e8>*</span>您的姓名：</div> <input type=\"text\" maxlength=\"10\" placeholder=\"请输入姓名\" name id=\"name\" autocomplete=\"off\""+(_vm._ssrAttr("value",(_vm.name)))+" data-v-9e34d7e8> <div class=\"input-error\" data-v-9e34d7e8>"+_vm._ssrEscape(_vm._s(_vm.name_error))+"</div></div> <div class=\"item\" data-v-9e34d7e8><div class=\"text\" data-v-9e34d7e8>公司名称：</div> <input type=\"text\" placeholder=\"请输入公司名称\" maxlength=\"100\" name id=\"companyName\" autocomplete=\"off\""+(_vm._ssrAttr("value",(_vm.company_name)))+" data-v-9e34d7e8> <div class=\"input-error\" data-v-9e34d7e8>"+_vm._ssrEscape(_vm._s(_vm.company_name_error))+"</div></div> <div class=\"item\" data-v-9e34d7e8><div class=\"text\" data-v-9e34d7e8><span data-v-9e34d7e8>*</span>联系电话：</div> <input type=\"text\" placeholder=\"请输入联系电话\" maxlength=\"30\" name id=\"phone\" autocomplete=\"off\""+(_vm._ssrAttr("value",(_vm.phone)))+" data-v-9e34d7e8> <div class=\"input-error\" data-v-9e34d7e8>"+_vm._ssrEscape(_vm._s(_vm.phone_error))+"</div></div> <div class=\"item\" data-v-9e34d7e8><div class=\"text\" data-v-9e34d7e8><span data-v-9e34d7e8>*</span>验证码：</div> <input type=\"text\" placeholder=\"请输入验证码\" name id=\"code\" autocomplete=\"off\""+(_vm._ssrAttr("value",(_vm.code)))+" data-v-9e34d7e8> <div class=\"input-error\" data-v-9e34d7e8>"+_vm._ssrEscape(_vm._s(_vm.code_error))+"</div> "+((!_vm.codeText)?("<div class=\"get-code\" data-v-9e34d7e8>获取验证码</div>"):("<div class=\"get-code code-disable\" data-v-9e34d7e8>"+_vm._ssrEscape(_vm._s(_vm.codeText))+"</div>"))+"</div> <div class=\"plan-btn\" data-v-9e34d7e8>免费获取方案</div></div></div></div>"):"<!---->"))]):_vm._e()}
+// CONCATENATED MODULE: ./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/@nuxt/components/dist/loader.js??ref--0-0!./node_modules/vue-loader/lib??vue-loader-options!./components/form/form.vue?vue&type=template&id=247fb724&scoped=true&
+var render = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return (!_vm.hidePlan)?_c('section',{class:("free-plan " + (_vm.clearFixed && 'clear-fixed')),style:({ zIndex: _vm.showForm ? 99 : 50 })},[_vm._ssrNode("<div class=\"container\" data-v-247fb724><img"+(_vm._ssrAttr("src",__webpack_require__(48)))+" alt class=\"img\" data-v-247fb724> <div class=\"free-get-plan\" data-v-247fb724>免费获取方案</div> <img"+(_vm._ssrAttr("src",__webpack_require__(35)))+" alt class=\"img-close\" data-v-247fb724></div> "+((_vm.showForm)?("<div class=\"form-dialog\" data-v-247fb724><div class=\"form-dialog-main\" data-v-247fb724><img"+(_vm._ssrAttr("src",__webpack_require__(35)))+" alt class=\"form-dialog-close\" data-v-247fb724> <img"+(_vm._ssrAttr("src",__webpack_require__(43)))+" alt class=\"b-img\" data-v-247fb724> <div class=\"plan-form\" data-v-247fb724><div class=\"mobile-top\" data-v-247fb724><h4 data-v-247fb724>这些企业都已免费获得定制会员方案</h4> <ul data-v-247fb724><li data-v-247fb724><img"+(_vm._ssrAttr("src",__webpack_require__(23)))+" alt data-v-247fb724>省呗</li> <li data-v-247fb724><img"+(_vm._ssrAttr("src",__webpack_require__(26)))+" alt data-v-247fb724>我来数科</li> <li data-v-247fb724><img"+(_vm._ssrAttr("src",__webpack_require__(24)))+" alt data-v-247fb724>keep</li> <li data-v-247fb724><img"+(_vm._ssrAttr("src",__webpack_require__(25)))+" alt data-v-247fb724>榕树贷款</li> <li data-v-247fb724><img"+(_vm._ssrAttr("src",__webpack_require__(44)))+" alt data-v-247fb724>新橙优品</li></ul></div> <h2 data-v-247fb724>完善信息后 48小时内会有专门的商务人员与您对接</h2> <div class=\"item\" data-v-247fb724><div class=\"text\" data-v-247fb724><span data-v-247fb724>*</span>您的姓名：</div> <input type=\"text\" maxlength=\"10\" placeholder=\"请输入姓名\" name id=\"name\" autocomplete=\"off\""+(_vm._ssrAttr("value",(_vm.name)))+" data-v-247fb724> <div class=\"input-error\" data-v-247fb724>"+_vm._ssrEscape(_vm._s(_vm.name_error))+"</div></div> <div class=\"item\" data-v-247fb724><div class=\"text\" data-v-247fb724>公司名称：</div> <input type=\"text\" placeholder=\"请输入公司名称\" maxlength=\"100\" name id=\"companyName\" autocomplete=\"off\""+(_vm._ssrAttr("value",(_vm.company_name)))+" data-v-247fb724> <div class=\"input-error\" data-v-247fb724>"+_vm._ssrEscape(_vm._s(_vm.company_name_error))+"</div></div> <div class=\"item\" data-v-247fb724><div class=\"text\" data-v-247fb724><span data-v-247fb724>*</span>联系电话：</div> <input type=\"text\" placeholder=\"请输入联系电话\" maxlength=\"30\" name id=\"phone\" autocomplete=\"off\""+(_vm._ssrAttr("value",(_vm.phone)))+" data-v-247fb724> <div class=\"input-error\" data-v-247fb724>"+_vm._ssrEscape(_vm._s(_vm.phone_error))+"</div></div> <div class=\"item\" data-v-247fb724><div class=\"text\" data-v-247fb724><span data-v-247fb724>*</span>验证码：</div> <input type=\"text\" placeholder=\"请输入验证码\" name id=\"code\" autocomplete=\"off\""+(_vm._ssrAttr("value",(_vm.code)))+" data-v-247fb724> <div class=\"input-error\" data-v-247fb724>"+_vm._ssrEscape(_vm._s(_vm.code_error))+"</div> "+((!_vm.codeText)?("<div class=\"get-code\" data-v-247fb724>\n            获取验证码\n          </div>"):("<div class=\"get-code code-disable\" data-v-247fb724>"+_vm._ssrEscape(_vm._s(_vm.codeText))+"</div>"))+"</div> <div class=\"plan-btn\" data-v-247fb724>免费获取方案</div></div></div></div>"):"<!---->"))]):_vm._e()}
 var staticRenderFns = []
 
 
-// CONCATENATED MODULE: ./components/form/form.vue?vue&type=template&id=9e34d7e8&scoped=true&
+// CONCATENATED MODULE: ./components/form/form.vue?vue&type=template&id=247fb724&scoped=true&
 
 // EXTERNAL MODULE: ./utils/api.js + 2 modules
 var api = __webpack_require__(45);
@@ -3369,12 +3369,18 @@ var external_vant_ = __webpack_require__(7);
 //
 //
 //
+//
+//
+//
+//
+//
+//
 
 
 /* harmony default export */ var formvue_type_script_lang_js_ = ({
   data() {
     return {
-      codeText: '',
+      codeText: "",
       num: 60,
       name: "",
       name_error: "",
@@ -3419,7 +3425,7 @@ var external_vant_ = __webpack_require__(7);
     name: {
       handler: function () {
         if (this.name) {
-          this.name_error = '';
+          this.name_error = "";
         }
       },
       immediate: true
@@ -3427,7 +3433,7 @@ var external_vant_ = __webpack_require__(7);
     phone: {
       handler: function () {
         if (this.phone) {
-          this.phone_error = '';
+          this.phone_error = "";
         }
       },
       immediate: true
@@ -3435,7 +3441,7 @@ var external_vant_ = __webpack_require__(7);
     code: {
       handler: function () {
         if (this.code) {
-          this.code_error = '';
+          this.code_error = "";
         }
       },
       immediate: true
@@ -3455,7 +3461,7 @@ var external_vant_ = __webpack_require__(7);
       }
 
       external_vant_["Toast"].loading({
-        message: '加载中...',
+        message: "加载中...",
         forbidClick: true
       });
       Object(api["b" /* register */])(this.$axios, {
@@ -3496,12 +3502,12 @@ var external_vant_ = __webpack_require__(7);
       }
 
       if (!this.session_code) {
-        Object(external_vant_["Toast"])('请先获取验证码');
+        Object(external_vant_["Toast"])("请先获取验证码");
         return;
       }
 
       external_vant_["Toast"].loading({
-        message: '加载中...',
+        message: "加载中...",
         forbidClick: true
       });
       Object(api["a" /* officialWebsite */])(this.$axios, {
@@ -3512,11 +3518,11 @@ var external_vant_ = __webpack_require__(7);
         session_code: this.session_code
       }).then(() => {
         external_vant_["Toast"].clear();
-        Object(external_vant_["Toast"])('提交成功，稍后会有专门商务联络，谢谢！');
-        this.phone = '';
-        this.company_name = '';
-        this.code = '';
-        this.name = '';
+        Object(external_vant_["Toast"])("提交成功，稍后会有专门商务联络，谢谢！");
+        this.phone = "";
+        this.company_name = "";
+        this.code = "";
+        this.name = "";
       });
     },
 
@@ -3527,7 +3533,7 @@ var external_vant_ = __webpack_require__(7);
 
         if (this.num <= 0) {
           clearInterval(time);
-          this.codeText = '';
+          this.codeText = "";
           this.num = 60;
         }
       }, 1000);
@@ -3559,7 +3565,7 @@ var component = Object(componentNormalizer["a" /* default */])(
   staticRenderFns,
   false,
   injectStyles,
-  "9e34d7e8",
+  "247fb724",
   "5c789a2f"
   
 )

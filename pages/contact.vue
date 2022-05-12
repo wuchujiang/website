@@ -57,10 +57,10 @@
             <h4>这些企业都已免费获得定制会员方案</h4>
             <ul>
               <li><img src="@/static/kh1.png" alt="" />省呗</li>
-              <li><img src="@/static/kh2.png" alt="" />小赢卡贷</li>
+              <li><img src="@/static/kh5.png" alt="" />我来数科</li>
               <li><img src="@/static/kh3.png" alt="" />keep</li>
               <li><img src="@/static/kh4.png" alt="" />榕树贷款</li>
-              <li><img src="@/static/kh5.png" alt="" />新橙优品</li>
+              <li><img src="@/static/kh7.png" alt="" />新橙优品</li>
             </ul>
           </div>
           <div class="plan-form">
