@@ -271,6 +271,7 @@ export default {
     padding: 0 100px;
     display: flex;
     justify-content: space-between;
+    align-items: center;
     position: relative;
     .img{
       width: 469px;

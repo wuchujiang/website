@@ -6,7 +6,7 @@
       <section class="saas-tab">
         <div class="container">
           <div
-            :class="{'item': true, 'active': current === index}"
+            :class="{ item: true, active: current === index }"
             v-for="(item, index) in tab"
             :key="item"
             @click="scrollView(index)"
@@ -17,7 +17,13 @@
       </section>
       <section class="mobile-second-nav">
         <ul>
-          <li v-for="item in sec_list" :key="item.title" :class="{active: item.type === 'saas'}"><nuxt-link :to="item.url">{{ item.title }}</nuxt-link></li>
+          <li
+            v-for="item in sec_list"
+            :key="item.title"
+            :class="{ active: item.type === 'saas' }"
+          >
+            <nuxt-link :to="item.url">{{ item.title }}</nuxt-link>
+          </li>
         </ul>
       </section>
       <section class="section1" ref="section1">
@@ -25,14 +31,18 @@
           <div class="common-title">
             <div class="en">digitization</div>
             <div class="name">数字化会员产品设计</div>
-            <div class="desc">橡树支持对会员设计，及全链路的各项核心数据监控</div>
+            <div class="desc">
+              橡树支持对会员设计，及全链路的各项核心数据监控
+            </div>
           </div>
           <section class="mobile-section1-main">
-            <img src="@/static/mobile/img4.png" alt="">
+            <img src="@/static/mobile/img4.png" alt="" />
             <h4>丰富的权益资源</h4>
             <p>橡树整合内外部资源，拥有多平台数千个虚拟服务产品的权益资源。</p>
-            <img src="@/static/mobile/img5.png" alt="">
-            <p>通过SasS运营赋能的方式快速、定制化输出，可广泛应用于用户生活的不同场景，发挥成本和规模交易的优势，助力客户促活，提升交易量。</p>
+            <img src="@/static/mobile/img5.png" alt="" />
+            <p>
+              通过SasS运营赋能的方式快速、定制化输出，可广泛应用于用户生活的不同场景，发挥成本和规模交易的优势，助力客户促活，提升交易量。
+            </p>
           </section>
           <div class="section1-main">
             <div class="left">
@@ -67,7 +77,9 @@
           <div class="common-title">
             <div class="en">backstage</div>
             <div class="name">会员管理后台</div>
-            <div class="desc">橡树支持对会员设计，及全链路的各项核心数据监控</div>
+            <div class="desc">
+              橡树支持对会员设计，及全链路的各项核心数据监控
+            </div>
           </div>
           <div class="section2-main">
             <ul>
@@ -80,16 +92,16 @@
             <img src="@/static/img3.png" alt="" />
           </div>
           <div class="mobile-section2-main">
-            <img src="@/static/mobile/img6.png" alt="">
+            <img src="@/static/mobile/img6.png" alt="" />
           </div>
         </div>
       </section>
       <section class="section3" ref="section3">
         <div class="container">
           <div class="common-title">
-            <div class="en">Technical </div>
+            <div class="en">Technical</div>
             <div class="name">敏捷高效的技术能力</div>
-            <div class="desc">持续迭代  快速上线</div>
+            <div class="desc">持续迭代 快速上线</div>
           </div>
           <div class="section3-main">
             <img src="@/static/img4.png" alt="" />
@@ -100,7 +112,9 @@
                 <li>持续迭代</li>
               </ul>
               <div class="jishu">
-                <div>3384次提交</div>     <div>306个分支</div>    <div>148个标签</div>
+                <div>3384次提交</div>
+                <div>306个分支</div>
+                <div>148个标签</div>
               </div>
               <div class="item">
                 开发图案经验丰富，累计开发上线50+项目，近一年上线20+项目
@@ -138,9 +152,9 @@ export default {
       current: 0,
       pageShow: false,
       sec_list: [
-        {title: '会员SaaS服务', url: "/saas", type: 'saas'},
-        {title: '精细化运营服务', url: "/operation", type: 'operation'}
-      ]
+        { title: "会员SaaS服务", url: "/saas", type: "saas" },
+        { title: "精细化运营服务", url: "/operation", type: "operation" },
+      ],
     };
   },
   head() {
@@ -173,7 +187,7 @@ export default {
 };
 </script>
 <style lang="scss" scoped>
-.saas-banner{
+.saas-banner {
   width: 100%;
   height: 430px;
   background: url("@/static/saas-banner.png") no-repeat center center;
@@ -186,18 +200,19 @@ export default {
     color: #333;
     font-weight: bold;
   }
-  .desc{
+  .desc {
     display: none;
   }
 }
-.section1{
+.section1 {
   padding-bottom: 40px;
 }
 .section1-main {
   display: flex;
   padding: 0 40px 0 80px;
   justify-content: space-between;
-  .left{
+  align-items: center;
+  .left {
     padding-top: 88px;
     p {
       font-size: 30px;
@@ -218,8 +233,8 @@ export default {
         }
       }
     }
-  } 
-  .img1{
+  }
+  .img1 {
     width: 612px;
   }
 }
@@ -241,27 +256,27 @@ export default {
       min-height: 60px;
     }
   }
-  .img2{
+  .img2 {
     width: 644px;
   }
 }
 .section2 {
   padding: 72px 0;
-  .section2-main{
+  .section2-main {
     margin-top: 44px;
     display: flex;
     align-items: center;
-    ul{
+    ul {
       width: 40%;
       padding-left: 200px;
-      li{
+      li {
         color: #333;
         font-size: 16px;
         line-height: 60px;
         font-weight: bold;
       }
     }
-    img{
+    img {
       width: 662px;
     }
   }
@@ -288,7 +303,7 @@ export default {
         position: absolute;
         width: 33px;
         height: 2px;
-        background-color: #4A4A4A;
+        background-color: #4a4a4a;
         left: 0;
         top: -10px;
       }
@@ -308,7 +323,7 @@ export default {
       align-items: center;
       padding: 0 10px;
       position: relative;
-      &::after{
+      &::after {
         content: "";
         position: absolute;
         width: 100%;
@@ -320,72 +335,76 @@ export default {
     }
   }
 }
-.mobile-section2-main, .mobile-section1-main, .mobile-img, .mobile-second-nav, .jishu{
+.mobile-section2-main,
+.mobile-section1-main,
+.mobile-img,
+.mobile-second-nav,
+.jishu {
   display: none;
 }
 
-@media screen and (max-width:1024px){
-  .saas-banner{
+@media screen and (max-width: 1024px) {
+  .saas-banner {
     height: 300px;
   }
-  .saas-tab .item{
+  .saas-tab .item {
     margin: 0 15px;
   }
-  .section1-main{
+  .section1-main {
     padding: 50px 30px 0;
     justify-content: center;
   }
   .section1-main {
-    .left{
+    .left {
       padding-top: 0;
-      p{
+      p {
         font-size: 24px;
       }
     }
     flex-wrap: wrap;
-    .img1{
+    .img1 {
       width: 500px;
     }
   }
-  .section1-2{
+  .section1-2 {
     padding: 30px;
   }
-  .section1-2 .container{
+  .section1-2 .container {
     justify-content: center;
     flex-wrap: wrap;
     padding: 0;
   }
-  .section1-2 .container > img{
+  .section1-2 .container > img {
     max-width: 100%;
   }
-  .section1-2 .text{
+  .section1-2 .text {
     margin-top: 30px;
     width: auto;
     padding: 0 30px;
   }
-  .section2{
-    .section2-main{
+  .section2 {
+    .section2-main {
       flex-wrap: wrap;
-      ul{
+      ul {
         width: 100%;
       }
     }
   }
-  .section3-main{
+  .section3-main {
     padding: 0 30px;
     justify-content: center;
     flex-wrap: wrap;
   }
-  .section3-main .right{
+  .section3-main .right {
     margin-top: 30px;
   }
 }
 
-@media screen and (max-width:640px){
-  .saas-banner{
+@media screen and (max-width: 640px) {
+  .saas-banner {
     display: none;
   }
-  .section1{
+  .section1 {
     padding-top: 42px;
   }
   .common-title {
@@ -401,63 +420,64 @@ export default {
       color: #666;
     }
   }
-  .section1-main, .section1-2{
+  .section1-main,
+  .section1-2 {
     display: none;
   }
-  .mobile-section1-main{
+  .mobile-section1-main {
     color: #666;
     display: block;
-    img{
+    img {
       display: block;
       margin: 24px auto;
     }
-    h4{
+    h4 {
       font-size: 14px;
       padding: 0 14px 10px;
     }
-    p{
+    p {
       font-size: 12px;
       padding: 0 14px;
     }
   }
-  .section2{
-    background-color: #FBFBFB;
+  .section2 {
+    background-color: #fbfbfb;
     padding: 35px 0 24px;
   }
-  .section2 .section2-main{
+  .section2 .section2-main {
     display: none;
   }
-  .mobile-section2-main{
+  .mobile-section2-main {
     display: block;
     margin-top: 20px;
   }
-  .section3{
+  .section3 {
     padding-bottom: 44px;
   }
-  .section3-main{
+  .section3-main {
     padding: 0;
     margin-top: 16px;
-    img{
+    img {
       display: none;
     }
-    .mobile-img{
+    .mobile-img {
       display: block;
       width: 292px;
       height: 292px !important;
       margin: 0 auto;
     }
-    .right{
-      .item{
+    .right {
+      .item {
         font-size: 12px;
         color: #666;
         line-height: 24px;
         margin-top: 0;
         letter-spacing: 2px;
         text-indent: 1.2em;
-        &::before{
+        &::before {
           display: none;
         }
-        &::after{
+        &::after {
           content: "·";
           position: absolute;
           left: -10px;
@@ -465,19 +485,19 @@ export default {
         }
       }
     }
-    ul{
+    ul {
       display: none;
     }
   }
-  .mobile-second-nav{
+  .mobile-second-nav {
     display: block;
   }
-  .jishu{
+  .jishu {
     display: block;
     display: flex;
     justify-content: space-between;
     font-size: 14px;
-    color: #FF5001;
+    color: #ff5001;
     font-weight: bold;
     padding: 0 40px 20px;
   }

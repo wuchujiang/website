@@ -17,7 +17,13 @@
       </section>
       <section class="mobile-second-nav">
         <ul>
-          <li v-for="item in sec_list" :key="item.title" :class="{active: item.type === 'operation'}"><nuxt-link :to="item.url">{{ item.title }}</nuxt-link></li>
+          <li
+            v-for="item in sec_list"
+            :key="item.title"
+            :class="{ active: item.type === 'operation' }"
+          >
+            <nuxt-link :to="item.url">{{ item.title }}</nuxt-link>
+          </li>
         </ul>
       </section>
       <section class="section1" ref="section1">
@@ -68,12 +74,14 @@
         </div>
         <div class="mobile-section2-main">
           <img src="@/static/mobile/img11.png" alt="" />
-          <p>针对客户需要，可以制定的分级式套餐组合，拉动向上销售，提高购买率，从而实现ARPU值提升。</p>
+          <p>
+            针对客户需要，可以制定的分级式套餐组合，拉动向上销售，提高购买率，从而实现ARPU值提升。
+          </p>
         </div>
       </section>
       <section class="formulate" ref="section3">
         <div class="common-title">
-          <div class="en">Technical </div>
+          <div class="en">Technical</div>
           <div class="name">用户分层及策略制定</div>
           <div class="desc">
             多平台整合的销售数据和专业的运营团队，可帮助客户构建用户画像，结合用户标签和消费场景，对用户进行科学化、系统化的分层并制定相应策略。
@@ -81,7 +89,11 @@
         </div>
         <div class="container">
           <img class="formulate-img" src="@/static/img9.png" alt="" />
-          <img class="mobile-formulate-img" src="@/static/mobile/img12.png" alt="" />
+          <img
+            class="mobile-formulate-img"
+            src="@/static/mobile/img12.png"
+            alt=""
+          />
         </div>
       </section>
       <oakForm />
@@ -107,9 +119,9 @@ export default {
       current: 0,
       pageShow: false,
       sec_list: [
-        {title: '会员SaaS服务', url: "/saas", type: 'saas'},
-        {title: '精细化运营服务', url: "/operation", type: 'operation'}
-      ]
+        { title: "会员SaaS服务", url: "/saas", type: "saas" },
+        { title: "精细化运营服务", url: "/operation", type: "operation" },
+      ],
     };
   },
   head() {
@@ -142,7 +154,7 @@ export default {
 };
 </script>
 <style lang="scss" scoped>
-.operation-banner{
+.operation-banner {
   width: 100%;
   height: 430px;
   background: url("@/static/operation-banner.png") no-repeat center center;
@@ -158,7 +170,7 @@ export default {
     color: #333;
     font-weight: bold;
   }
-  .des{
+  .des {
     font-size: 20px;
     color: #666;
     margin-top: 10px;
@@ -199,7 +211,7 @@ export default {
         min-height: 60px;
       }
     }
-    img{
+    img {
       width: 640px;
     }
   }
@@ -213,11 +225,12 @@ export default {
       margin: 12px auto 0;
     }
   }
-  .container{
+  .container {
     display: flex;
     justify-content: center;
+    align-items: center;
   }
-  img{
+  img {
     width: 1028px;
   }
 }
@@ -225,44 +238,46 @@ export default {
   display: block;
   margin: 72px auto 0;
 }
-.section2{
-  .common-title{
-    .desc{
+.section2 {
+  .common-title {
+    .desc {
       display: none;
     }
   }
 }
-.mobile-formulate-img, .mobile-second-nav, .mobile-operation-list, .mobile-section2-main{
+.mobile-formulate-img,
+.mobile-second-nav,
+.mobile-operation-list,
+.mobile-section2-main {
   display: none;
 }
 
-
-@media screen and (max-width:1024px){
-  .operation-banner{
+@media screen and (max-width: 1024px) {
+  .operation-banner {
     height: 300px;
   }
-  .saas-tab .item{
+  .saas-tab .item {
     margin: 0 15px;
   }
-  .common-title .name{
-    font-size: 26px
+  .common-title .name {
+    font-size: 26px;
   }
-  .operation-list .item{
+  .operation-list .item {
     width: 32%;
   }
-  .period .container{
+  .period .container {
     padding: 0 30px;
     flex-wrap: wrap;
     justify-content: center;
   }
-  .period .text{
+  .period .text {
     width: auto;
     padding: 30px 30px 0;
   }
 }
 
-@media screen and (max-width:640px){
-  .operation-banner{
+@media screen and (max-width: 640px) {
+  .operation-banner {
     display: none;
   }
   .common-title {
@@ -278,35 +293,35 @@ export default {
       color: #666;
     }
   }
-  .section1{
+  .section1 {
     padding: 42px 12px;
   }
-  .operation-list{
+  .operation-list {
     display: none;
   }
-  .mobile-operation-list{
+  .mobile-operation-list {
     display: block;
     margin-top: 13px;
   }
-  .section2{
+  .section2 {
     padding: 35px 12px;
-    background-color: #FBFBFB;
-    .common-title{
-      .desc{
+    background-color: #fbfbfb;
+    .common-title {
+      .desc {
         display: block;
       }
     }
-    .container{
+    .container {
       display: none;
     }
-    .mobile-section2-main{
+    .mobile-section2-main {
       display: block;
-      img{
+      img {
         display: block;
         width: 188px;
         margin: 22px auto 0;
       }
-      p{
+      p {
         font-size: 12px;
         color: #666;
         line-height: 20px;
@@ -314,22 +329,22 @@ export default {
       }
     }
   }
-  .formulate{
+  .formulate {
     padding: 78px 12px 44px;
-    .common-title{
-      .desc{
+    .common-title {
+      .desc {
         width: auto;
       }
     }
-    .formulate-img{
+    .formulate-img {
       display: none;
     }
-    .mobile-formulate-img{
+    .mobile-formulate-img {
       display: block;
       margin-top: 24px;
     }
   }
-  .mobile-second-nav{
+  .mobile-second-nav {
     display: block;
   }
 }

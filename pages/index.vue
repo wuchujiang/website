@@ -561,6 +561,7 @@ export default {
 .plan .container {
   display: flex;
   justify-content: space-between;
+  align-items: center;
 }
 .plan img {
   width: 40%;

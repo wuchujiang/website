@@ -6,13 +6,18 @@
         <p>合作电话：400-150-9669</p>
         <p>业务合作：marketing@oakblack.com</p>
         <p>媒体合作：media@oakblack.com</p>
-        <a class='qqkf' target="_blank" href="http://wpa.qq.com/msgrd?v=3&uin=&site=qq&menu=yes">QQ咨询</a>
+        <a
+          class="qqkf"
+          target="_blank"
+          href="http://wpa.qq.com/msgrd?v=3&uin=&site=qq&menu=yes"
+          >QQ咨询</a
+        >
       </div>
       <div class="r-nav">
-        <div class="item" v-for="(item) in nav" :key="item.name">
+        <div class="item" v-for="item in nav" :key="item.name">
           <h2>{{ item.name }}</h2>
           <ul>
-            <li v-for="(i) in item.sec_list" :key="i.name">
+            <li v-for="i in item.sec_list" :key="i.name">
               <nuxt-link :to="i.url">{{ i.name }}</nuxt-link>
               <div class="shadow" @click="toTop" v-if="type === i.type"></div>
             </li>
@@ -21,8 +26,13 @@
       </div>
     </div>
     <div class="copyright">
-      <span><a href="https://beian.miit.gov.cn/" target="_blank">粤ICP备18120172号</a>
-      Copyright © 2018</span> 深圳市橡树黑卡网络科技有限公司 XSHKVIP.COM
+      <span
+        ><a href="https://beian.miit.gov.cn/" target="_blank"
+          >粤ICP备18120172号</a
+        >
+        Copyright © 2018</span
+      >
+      深圳市橡树黑卡网络科技有限公司 XSHKVIP.COM
     </div>
     <div class="suspend">
       <div class="item online-hover">
@@ -90,7 +100,9 @@
         <img src="@/static/suspend2.png" alt="" />
         <div class="phone-consult">
           <div class="phone-consult-main">
-            <h4><a href="tel:400-150-9669">客服电话<span>400-150-9669</span></a></h4>
+            <h4>
+              <a href="tel:400-150-9669">客服电话<span>400-150-9669</span></a>
+            </h4>
             <h4>客服工作时间</h4>
             <p>周一到周五：9：00～20：00（在线和电话）</p>
             <p>周末或节假日：9：00～20：00（电话）</p>
@@ -120,13 +132,6 @@
                 <a
                   href="https://oakvip.s2.udesk.cn/im_client/?web_plugin_id=24433"
                   target="_blank"
-                  ><img src="@/static/kh2.png" alt="" /><span>小赢卡贷</span></a
-                >
-              </li>
-              <li>
-                <a
-                  href="https://oakvip.s2.udesk.cn/im_client/?web_plugin_id=24433"
-                  target="_blank"
                   ><img src="@/static/kh3.png" alt="" /><span>keep</span></a
                 >
               </li>
@@ -139,9 +144,9 @@
               </li>
               <li>
                 <a
-                  href="https://oakvip.s2.udesk.cn/im_client/?web_plugin_id=24433"
+                  href="https://oakvip.s2.udesk.cn/im_client/?web_plugin_id=29354"
                   target="_blank"
-                  ><img src="@/static/kh5.png" alt="" /><span>新橙优品</span></a
+                  ><img src="@/static/kh5.png" alt="" /><span>我来数科</span></a
                 >
               </li>
               <li>
@@ -167,7 +172,9 @@
         <img @click="show1" src="@/static/suspend2.png" alt="" />
         <div class="phone-consult show-phone-consult" v-if="show_phone_consult">
           <div class="phone-consult-main">
-            <h4><a href="tel:400-150-9669">客服电话<span>400-150-9669</span></a></h4>
+            <h4>
+              <a href="tel:400-150-9669">客服电话<span>400-150-9669</span></a>
+            </h4>
             <h4>客服工作时间</h4>
             <p>周一到周五：9：00～20：00（在线和电话）</p>
             <p>周末或节假日：9：00～20：00（电话）</p>
@@ -179,7 +186,11 @@
       </div>
     </div>
     <div class="shadow" v-if="show_online" @click="show_online = false"></div>
-    <div class="shadow2" v-if="show_phone_consult" @click="show_phone_consult = false"></div>
+    <div
+      class="shadow2"
+      v-if="show_phone_consult"
+      @click="show_phone_consult = false"
+    ></div>
   </footer>
 </template>
 
@@ -193,26 +204,24 @@ export default {
       show_phone_consult: false,
       nav: [
         {
-          name: '产品服务',
+          name: "产品服务",
           sec_list: [
-            {name: '会员SAAS服务', type: 'saas', url: '/saas'},
-            {name: '精细化运营服务', type: 'operation', url: '/operation'},
-          ]
+            { name: "会员SAAS服务", type: "saas", url: "/saas" },
+            { name: "精细化运营服务", type: "operation", url: "/operation" },
+          ],
         },
         {
-          name: '关于我们',
+          name: "关于我们",
           sec_list: [
-            {name: '公司介绍', type: 'about', url: '/about'},
-            {name: '联系我们', type: 'contact', url: '/contact'},
-          ]
+            { name: "公司介绍", type: "about", url: "/about" },
+            { name: "联系我们", type: "contact", url: "/contact" },
+          ],
         },
         {
-          name: '加入我们',
-          sec_list: [
-            {name: '招聘职位', type: 'join', url: '/join'},
-          ]
-        }
-      ]
+          name: "加入我们",
+          sec_list: [{ name: "招聘职位", type: "join", url: "/join" }],
+        },
+      ],
     };
   },
   mounted() {
@@ -278,7 +287,7 @@ export default {
     show2() {
       this.show_online = !this.show_online;
       this.show_phone_consult = false;
-    }
+    },
   },
 };
 </script>
@@ -293,7 +302,7 @@ export default {
   .left {
     font-size: 14px;
     color: #fff;
-    img{
+    img {
       width: 124px;
     }
     p {
@@ -437,7 +446,7 @@ export default {
   h4 {
     margin-bottom: 10px;
     font-size: 18px;
-    a{
+    a {
       color: #333;
     }
     span {
@@ -457,20 +466,20 @@ export default {
     color: #666;
   }
 }
-.qqkf{
+.qqkf {
   display: block;
   color: #fff;
   margin-top: 10px;
 }
 
-.shadow{
+.shadow {
   position: absolute;
   width: 100%;
   height: 100%;
   left: 0;
   top: 0;
 }
-.mobile-suspend{
+.mobile-suspend {
   display: none;
 }
 
@@ -500,30 +509,30 @@ export default {
 }
 
 @media screen and (max-width: 640px) {
-  .footer{
+  .footer {
     padding: 0;
-    .container{
+    .container {
       flex-wrap: wrap-reverse;
     }
-    .left{
+    .left {
       padding-top: 30px;
-      img{
+      img {
         width: 90px;
         margin-bottom: 16px;
       }
-      p{
+      p {
         line-height: 24px;
         margin-top: 0;
         font-size: 12px;
       }
     }
   }
-  .r-nav{
+  .r-nav {
     margin-top: 28px;
     padding-bottom: 30px;
-    border-bottom: 1PX solid #666;
-    .item{
-      h2{
+    border-bottom: 1px solid #666;
+    .item {
+      h2 {
         font-size: 15px;
       }
       ul {
@@ -535,78 +544,78 @@ export default {
       }
     }
   }
-  .copyright{
+  .copyright {
     margin-top: 40px;
     padding-bottom: 44px;
     font-size: 12px;
-    span{
+    span {
       display: block;
     }
   }
-  .suspend{
+  .suspend {
     right: 12px;
     width: 44px;
     top: 70%;
-    .item{
-      img{
+    .item {
+      img {
         width: 20px;
         height: 20px;
       }
     }
   }
-  .online-consult{
+  .online-consult {
     right: 44px;
     width: 168px;
   }
-  .online-consult-main{
+  .online-consult-main {
     width: 158px;
     padding: 10px;
-    h3{
+    h3 {
       font-size: 8px;
     }
-    p{
+    p {
       font-size: 8px;
     }
     ul {
       flex-wrap: wrap;
       margin: 10px 0;
-      li{
+      li {
         width: 33.33%;
-        span{
+        span {
           display: none;
         }
-        img{
+        img {
           width: 30px !important;
           height: 30px !important;
         }
       }
     }
   }
-  .phone-consult{
+  .phone-consult {
     right: 44px;
   }
-  .phone-consult-main{
+  .phone-consult-main {
     width: 138px;
     padding: 10px;
-    h4{
+    h4 {
       font-size: 12px;
       margin-bottom: 6px;
-      span{
+      span {
         font-size: 12px;
         margin-top: 0;
       }
     }
-    p{
+    p {
       font-size: 10px;
       margin-top: 5px;
     }
   }
-  .suspend{
+  .suspend {
     display: none;
   }
-  .mobile-suspend{
+  .mobile-suspend {
     display: block;
-    .shadow{
+    .shadow {
       position: fixed;
       width: 100%;
       height: 100%;
@@ -615,7 +624,7 @@ export default {
       z-index: 50;
     }
   }
-  .shadow2{
+  .shadow2 {
     position: fixed;
     width: 100%;
     height: 100%;
@@ -623,7 +632,8 @@ export default {
     top: 0;
     z-index: 50;
   }
-  .show-online-consult, .show-phone-consult{
+  .show-online-consult,
+  .show-phone-consult {
     display: block;
   }
 }
