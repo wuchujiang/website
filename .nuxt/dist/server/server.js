@@ -1914,9 +1914,9 @@ const layouts = {
   }
 });
 // CONCATENATED MODULE: ./.nuxt/components/index.js
-const Footer = () => __webpack_require__.e(/* import() | components/footer */ 1).then(__webpack_require__.bind(null, 35)).then(c => wrapFunctional(c.default || c));
+const Footer = () => __webpack_require__.e(/* import() | components/footer */ 1).then(__webpack_require__.bind(null, 34)).then(c => wrapFunctional(c.default || c));
 const Form = () => __webpack_require__.e(/* import() | components/form */ 2).then(__webpack_require__.bind(null, 50)).then(c => wrapFunctional(c.default || c));
-const Header = () => __webpack_require__.e(/* import() | components/header */ 3).then(__webpack_require__.bind(null, 34)).then(c => wrapFunctional(c.default || c)); // nuxt/nuxt.js#8607
+const Header = () => __webpack_require__.e(/* import() | components/header */ 3).then(__webpack_require__.bind(null, 33)).then(c => wrapFunctional(c.default || c)); // nuxt/nuxt.js#8607
 
 function wrapFunctional(options) {
   if (!options || !options.functional) {

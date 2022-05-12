@@ -51,35 +51,28 @@
               </li>
               <li>
                 <a
-                  href="https://oakvip.s2.udesk.cn/im_client/?web_plugin_id=24433"
-                  target="_blank"
-                  ><img src="@/static/kh2.png" alt="" /><span>小赢卡贷</span></a
-                >
-              </li>
-              <li>
-                <a
-                  href="https://oakvip.s2.udesk.cn/im_client/?web_plugin_id=24433"
+                  href="https://oakvip.s2.udesk.cn/im_client/?web_plugin_id=30020"
                   target="_blank"
                   ><img src="@/static/kh3.png" alt="" /><span>keep</span></a
                 >
               </li>
               <li>
                 <a
-                  href="https://oakvip.s2.udesk.cn/im_client/?web_plugin_id=24433"
+                  href="https://oakvip.s2.udesk.cn/im_client/?web_plugin_id=29924"
                   target="_blank"
                   ><img src="@/static/kh4.png" alt="" /><span>榕树贷款</span></a
                 >
               </li>
               <li>
                 <a
-                  href="https://oakvip.s2.udesk.cn/im_client/?web_plugin_id=24433"
+                  href="https://oakvip.s2.udesk.cn/im_client/?web_plugin_id=29354"
                   target="_blank"
-                  ><img src="@/static/kh5.png" alt="" /><span>新橙优品</span></a
+                  ><img src="@/static/kh5.png" alt="" /><span>我来数科</span></a
                 >
               </li>
               <li>
                 <a
-                  href="https://oakvip.s2.udesk.cn/im_client/?web_plugin_id=24433"
+                  href="https://oakvip.s2.udesk.cn/im_client/?web_plugin_id=28877"
                   target="_blank"
                   ><img src="@/static/kh6.png" alt="" /><span>其他</span></a
                 >
@@ -130,14 +123,14 @@
               </li>
               <li>
                 <a
-                  href="https://oakvip.s2.udesk.cn/im_client/?web_plugin_id=24433"
+                  href="https://oakvip.s2.udesk.cn/im_client/?web_plugin_id=30020"
                   target="_blank"
                   ><img src="@/static/kh3.png" alt="" /><span>keep</span></a
                 >
               </li>
               <li>
                 <a
-                  href="https://oakvip.s2.udesk.cn/im_client/?web_plugin_id=24433"
+                  href="https://oakvip.s2.udesk.cn/im_client/?web_plugin_id=29924"
                   target="_blank"
                   ><img src="@/static/kh4.png" alt="" /><span>榕树贷款</span></a
                 >
@@ -151,7 +144,7 @@
               </li>
               <li>
                 <a
-                  href="https://oakvip.s2.udesk.cn/im_client/?web_plugin_id=24433"
+                  href="https://oakvip.s2.udesk.cn/im_client/?web_plugin_id=28877"
                   target="_blank"
                   ><img src="@/static/kh6.png" alt="" /><span>其他</span></a
                 >
