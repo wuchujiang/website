@@ -2270,7 +2270,7 @@ async function createApp(ssrContext, config = {}) {
         "href": "\u002Ffavicon.ico"
       }, {
         "rel": "stylesheet",
-        "href": "https:\u002F\u002Fcdn.jsdelivr.net\u002Fnpm\u002Fvant@3\u002Flib\u002Findex.css"
+        "href": "https:\u002F\u002Fcdn.xiangshuheika.com\u002Fh5\u002Fcommonjs\u002Fvant.min.css"
       }],
       "script": [{
         "src": "https:\u002F\u002Fhm.baidu.com\u002Fhm.js?62ef9a621a0d708d7d4206706dedb23c"
