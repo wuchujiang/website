@@ -20,13 +20,19 @@ export default {
             { rel: 'stylesheet', href: 'https://cdn.jsdelivr.net/npm/vant@3/lib/index.css' }
         ],
         script: [
-            {src: "https://hm.baidu.com/hm.js?62ef9a621a0d708d7d4206706dedb23c"}
+            { src: "https://hm.baidu.com/hm.js?62ef9a621a0d708d7d4206706dedb23c" }
         ]
     },
 
     router: {
-        scrollBehavior (to, from) {
+        scrollBehavior(to, from) {
             return { x: 0, y: 0 }
+        }
+    },
+    html: {
+        minify: {
+            minifyCSS: false,
+            minifyJS: false,
         }
     },
     /*

@@ -421,8 +421,8 @@ __webpack_require__.r(__webpack_exports__);
 var components_namespaceObject = {};
 __webpack_require__.r(components_namespaceObject);
 __webpack_require__.d(components_namespaceObject, "Footer", function() { return Footer; });
-__webpack_require__.d(components_namespaceObject, "Header", function() { return Header; });
 __webpack_require__.d(components_namespaceObject, "Form", function() { return Form; });
+__webpack_require__.d(components_namespaceObject, "Header", function() { return Header; });
 
 // EXTERNAL MODULE: external "vue"
 var external_vue_ = __webpack_require__(0);
@@ -1915,8 +1915,8 @@ const layouts = {
 });
 // CONCATENATED MODULE: ./.nuxt/components/index.js
 const Footer = () => __webpack_require__.e(/* import() | components/footer */ 1).then(__webpack_require__.bind(null, 34)).then(c => wrapFunctional(c.default || c));
-const Header = () => __webpack_require__.e(/* import() | components/header */ 3).then(__webpack_require__.bind(null, 33)).then(c => wrapFunctional(c.default || c));
-const Form = () => __webpack_require__.e(/* import() | components/form */ 2).then(__webpack_require__.bind(null, 50)).then(c => wrapFunctional(c.default || c)); // nuxt/nuxt.js#8607
+const Form = () => __webpack_require__.e(/* import() | components/form */ 2).then(__webpack_require__.bind(null, 50)).then(c => wrapFunctional(c.default || c));
+const Header = () => __webpack_require__.e(/* import() | components/header */ 3).then(__webpack_require__.bind(null, 33)).then(c => wrapFunctional(c.default || c)); // nuxt/nuxt.js#8607
 
 function wrapFunctional(options) {
   if (!options || !options.functional) {
