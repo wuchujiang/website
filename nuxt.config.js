@@ -33,6 +33,7 @@ export default {
         minify: {
             minifyCSS: false,
             minifyJS: false,
+            keepClosingSlash: true
         }
     },
     /*
