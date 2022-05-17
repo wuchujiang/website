@@ -93,7 +93,7 @@
               <div class="text">
                 <div class="top">
                   <h4>灵活定制</h4>
-                  <span>Flexible customizati</span>
+                  <span>Flexible customized</span>
                   <h5>专业服务 一键接入</h5>
                 </div>
                 <p>
