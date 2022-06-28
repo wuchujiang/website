@@ -6,7 +6,7 @@
   >
     <div class="container">
       <img class="img" src="@/static/img12.png" alt="" />
-      <div class="free-get-plan" @click="showForm">免费获取方案</div>
+      <div class="free-get-plan" @click="showFormFn">免费获取方案</div>
       <img
         @click="hidePlan = true"
         class="img-close"
@@ -167,7 +167,7 @@ export default {
     },
   },
   methods: {
-    showForm() {
+    showFormFn() {
       this.showForm = true;
       ans.track("bottom_click");
     },
