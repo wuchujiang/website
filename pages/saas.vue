@@ -139,6 +139,7 @@
 import oakHeader from "../components/header/header";
 import oakFooter from "../components/footer/footer";
 import oakForm from "../components/form/form";
+import ans from "@/utils/ans";
 export default {
   name: "saas",
   components: {
@@ -177,6 +178,7 @@ export default {
   },
   mounted() {
     this.pageShow = true;
+    ans.pageView("oak_saas_page");
   },
   methods: {
     scrollView(index) {

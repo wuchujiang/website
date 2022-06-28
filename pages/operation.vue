@@ -106,6 +106,7 @@
 import oakHeader from "../components/header/header";
 import oakFooter from "../components/footer/footer";
 import oakForm from "../components/form/form";
+import ans from "@/utils/ans";
 export default {
   name: "operation",
   components: {
@@ -144,6 +145,7 @@ export default {
   },
   mounted() {
     this.pageShow = true;
+    ans.pageView("oak_operation_page");
   },
   methods: {
     scrollView(index) {

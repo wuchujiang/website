@@ -140,7 +140,7 @@
               <div class="input-error">{{ name_error }}</div>
             </div>
             <div class="item">
-              <div class="text">公司名称：</div>
+              <div class="text"><span>*</span>公司名称：</div>
               <input
                 type="text"
                 placeholder="请输入公司名称"
@@ -247,6 +247,7 @@ import oakFooter from "../components/footer/footer";
 import oakForm from "../components/form/form";
 import { register, officialWebsite } from "../utils/api";
 import { Toast } from "vant";
+import ans from "@/utils/ans";
 export default {
   name: "IndexPage",
   components: {
@@ -366,6 +367,7 @@ export default {
   },
   mounted() {
     this.pageShow = true;
+    ans.pageView("oak_page");
   },
   methods: {
     getCode() {
@@ -397,6 +399,12 @@ export default {
         return;
       } else {
         this.name_error = "";
+      }
+      if (!this.company_name) {
+        this.company_name_error = "请填写公司名称";
+        return;
+      } else {
+        this.company_name_error = "";
       }
       if (!this.phone) {
         this.phone_error = "请填写您的联系电话";
@@ -435,6 +443,7 @@ export default {
         this.company_name = "";
         this.code = "";
         this.name = "";
+        ans.track("business_click");
       });
     },
     timer() {

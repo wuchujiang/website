@@ -1148,17 +1148,17 @@ var external_vue_router_default = /*#__PURE__*/__webpack_require__.n(external_vu
 
 
 
-const _61fc1908 = () => interopDefault(__webpack_require__.e(/* import() | pages/about */ 4).then(__webpack_require__.bind(null, 116)));
+const _61fc1908 = () => interopDefault(__webpack_require__.e(/* import() | pages/about */ 4).then(__webpack_require__.bind(null, 117)));
 
-const _5452694a = () => interopDefault(__webpack_require__.e(/* import() | pages/contact */ 5).then(__webpack_require__.bind(null, 117)));
+const _5452694a = () => interopDefault(__webpack_require__.e(/* import() | pages/contact */ 5).then(__webpack_require__.bind(null, 118)));
 
-const _1d79e0ff = () => interopDefault(__webpack_require__.e(/* import() | pages/join */ 7).then(__webpack_require__.bind(null, 118)));
+const _1d79e0ff = () => interopDefault(__webpack_require__.e(/* import() | pages/join */ 7).then(__webpack_require__.bind(null, 119)));
 
-const _4a18373c = () => interopDefault(__webpack_require__.e(/* import() | pages/operation */ 8).then(__webpack_require__.bind(null, 119)));
+const _4a18373c = () => interopDefault(__webpack_require__.e(/* import() | pages/operation */ 8).then(__webpack_require__.bind(null, 120)));
 
-const _5b263056 = () => interopDefault(__webpack_require__.e(/* import() | pages/saas */ 9).then(__webpack_require__.bind(null, 120)));
+const _5b263056 = () => interopDefault(__webpack_require__.e(/* import() | pages/saas */ 9).then(__webpack_require__.bind(null, 121)));
 
-const _fc981866 = () => interopDefault(__webpack_require__.e(/* import() | pages/index */ 6).then(__webpack_require__.bind(null, 121)));
+const _fc981866 = () => interopDefault(__webpack_require__.e(/* import() | pages/index */ 6).then(__webpack_require__.bind(null, 122)));
 
 const emptyFn = () => {};
 
@@ -1915,7 +1915,7 @@ const layouts = {
 });
 // CONCATENATED MODULE: ./.nuxt/components/index.js
 const Footer = () => __webpack_require__.e(/* import() | components/footer */ 1).then(__webpack_require__.bind(null, 34)).then(c => wrapFunctional(c.default || c));
-const Form = () => __webpack_require__.e(/* import() | components/form */ 2).then(__webpack_require__.bind(null, 50)).then(c => wrapFunctional(c.default || c));
+const Form = () => __webpack_require__.e(/* import() | components/form */ 2).then(__webpack_require__.bind(null, 51)).then(c => wrapFunctional(c.default || c));
 const Header = () => __webpack_require__.e(/* import() | components/header */ 3).then(__webpack_require__.bind(null, 33)).then(c => wrapFunctional(c.default || c)); // nuxt/nuxt.js#8607
 
 function wrapFunctional(options) {
@@ -2274,6 +2274,8 @@ async function createApp(ssrContext, config = {}) {
       }],
       "script": [{
         "src": "https:\u002F\u002Fhm.baidu.com\u002Fhm.js?62ef9a621a0d708d7d4206706dedb23c"
+      }, {
+        "innerHTML": "(function(w, d, s, q) { w[q] =w[q] || []; var f=d.getElementsByTagName(s)[0],j=d.createElement(s); j.async=true; j.id=`beacon-aplus`; j.src=`https:\u002F\u002Fd.alicdn.com\u002Falilog\u002Fmlog\u002Faplus\u002F203561150.js`; f.parentNode.insertBefore(j, f);})(window, document, `script`, `aplus_queue`);aplus_queue.push({ action: `aplus.setMetaInfo`, arguments: [`appKey`, `6nczpkuv53z0tdx3njg70x3r`]  });aplus_queue.push({ action: `aplus.setMetaInfo`, arguments: [`aplus-rhost-v`, `quickaplus-he-api-cn-shanghai.aliyuncs.com`]  });aplus_queue.push({ action: `aplus.setMetaInfo`, arguments: [`aplus-waiting`, `MAN`] });"
       }],
       "style": []
     },

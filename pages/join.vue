@@ -11,7 +11,7 @@
           <div class="join-container">
             <div class="left">
               <div
-                :class="{'item': true, 'active': current === index}"
+                :class="{ item: true, active: current === index }"
                 v-for="(item, index) in list"
                 :key="item.name"
                 @click="current = index"
@@ -74,6 +74,7 @@
 <script>
 import oakHeader from "../components/header/header";
 import oakFooter from "../components/footer/footer";
+import ans from "@/utils/ans";
 export default {
   name: "join",
   components: {
@@ -216,18 +217,19 @@ export default {
   },
   mounted() {
     this.pageShow = true;
+    ans.pageView("oak_join_page");
   },
   methods: {
-    showDetail(index){
+    showDetail(index) {
       const arr = this.list;
       arr[index].show = !arr[index].show;
       this.list = arr;
-    }
-  }
+    },
+  },
 };
 </script>
 <style lang="scss" scoped>
-.join-banner{
+.join-banner {
   width: 100%;
   height: 430px;
   background: url("@/static/join-banner.png") no-repeat center center;
@@ -309,88 +311,89 @@ export default {
   color: #333;
   font-weight: bold;
 }
-.mobile-join-banner, .mobile-join-container{
+.mobile-join-banner,
+.mobile-join-container {
   display: none;
 }
 
-@media screen and (max-width:1200px){
-  .join-banner{
+@media screen and (max-width: 1200px) {
+  .join-banner {
     height: 350px;
   }
 }
 
-@media screen and (max-width:1024px){
-  .join-banner{
+@media screen and (max-width: 1024px) {
+  .join-banner {
     height: 300px;
   }
-  .join-container .left{
+  .join-container .left {
     margin-right: 30px;
   }
-  .join-container .left .item{
+  .join-container .left .item {
     width: 255px;
   }
 }
 
-@media screen and (max-width:1024px){
-  .join-banner{
+@media screen and (max-width: 1024px) {
+  .join-banner {
     display: none;
   }
-  .mobile-join-banner{
+  .mobile-join-banner {
     display: block;
     height: 152px;
     background: url("@/static/mobile/join-banner.png") no-repeat center center;
     background-size: auto 100%;
   }
-  .join-main{
+  .join-main {
     padding-top: 30px;
-    h2{
+    h2 {
       font-size: 16px;
     }
-    .title{
+    .title {
       margin-top: 20px;
     }
-    .join-container{
+    .join-container {
       display: none;
     }
-    .mobile-join-container{
+    .mobile-join-container {
       display: block;
       margin-top: 16px;
-      .item{
+      .item {
         font-size: 12px;
         color: #333;
         font-weight: bold;
         padding: 0 8px;
-        border: 1PX solid #DCDCDC;
+        border: 1px solid #dcdcdc;
         border-radius: 4px;
         margin-bottom: 12px;
-        .top{
+        .top {
           height: 40px;
           display: flex;
           align-items: center;
           justify-content: space-between;
-          span{
+          span {
             font-weight: normal;
             color: #999;
           }
         }
-        .right{
-          border-top: 1PX solid #DDDDDD;
+        .right {
+          border-top: 1px solid #dddddd;
           padding-top: 13px;
-          h4{
+          h4 {
             margin-bottom: 8px;
           }
-          ul{
+          ul {
             padding-bottom: 20px;
-            li{
+            li {
               font-weight: normal;
               font-size: 12px;
               color: #666;
               line-height: 24px;
             }
           }
-          .join-email{
+          .join-email {
             font-size: 14px;
-            color: #FF5001;
+            color: #ff5001;
             padding-bottom: 16px;
           }
         }

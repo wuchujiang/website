@@ -5,13 +5,19 @@
       <section class="about-banner"></section>
       <section class="mobile-second-nav">
         <ul>
-          <li v-for="item in sec_list" :key="item.title" :class="{active: item.type === 'about'}"><nuxt-link :to="item.url">{{ item.title }}</nuxt-link></li>
+          <li
+            v-for="item in sec_list"
+            :key="item.title"
+            :class="{ active: item.type === 'about' }"
+          >
+            <nuxt-link :to="item.url">{{ item.title }}</nuxt-link>
+          </li>
         </ul>
       </section>
       <section class="about-section1">
         <div class="container">
           <div class="common-title">
-          <div class="en">about </div>
+            <div class="en">about</div>
             <div class="name">关于我们</div>
             <div class="desc">助力企业构建会员体系实现活跃与创收</div>
           </div>
@@ -41,9 +47,11 @@
       <section class="course">
         <div class="container">
           <div class="common-title">
-          <div class="en">history </div>
+            <div class="en">history</div>
             <div class="name">公司历程</div>
-            <div class="desc">针对性地输出客户权益套餐，满足用户在不同生活场景下的需求，高频使用产品，增加用户黏性，提高用户留存率，进而提升LTV。</div>
+            <div class="desc">
+              针对性地输出客户权益套餐，满足用户在不同生活场景下的需求，高频使用产品，增加用户黏性，提高用户留存率，进而提升LTV。
+            </div>
           </div>
         </div>
         <div class="course-main container">
@@ -124,6 +132,7 @@
 import oakHeader from "../components/header/header";
 import oakFooter from "../components/footer/footer";
 import oakForm from "../components/form/form";
+import ans from "@/utils/ans";
 export default {
   name: "about",
   components: {
@@ -135,9 +144,9 @@ export default {
     return {
       pageShow: false,
       sec_list: [
-        {title: '公司介绍', url: "/about", type: 'about'},
-        {title: '联系我们', url: "/contact", type: 'contact'}
-      ]
+        { title: "公司介绍", url: "/about", type: "about" },
+        { title: "联系我们", url: "/contact", type: "contact" },
+      ],
     };
   },
   head() {
@@ -160,11 +169,12 @@ export default {
   },
   mounted() {
     this.pageShow = true;
+    ans.pageView("oak_about_page");
   },
 };
 </script>
 <style lang="scss" scoped>
-.about-banner{
+.about-banner {
   width: 100%;
   height: 430px;
   background: url("@/static/about-banner.png") no-repeat center center;
@@ -327,43 +337,44 @@ export default {
 .course-main .list:first-child .item .date span:last-child {
   transform: translateX(7px);
 }
-.about-text img.mobile-img, .mobile-course-main{
+.about-text img.mobile-img,
+.mobile-course-main {
   display: none;
 }
-.course{
-  .common-title{
-    .desc{
+.course {
+  .common-title {
+    .desc {
       display: none;
     }
   }
 }
-.mobile-second-nav{
+.mobile-second-nav {
   display: none;
 }
-@media screen and (max-width:1024px){
-  .about-banner{
+@media screen and (max-width: 1024px) {
+  .about-banner {
     height: 300px;
   }
-  .about-text img{
+  .about-text img {
     width: 100%;
   }
-  .course-main{
+  .course-main {
     padding: 0 26px;
   }
-  .course-main .item{
+  .course-main .item {
     width: 244px;
   }
-  .course-main .item p{
+  .course-main .item p {
     font-size: 14px;
     line-height: 22px;
   }
-  .course-main .list:first-child .item .date{
+  .course-main .list:first-child .item .date {
     font-size: 14px;
   }
 }
 
-@media screen and (max-width:640px){
-  .about-banner{
+@media screen and (max-width: 640px) {
+  .about-banner {
     display: none;
   }
   .common-title {
@@ -379,45 +390,45 @@ export default {
       color: #666;
     }
   }
-  .about-section1{
+  .about-section1 {
     padding-top: 48px;
     padding-bottom: 50px;
-    .about-text{
+    .about-text {
       margin-top: 14px;
     }
-    p{
+    p {
       font-size: 12px;
       color: #333;
       line-height: 24px;
       min-height: 0;
     }
-    img{
+    img {
       display: none;
     }
   }
-  .about-text img.mobile-img{
-      display: block;
-    }
-  .course{
+  .about-text img.mobile-img {
+    display: block;
+  }
+  .course {
     padding-top: 35px;
     padding-bottom: 30px;
-    .common-title{
-      .desc{
+    .common-title {
+      .desc {
         display: block;
       }
     }
-    .course-main{
+    .course-main {
       margin-top: 24px;
     }
   }
-  .course-main{
+  .course-main {
     display: none;
   }
-  .mobile-course-main{
+  .mobile-course-main {
     display: block;
     margin: 10px 0 0 10px;
   }
-  .mobile-second-nav{
+  .mobile-second-nav {
     display: block;
   }
 }
