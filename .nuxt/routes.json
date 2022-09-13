@@ -2,37 +2,37 @@
   {
     "name": "about",
     "path": "/about",
-    "component": "C:\\\\Users\\\\marco\\\\Desktop\\\\OakNewWebsite\\\\pages\\\\about.vue",
+    "component": "C:\\\\Users\\\\18489\\\\Desktop\\\\OakNewWebsite\\\\pages\\\\about.vue",
     "chunkName": "pages/about"
   },
   {
     "name": "contact",
     "path": "/contact",
-    "component": "C:\\\\Users\\\\marco\\\\Desktop\\\\OakNewWebsite\\\\pages\\\\contact.vue",
+    "component": "C:\\\\Users\\\\18489\\\\Desktop\\\\OakNewWebsite\\\\pages\\\\contact.vue",
     "chunkName": "pages/contact"
   },
   {
     "name": "join",
     "path": "/join",
-    "component": "C:\\\\Users\\\\marco\\\\Desktop\\\\OakNewWebsite\\\\pages\\\\join.vue",
+    "component": "C:\\\\Users\\\\18489\\\\Desktop\\\\OakNewWebsite\\\\pages\\\\join.vue",
     "chunkName": "pages/join"
   },
   {
     "name": "operation",
     "path": "/operation",
-    "component": "C:\\\\Users\\\\marco\\\\Desktop\\\\OakNewWebsite\\\\pages\\\\operation.vue",
+    "component": "C:\\\\Users\\\\18489\\\\Desktop\\\\OakNewWebsite\\\\pages\\\\operation.vue",
     "chunkName": "pages/operation"
   },
   {
     "name": "saas",
     "path": "/saas",
-    "component": "C:\\\\Users\\\\marco\\\\Desktop\\\\OakNewWebsite\\\\pages\\\\saas.vue",
+    "component": "C:\\\\Users\\\\18489\\\\Desktop\\\\OakNewWebsite\\\\pages\\\\saas.vue",
     "chunkName": "pages/saas"
   },
   {
     "name": "index",
     "path": "/",
-    "component": "C:\\\\Users\\\\marco\\\\Desktop\\\\OakNewWebsite\\\\pages\\\\index.vue",
+    "component": "C:\\\\Users\\\\18489\\\\Desktop\\\\OakNewWebsite\\\\pages\\\\index.vue",
     "chunkName": "pages/index"
   }
 ]

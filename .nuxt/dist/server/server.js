@@ -420,8 +420,8 @@ __webpack_require__.r(__webpack_exports__);
 // NAMESPACE OBJECT: ./.nuxt/components/index.js
 var components_namespaceObject = {};
 __webpack_require__.r(components_namespaceObject);
-__webpack_require__.d(components_namespaceObject, "Footer", function() { return Footer; });
 __webpack_require__.d(components_namespaceObject, "Form", function() { return Form; });
+__webpack_require__.d(components_namespaceObject, "Footer", function() { return Footer; });
 __webpack_require__.d(components_namespaceObject, "Header", function() { return Header; });
 
 // EXTERNAL MODULE: external "vue"
@@ -1148,17 +1148,17 @@ var external_vue_router_default = /*#__PURE__*/__webpack_require__.n(external_vu
 
 
 
-const _61fc1908 = () => interopDefault(__webpack_require__.e(/* import() | pages/about */ 4).then(__webpack_require__.bind(null, 117)));
+const _ce796f28 = () => interopDefault(__webpack_require__.e(/* import() | pages/about */ 4).then(__webpack_require__.bind(null, 117)));
 
-const _5452694a = () => interopDefault(__webpack_require__.e(/* import() | pages/contact */ 5).then(__webpack_require__.bind(null, 118)));
+const _778fb1bf = () => interopDefault(__webpack_require__.e(/* import() | pages/contact */ 5).then(__webpack_require__.bind(null, 118)));
 
-const _1d79e0ff = () => interopDefault(__webpack_require__.e(/* import() | pages/join */ 7).then(__webpack_require__.bind(null, 119)));
+const _c9c595ca = () => interopDefault(__webpack_require__.e(/* import() | pages/join */ 7).then(__webpack_require__.bind(null, 119)));
 
-const _4a18373c = () => interopDefault(__webpack_require__.e(/* import() | pages/operation */ 8).then(__webpack_require__.bind(null, 120)));
+const _1be67c74 = () => interopDefault(__webpack_require__.e(/* import() | pages/operation */ 8).then(__webpack_require__.bind(null, 120)));
 
-const _5b263056 = () => interopDefault(__webpack_require__.e(/* import() | pages/saas */ 9).then(__webpack_require__.bind(null, 121)));
+const _50103bf1 = () => interopDefault(__webpack_require__.e(/* import() | pages/saas */ 9).then(__webpack_require__.bind(null, 121)));
 
-const _fc981866 = () => interopDefault(__webpack_require__.e(/* import() | pages/index */ 6).then(__webpack_require__.bind(null, 122)));
+const _8f09b99e = () => interopDefault(__webpack_require__.e(/* import() | pages/index */ 6).then(__webpack_require__.bind(null, 122)));
 
 const emptyFn = () => {};
 
@@ -1171,27 +1171,27 @@ const routerOptions = {
   scrollBehavior: router_scrollBehavior,
   routes: [{
     path: "/about",
-    component: _61fc1908,
+    component: _ce796f28,
     name: "about"
   }, {
     path: "/contact",
-    component: _5452694a,
+    component: _778fb1bf,
     name: "contact"
   }, {
     path: "/join",
-    component: _1d79e0ff,
+    component: _c9c595ca,
     name: "join"
   }, {
     path: "/operation",
-    component: _4a18373c,
+    component: _1be67c74,
     name: "operation"
   }, {
     path: "/saas",
-    component: _5b263056,
+    component: _50103bf1,
     name: "saas"
   }, {
     path: "/",
-    component: _fc981866,
+    component: _8f09b99e,
     name: "index"
   }],
   fallback: false
@@ -1389,7 +1389,7 @@ var nuxt_error_component = Object(componentNormalizer["a" /* default */])(
   false,
   injectStyles,
   null,
-  "2e0af1d0"
+  "66b071fc"
   
 )
 
@@ -1693,7 +1693,7 @@ var nuxt_loading_component = Object(componentNormalizer["a" /* default */])(
   false,
   nuxt_loading_injectStyles,
   null,
-  "4d6cbb04"
+  "1a9a3fa0"
   
 )
 
@@ -1727,7 +1727,7 @@ var default_component = Object(componentNormalizer["a" /* default */])(
   false,
   default_injectStyles,
   null,
-  "06d6b036"
+  "2ab80a11"
   
 )
 
@@ -1914,8 +1914,8 @@ const layouts = {
   }
 });
 // CONCATENATED MODULE: ./.nuxt/components/index.js
-const Footer = () => __webpack_require__.e(/* import() | components/footer */ 1).then(__webpack_require__.bind(null, 34)).then(c => wrapFunctional(c.default || c));
 const Form = () => __webpack_require__.e(/* import() | components/form */ 2).then(__webpack_require__.bind(null, 51)).then(c => wrapFunctional(c.default || c));
+const Footer = () => __webpack_require__.e(/* import() | components/footer */ 1).then(__webpack_require__.bind(null, 34)).then(c => wrapFunctional(c.default || c));
 const Header = () => __webpack_require__.e(/* import() | components/header */ 3).then(__webpack_require__.bind(null, 33)).then(c => wrapFunctional(c.default || c)); // nuxt/nuxt.js#8607
 
 function wrapFunctional(options) {

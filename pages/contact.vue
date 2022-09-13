@@ -29,7 +29,7 @@
               <img src="@/static/icon11.png" alt="" />
               <h4>在线客服</h4>
               <p>周一到周五：<span>9：00～20：00</span> (在线和电话)</p>
-              <button>立即联系</button>
+              <button @click="toAns('service')">立即联系</button>
             </a>
           </div>
           <div class="item">
@@ -37,7 +37,7 @@
               <img src="@/static/icon12.png" alt="" />
               <h4>电话咨询</h4>
               <p>周末或节假日：<span>9：00～20：00</span> (电话)</p>
-              <button class="btn">400-150-9669</button>
+              <button @click="toAns('phone')" class="btn">400-150-9669</button>
             </a>
           </div>
           <div class="item">
@@ -296,6 +296,14 @@ export default {
         }
       }, 1000);
     },
+    toAns(type) {
+      if(type === 'service') {
+        ans.track("button_service_click");
+      };
+      if(type === 'phone') {
+        ans.track("button_phone_click");
+      };
+    },
   },
 };
 </script>
@@ -346,6 +354,7 @@ export default {
   color: #fff;
   margin: 28px auto 0;
   border: none;
+  cursor: pointer;
 }
 .contact-main .item button a {
   color: #fff;

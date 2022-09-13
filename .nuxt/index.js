@@ -12,8 +12,8 @@ import { setContext, getLocation, getRouteData, normalizeError } from './utils'
 
 /* Plugins */
 
-import nuxt_plugin_plugin_05155e26 from 'nuxt_plugin_plugin_05155e26' // Source: .\\components\\plugin.js (mode: 'all')
-import nuxt_plugin_axios_74fc5b49 from 'nuxt_plugin_axios_74fc5b49' // Source: .\\axios.js (mode: 'all')
+import nuxt_plugin_plugin_48be537c from 'nuxt_plugin_plugin_48be537c' // Source: .\\components\\plugin.js (mode: 'all')
+import nuxt_plugin_axios_6073c536 from 'nuxt_plugin_axios_6073c536' // Source: .\\axios.js (mode: 'all')
 import nuxt_plugin_userAuth_47d7e207 from 'nuxt_plugin_userAuth_47d7e207' // Source: ..\\plugins\\userAuth (mode: 'all')
 import nuxt_plugin_vantui_6b945fbc from 'nuxt_plugin_vantui_6b945fbc' // Source: ..\\plugins\\vant-ui (mode: 'all')
 
@@ -179,12 +179,12 @@ async function createApp(ssrContext, config = {}) {
   }
   // Plugin execution
 
-  if (typeof nuxt_plugin_plugin_05155e26 === 'function') {
-    await nuxt_plugin_plugin_05155e26(app.context, inject)
+  if (typeof nuxt_plugin_plugin_48be537c === 'function') {
+    await nuxt_plugin_plugin_48be537c(app.context, inject)
   }
 
-  if (typeof nuxt_plugin_axios_74fc5b49 === 'function') {
-    await nuxt_plugin_axios_74fc5b49(app.context, inject)
+  if (typeof nuxt_plugin_axios_6073c536 === 'function') {
+    await nuxt_plugin_axios_6073c536(app.context, inject)
   }
 
   if (typeof nuxt_plugin_userAuth_47d7e207 === 'function') {
