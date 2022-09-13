@@ -29,7 +29,7 @@ module.exports = __webpack_require__.p + "img/kh5.8b814ab.png";
 
 /***/ }),
 
-/***/ 35:
+/***/ 27:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -2749,7 +2749,7 @@ var api = __webpack_require__(46);
 var external_vant_ = __webpack_require__(7);
 
 // EXTERNAL MODULE: ./utils/ans.js
-var ans = __webpack_require__(35);
+var ans = __webpack_require__(27);
 
 // CONCATENATED MODULE: ./node_modules/babel-loader/lib??ref--2-0!./node_modules/@nuxt/components/dist/loader.js??ref--0-0!./node_modules/vue-loader/lib??vue-loader-options!./components/form/form.vue?vue&type=script&lang=js&
 //

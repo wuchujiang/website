@@ -188,6 +188,7 @@
 </template>
 
 <script>
+import ans from "@/utils/ans";
 export default {
   props: ["type"],
   data() {
@@ -282,7 +283,7 @@ export default {
       this.show_phone_consult = false;
     },
     toAns(namespace) {
-      ans.track("button_service_click", {namespace});
+      ans.track("button_service_click", {type: namespace});
     },
   },
 };

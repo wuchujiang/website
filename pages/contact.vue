@@ -298,7 +298,7 @@ export default {
     },
     toAns(type) {
       if(type === 'service') {
-        ans.track("button_service_click");
+        ans.track("button_service_click", {type: 'contact'});
       };
       if(type === 'phone') {
         ans.track("button_phone_click");
