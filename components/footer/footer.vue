@@ -42,35 +42,35 @@
             <h3>亲爱的用户</h3>
             <p>为了更好的帮您解决问题，请选择您要咨询的会员类型</p>
             <ul>
-              <li>
+              <li @click="toAns('sy')">
                 <a
                   href="https://oakvip.s2.udesk.cn/im_client/?web_plugin_id=24433"
                   target="_blank"
                   ><img src="@/static/kh1.png" alt="" /><span>省呗</span></a
                 >
               </li>
-              <li>
+              <li @click="toAns('keep')">
                 <a
                   href="https://oakvip.s2.udesk.cn/im_client/?web_plugin_id=30020"
                   target="_blank"
                   ><img src="@/static/kh3.png" alt="" /><span>keep</span></a
                 >
               </li>
-              <li>
+              <li @click="toAns('rongshu')">
                 <a
                   href="https://oakvip.s2.udesk.cn/im_client/?web_plugin_id=29924"
                   target="_blank"
                   ><img src="@/static/kh4.png" alt="" /><span>榕树贷款</span></a
                 >
               </li>
-              <li>
+              <li @click="toAns('welab')">
                 <a
                   href="https://oakvip.s2.udesk.cn/im_client/?web_plugin_id=29354"
                   target="_blank"
                   ><img src="@/static/kh5.png" alt="" /><span>我来数科</span></a
                 >
               </li>
-              <li>
+              <li @click="toAns('other')">
                 <a
                   href="https://oakvip.s2.udesk.cn/im_client/?web_plugin_id=28877"
                   target="_blank"
@@ -114,35 +114,35 @@
             <h3>亲爱的用户</h3>
             <p>为了更好的帮您解决问题，请选择您要咨询的会员类型</p>
             <ul>
-              <li>
+              <li @click="toAns('sy')">
                 <a
                   href="https://oakvip.s2.udesk.cn/im_client/?web_plugin_id=24433"
                   target="_blank"
                   ><img src="@/static/kh1.png" alt="" /><span>省呗</span></a
                 >
               </li>
-              <li>
+              <li @click="toAns('keep')">
                 <a
                   href="https://oakvip.s2.udesk.cn/im_client/?web_plugin_id=30020"
                   target="_blank"
                   ><img src="@/static/kh3.png" alt="" /><span>keep</span></a
                 >
               </li>
-              <li>
+              <li @click="toAns('rongshu')">
                 <a
                   href="https://oakvip.s2.udesk.cn/im_client/?web_plugin_id=29924"
                   target="_blank"
                   ><img src="@/static/kh4.png" alt="" /><span>榕树贷款</span></a
                 >
               </li>
-              <li>
+              <li @click="toAns('welab')">
                 <a
                   href="https://oakvip.s2.udesk.cn/im_client/?web_plugin_id=29354"
                   target="_blank"
                   ><img src="@/static/kh5.png" alt="" /><span>我来数科</span></a
                 >
               </li>
-              <li>
+              <li @click="toAns('other')">
                 <a
                   href="https://oakvip.s2.udesk.cn/im_client/?web_plugin_id=28877"
                   target="_blank"
@@ -280,6 +280,9 @@ export default {
     show2() {
       this.show_online = !this.show_online;
       this.show_phone_consult = false;
+    },
+    toAns(namespace) {
+      ans.track("button_service_click", {namespace});
     },
   },
 };
