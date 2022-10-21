@@ -14,7 +14,7 @@ export default {
   },
 
   mounted() {
-    const isGaoGuang = !location.href.includes("lifesvip");
+    const isGaoGuang = location.href.includes("lifesvip");
     localStorage.setItem("isGaoGuang", isGaoGuang);
   }
 }
