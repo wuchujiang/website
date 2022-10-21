@@ -1148,17 +1148,17 @@ var external_vue_router_default = /*#__PURE__*/__webpack_require__.n(external_vu
 
 
 
-const _ce796f28 = () => interopDefault(__webpack_require__.e(/* import() | pages/about */ 4).then(__webpack_require__.bind(null, 117)));
+const _9e18e614 = () => interopDefault(__webpack_require__.e(/* import() | pages/about */ 4).then(__webpack_require__.bind(null, 119)));
 
-const _778fb1bf = () => interopDefault(__webpack_require__.e(/* import() | pages/contact */ 5).then(__webpack_require__.bind(null, 118)));
+const _44c0fbc9 = () => interopDefault(__webpack_require__.e(/* import() | pages/contact */ 5).then(__webpack_require__.bind(null, 120)));
 
-const _c9c595ca = () => interopDefault(__webpack_require__.e(/* import() | pages/join */ 7).then(__webpack_require__.bind(null, 119)));
+const _8625915e = () => interopDefault(__webpack_require__.e(/* import() | pages/join */ 7).then(__webpack_require__.bind(null, 121)));
 
-const _1be67c74 = () => interopDefault(__webpack_require__.e(/* import() | pages/operation */ 8).then(__webpack_require__.bind(null, 120)));
+const _3813b150 = () => interopDefault(__webpack_require__.e(/* import() | pages/operation */ 8).then(__webpack_require__.bind(null, 122)));
 
-const _50103bf1 = () => interopDefault(__webpack_require__.e(/* import() | pages/saas */ 9).then(__webpack_require__.bind(null, 121)));
+const _71e03e27 = () => interopDefault(__webpack_require__.e(/* import() | pages/saas */ 9).then(__webpack_require__.bind(null, 123)));
 
-const _8f09b99e = () => interopDefault(__webpack_require__.e(/* import() | pages/index */ 6).then(__webpack_require__.bind(null, 122)));
+const _5ea9308a = () => interopDefault(__webpack_require__.e(/* import() | pages/index */ 6).then(__webpack_require__.bind(null, 124)));
 
 const emptyFn = () => {};
 
@@ -1171,27 +1171,27 @@ const routerOptions = {
   scrollBehavior: router_scrollBehavior,
   routes: [{
     path: "/about",
-    component: _ce796f28,
+    component: _9e18e614,
     name: "about"
   }, {
     path: "/contact",
-    component: _778fb1bf,
+    component: _44c0fbc9,
     name: "contact"
   }, {
     path: "/join",
-    component: _c9c595ca,
+    component: _8625915e,
     name: "join"
   }, {
     path: "/operation",
-    component: _1be67c74,
+    component: _3813b150,
     name: "operation"
   }, {
     path: "/saas",
-    component: _50103bf1,
+    component: _71e03e27,
     name: "saas"
   }, {
     path: "/",
-    component: _8f09b99e,
+    component: _5ea9308a,
     name: "index"
   }],
   fallback: false
@@ -1389,7 +1389,7 @@ var nuxt_error_component = Object(componentNormalizer["a" /* default */])(
   false,
   injectStyles,
   null,
-  "66b071fc"
+  "7941edfc"
   
 )
 
@@ -1693,7 +1693,7 @@ var nuxt_loading_component = Object(componentNormalizer["a" /* default */])(
   false,
   nuxt_loading_injectStyles,
   null,
-  "1a9a3fa0"
+  "43d06494"
   
 )
 
@@ -1701,16 +1701,38 @@ var nuxt_loading_component = Object(componentNormalizer["a" /* default */])(
 // EXTERNAL MODULE: ./style/index.scss
 var style = __webpack_require__(18);
 
-// CONCATENATED MODULE: ./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/@nuxt/components/dist/loader.js??ref--0-0!./node_modules/vue-loader/lib??vue-loader-options!./layouts/default.vue?vue&type=template&id=d47250f2&
-var defaultvue_type_template_id_d47250f2_render = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('div',[_c('nuxt')],1)}
-var defaultvue_type_template_id_d47250f2_staticRenderFns = []
+// CONCATENATED MODULE: ./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/@nuxt/components/dist/loader.js??ref--0-0!./node_modules/vue-loader/lib??vue-loader-options!./layouts/default.vue?vue&type=template&id=227bdc3e&
+var defaultvue_type_template_id_227bdc3e_render = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('div',[_c('nuxt')],1)}
+var defaultvue_type_template_id_227bdc3e_staticRenderFns = []
 
 
-// CONCATENATED MODULE: ./layouts/default.vue?vue&type=template&id=d47250f2&
+// CONCATENATED MODULE: ./layouts/default.vue?vue&type=template&id=227bdc3e&
 
+// CONCATENATED MODULE: ./node_modules/babel-loader/lib??ref--2-0!./node_modules/@nuxt/components/dist/loader.js??ref--0-0!./node_modules/vue-loader/lib??vue-loader-options!./layouts/default.vue?vue&type=script&lang=js&
+//
+//
+//
+//
+//
+//
+//
+/* harmony default export */ var defaultvue_type_script_lang_js_ = ({
+  data() {
+    return {};
+  },
+
+  mounted() {
+    const isGaoGuang = !location.href.includes("lifesvip");
+    localStorage.setItem("isGaoGuang", isGaoGuang);
+  }
+
+});
+// CONCATENATED MODULE: ./layouts/default.vue?vue&type=script&lang=js&
+ /* harmony default export */ var layouts_defaultvue_type_script_lang_js_ = (defaultvue_type_script_lang_js_); 
 // CONCATENATED MODULE: ./layouts/default.vue
 
-var script = {}
+
+
 function default_injectStyles (context) {
   
   var style0 = __webpack_require__(19)
@@ -1721,13 +1743,13 @@ if (style0.__inject__) style0.__inject__(context)
 /* normalize component */
 
 var default_component = Object(componentNormalizer["a" /* default */])(
-  script,
-  defaultvue_type_template_id_d47250f2_render,
-  defaultvue_type_template_id_d47250f2_staticRenderFns,
+  layouts_defaultvue_type_script_lang_js_,
+  defaultvue_type_template_id_227bdc3e_render,
+  defaultvue_type_template_id_227bdc3e_staticRenderFns,
   false,
   default_injectStyles,
   null,
-  "2ab80a11"
+  "b9070bd2"
   
 )
 
@@ -1915,7 +1937,7 @@ const layouts = {
 });
 // CONCATENATED MODULE: ./.nuxt/components/index.js
 const Footer = () => __webpack_require__.e(/* import() | components/footer */ 1).then(__webpack_require__.bind(null, 35)).then(c => wrapFunctional(c.default || c));
-const Form = () => __webpack_require__.e(/* import() | components/form */ 2).then(__webpack_require__.bind(null, 51)).then(c => wrapFunctional(c.default || c));
+const Form = () => __webpack_require__.e(/* import() | components/form */ 2).then(__webpack_require__.bind(null, 52)).then(c => wrapFunctional(c.default || c));
 const Header = () => __webpack_require__.e(/* import() | components/header */ 3).then(__webpack_require__.bind(null, 34)).then(c => wrapFunctional(c.default || c)); // nuxt/nuxt.js#8607
 
 function wrapFunctional(options) {

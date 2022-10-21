@@ -28,11 +28,11 @@
     <div class="copyright">
       <span
         ><a href="https://beian.miit.gov.cn/" target="_blank"
-          >粤ICP备18120172号</a
+          >粤ICP备{{isGaoGuang ? '20063673' : '18120172'}}号</a
         >
         Copyright © 2018</span
       >
-      深圳市橡树黑卡网络科技有限公司 XSHKVIP.COM
+      深圳市{{isGaoGuang ? "高光时刻" : "橡树黑卡"}}网络科技有限公司 {{!isGaoGuang ? "XSHKVIP.COM" : ""}}
     </div>
     <div class="suspend">
       <div class="item online-hover">
@@ -216,9 +216,11 @@ export default {
           sec_list: [{ name: "招聘职位", type: "join", url: "/join" }],
         },
       ],
+      isGaoGuang: false,
     };
   },
   mounted() {
+    this.isGaoGuang = localStorage.getItem("isGaoGuang") === "true" ? true : false;
     document.addEventListener("scroll", () => {
       const scroll =
         document.documentElement.scrollTop || document.body.scrollTop;

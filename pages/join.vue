@@ -2,7 +2,8 @@
   <div v-show="pageShow">
     <oakHeader :current="3" />
     <main>
-      <section class="join-banner"></section>
+      <section v-if="isGaoGuang" class="join-banner2"></section>
+      <section v-else class="join-banner"></section>
       <section class="mobile-join-banner"></section>
       <section class="join-main">
         <div class="container">
@@ -84,6 +85,7 @@ export default {
   data() {
     return {
       pageShow: false,
+      isGaoGuang: false,
       current: 0,
       list: [
         {
@@ -217,6 +219,7 @@ export default {
   },
   mounted() {
     this.pageShow = true;
+    this.isGaoGuang = localStorage.getItem("isGaoGuang") === "true" ? true : false;
     ans.pageView("oak_join_page");
   },
   methods: {
@@ -233,6 +236,12 @@ export default {
   width: 100%;
   height: 430px;
   background: url("@/static/join-banner.png") no-repeat center center;
+  background-size: auto 100%;
+}
+.join-banner2 {
+  width: 100%;
+  height: 430px;
+  background: url("@/static/join-banner2.png") no-repeat center center;
   background-size: auto 100%;
 }
 .join-main {
@@ -317,25 +326,32 @@ export default {
 }
 
 @media screen and (max-width: 1200px) {
-  .join-banner {
-    height: 350px;
+  .join-banner,
+    .join-banner2 {
+      height: 350px;
+    }
   }
-}
-
-@media screen and (max-width: 1024px) {
-  .join-banner {
-    height: 300px;
+  
+  @media screen and (max-width: 1024px) {
+  
+    .join-banner,
+    .join-banner2 {
+      height: 300px;
+    }
+  
+    .join-container .left {
+      margin-right: 30px;
+    }
+  
+    .join-container .left .item {
+      width: 255px;
+    }
   }
-  .join-container .left {
-    margin-right: 30px;
-  }
-  .join-container .left .item {
-    width: 255px;
-  }
-}
-
-@media screen and (max-width: 1024px) {
-  .join-banner {
+  
+  @media screen and (max-width: 1024px) {
+  
+    .join-banner,
+    .join-banner2 {
     display: none;
   }
   .mobile-join-banner {

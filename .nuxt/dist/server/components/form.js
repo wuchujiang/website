@@ -2712,19 +2712,14 @@ module.exports = function(module) {
 /***/ 49:
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__.p + "img/img12.e3e0f3d.png";
+module.exports = __webpack_require__.p + "img/img12-2.5e9ddaa.png";
 
 /***/ }),
 
 /***/ 50:
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
+/***/ (function(module, exports, __webpack_require__) {
 
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony import */ var _node_modules_css_loader_dist_cjs_js_ref_7_oneOf_1_0_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_postcss_loader_src_index_js_ref_7_oneOf_1_1_node_modules_sass_loader_dist_cjs_js_ref_7_oneOf_1_2_node_modules_nuxt_components_dist_loader_js_ref_0_0_node_modules_vue_loader_lib_index_js_vue_loader_options_form_vue_vue_type_style_index_0_id_0d01903c_lang_scss_scoped_true___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(37);
-/* harmony import */ var _node_modules_css_loader_dist_cjs_js_ref_7_oneOf_1_0_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_postcss_loader_src_index_js_ref_7_oneOf_1_1_node_modules_sass_loader_dist_cjs_js_ref_7_oneOf_1_2_node_modules_nuxt_components_dist_loader_js_ref_0_0_node_modules_vue_loader_lib_index_js_vue_loader_options_form_vue_vue_type_style_index_0_id_0d01903c_lang_scss_scoped_true___WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_node_modules_css_loader_dist_cjs_js_ref_7_oneOf_1_0_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_postcss_loader_src_index_js_ref_7_oneOf_1_1_node_modules_sass_loader_dist_cjs_js_ref_7_oneOf_1_2_node_modules_nuxt_components_dist_loader_js_ref_0_0_node_modules_vue_loader_lib_index_js_vue_loader_options_form_vue_vue_type_style_index_0_id_0d01903c_lang_scss_scoped_true___WEBPACK_IMPORTED_MODULE_0__);
-/* harmony reexport (unknown) */ for(var __WEBPACK_IMPORT_KEY__ in _node_modules_css_loader_dist_cjs_js_ref_7_oneOf_1_0_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_postcss_loader_src_index_js_ref_7_oneOf_1_1_node_modules_sass_loader_dist_cjs_js_ref_7_oneOf_1_2_node_modules_nuxt_components_dist_loader_js_ref_0_0_node_modules_vue_loader_lib_index_js_vue_loader_options_form_vue_vue_type_style_index_0_id_0d01903c_lang_scss_scoped_true___WEBPACK_IMPORTED_MODULE_0__) if(["default"].indexOf(__WEBPACK_IMPORT_KEY__) < 0) (function(key) { __webpack_require__.d(__webpack_exports__, key, function() { return _node_modules_css_loader_dist_cjs_js_ref_7_oneOf_1_0_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_postcss_loader_src_index_js_ref_7_oneOf_1_1_node_modules_sass_loader_dist_cjs_js_ref_7_oneOf_1_2_node_modules_nuxt_components_dist_loader_js_ref_0_0_node_modules_vue_loader_lib_index_js_vue_loader_options_form_vue_vue_type_style_index_0_id_0d01903c_lang_scss_scoped_true___WEBPACK_IMPORTED_MODULE_0__[key]; }) }(__WEBPACK_IMPORT_KEY__));
-
+module.exports = __webpack_require__.p + "img/img12.e3e0f3d.png";
 
 /***/ }),
 
@@ -2732,15 +2727,27 @@ __webpack_require__.r(__webpack_exports__);
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _node_modules_css_loader_dist_cjs_js_ref_7_oneOf_1_0_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_postcss_loader_src_index_js_ref_7_oneOf_1_1_node_modules_sass_loader_dist_cjs_js_ref_7_oneOf_1_2_node_modules_nuxt_components_dist_loader_js_ref_0_0_node_modules_vue_loader_lib_index_js_vue_loader_options_form_vue_vue_type_style_index_0_id_7a376c0c_lang_scss_scoped_true___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(37);
+/* harmony import */ var _node_modules_css_loader_dist_cjs_js_ref_7_oneOf_1_0_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_postcss_loader_src_index_js_ref_7_oneOf_1_1_node_modules_sass_loader_dist_cjs_js_ref_7_oneOf_1_2_node_modules_nuxt_components_dist_loader_js_ref_0_0_node_modules_vue_loader_lib_index_js_vue_loader_options_form_vue_vue_type_style_index_0_id_7a376c0c_lang_scss_scoped_true___WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_node_modules_css_loader_dist_cjs_js_ref_7_oneOf_1_0_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_postcss_loader_src_index_js_ref_7_oneOf_1_1_node_modules_sass_loader_dist_cjs_js_ref_7_oneOf_1_2_node_modules_nuxt_components_dist_loader_js_ref_0_0_node_modules_vue_loader_lib_index_js_vue_loader_options_form_vue_vue_type_style_index_0_id_7a376c0c_lang_scss_scoped_true___WEBPACK_IMPORTED_MODULE_0__);
+/* harmony reexport (unknown) */ for(var __WEBPACK_IMPORT_KEY__ in _node_modules_css_loader_dist_cjs_js_ref_7_oneOf_1_0_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_postcss_loader_src_index_js_ref_7_oneOf_1_1_node_modules_sass_loader_dist_cjs_js_ref_7_oneOf_1_2_node_modules_nuxt_components_dist_loader_js_ref_0_0_node_modules_vue_loader_lib_index_js_vue_loader_options_form_vue_vue_type_style_index_0_id_7a376c0c_lang_scss_scoped_true___WEBPACK_IMPORTED_MODULE_0__) if(["default"].indexOf(__WEBPACK_IMPORT_KEY__) < 0) (function(key) { __webpack_require__.d(__webpack_exports__, key, function() { return _node_modules_css_loader_dist_cjs_js_ref_7_oneOf_1_0_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_postcss_loader_src_index_js_ref_7_oneOf_1_1_node_modules_sass_loader_dist_cjs_js_ref_7_oneOf_1_2_node_modules_nuxt_components_dist_loader_js_ref_0_0_node_modules_vue_loader_lib_index_js_vue_loader_options_form_vue_vue_type_style_index_0_id_7a376c0c_lang_scss_scoped_true___WEBPACK_IMPORTED_MODULE_0__[key]; }) }(__WEBPACK_IMPORT_KEY__));
+
+
+/***/ }),
+
+/***/ 52:
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
 // ESM COMPAT FLAG
 __webpack_require__.r(__webpack_exports__);
 
-// CONCATENATED MODULE: ./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/@nuxt/components/dist/loader.js??ref--0-0!./node_modules/vue-loader/lib??vue-loader-options!./components/form/form.vue?vue&type=template&id=0d01903c&scoped=true&
-var render = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return (!_vm.hidePlan)?_c('section',{class:("free-plan " + (_vm.clearFixed && 'clear-fixed')),style:({ zIndex: _vm.showForm ? 99 : 50 })},[_vm._ssrNode("<div class=\"container\" data-v-0d01903c><img"+(_vm._ssrAttr("src",__webpack_require__(49)))+" alt class=\"img\" data-v-0d01903c> <div class=\"free-get-plan\" data-v-0d01903c>免费获取方案</div> <img"+(_vm._ssrAttr("src",__webpack_require__(36)))+" alt class=\"img-close\" data-v-0d01903c></div> "+((_vm.showForm)?("<div class=\"form-dialog\" data-v-0d01903c><div class=\"form-dialog-main\" data-v-0d01903c><img"+(_vm._ssrAttr("src",__webpack_require__(36)))+" alt class=\"form-dialog-close\" data-v-0d01903c> <img"+(_vm._ssrAttr("src",__webpack_require__(44)))+" alt class=\"b-img\" data-v-0d01903c> <div class=\"plan-form\" data-v-0d01903c><div class=\"mobile-top\" data-v-0d01903c><h4 data-v-0d01903c>这些企业都已免费获得定制会员方案</h4> <ul data-v-0d01903c><li data-v-0d01903c><img"+(_vm._ssrAttr("src",__webpack_require__(23)))+" alt data-v-0d01903c>省呗</li> <li data-v-0d01903c><img"+(_vm._ssrAttr("src",__webpack_require__(26)))+" alt data-v-0d01903c>我来数科</li> <li data-v-0d01903c><img"+(_vm._ssrAttr("src",__webpack_require__(24)))+" alt data-v-0d01903c>keep</li> <li data-v-0d01903c><img"+(_vm._ssrAttr("src",__webpack_require__(25)))+" alt data-v-0d01903c>榕树贷款</li> <li data-v-0d01903c><img"+(_vm._ssrAttr("src",__webpack_require__(45)))+" alt data-v-0d01903c>新橙优品</li></ul></div> <h2 data-v-0d01903c>完善信息后 48小时内会有专门的商务人员与您对接</h2> <div class=\"item\" data-v-0d01903c><div class=\"text\" data-v-0d01903c><span data-v-0d01903c>*</span>您的姓名：</div> <input type=\"text\" maxlength=\"10\" placeholder=\"请输入姓名\" name id=\"name\" autocomplete=\"off\""+(_vm._ssrAttr("value",(_vm.name)))+" data-v-0d01903c> <div class=\"input-error\" data-v-0d01903c>"+_vm._ssrEscape(_vm._s(_vm.name_error))+"</div></div> <div class=\"item\" data-v-0d01903c><div class=\"text\" data-v-0d01903c><span data-v-0d01903c>*</span>公司名称：</div> <input type=\"text\" placeholder=\"请输入公司名称\" maxlength=\"100\" name id=\"companyName\" autocomplete=\"off\""+(_vm._ssrAttr("value",(_vm.company_name)))+" data-v-0d01903c> <div class=\"input-error\" data-v-0d01903c>"+_vm._ssrEscape(_vm._s(_vm.company_name_error))+"</div></div> <div class=\"item\" data-v-0d01903c><div class=\"text\" data-v-0d01903c><span data-v-0d01903c>*</span>联系电话：</div> <input type=\"text\" placeholder=\"请输入联系电话\" maxlength=\"30\" name id=\"phone\" autocomplete=\"off\""+(_vm._ssrAttr("value",(_vm.phone)))+" data-v-0d01903c> <div class=\"input-error\" data-v-0d01903c>"+_vm._ssrEscape(_vm._s(_vm.phone_error))+"</div></div> <div class=\"item\" data-v-0d01903c><div class=\"text\" data-v-0d01903c><span data-v-0d01903c>*</span>验证码：</div> <input type=\"text\" placeholder=\"请输入验证码\" name id=\"code\" autocomplete=\"off\""+(_vm._ssrAttr("value",(_vm.code)))+" data-v-0d01903c> <div class=\"input-error\" data-v-0d01903c>"+_vm._ssrEscape(_vm._s(_vm.code_error))+"</div> "+((!_vm.codeText)?("<div class=\"get-code\" data-v-0d01903c>\n            获取验证码\n          </div>"):("<div class=\"get-code code-disable\" data-v-0d01903c>"+_vm._ssrEscape(_vm._s(_vm.codeText))+"</div>"))+"</div> <div class=\"plan-btn\" data-v-0d01903c>免费获取方案</div></div></div></div>"):"<!---->"))]):_vm._e()}
+// CONCATENATED MODULE: ./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/@nuxt/components/dist/loader.js??ref--0-0!./node_modules/vue-loader/lib??vue-loader-options!./components/form/form.vue?vue&type=template&id=7a376c0c&scoped=true&
+var render = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return (!_vm.hidePlan)?_c('section',{class:("free-plan " + (_vm.clearFixed && 'clear-fixed')),style:({ zIndex: _vm.showForm ? 99 : 50 })},[_vm._ssrNode("<div class=\"container\" data-v-7a376c0c>"+((_vm.isGaoGuang)?("<img"+(_vm._ssrAttr("src",__webpack_require__(49)))+" alt class=\"img\" data-v-7a376c0c>"):("<img"+(_vm._ssrAttr("src",__webpack_require__(50)))+" alt class=\"img\" data-v-7a376c0c>"))+" <div class=\"free-get-plan\" data-v-7a376c0c>免费获取方案</div> <img"+(_vm._ssrAttr("src",__webpack_require__(36)))+" alt class=\"img-close\" data-v-7a376c0c></div> "+((_vm.showForm)?("<div class=\"form-dialog\" data-v-7a376c0c><div class=\"form-dialog-main\" data-v-7a376c0c><img"+(_vm._ssrAttr("src",__webpack_require__(36)))+" alt class=\"form-dialog-close\" data-v-7a376c0c> <img"+(_vm._ssrAttr("src",__webpack_require__(44)))+" alt class=\"b-img\" data-v-7a376c0c> <div class=\"plan-form\" data-v-7a376c0c><div class=\"mobile-top\" data-v-7a376c0c><h4 data-v-7a376c0c>这些企业都已免费获得定制会员方案</h4> <ul data-v-7a376c0c><li data-v-7a376c0c><img"+(_vm._ssrAttr("src",__webpack_require__(23)))+" alt data-v-7a376c0c>省呗</li> <li data-v-7a376c0c><img"+(_vm._ssrAttr("src",__webpack_require__(26)))+" alt data-v-7a376c0c>我来数科</li> <li data-v-7a376c0c><img"+(_vm._ssrAttr("src",__webpack_require__(24)))+" alt data-v-7a376c0c>keep</li> <li data-v-7a376c0c><img"+(_vm._ssrAttr("src",__webpack_require__(25)))+" alt data-v-7a376c0c>榕树贷款</li> <li data-v-7a376c0c><img"+(_vm._ssrAttr("src",__webpack_require__(45)))+" alt data-v-7a376c0c>新橙优品</li></ul></div> <h2 data-v-7a376c0c>完善信息后 48小时内会有专门的商务人员与您对接</h2> <div class=\"item\" data-v-7a376c0c><div class=\"text\" data-v-7a376c0c><span data-v-7a376c0c>*</span>您的姓名：</div> <input type=\"text\" maxlength=\"10\" placeholder=\"请输入姓名\" name id=\"name\" autocomplete=\"off\""+(_vm._ssrAttr("value",(_vm.name)))+" data-v-7a376c0c> <div class=\"input-error\" data-v-7a376c0c>"+_vm._ssrEscape(_vm._s(_vm.name_error))+"</div></div> <div class=\"item\" data-v-7a376c0c><div class=\"text\" data-v-7a376c0c><span data-v-7a376c0c>*</span>公司名称：</div> <input type=\"text\" placeholder=\"请输入公司名称\" maxlength=\"100\" name id=\"companyName\" autocomplete=\"off\""+(_vm._ssrAttr("value",(_vm.company_name)))+" data-v-7a376c0c> <div class=\"input-error\" data-v-7a376c0c>"+_vm._ssrEscape(_vm._s(_vm.company_name_error))+"</div></div> <div class=\"item\" data-v-7a376c0c><div class=\"text\" data-v-7a376c0c><span data-v-7a376c0c>*</span>联系电话：</div> <input type=\"text\" placeholder=\"请输入联系电话\" maxlength=\"30\" name id=\"phone\" autocomplete=\"off\""+(_vm._ssrAttr("value",(_vm.phone)))+" data-v-7a376c0c> <div class=\"input-error\" data-v-7a376c0c>"+_vm._ssrEscape(_vm._s(_vm.phone_error))+"</div></div> <div class=\"item\" data-v-7a376c0c><div class=\"text\" data-v-7a376c0c><span data-v-7a376c0c>*</span>验证码：</div> <input type=\"text\" placeholder=\"请输入验证码\" name id=\"code\" autocomplete=\"off\""+(_vm._ssrAttr("value",(_vm.code)))+" data-v-7a376c0c> <div class=\"input-error\" data-v-7a376c0c>"+_vm._ssrEscape(_vm._s(_vm.code_error))+"</div> "+((!_vm.codeText)?("<div class=\"get-code\" data-v-7a376c0c>\n            获取验证码\n          </div>"):("<div class=\"get-code code-disable\" data-v-7a376c0c>"+_vm._ssrEscape(_vm._s(_vm.codeText))+"</div>"))+"</div> <div class=\"plan-btn\" data-v-7a376c0c>免费获取方案</div></div></div></div>"):"<!---->"))]):_vm._e()}
 var staticRenderFns = []
 
 
-// CONCATENATED MODULE: ./components/form/form.vue?vue&type=template&id=0d01903c&scoped=true&
+// CONCATENATED MODULE: ./components/form/form.vue?vue&type=template&id=7a376c0c&scoped=true&
 
 // EXTERNAL MODULE: ./utils/api.js + 2 modules
 var api = __webpack_require__(46);
@@ -2752,6 +2759,7 @@ var external_vant_ = __webpack_require__(7);
 var ans = __webpack_require__(27);
 
 // CONCATENATED MODULE: ./node_modules/babel-loader/lib??ref--2-0!./node_modules/@nuxt/components/dist/loader.js??ref--0-0!./node_modules/vue-loader/lib??vue-loader-options!./components/form/form.vue?vue&type=script&lang=js&
+//
 //
 //
 //
@@ -2869,11 +2877,13 @@ var ans = __webpack_require__(27);
       code_error: "",
       clearFixed: false,
       hidePlan: false,
-      showForm: false
+      showForm: false,
+      isGaoGuang: false
     };
   },
 
   mounted() {
+    this.isGaoGuang = localStorage.getItem("isGaoGuang") === "true" ? true : false;
     let footer_height = 290;
 
     if (window.innerWidth < 641) {
@@ -3042,7 +3052,7 @@ var componentNormalizer = __webpack_require__(2);
 
 function injectStyles (context) {
   
-  var style0 = __webpack_require__(50)
+  var style0 = __webpack_require__(51)
 if (style0.__inject__) style0.__inject__(context)
 
 }
@@ -3055,8 +3065,8 @@ var component = Object(componentNormalizer["a" /* default */])(
   staticRenderFns,
   false,
   injectStyles,
-  "0d01903c",
-  "1237b383"
+  "7a376c0c",
+  "c6135186"
   
 )
 

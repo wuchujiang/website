@@ -4,6 +4,22 @@
   </div>
 </template>
 
+
+<script>
+export default {
+  data() {
+    return {
+
+    }
+  },
+
+  mounted() {
+    const isGaoGuang = !location.href.includes("lifesvip");
+    localStorage.setItem("isGaoGuang", isGaoGuang);
+  }
+}
+</script>
+
 <style>
 html {
   font-family: 'Source Sans Pro', -apple-system, BlinkMacSystemFont, 'Segoe UI',

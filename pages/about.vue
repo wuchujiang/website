@@ -22,7 +22,7 @@
             <div class="desc">助力企业构建会员体系实现活跃与创收</div>
           </div>
           <div class="about-text">
-            <p>橡树黑卡成立于2018年，</p>
+            <p>{{ isGaoGuang ? "高光时刻" : "橡树黑卡"}}成立于2018年，</p>
             <p>
               是国内领先的付费会员制权益SaaS服务平台，是国家高新技术企业、“双软企业”
               。
@@ -59,7 +59,7 @@
             <div class="item">
               <div class="date">
                 <span>2018.11</span>
-                <span>【橡树黑卡小程序】</span>
+                <span>【{{ isGaoGuang ? "高光时刻" : "橡树黑卡"}}小程序】</span>
               </div>
               <p>
                 与龙腾出行、海南航空、希尔顿、洲际、凯悦、雅高、滴滴出行、易安保险等企业达成合作，整合权益资源，搭建会员系统，奠基ToB能力
@@ -109,10 +109,10 @@
             <div class="item">
               <div class="date">
                 <span>2020.06</span>
-                <span>【全新推出橡树生活权益平台】</span>
+                <span>【全新推出{{ isGaoGuang ? "高光时刻" : "橡树"}}生活权益平台】</span>
               </div>
               <p>
-                橡树生活权益平台，涵盖娱乐视听类、生活服务类、旅游出行、车主福利、阅读学习、医护健康等300余项权益服务
+                {{ isGaoGuang ? "高光时刻" : "橡树"}}生活权益平台，涵盖娱乐视听类、生活服务类、旅游出行、车主福利、阅读学习、医护健康等300余项权益服务
               </p>
               <b></b>
             </div>
@@ -147,6 +147,7 @@ export default {
         { title: "公司介绍", url: "/about", type: "about" },
         { title: "联系我们", url: "/contact", type: "contact" },
       ],
+      isGaoGuang: false,
     };
   },
   head() {
@@ -169,6 +170,7 @@ export default {
   },
   mounted() {
     this.pageShow = true;
+    this.isGaoGuang = localStorage.getItem("isGaoGuang") === "true" ? true : false;
     ans.pageView("oak_about_page");
   },
 };
@@ -269,7 +271,7 @@ export default {
 .course-main .item {
   box-sizing: border-box;
   width: 288px;
-  padding: 10px 20px 0;
+  padding: 10px 14px 0;
   box-shadow: 0px 2px 16px 0px rgba(0, 0, 0, 0.04);
   height: 215px;
   position: relative;

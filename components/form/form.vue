@@ -5,7 +5,8 @@
     :style="{ zIndex: showForm ? 99 : 50 }"
   >
     <div class="container">
-      <img class="img" src="@/static/img12.png" alt="" />
+      <img v-if="isGaoGuang" class="img" src="@/static/img12-2.png" alt="" />
+      <img v-else class="img" src="@/static/img12.png" alt="" />
       <div class="free-get-plan" @click="showFormFn">免费获取方案</div>
       <img
         @click="hidePlan = true"
@@ -117,9 +118,11 @@ export default {
       clearFixed: false,
       hidePlan: false,
       showForm: false,
+      isGaoGuang: false,
     };
   },
   mounted() {
+    this.isGaoGuang = localStorage.getItem("isGaoGuang") === "true" ? true : false;
     let footer_height = 290;
     if (window.innerWidth < 641) {
       footer_height = 400;

@@ -2,12 +2,13 @@
   <div ref="index" v-show="pageShow">
     <oakHeader :current="0" />
     <main>
-      <section class="banner"></section>
+      <section v-if="isGaoGuang" class="banner2"></section>
+      <section v-else class="banner"></section>
       <section class="why-select-oak">
         <div class="container">
           <div class="common-title">
             <div class="en">WHY</div>
-            <div class="name">为什么选择橡树黑卡</div>
+            <div class="name">为什么选择{{ isGaoGuang ? "高光时刻" : "橡树黑卡"}}</div>
             <div class="desc">
               专业团队根据合作方与用户诉求，设计定制产品，并提供专业运营支持服务
             </div>
@@ -319,6 +320,7 @@ export default {
       ],
       service_value_current: -1,
       showDialog: false,
+      isGaoGuang: false,
     };
   },
   head() {
@@ -367,6 +369,7 @@ export default {
   },
   mounted() {
     this.pageShow = true;
+    this.isGaoGuang = localStorage.getItem("isGaoGuang") === "true" ? true : false;
     ans.pageView("oak_page");
   },
   methods: {
@@ -466,6 +469,12 @@ export default {
   width: 100%;
   height: 420px;
   background: url("@/static/banner.png") no-repeat center center;
+  background-size: auto 100%;
+}
+.banner2 {
+  width: 100%;
+  height: 420px;
+  background: url("@/static/banner2.png") no-repeat center center;
   background-size: auto 100%;
 }
 .why-select-oak {
@@ -641,22 +650,28 @@ export default {
   display: none;
 }
 @media screen and (max-width: 1200px) {
-  .banner {
-    height: 400px;
+  .banner,
+    .banner2 {
+      height: 400px;
+    }
+  
+    .service-value .list .item {
+      width: 23%;
+    }
+  
+    .capacity .item {
+      font-size: 18px;
+    }
+  
+    .capacity-content1 {
+      padding: 0 70px;
+    }
   }
-  .service-value .list .item {
-    width: 23%;
-  }
-  .capacity .item {
-    font-size: 18px;
-  }
-  .capacity-content1 {
-    padding: 0 70px;
-  }
-}
-
-@media screen and (max-width: 1024px) {
-  .banner {
+  
+  @media screen and (max-width: 1024px) {
+  
+    .banner,
+    .banner2 {
     height: 300px;
   }
   .plan img {
