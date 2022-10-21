@@ -2,7 +2,7 @@
   <header class="header" id="header">
     <div class="container">
       <h1 class="logo">
-        <nuxt-link to="/"><img src="@/static/logo.png" alt="" /></nuxt-link>
+        <nuxt-link to="/"><img :src="project ? `${url}${project.en}_logo.png` : `${url}logo.png`" alt="" /></nuxt-link>
       </h1>
       <nav class="nav">
         <ul>
@@ -65,11 +65,14 @@
 </template>
 
 <script>
+import { url } from '../../utils/config'
 export default {
   props: ["current", "sec_current"],
   data() {
     return {
       showNav: false,
+      project: null,
+      url,
       nav: [
         {
           name: "首页",
@@ -117,6 +120,10 @@ export default {
         },
       ],
     };
+  },
+  mounted() {
+    this.project = window.local;
+    console.log(this.project);
   },
 };
 </script>

@@ -2,13 +2,13 @@
   <div ref="index" v-show="pageShow">
     <oakHeader :current="0" />
     <main>
-      <section v-if="isGaoGuang" class="banner2"></section>
+      <section v-if="project" class="banner2"></section>
       <section v-else class="banner"></section>
       <section class="why-select-oak">
         <div class="container">
           <div class="common-title">
             <div class="en">WHY</div>
-            <div class="name">为什么选择{{ isGaoGuang ? "高光时刻" : "橡树黑卡"}}</div>
+            <div class="name">为什么选择{{ project ? project.name : "橡树黑卡"}}</div>
             <div class="desc">
               专业团队根据合作方与用户诉求，设计定制产品，并提供专业运营支持服务
             </div>
@@ -114,7 +114,7 @@
       </section>
       <section class="plan">
         <div class="container">
-          <img src="@/static/img11.png" alt="" />
+          <img :src="project ? `${url}${project.en}_img11.png` : `${url}img11.png`" alt="" />
           <div class="mobile-top">
             <h4>这些企业都已免费获得定制会员方案</h4>
             <ul>
@@ -249,6 +249,7 @@ import oakForm from "../components/form/form";
 import { register, officialWebsite } from "../utils/api";
 import { Toast } from "vant";
 import ans from "@/utils/ans";
+import { url } from '../utils/config'
 export default {
   name: "IndexPage",
   components: {
@@ -258,6 +259,7 @@ export default {
   },
   data() {
     return {
+      url,
       pageShow: false,
       codeText: "",
       num: 60,
@@ -320,23 +322,30 @@ export default {
       ],
       service_value_current: -1,
       showDialog: false,
-      isGaoGuang: false,
+      project: null,
     };
   },
   head() {
+    const local = window.local;
+    let title = '橡树黑卡--值得信赖的会员权益平台';
+    let description_content = "橡树黑卡为金融、互联网、电商、零售等行业提供强大的用户运营全周期服务，提供积分体系运营、会员营销运营、游戏化运营等方案，400-150-9669。";
+    let keywords_content = "橡树黑卡，会员权益，会员积分，视频会员，网站会员，app会员，用户运营，SaaS平台";
+    if (local) {
+      title = `${local.name}--值得信赖的会员权益平台`;
+      description_content = `${local.name}为金融、互联网、电商、零售等行业提供强大的用户运营全周期服务，提供积分体系运营、会员营销运营、游戏化运营等方案，400-150-9669。`;
+      keywords_content = `${local.name}，会员权益，会员积分，视频会员，网站会员，app会员，用户运营，SaaS平台`
+    }
     return {
-      title: "橡树黑卡--值得信赖的会员权益平台",
+      title,
       meta: [
         {
           hid: "index",
           name: "description",
-          content:
-            "橡树黑卡为金融、互联网、电商、零售等行业提供强大的用户运营全周期服务，提供积分体系运营、会员营销运营、游戏化运营等方案，400-150-9669。",
+          content: description_content,
         },
         {
           name: "keywords",
-          content:
-            "橡树黑卡，会员权益，会员积分，视频会员，网站会员，app会员，用户运营，SaaS平台",
+          content: keywords_content,
         },
       ],
     };
@@ -369,7 +378,8 @@ export default {
   },
   mounted() {
     this.pageShow = true;
-    this.isGaoGuang = localStorage.getItem("isGaoGuang") === "true" ? true : false;
+    this.project = window.local;
+    console.log("index:", window.local);
     ans.pageView("oak_page");
   },
   methods: {

@@ -2,7 +2,7 @@
   <div v-show="pageShow">
     <oakHeader :current="3" />
     <main>
-      <section v-if="isGaoGuang" class="join-banner2"></section>
+      <section v-if="project" class="join-banner2"></section>
       <section v-else class="join-banner"></section>
       <section class="mobile-join-banner"></section>
       <section class="join-main">
@@ -85,7 +85,7 @@ export default {
   data() {
     return {
       pageShow: false,
-      isGaoGuang: false,
+      project: null,
       current: 0,
       list: [
         {
@@ -219,7 +219,7 @@ export default {
   },
   mounted() {
     this.pageShow = true;
-    this.isGaoGuang = localStorage.getItem("isGaoGuang") === "true" ? true : false;
+    this.project = window.local;
     ans.pageView("oak_join_page");
   },
   methods: {

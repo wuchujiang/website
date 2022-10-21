@@ -2,7 +2,8 @@
   <div ref="about" v-show="pageShow">
     <oakHeader :current="2" sec_current="nav_about" />
     <main>
-      <section class="about-banner"></section>
+      <section v-if="project" class="about-banner2"></section>
+      <section v-else class="about-banner"></section>
       <section class="mobile-second-nav">
         <ul>
           <li
@@ -22,7 +23,7 @@
             <div class="desc">助力企业构建会员体系实现活跃与创收</div>
           </div>
           <div class="about-text">
-            <p>{{ isGaoGuang ? "高光时刻" : "橡树黑卡"}}成立于2018年，</p>
+            <p>{{ project ? project.name : "橡树黑卡"}}成立于2018年，</p>
             <p>
               是国内领先的付费会员制权益SaaS服务平台，是国家高新技术企业、“双软企业”
               。
@@ -59,7 +60,7 @@
             <div class="item">
               <div class="date">
                 <span>2018.11</span>
-                <span>【{{ isGaoGuang ? "高光时刻" : "橡树黑卡"}}小程序】</span>
+                <span>【{{ project ? project.name : "橡树黑卡"}}小程序】</span>
               </div>
               <p>
                 与龙腾出行、海南航空、希尔顿、洲际、凯悦、雅高、滴滴出行、易安保险等企业达成合作，整合权益资源，搭建会员系统，奠基ToB能力
@@ -109,10 +110,10 @@
             <div class="item">
               <div class="date">
                 <span>2020.06</span>
-                <span>【全新推出{{ isGaoGuang ? "高光时刻" : "橡树"}}生活权益平台】</span>
+                <span>【全新推出{{ project ? project.name : "橡树"}}生活权益平台】</span>
               </div>
               <p>
-                {{ isGaoGuang ? "高光时刻" : "橡树"}}生活权益平台，涵盖娱乐视听类、生活服务类、旅游出行、车主福利、阅读学习、医护健康等300余项权益服务
+                {{ project ? project.name : "橡树"}}生活权益平台，涵盖娱乐视听类、生活服务类、旅游出行、车主福利、阅读学习、医护健康等300余项权益服务
               </p>
               <b></b>
             </div>
@@ -147,7 +148,7 @@ export default {
         { title: "公司介绍", url: "/about", type: "about" },
         { title: "联系我们", url: "/contact", type: "contact" },
       ],
-      isGaoGuang: false,
+      project: null,
     };
   },
   head() {
@@ -170,7 +171,7 @@ export default {
   },
   mounted() {
     this.pageShow = true;
-    this.isGaoGuang = localStorage.getItem("isGaoGuang") === "true" ? true : false;
+    this.project = window.local;
     ans.pageView("oak_about_page");
   },
 };
@@ -180,6 +181,12 @@ export default {
   width: 100%;
   height: 430px;
   background: url("@/static/about-banner.png") no-repeat center center;
+  background-size: auto 100%;
+}
+.about-banner2 {
+  width: 100%;
+  height: 430px;
+  background: url("@/static/about-banner2.png") no-repeat center center;
   background-size: auto 100%;
 }
 .common-title {
@@ -354,29 +361,37 @@ export default {
   display: none;
 }
 @media screen and (max-width: 1024px) {
-  .about-banner {
-    height: 300px;
+  .about-banner,
+    .about-banner2 {
+      height: 300px;
+    }
+  
+    .about-text img {
+      width: 100%;
+    }
+  
+    .course-main {
+      padding: 0 26px;
+    }
+  
+    .course-main .item {
+      width: 244px;
+    }
+  
+    .course-main .item p {
+      font-size: 14px;
+      line-height: 22px;
+    }
+  
+    .course-main .list:first-child .item .date {
+      font-size: 14px;
+    }
   }
-  .about-text img {
-    width: 100%;
-  }
-  .course-main {
-    padding: 0 26px;
-  }
-  .course-main .item {
-    width: 244px;
-  }
-  .course-main .item p {
-    font-size: 14px;
-    line-height: 22px;
-  }
-  .course-main .list:first-child .item .date {
-    font-size: 14px;
-  }
-}
-
-@media screen and (max-width: 640px) {
-  .about-banner {
+  
+  @media screen and (max-width: 640px) {
+  
+    .about-banner,
+    .about-banner2 {
     display: none;
   }
   .common-title {

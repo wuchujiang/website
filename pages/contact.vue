@@ -52,7 +52,7 @@
       </section>
       <section class="contact-form">
         <div class="container">
-          <img src="@/static/img11.png" alt="" />
+          <img :src="project ? `${url}${project.en}_img11.png` : `${url}img11.png`" alt="" />
           <div class="mobile-top">
             <h4>这些企业都已免费获得定制会员方案</h4>
             <ul>
@@ -135,6 +135,7 @@ import oakFooter from "../components/footer/footer";
 import { register, officialWebsite } from "../utils/api";
 import { Toast } from "vant";
 import ans from "@/utils/ans";
+import { url } from '../utils/config'
 export default {
   name: "contact",
   components: {
@@ -158,6 +159,8 @@ export default {
         { title: "公司介绍", url: "/about", type: "about" },
         { title: "联系我们", url: "/contact", type: "contact" },
       ],
+      url,
+      project: null,
     };
   },
   head() {
@@ -180,6 +183,7 @@ export default {
   },
   mounted() {
     this.pageShow = true;
+    this.project = window.local;
     ans.pageView("oak_connect_page");
   },
   watch: {

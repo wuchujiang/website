@@ -2,7 +2,7 @@
   <footer class="footer">
     <div class="container">
       <div class="left">
-        <img src="@/static/logo2.png" alt="" />
+        <img :src="project ? `${url}${project.en}_logo2.png` : `${url}logo2.png`" alt="" />
         <p>合作电话：400-150-9669</p>
         <p>业务合作：marketing@oakblack.com</p>
         <p>媒体合作：media@oakblack.com</p>
@@ -28,11 +28,11 @@
     <div class="copyright">
       <span
         ><a href="https://beian.miit.gov.cn/" target="_blank"
-          >粤ICP备{{isGaoGuang ? '20063673' : '18120172'}}号</a
+          >粤ICP备{{project ? project.record : '18120172'}}号</a
         >
-        Copyright © 2018</span
+      </span
       >
-      深圳市{{isGaoGuang ? "高光时刻" : "橡树黑卡"}}网络科技有限公司 {{!isGaoGuang ? "XSHKVIP.COM" : ""}}
+      深圳市{{project ? project.name : "橡树黑卡"}}网络科技有限公司
     </div>
     <div class="suspend">
       <div class="item online-hover">
@@ -189,6 +189,7 @@
 
 <script>
 import ans from "@/utils/ans";
+import { url } from '../../utils/config'
 export default {
   props: ["type"],
   data() {
@@ -196,6 +197,7 @@ export default {
       showBackTop: false,
       show_online: false,
       show_phone_consult: false,
+      url,
       nav: [
         {
           name: "产品服务",
@@ -216,11 +218,11 @@ export default {
           sec_list: [{ name: "招聘职位", type: "join", url: "/join" }],
         },
       ],
-      isGaoGuang: false,
+      project: null,
     };
   },
   mounted() {
-    this.isGaoGuang = localStorage.getItem("isGaoGuang") === "true" ? true : false;
+    this.project = window.local;
     document.addEventListener("scroll", () => {
       const scroll =
         document.documentElement.scrollTop || document.body.scrollTop;

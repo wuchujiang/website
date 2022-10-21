@@ -2,34 +2,50 @@ exports.ids = [2];
 exports.modules = {
 
 /***/ 23:
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "b", function() { return key; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "c", function() { return secret; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return baseUrl; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "d", function() { return url; });
+//阿里云api网关使用的key，secret
+const key =  false ? undefined : '203810451';
+const secret =  false ? undefined : "fa70o4nrgiqrz7tk2f20gksluh7qyg3s";
+const baseUrl =  false ? undefined : "https://api.xiangshuheika.com";
+const url = 'https://cdn.xiangshuheika.com/static/website/';
+
+/***/ }),
+
+/***/ 24:
 /***/ (function(module, exports, __webpack_require__) {
 
 module.exports = __webpack_require__.p + "img/kh1.b160cb0.png";
 
 /***/ }),
 
-/***/ 24:
+/***/ 25:
 /***/ (function(module, exports) {
 
 module.exports = "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACkAAAAoCAMAAABU4iNhAAAA/FBMVEUAAABaT2FYTmBYTmFaUGJYTmBZTmBZT2JZT2FYT2NbU2RgWm5YTmBYT2BYT2BYTmFYTmBYT2BZTmFZT2BaUGRgUHCAZ4BYT2BZTmFYTmBZTmFaUWBZUWNaT2FcT2FgUGheVWZgYIBYTmD///9TSVxXTV9VS13AvMHr6utyaXfu7e59d4ODfYnq6et6c4BaUGHm5ebk4uTe3N92cH1cU2P39/jo5+htZHT6+fr09PXV1NfGw8icmKGTjpiIg46AeoZzbHlqYXFjWmry8vLv7u/f3+HS0NS2s7myrrWZlJ6Mh5N1bXtvZ3VQRlna19vW1NfNy8/JyMzCv8OsqLB2ifNTAAAAInRSTlMAWea1QPjvjXAyJQz74djQyryjmRkQBfbasIlSSEc6IB4IY+PUaAAAAeJJREFUOMul1WdTwkAQBuAEIiBgw971GgqBEEAQG4KdYv3//8XdUK4QZBjfT+HmmSO3e3ex9Gw58d3VpYXISnR9P2VNj5OJEZmFqD3FLUaJmZXDEHe67pGQrG2YcGOVhCeyaPxzhEzLtva2SVgJJx43lcDh9IGEqWUYbF2XOwZlxc/vniCx5FjiovkPpX6bazBfozQLDzubQ2gTTJbSs3OhzZijlF7jY3zYlyVNSlgDWKpwbMJxIBNElRL6AHN5RjCZQEbCJKsUABYQBjkBeERCJOv6CJsjSBIg90KkqJQBPjYZH3cV5PKkFNUvfEeXyfWlN60UmZDCq7ZfVIhxrOSEZK2X7L33ese4Km3LMSWrf1Bay/c1h0uyDSnq71TWRyZuSlbHVcuaS2n8e7/1DOoCG+4XNZrQV1RvXyHsFJGWKiq1tSqVXIQPtyLYb7SgUkerfKOMM94KDlvzDB6fukxWXusm5hIgFrX5gPSeKd080mTjDSFSt4DvOqIJbdfhjG8c4JA+wkC5N/h9ou5khDcARxFuY3Q6SEY5HfwVFnMj1B6yOyjWM5GnY9AmcX6VC2bUaMl3cSiunmLCvaoBcaNWuXqK8Wb4K7GkdttMT/pg3hts9q045007+/b+zxdh9lfmF/LesdJwxKu2AAAAAElFTkSuQmCC"
 
 /***/ }),
 
-/***/ 25:
+/***/ 26:
 /***/ (function(module, exports, __webpack_require__) {
 
 module.exports = __webpack_require__.p + "img/kh4.32ab95a.png";
 
 /***/ }),
 
-/***/ 26:
+/***/ 27:
 /***/ (function(module, exports, __webpack_require__) {
 
 module.exports = __webpack_require__.p + "img/kh5.8b814ab.png";
 
 /***/ }),
 
-/***/ 27:
+/***/ 28:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -96,14 +112,14 @@ module.exports = __webpack_require__.p + "img/kh5.8b814ab.png";
 
 /***/ }),
 
-/***/ 36:
+/***/ 37:
 /***/ (function(module, exports) {
 
 module.exports = "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAFYAAABWCAMAAABiiJHFAAAAh1BMVEUAAABmZmZsbGxmZmZ1dXVoaGhnZ2d8fHyCgoJmZmZmZmZpaWlnZ2dnZ2dmZmZmZmZpaWlnZ2dnZ2dnZ2dnZ2dubm5mZmZnZ2dpaWltbW1nZ2dnZ2dnZ2doaGhoaGhnZ2dnZ2dnZ2dnZ2dpaWltbW1mZmZnZ2dmZmZoaGhnZ2dmZmZnZ2dmZma74kPmAAAALHRSTlMA1RX7DFvGBgPw6CD2tYzeOKFqQTIPcFYnGxGGYk9Jy7+akzwK0rqoLXqtncbZehkAAAI1SURBVFjD7dXJjqMwFIXh65jEZoYwJIHMc6rO+z9fqySIpbKbYJJFS82/YvUJrsw1jY2NjY2N/SeJws9zvxIfJJ1tytEURPln6GUIgMf7WxTd9uzHD/230ckX4N4WBTUVi9QDwtV7E42AePrrq+U0Bg5yuFowuKVCFbyOwaqhqh8gLMhYESLIh6knIJL0l2QNJEPUFfiaOlpwrOxV4WFOnZVwHWv2ipRedMBFWqoL7AS9SO6xsVNlwJfNY37W5tP+ZXfuCit2jbRVwSa/VsTMo6ZvzG1UwXn7RmfWuErl0+dpCXC2YLc4qK2gXKW2HbGwYL+Qke7qKmVg/VUJV5Lu6ipJF/3P7h03It1VqirFqTc7x5p016TSFGVvNkJGBteg0gnH3myIJRncna7SEvvebIyCDK7p7J/h9WbBScvZ4We+WgF6sx4cTZ3xOTO4Au6w2arzOjG4Pma92SMyg0omN8HB4txODarRXeBhcTl+66rZPVhclAU8qalm14Og3sU4aarRzTGj/k0RUZN4qsrdUVtttW8duO0b+V6jKnfHZPvowiGLHp0bRKqd9CCbhLp5DdlfZWq6Ib1KhijJLhmjphfVYJIsqwKsqbMNgoqsW4Jn1NHWRU4D2oLPO/YGV19j6yIVZEwegYwGtvJw2RrHyuD6NDhxBWbaWyUzIHTone4X4FInUpk1A9id3i2JAXjXNCrLKN17AOKMPlG1ueIZK1f0sUTlJ5tN4leCxsbGxsbG/q3+AJdlL7UiHjrxAAAAAElFTkSuQmCC"
 
 /***/ }),
 
-/***/ 37:
+/***/ 38:
 /***/ (function(module, exports) {
 
 // Exports
@@ -114,21 +130,14 @@ module.exports = {
 
 /***/ }),
 
-/***/ 44:
-/***/ (function(module, exports, __webpack_require__) {
-
-module.exports = __webpack_require__.p + "img/img11.ccebef4.png";
-
-/***/ }),
-
-/***/ 45:
+/***/ 43:
 /***/ (function(module, exports, __webpack_require__) {
 
 module.exports = __webpack_require__.p + "img/kh7.2b8b3b8.png";
 
 /***/ }),
 
-/***/ 46:
+/***/ 44:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -142,17 +151,15 @@ var external_qs_ = __webpack_require__(21);
 var external_qs_default = /*#__PURE__*/__webpack_require__.n(external_qs_);
 
 // EXTERNAL MODULE: ./node_modules/lodash.pickby/index.js
-var lodash_pickby = __webpack_require__(47);
+var lodash_pickby = __webpack_require__(45);
 var lodash_pickby_default = /*#__PURE__*/__webpack_require__.n(lodash_pickby);
 
 // EXTERNAL MODULE: external "jsrsasign"
 var external_jsrsasign_ = __webpack_require__(22);
 
-// CONCATENATED MODULE: ./utils/config.js
-//阿里云api网关使用的key，secret
-const key =  false ? undefined : '203810451';
-const secret =  false ? undefined : "fa70o4nrgiqrz7tk2f20gksluh7qyg3s";
-const baseUrl =  false ? undefined : "https://api.xiangshuheika.com";
+// EXTERNAL MODULE: ./utils/config.js
+var utils_config = __webpack_require__(23);
+
 // EXTERNAL MODULE: external "vant"
 var external_vant_ = __webpack_require__(7);
 
@@ -165,7 +172,7 @@ var external_vant_ = __webpack_require__(7);
 const utils_contentType = 'application/x-www-form-urlencoded';
 
 function encrypt(option, method, accept, contentType) {
-  var _Headers = 'X-Ca-Key' + ":" + key + "\n" + "X-Ca-Stage" + ":" + "RELEASE" + "\n";
+  var _Headers = 'X-Ca-Key' + ":" + utils_config["b" /* key */] + "\n" + "X-Ca-Stage" + ":" + "RELEASE" + "\n";
 
   var paramsData = '';
   var arr = Object.keys(option.data).sort();
@@ -188,7 +195,7 @@ function encrypt(option, method, accept, contentType) {
 
   var stringToSign = method.toUpperCase() + "\n" + accept + "\n" + "\n" + (contentType || '') + "\n" + "\n" + _Headers + _Url;
 
-  var hmacSha256 = external_jsrsasign_["CryptoJS"].HmacSHA256(stringToSign, secret);
+  var hmacSha256 = external_jsrsasign_["CryptoJS"].HmacSHA256(stringToSign, utils_config["c" /* secret */]);
   var hashInBase64 = external_jsrsasign_["CryptoJS"].enc.Base64.stringify(hmacSha256);
   return {
     hashInBase64
@@ -201,12 +208,12 @@ function encrypt(option, method, accept, contentType) {
     headers: {
       'Accept': utils_contentType,
       "X-Ca-Stage": "RELEASE",
-      'X-Ca-Key': key,
+      'X-Ca-Key': utils_config["b" /* key */],
       'X-Ca-Signature-Headers': 'X-Ca-Key,X-Ca-Stage'
     }
   });
   instance.interceptors.request.use(config => {
-    config.baseURL = baseUrl;
+    config.baseURL = utils_config["a" /* baseUrl */];
     const tempData = config.data || {};
 
     if (config.method === 'post' || config.method === 'put') {
@@ -267,7 +274,7 @@ const officialWebsite = (that, data) => {
 
 /***/ }),
 
-/***/ 47:
+/***/ 45:
 /***/ (function(module, exports, __webpack_require__) {
 
 /* WEBPACK VAR INJECTION */(function(module) {/**
@@ -2676,11 +2683,11 @@ function stubArray() {
 
 module.exports = pickBy;
 
-/* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(48)(module)))
+/* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(46)(module)))
 
 /***/ }),
 
-/***/ 48:
+/***/ 46:
 /***/ (function(module, exports) {
 
 module.exports = function(module) {
@@ -2709,54 +2716,43 @@ module.exports = function(module) {
 
 /***/ }),
 
-/***/ 49:
-/***/ (function(module, exports, __webpack_require__) {
-
-module.exports = __webpack_require__.p + "img/img12-2.5e9ddaa.png";
-
-/***/ }),
-
-/***/ 50:
-/***/ (function(module, exports, __webpack_require__) {
-
-module.exports = __webpack_require__.p + "img/img12.e3e0f3d.png";
-
-/***/ }),
-
-/***/ 51:
+/***/ 47:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony import */ var _node_modules_css_loader_dist_cjs_js_ref_7_oneOf_1_0_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_postcss_loader_src_index_js_ref_7_oneOf_1_1_node_modules_sass_loader_dist_cjs_js_ref_7_oneOf_1_2_node_modules_nuxt_components_dist_loader_js_ref_0_0_node_modules_vue_loader_lib_index_js_vue_loader_options_form_vue_vue_type_style_index_0_id_7a376c0c_lang_scss_scoped_true___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(37);
-/* harmony import */ var _node_modules_css_loader_dist_cjs_js_ref_7_oneOf_1_0_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_postcss_loader_src_index_js_ref_7_oneOf_1_1_node_modules_sass_loader_dist_cjs_js_ref_7_oneOf_1_2_node_modules_nuxt_components_dist_loader_js_ref_0_0_node_modules_vue_loader_lib_index_js_vue_loader_options_form_vue_vue_type_style_index_0_id_7a376c0c_lang_scss_scoped_true___WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_node_modules_css_loader_dist_cjs_js_ref_7_oneOf_1_0_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_postcss_loader_src_index_js_ref_7_oneOf_1_1_node_modules_sass_loader_dist_cjs_js_ref_7_oneOf_1_2_node_modules_nuxt_components_dist_loader_js_ref_0_0_node_modules_vue_loader_lib_index_js_vue_loader_options_form_vue_vue_type_style_index_0_id_7a376c0c_lang_scss_scoped_true___WEBPACK_IMPORTED_MODULE_0__);
-/* harmony reexport (unknown) */ for(var __WEBPACK_IMPORT_KEY__ in _node_modules_css_loader_dist_cjs_js_ref_7_oneOf_1_0_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_postcss_loader_src_index_js_ref_7_oneOf_1_1_node_modules_sass_loader_dist_cjs_js_ref_7_oneOf_1_2_node_modules_nuxt_components_dist_loader_js_ref_0_0_node_modules_vue_loader_lib_index_js_vue_loader_options_form_vue_vue_type_style_index_0_id_7a376c0c_lang_scss_scoped_true___WEBPACK_IMPORTED_MODULE_0__) if(["default"].indexOf(__WEBPACK_IMPORT_KEY__) < 0) (function(key) { __webpack_require__.d(__webpack_exports__, key, function() { return _node_modules_css_loader_dist_cjs_js_ref_7_oneOf_1_0_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_postcss_loader_src_index_js_ref_7_oneOf_1_1_node_modules_sass_loader_dist_cjs_js_ref_7_oneOf_1_2_node_modules_nuxt_components_dist_loader_js_ref_0_0_node_modules_vue_loader_lib_index_js_vue_loader_options_form_vue_vue_type_style_index_0_id_7a376c0c_lang_scss_scoped_true___WEBPACK_IMPORTED_MODULE_0__[key]; }) }(__WEBPACK_IMPORT_KEY__));
+/* harmony import */ var _node_modules_css_loader_dist_cjs_js_ref_7_oneOf_1_0_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_postcss_loader_src_index_js_ref_7_oneOf_1_1_node_modules_sass_loader_dist_cjs_js_ref_7_oneOf_1_2_node_modules_nuxt_components_dist_loader_js_ref_0_0_node_modules_vue_loader_lib_index_js_vue_loader_options_form_vue_vue_type_style_index_0_id_63c1b502_lang_scss_scoped_true___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(38);
+/* harmony import */ var _node_modules_css_loader_dist_cjs_js_ref_7_oneOf_1_0_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_postcss_loader_src_index_js_ref_7_oneOf_1_1_node_modules_sass_loader_dist_cjs_js_ref_7_oneOf_1_2_node_modules_nuxt_components_dist_loader_js_ref_0_0_node_modules_vue_loader_lib_index_js_vue_loader_options_form_vue_vue_type_style_index_0_id_63c1b502_lang_scss_scoped_true___WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_node_modules_css_loader_dist_cjs_js_ref_7_oneOf_1_0_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_postcss_loader_src_index_js_ref_7_oneOf_1_1_node_modules_sass_loader_dist_cjs_js_ref_7_oneOf_1_2_node_modules_nuxt_components_dist_loader_js_ref_0_0_node_modules_vue_loader_lib_index_js_vue_loader_options_form_vue_vue_type_style_index_0_id_63c1b502_lang_scss_scoped_true___WEBPACK_IMPORTED_MODULE_0__);
+/* harmony reexport (unknown) */ for(var __WEBPACK_IMPORT_KEY__ in _node_modules_css_loader_dist_cjs_js_ref_7_oneOf_1_0_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_postcss_loader_src_index_js_ref_7_oneOf_1_1_node_modules_sass_loader_dist_cjs_js_ref_7_oneOf_1_2_node_modules_nuxt_components_dist_loader_js_ref_0_0_node_modules_vue_loader_lib_index_js_vue_loader_options_form_vue_vue_type_style_index_0_id_63c1b502_lang_scss_scoped_true___WEBPACK_IMPORTED_MODULE_0__) if(["default"].indexOf(__WEBPACK_IMPORT_KEY__) < 0) (function(key) { __webpack_require__.d(__webpack_exports__, key, function() { return _node_modules_css_loader_dist_cjs_js_ref_7_oneOf_1_0_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_postcss_loader_src_index_js_ref_7_oneOf_1_1_node_modules_sass_loader_dist_cjs_js_ref_7_oneOf_1_2_node_modules_nuxt_components_dist_loader_js_ref_0_0_node_modules_vue_loader_lib_index_js_vue_loader_options_form_vue_vue_type_style_index_0_id_63c1b502_lang_scss_scoped_true___WEBPACK_IMPORTED_MODULE_0__[key]; }) }(__WEBPACK_IMPORT_KEY__));
 
 
 /***/ }),
 
-/***/ 52:
+/***/ 48:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 // ESM COMPAT FLAG
 __webpack_require__.r(__webpack_exports__);
 
-// CONCATENATED MODULE: ./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/@nuxt/components/dist/loader.js??ref--0-0!./node_modules/vue-loader/lib??vue-loader-options!./components/form/form.vue?vue&type=template&id=7a376c0c&scoped=true&
-var render = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return (!_vm.hidePlan)?_c('section',{class:("free-plan " + (_vm.clearFixed && 'clear-fixed')),style:({ zIndex: _vm.showForm ? 99 : 50 })},[_vm._ssrNode("<div class=\"container\" data-v-7a376c0c>"+((_vm.isGaoGuang)?("<img"+(_vm._ssrAttr("src",__webpack_require__(49)))+" alt class=\"img\" data-v-7a376c0c>"):("<img"+(_vm._ssrAttr("src",__webpack_require__(50)))+" alt class=\"img\" data-v-7a376c0c>"))+" <div class=\"free-get-plan\" data-v-7a376c0c>免费获取方案</div> <img"+(_vm._ssrAttr("src",__webpack_require__(36)))+" alt class=\"img-close\" data-v-7a376c0c></div> "+((_vm.showForm)?("<div class=\"form-dialog\" data-v-7a376c0c><div class=\"form-dialog-main\" data-v-7a376c0c><img"+(_vm._ssrAttr("src",__webpack_require__(36)))+" alt class=\"form-dialog-close\" data-v-7a376c0c> <img"+(_vm._ssrAttr("src",__webpack_require__(44)))+" alt class=\"b-img\" data-v-7a376c0c> <div class=\"plan-form\" data-v-7a376c0c><div class=\"mobile-top\" data-v-7a376c0c><h4 data-v-7a376c0c>这些企业都已免费获得定制会员方案</h4> <ul data-v-7a376c0c><li data-v-7a376c0c><img"+(_vm._ssrAttr("src",__webpack_require__(23)))+" alt data-v-7a376c0c>省呗</li> <li data-v-7a376c0c><img"+(_vm._ssrAttr("src",__webpack_require__(26)))+" alt data-v-7a376c0c>我来数科</li> <li data-v-7a376c0c><img"+(_vm._ssrAttr("src",__webpack_require__(24)))+" alt data-v-7a376c0c>keep</li> <li data-v-7a376c0c><img"+(_vm._ssrAttr("src",__webpack_require__(25)))+" alt data-v-7a376c0c>榕树贷款</li> <li data-v-7a376c0c><img"+(_vm._ssrAttr("src",__webpack_require__(45)))+" alt data-v-7a376c0c>新橙优品</li></ul></div> <h2 data-v-7a376c0c>完善信息后 48小时内会有专门的商务人员与您对接</h2> <div class=\"item\" data-v-7a376c0c><div class=\"text\" data-v-7a376c0c><span data-v-7a376c0c>*</span>您的姓名：</div> <input type=\"text\" maxlength=\"10\" placeholder=\"请输入姓名\" name id=\"name\" autocomplete=\"off\""+(_vm._ssrAttr("value",(_vm.name)))+" data-v-7a376c0c> <div class=\"input-error\" data-v-7a376c0c>"+_vm._ssrEscape(_vm._s(_vm.name_error))+"</div></div> <div class=\"item\" data-v-7a376c0c><div class=\"text\" data-v-7a376c0c><span data-v-7a376c0c>*</span>公司名称：</div> <input type=\"text\" placeholder=\"请输入公司名称\" maxlength=\"100\" name id=\"companyName\" autocomplete=\"off\""+(_vm._ssrAttr("value",(_vm.company_name)))+" data-v-7a376c0c> <div class=\"input-error\" data-v-7a376c0c>"+_vm._ssrEscape(_vm._s(_vm.company_name_error))+"</div></div> <div class=\"item\" data-v-7a376c0c><div class=\"text\" data-v-7a376c0c><span data-v-7a376c0c>*</span>联系电话：</div> <input type=\"text\" placeholder=\"请输入联系电话\" maxlength=\"30\" name id=\"phone\" autocomplete=\"off\""+(_vm._ssrAttr("value",(_vm.phone)))+" data-v-7a376c0c> <div class=\"input-error\" data-v-7a376c0c>"+_vm._ssrEscape(_vm._s(_vm.phone_error))+"</div></div> <div class=\"item\" data-v-7a376c0c><div class=\"text\" data-v-7a376c0c><span data-v-7a376c0c>*</span>验证码：</div> <input type=\"text\" placeholder=\"请输入验证码\" name id=\"code\" autocomplete=\"off\""+(_vm._ssrAttr("value",(_vm.code)))+" data-v-7a376c0c> <div class=\"input-error\" data-v-7a376c0c>"+_vm._ssrEscape(_vm._s(_vm.code_error))+"</div> "+((!_vm.codeText)?("<div class=\"get-code\" data-v-7a376c0c>\n            获取验证码\n          </div>"):("<div class=\"get-code code-disable\" data-v-7a376c0c>"+_vm._ssrEscape(_vm._s(_vm.codeText))+"</div>"))+"</div> <div class=\"plan-btn\" data-v-7a376c0c>免费获取方案</div></div></div></div>"):"<!---->"))]):_vm._e()}
+// CONCATENATED MODULE: ./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/@nuxt/components/dist/loader.js??ref--0-0!./node_modules/vue-loader/lib??vue-loader-options!./components/form/form.vue?vue&type=template&id=63c1b502&scoped=true&
+var render = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return (!_vm.hidePlan)?_c('section',{class:("free-plan " + (_vm.clearFixed && 'clear-fixed')),style:({ zIndex: _vm.showForm ? 99 : 50 })},[_vm._ssrNode("<div class=\"container\" data-v-63c1b502><img"+(_vm._ssrAttr("src",_vm.project ? ("" + _vm.url + (_vm.project.en) + "_img12.png") : (_vm.url + "img12.png")))+" alt class=\"img\" data-v-63c1b502> <div class=\"free-get-plan\" data-v-63c1b502>免费获取方案</div> <img"+(_vm._ssrAttr("src",__webpack_require__(37)))+" alt class=\"img-close\" data-v-63c1b502></div> "+((_vm.showForm)?("<div class=\"form-dialog\" data-v-63c1b502><div class=\"form-dialog-main\" data-v-63c1b502><img"+(_vm._ssrAttr("src",__webpack_require__(37)))+" alt class=\"form-dialog-close\" data-v-63c1b502> <img"+(_vm._ssrAttr("src",_vm.project ? ("" + _vm.url + (_vm.project.en) + "_img11.png") : (_vm.url + "img11.png")))+" alt class=\"b-img\" data-v-63c1b502> <div class=\"plan-form\" data-v-63c1b502><div class=\"mobile-top\" data-v-63c1b502><h4 data-v-63c1b502>这些企业都已免费获得定制会员方案</h4> <ul data-v-63c1b502><li data-v-63c1b502><img"+(_vm._ssrAttr("src",__webpack_require__(24)))+" alt data-v-63c1b502>省呗</li> <li data-v-63c1b502><img"+(_vm._ssrAttr("src",__webpack_require__(27)))+" alt data-v-63c1b502>我来数科</li> <li data-v-63c1b502><img"+(_vm._ssrAttr("src",__webpack_require__(25)))+" alt data-v-63c1b502>keep</li> <li data-v-63c1b502><img"+(_vm._ssrAttr("src",__webpack_require__(26)))+" alt data-v-63c1b502>榕树贷款</li> <li data-v-63c1b502><img"+(_vm._ssrAttr("src",__webpack_require__(43)))+" alt data-v-63c1b502>新橙优品</li></ul></div> <h2 data-v-63c1b502>完善信息后 48小时内会有专门的商务人员与您对接</h2> <div class=\"item\" data-v-63c1b502><div class=\"text\" data-v-63c1b502><span data-v-63c1b502>*</span>您的姓名：</div> <input type=\"text\" maxlength=\"10\" placeholder=\"请输入姓名\" name id=\"name\" autocomplete=\"off\""+(_vm._ssrAttr("value",(_vm.name)))+" data-v-63c1b502> <div class=\"input-error\" data-v-63c1b502>"+_vm._ssrEscape(_vm._s(_vm.name_error))+"</div></div> <div class=\"item\" data-v-63c1b502><div class=\"text\" data-v-63c1b502><span data-v-63c1b502>*</span>公司名称：</div> <input type=\"text\" placeholder=\"请输入公司名称\" maxlength=\"100\" name id=\"companyName\" autocomplete=\"off\""+(_vm._ssrAttr("value",(_vm.company_name)))+" data-v-63c1b502> <div class=\"input-error\" data-v-63c1b502>"+_vm._ssrEscape(_vm._s(_vm.company_name_error))+"</div></div> <div class=\"item\" data-v-63c1b502><div class=\"text\" data-v-63c1b502><span data-v-63c1b502>*</span>联系电话：</div> <input type=\"text\" placeholder=\"请输入联系电话\" maxlength=\"30\" name id=\"phone\" autocomplete=\"off\""+(_vm._ssrAttr("value",(_vm.phone)))+" data-v-63c1b502> <div class=\"input-error\" data-v-63c1b502>"+_vm._ssrEscape(_vm._s(_vm.phone_error))+"</div></div> <div class=\"item\" data-v-63c1b502><div class=\"text\" data-v-63c1b502><span data-v-63c1b502>*</span>验证码：</div> <input type=\"text\" placeholder=\"请输入验证码\" name id=\"code\" autocomplete=\"off\""+(_vm._ssrAttr("value",(_vm.code)))+" data-v-63c1b502> <div class=\"input-error\" data-v-63c1b502>"+_vm._ssrEscape(_vm._s(_vm.code_error))+"</div> "+((!_vm.codeText)?("<div class=\"get-code\" data-v-63c1b502>\n            获取验证码\n          </div>"):("<div class=\"get-code code-disable\" data-v-63c1b502>"+_vm._ssrEscape(_vm._s(_vm.codeText))+"</div>"))+"</div> <div class=\"plan-btn\" data-v-63c1b502>免费获取方案</div></div></div></div>"):"<!---->"))]):_vm._e()}
 var staticRenderFns = []
 
 
-// CONCATENATED MODULE: ./components/form/form.vue?vue&type=template&id=7a376c0c&scoped=true&
+// CONCATENATED MODULE: ./components/form/form.vue?vue&type=template&id=63c1b502&scoped=true&
 
-// EXTERNAL MODULE: ./utils/api.js + 2 modules
-var api = __webpack_require__(46);
+// EXTERNAL MODULE: ./utils/api.js + 1 modules
+var api = __webpack_require__(44);
 
 // EXTERNAL MODULE: external "vant"
 var external_vant_ = __webpack_require__(7);
 
 // EXTERNAL MODULE: ./utils/ans.js
-var ans = __webpack_require__(27);
+var ans = __webpack_require__(28);
+
+// EXTERNAL MODULE: ./utils/config.js
+var config = __webpack_require__(23);
 
 // CONCATENATED MODULE: ./node_modules/babel-loader/lib??ref--2-0!./node_modules/@nuxt/components/dist/loader.js??ref--0-0!./node_modules/vue-loader/lib??vue-loader-options!./components/form/form.vue?vue&type=script&lang=js&
 //
@@ -2858,7 +2854,7 @@ var ans = __webpack_require__(27);
 //
 //
 //
-//
+
 
 
 
@@ -2878,12 +2874,13 @@ var ans = __webpack_require__(27);
       clearFixed: false,
       hidePlan: false,
       showForm: false,
-      isGaoGuang: false
+      project: null,
+      url: config["d" /* url */]
     };
   },
 
   mounted() {
-    this.isGaoGuang = localStorage.getItem("isGaoGuang") === "true" ? true : false;
+    this.project = window.local;
     let footer_height = 290;
 
     if (window.innerWidth < 641) {
@@ -3052,7 +3049,7 @@ var componentNormalizer = __webpack_require__(2);
 
 function injectStyles (context) {
   
-  var style0 = __webpack_require__(51)
+  var style0 = __webpack_require__(47)
 if (style0.__inject__) style0.__inject__(context)
 
 }
@@ -3065,7 +3062,7 @@ var component = Object(componentNormalizer["a" /* default */])(
   staticRenderFns,
   false,
   injectStyles,
-  "7a376c0c",
+  "63c1b502",
   "c6135186"
   
 )
