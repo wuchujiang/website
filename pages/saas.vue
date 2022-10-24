@@ -161,19 +161,26 @@ export default {
     };
   },
   head() {
+    const local = window.local;
+    let title = '橡树黑卡--会员SAAS服务';
+    let description_content = "橡树支持对会员设计，及全链路的各项核心数据（包括：交易数据、权益使用数据、用户生命周期等）监控，400-150-9669。";
+    let keywords_content = "橡树黑卡，会员SAAS服务，会员设计，配置会员，权益SKU管理，会员卡和权益管理，活动快速配置，敏捷开发";
+    if (local) {
+      title = `${local.name}--会员SAAS服务`;
+      description_content = `${local.name}支持对会员设计，及全链路的各项核心数据（包括：交易数据、权益使用数据、用户生命周期等）监控，400-150-9669。`;
+      keywords_content = `${local.name}，会员SAAS服务，会员设计，配置会员，权益SKU管理，会员卡和权益管理，活动快速配置，敏捷开发`
+    }
     return {
-      title: "橡树黑卡--会员SAAS服务",
+      title,
       meta: [
         {
           hid: "about",
           name: "description",
-          content:
-            "橡树支持对会员设计，及全链路的各项核心数据（包括：交易数据、权益使用数据、用户生命周期等）监控，400-150-9669。",
+          content: description_content,
         },
         {
           name: "keywords",
-          content:
-            "橡树黑卡，会员SAAS服务，会员设计，配置会员，权益SKU管理，会员卡和权益管理，活动快速配置，敏捷开发",
+          content: keywords_content,
         },
       ],
     };

@@ -2,9 +2,16 @@
   <div v-show="pageShow">
     <oakHeader :current="3" />
     <main>
-      <section v-if="project" class="join-banner2"></section>
-      <section v-else class="join-banner"></section>
-      <section class="mobile-join-banner"></section>
+      <section class="join-banner" :style="{
+                                      'background': project ?
+                                      `url(${url}join-banner-${project.en}.png) center center / auto 100% no-repeat` :
+                                      `url(${url}join-banner.png) center center / auto 100% no-repeat`
+                                    }"></section>
+      <section class="mobile-join-banner" :style="{
+                                      'background': project ?
+                                      `url(${url}mobile-join-banner-${project.en}.png) center center / auto 100% no-repeat` :
+                                      `url(${url}mobile-join-banner.png) center center / auto 100% no-repeat`
+                                    }"></section>
       <section class="join-main">
         <div class="container">
           <h2>社招岗位</h2>
@@ -76,6 +83,7 @@
 import oakHeader from "../components/header/header";
 import oakFooter from "../components/footer/footer";
 import ans from "@/utils/ans";
+import { url } from '../utils/config'
 export default {
   name: "join",
   components: {
@@ -84,6 +92,7 @@ export default {
   },
   data() {
     return {
+      url,
       pageShow: false,
       project: null,
       current: 0,
@@ -200,19 +209,25 @@ export default {
     };
   },
   head() {
+    const local = window.local;
+    let title = '橡树黑卡--招聘职位，欢迎投递';
+    let description_content = "橡树黑卡正在招聘数据分析师，系统架构师，高级后端开发工程师，资深风控数据分析专家,400-150-9669。";
+    let keywords_content = "大数据，用户分析，用户运营，量化分析，指标监控，数据归因，数据挖掘，统计分析，统计建模，商业化，收益风险";
+    if (local) {
+      title = `${local.name}--招聘职位，欢迎投递`;
+      description_content = `${local.name}正在招聘数据分析师，系统架构师，高级后端开发工程师，资深风控数据分析专家,400-150-9669。`;
+    }
     return {
-      title: "橡树黑卡--招聘职位，欢迎投递",
+      title,
       meta: [
         {
           hid: "about",
           name: "description",
-          content:
-            "橡树黑卡正在招聘数据分析师，系统架构师，高级后端开发工程师，资深风控数据分析专家,400-150-9669。",
+          content: description_content,
         },
         {
           name: "keywords",
-          content:
-            "大数据，用户分析，用户运营，量化分析，指标监控，数据归因，数据挖掘，统计分析，统计建模，商业化，收益风险",
+          content: keywords_content,
         },
       ],
     };
@@ -235,14 +250,6 @@ export default {
 .join-banner {
   width: 100%;
   height: 430px;
-  background: url("@/static/join-banner.png") no-repeat center center;
-  background-size: auto 100%;
-}
-.join-banner2 {
-  width: 100%;
-  height: 430px;
-  background: url("@/static/join-banner2.png") no-repeat center center;
-  background-size: auto 100%;
 }
 .join-main {
   padding: 72px 0;
@@ -251,19 +258,23 @@ export default {
   font-size: 30px;
   color: #333;
 }
+
 .join-main .title {
   font-size: 18px;
   color: #ff5001;
   font-weight: bold;
   margin-top: 34px;
 }
+
 .join-container {
   margin-top: 30px;
   display: flex;
 }
+
 .join-container .left {
   margin-right: 100px;
 }
+
 .join-container .left .item {
   box-sizing: border-box;
   width: 304px;
@@ -280,16 +291,19 @@ export default {
   transition: all 0.3s linear;
   cursor: pointer;
 }
+
 .join-container .left .item.active {
   background-color: #eee;
   color: #ff5001;
   border: 1px solid #eee;
 }
+
 .join-container .left .item:hover {
   background-color: #eee;
   color: #ff5001;
   border: 1px solid #eee;
 }
+
 .join-container .right h4 {
   position: relative;
   font-size: 18px;
@@ -298,6 +312,7 @@ export default {
   line-height: 1;
   margin-bottom: 30px;
 }
+
 .join-container .right h4::after {
   content: "";
   position: absolute;
@@ -307,58 +322,61 @@ export default {
   left: 0;
   top: 2px;
 }
+
 .join-container .right ul {
   margin-bottom: 30px;
 }
+
 .join-container .right ul li {
   font-size: 16px;
   color: #333;
   line-height: 30px;
 }
+
 .join-email {
   font-size: 18px;
   color: #333;
   font-weight: bold;
 }
+
 .mobile-join-banner,
 .mobile-join-container {
   display: none;
 }
 
 @media screen and (max-width: 1200px) {
+
   .join-banner,
-    .join-banner2 {
-      height: 350px;
-    }
+  .join-banner2 {
+    height: 350px;
   }
-  
-  @media screen and (max-width: 1024px) {
-  
-    .join-banner,
-    .join-banner2 {
-      height: 300px;
-    }
-  
-    .join-container .left {
-      margin-right: 30px;
-    }
-  
-    .join-container .left .item {
-      width: 255px;
-    }
+}
+
+@media screen and (max-width: 1024px) {
+
+  .join-banner,
+  .join-banner2 {
+    height: 300px;
   }
-  
-  @media screen and (max-width: 1024px) {
-  
-    .join-banner,
-    .join-banner2 {
+
+  .join-container .left {
+    margin-right: 30px;
+  }
+
+  .join-container .left .item {
+    width: 255px;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+
+  .join-banner {
     display: none;
   }
+
   .mobile-join-banner {
     display: block;
     height: 152px;
-    background: url("@/static/mobile/join-banner.png") no-repeat center center;
-    background-size: auto 100%;
   }
   .join-main {
     padding-top: 30px;

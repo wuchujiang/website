@@ -2,8 +2,11 @@
   <div ref="about" v-show="pageShow">
     <oakHeader :current="2" sec_current="nav_about" />
     <main>
-      <section v-if="project" class="about-banner2"></section>
-      <section v-else class="about-banner"></section>
+      <section class="about-banner" :style="{
+                                            'background': project ?
+                                            `url(${url}about-banner-${project.en}.png) center center / auto 100% no-repeat` :
+                                            `url(${url}about-banner.png) center center / auto 100% no-repeat`
+                                          }"></section>
       <section class="mobile-second-nav">
         <ul>
           <li
@@ -134,6 +137,7 @@ import oakHeader from "../components/header/header";
 import oakFooter from "../components/footer/footer";
 import oakForm from "../components/form/form";
 import ans from "@/utils/ans";
+import { url } from '../utils/config'
 export default {
   name: "about",
   components: {
@@ -143,6 +147,7 @@ export default {
   },
   data() {
     return {
+      url,
       pageShow: false,
       sec_list: [
         { title: "公司介绍", url: "/about", type: "about" },
@@ -152,19 +157,25 @@ export default {
     };
   },
   head() {
+    const local = window.local;
+    let title = '橡树黑卡--公司介绍';
+    let description_content = "橡树黑卡成立于2018年，是国内领先的付费会员制权益SaaS服务平台，是国家高新技术企业、“双软企业” 。客户包含华润集团，微众银行，工商银行，浦发银行，招商银行，腾讯理财通、微信、滴滴出行、龙腾出行，创维，TCL等知名企业，400-150-9669。";
+    let keywords_content = "付费会员，会员权益，高新技术企业，提升活跃，带动营收，增加收入，客户关怀，用户画像，延长用户生命周期";
+    if (local) {
+      title = `${local.name}--公司介绍`;
+      description_content = `${local.name}成立于2018年，是国内领先的付费会员制权益SaaS服务平台，是国家高新技术企业、“双软企业” 。客户包含华润集团，微众银行，工商银行，浦发银行，招商银行，腾讯理财通、微信、滴滴出行、龙腾出行，创维，TCL等知名企业，400-150-9669。`;
+    }
     return {
-      title: "橡树黑卡--公司介绍",
+      title,
       meta: [
         {
           hid: "about",
           name: "description",
-          content:
-            "橡树黑卡成立于2018年，是国内领先的付费会员制权益SaaS服务平台，是国家高新技术企业、“双软企业” 。客户包含华润集团，微众银行，工商银行，浦发银行，招商银行，腾讯理财通、微信、滴滴出行、龙腾出行，创维，TCL等知名企业，400-150-9669。",
+          content: description_content,
         },
         {
           name: "keywords",
-          content:
-            "付费会员，会员权益，高新技术企业，提升活跃，带动营收，增加收入，客户关怀，用户画像，延长用户生命周期",
+          content: keywords_content,
         },
       ],
     };
@@ -180,14 +191,6 @@ export default {
 .about-banner {
   width: 100%;
   height: 430px;
-  background: url("@/static/about-banner.png") no-repeat center center;
-  background-size: auto 100%;
-}
-.about-banner2 {
-  width: 100%;
-  height: 430px;
-  background: url("@/static/about-banner2.png") no-repeat center center;
-  background-size: auto 100%;
 }
 .common-title {
   text-align: center;
@@ -361,8 +364,7 @@ export default {
   display: none;
 }
 @media screen and (max-width: 1024px) {
-  .about-banner,
-    .about-banner2 {
+  .about-banner {
       height: 300px;
     }
   
@@ -390,8 +392,7 @@ export default {
   
   @media screen and (max-width: 640px) {
   
-    .about-banner,
-    .about-banner2 {
+    .about-banner {
     display: none;
   }
   .common-title {

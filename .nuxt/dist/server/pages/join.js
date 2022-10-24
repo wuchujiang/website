@@ -8,12 +8,20 @@ exports.modules = {
 // ESM COMPAT FLAG
 __webpack_require__.r(__webpack_exports__);
 
-// CONCATENATED MODULE: ./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/@nuxt/components/dist/loader.js??ref--0-0!./node_modules/vue-loader/lib??vue-loader-options!./pages/join.vue?vue&type=template&id=06ff7499&scoped=true&
-var render = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('div',{directives:[{name:"show",rawName:"v-show",value:(_vm.pageShow),expression:"pageShow"}]},[_c('oakHeader',{attrs:{"current":3}}),_vm._ssrNode(" <main data-v-06ff7499>"+((_vm.project)?("<section class=\"join-banner2\" data-v-06ff7499></section>"):("<section class=\"join-banner\" data-v-06ff7499></section>"))+" <section class=\"mobile-join-banner\" data-v-06ff7499></section> <section class=\"join-main\" data-v-06ff7499><div class=\"container\" data-v-06ff7499><h2 data-v-06ff7499>社招岗位</h2> <div class=\"title\" data-v-06ff7499>全部</div> <div class=\"join-container\" data-v-06ff7499><div class=\"left\" data-v-06ff7499>"+(_vm._ssrList((_vm.list),function(item,index){return ("<div"+(_vm._ssrClass(null,{ item: true, active: _vm.current === index }))+" data-v-06ff7499>"+_vm._ssrEscape("\n              "+_vm._s(item.name)+"\n              ")+"<span data-v-06ff7499>"+_vm._ssrEscape(_vm._s(item.address)+" >")+"</span></div>")}))+"</div> <div class=\"right\" data-v-06ff7499><h4 data-v-06ff7499>职位描述</h4> <ul data-v-06ff7499>"+(_vm._ssrList((_vm.list[_vm.current].desc),function(item,index){return ("<li data-v-06ff7499>"+_vm._ssrEscape("\n                "+_vm._s(index + 1)+"."+_vm._s(item)+"\n              ")+"</li>")}))+"</ul> <h4 data-v-06ff7499>任职资格</h4> <ul data-v-06ff7499>"+(_vm._ssrList((_vm.list[_vm.current].qualification),function(item,index){return ("<li data-v-06ff7499>"+_vm._ssrEscape("\n                "+_vm._s(index + 1)+"."+_vm._s(item)+"\n              ")+"</li>")}))+"</ul> <div class=\"join-email\" data-v-06ff7499>"+_vm._ssrEscape(_vm._s(_vm.list[_vm.current].email))+"</div></div></div> <div class=\"mobile-join-container\" data-v-06ff7499>"+(_vm._ssrList((_vm.list),function(item,index){return ("<div class=\"item\" data-v-06ff7499><div class=\"top\" data-v-06ff7499>"+_vm._ssrEscape("\n              "+_vm._s(item.name)+"\n              ")+"<span data-v-06ff7499>"+_vm._ssrEscape(_vm._s(item.address)+" >")+"</span></div> "+((item.show)?("<div class=\"right\" data-v-06ff7499><h4 data-v-06ff7499>职位描述</h4> <ul data-v-06ff7499>"+(_vm._ssrList((_vm.list[index].desc),function(item,index){return ("<li data-v-06ff7499>"+_vm._ssrEscape("\n                  "+_vm._s(index + 1)+"."+_vm._s(item)+"\n                ")+"</li>")}))+"</ul> <h4 data-v-06ff7499>任职资格</h4> <ul data-v-06ff7499>"+(_vm._ssrList((_vm.list[index].qualification),function(item,index){return ("<li data-v-06ff7499>"+_vm._ssrEscape("\n                  "+_vm._s(index + 1)+"."+_vm._s(item)+"\n                ")+"</li>")}))+"</ul> <div class=\"join-email\" data-v-06ff7499>"+_vm._ssrEscape(_vm._s(_vm.list[index].email))+"</div></div>"):"<!---->")+"</div>")}))+"</div></div></section></main> "),_c('oakFooter',{attrs:{"type":"join"}})],2)}
+// CONCATENATED MODULE: ./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/@nuxt/components/dist/loader.js??ref--0-0!./node_modules/vue-loader/lib??vue-loader-options!./pages/join.vue?vue&type=template&id=2572e42b&scoped=true&
+var render = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('div',{directives:[{name:"show",rawName:"v-show",value:(_vm.pageShow),expression:"pageShow"}]},[_c('oakHeader',{attrs:{"current":3}}),_vm._ssrNode(" <main data-v-2572e42b><section class=\"join-banner\""+(_vm._ssrStyle(null,{
+                                    'background': _vm.project ?
+                                    ("url(" + _vm.url + "join-banner-" + (_vm.project.en) + ".png) center center / auto 100% no-repeat") :
+                                    ("url(" + _vm.url + "join-banner.png) center center / auto 100% no-repeat")
+                                  }, null))+" data-v-2572e42b></section> <section class=\"mobile-join-banner\""+(_vm._ssrStyle(null,{
+                                    'background': _vm.project ?
+                                    ("url(" + _vm.url + "mobile-join-banner-" + (_vm.project.en) + ".png) center center / auto 100% no-repeat") :
+                                    ("url(" + _vm.url + "mobile-join-banner.png) center center / auto 100% no-repeat")
+                                  }, null))+" data-v-2572e42b></section> <section class=\"join-main\" data-v-2572e42b><div class=\"container\" data-v-2572e42b><h2 data-v-2572e42b>社招岗位</h2> <div class=\"title\" data-v-2572e42b>全部</div> <div class=\"join-container\" data-v-2572e42b><div class=\"left\" data-v-2572e42b>"+(_vm._ssrList((_vm.list),function(item,index){return ("<div"+(_vm._ssrClass(null,{ item: true, active: _vm.current === index }))+" data-v-2572e42b>"+_vm._ssrEscape("\n              "+_vm._s(item.name)+"\n              ")+"<span data-v-2572e42b>"+_vm._ssrEscape(_vm._s(item.address)+" >")+"</span></div>")}))+"</div> <div class=\"right\" data-v-2572e42b><h4 data-v-2572e42b>职位描述</h4> <ul data-v-2572e42b>"+(_vm._ssrList((_vm.list[_vm.current].desc),function(item,index){return ("<li data-v-2572e42b>"+_vm._ssrEscape("\n                "+_vm._s(index + 1)+"."+_vm._s(item)+"\n              ")+"</li>")}))+"</ul> <h4 data-v-2572e42b>任职资格</h4> <ul data-v-2572e42b>"+(_vm._ssrList((_vm.list[_vm.current].qualification),function(item,index){return ("<li data-v-2572e42b>"+_vm._ssrEscape("\n                "+_vm._s(index + 1)+"."+_vm._s(item)+"\n              ")+"</li>")}))+"</ul> <div class=\"join-email\" data-v-2572e42b>"+_vm._ssrEscape(_vm._s(_vm.list[_vm.current].email))+"</div></div></div> <div class=\"mobile-join-container\" data-v-2572e42b>"+(_vm._ssrList((_vm.list),function(item,index){return ("<div class=\"item\" data-v-2572e42b><div class=\"top\" data-v-2572e42b>"+_vm._ssrEscape("\n              "+_vm._s(item.name)+"\n              ")+"<span data-v-2572e42b>"+_vm._ssrEscape(_vm._s(item.address)+" >")+"</span></div> "+((item.show)?("<div class=\"right\" data-v-2572e42b><h4 data-v-2572e42b>职位描述</h4> <ul data-v-2572e42b>"+(_vm._ssrList((_vm.list[index].desc),function(item,index){return ("<li data-v-2572e42b>"+_vm._ssrEscape("\n                  "+_vm._s(index + 1)+"."+_vm._s(item)+"\n                ")+"</li>")}))+"</ul> <h4 data-v-2572e42b>任职资格</h4> <ul data-v-2572e42b>"+(_vm._ssrList((_vm.list[index].qualification),function(item,index){return ("<li data-v-2572e42b>"+_vm._ssrEscape("\n                  "+_vm._s(index + 1)+"."+_vm._s(item)+"\n                ")+"</li>")}))+"</ul> <div class=\"join-email\" data-v-2572e42b>"+_vm._ssrEscape(_vm._s(_vm.list[index].email))+"</div></div>"):"<!---->")+"</div>")}))+"</div></div></section></main> "),_c('oakFooter',{attrs:{"type":"join"}})],2)}
 var staticRenderFns = []
 
 
-// CONCATENATED MODULE: ./pages/join.vue?vue&type=template&id=06ff7499&scoped=true&
+// CONCATENATED MODULE: ./pages/join.vue?vue&type=template&id=2572e42b&scoped=true&
 
 // EXTERNAL MODULE: ./components/header/header.vue + 4 modules
 var header = __webpack_require__(35);
@@ -23,6 +31,9 @@ var footer = __webpack_require__(36);
 
 // EXTERNAL MODULE: ./utils/ans.js
 var ans = __webpack_require__(28);
+
+// EXTERNAL MODULE: ./utils/config.js
+var config = __webpack_require__(23);
 
 // CONCATENATED MODULE: ./node_modules/babel-loader/lib??ref--2-0!./node_modules/@nuxt/components/dist/loader.js??ref--0-0!./node_modules/vue-loader/lib??vue-loader-options!./pages/join.vue?vue&type=script&lang=js&
 //
@@ -99,6 +110,14 @@ var ans = __webpack_require__(28);
 //
 //
 //
+//
+//
+//
+//
+//
+//
+//
+
 
 
 
@@ -111,6 +130,7 @@ var ans = __webpack_require__(28);
 
   data() {
     return {
+      url: config["d" /* url */],
       pageShow: false,
       project: null,
       current: 0,
@@ -154,15 +174,25 @@ var ans = __webpack_require__(28);
   },
 
   head() {
+    const local = window.local;
+    let title = '橡树黑卡--招聘职位，欢迎投递';
+    let description_content = "橡树黑卡正在招聘数据分析师，系统架构师，高级后端开发工程师，资深风控数据分析专家,400-150-9669。";
+    let keywords_content = "大数据，用户分析，用户运营，量化分析，指标监控，数据归因，数据挖掘，统计分析，统计建模，商业化，收益风险";
+
+    if (local) {
+      title = `${local.name}--招聘职位，欢迎投递`;
+      description_content = `${local.name}正在招聘数据分析师，系统架构师，高级后端开发工程师，资深风控数据分析专家,400-150-9669。`;
+    }
+
     return {
-      title: "橡树黑卡--招聘职位，欢迎投递",
+      title,
       meta: [{
         hid: "about",
         name: "description",
-        content: "橡树黑卡正在招聘数据分析师，系统架构师，高级后端开发工程师，资深风控数据分析专家,400-150-9669。"
+        content: description_content
       }, {
         name: "keywords",
-        content: "大数据，用户分析，用户运营，量化分析，指标监控，数据归因，数据挖掘，统计分析，统计建模，商业化，收益风险"
+        content: keywords_content
       }]
     };
   },
@@ -206,7 +236,7 @@ var component = Object(componentNormalizer["a" /* default */])(
   staticRenderFns,
   false,
   injectStyles,
-  "06ff7499",
+  "2572e42b",
   "e9dfc2ae"
   
 )
@@ -978,9 +1008,9 @@ module.exports = {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony import */ var _node_modules_css_loader_dist_cjs_js_ref_7_oneOf_1_0_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_postcss_loader_src_index_js_ref_7_oneOf_1_1_node_modules_sass_loader_dist_cjs_js_ref_7_oneOf_1_2_node_modules_nuxt_components_dist_loader_js_ref_0_0_node_modules_vue_loader_lib_index_js_vue_loader_options_join_vue_vue_type_style_index_0_id_06ff7499_lang_scss_scoped_true___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(57);
-/* harmony import */ var _node_modules_css_loader_dist_cjs_js_ref_7_oneOf_1_0_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_postcss_loader_src_index_js_ref_7_oneOf_1_1_node_modules_sass_loader_dist_cjs_js_ref_7_oneOf_1_2_node_modules_nuxt_components_dist_loader_js_ref_0_0_node_modules_vue_loader_lib_index_js_vue_loader_options_join_vue_vue_type_style_index_0_id_06ff7499_lang_scss_scoped_true___WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_node_modules_css_loader_dist_cjs_js_ref_7_oneOf_1_0_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_postcss_loader_src_index_js_ref_7_oneOf_1_1_node_modules_sass_loader_dist_cjs_js_ref_7_oneOf_1_2_node_modules_nuxt_components_dist_loader_js_ref_0_0_node_modules_vue_loader_lib_index_js_vue_loader_options_join_vue_vue_type_style_index_0_id_06ff7499_lang_scss_scoped_true___WEBPACK_IMPORTED_MODULE_0__);
-/* harmony reexport (unknown) */ for(var __WEBPACK_IMPORT_KEY__ in _node_modules_css_loader_dist_cjs_js_ref_7_oneOf_1_0_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_postcss_loader_src_index_js_ref_7_oneOf_1_1_node_modules_sass_loader_dist_cjs_js_ref_7_oneOf_1_2_node_modules_nuxt_components_dist_loader_js_ref_0_0_node_modules_vue_loader_lib_index_js_vue_loader_options_join_vue_vue_type_style_index_0_id_06ff7499_lang_scss_scoped_true___WEBPACK_IMPORTED_MODULE_0__) if(["default"].indexOf(__WEBPACK_IMPORT_KEY__) < 0) (function(key) { __webpack_require__.d(__webpack_exports__, key, function() { return _node_modules_css_loader_dist_cjs_js_ref_7_oneOf_1_0_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_postcss_loader_src_index_js_ref_7_oneOf_1_1_node_modules_sass_loader_dist_cjs_js_ref_7_oneOf_1_2_node_modules_nuxt_components_dist_loader_js_ref_0_0_node_modules_vue_loader_lib_index_js_vue_loader_options_join_vue_vue_type_style_index_0_id_06ff7499_lang_scss_scoped_true___WEBPACK_IMPORTED_MODULE_0__[key]; }) }(__WEBPACK_IMPORT_KEY__));
+/* harmony import */ var _node_modules_css_loader_dist_cjs_js_ref_7_oneOf_1_0_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_postcss_loader_src_index_js_ref_7_oneOf_1_1_node_modules_sass_loader_dist_cjs_js_ref_7_oneOf_1_2_node_modules_nuxt_components_dist_loader_js_ref_0_0_node_modules_vue_loader_lib_index_js_vue_loader_options_join_vue_vue_type_style_index_0_id_2572e42b_lang_scss_scoped_true___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(57);
+/* harmony import */ var _node_modules_css_loader_dist_cjs_js_ref_7_oneOf_1_0_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_postcss_loader_src_index_js_ref_7_oneOf_1_1_node_modules_sass_loader_dist_cjs_js_ref_7_oneOf_1_2_node_modules_nuxt_components_dist_loader_js_ref_0_0_node_modules_vue_loader_lib_index_js_vue_loader_options_join_vue_vue_type_style_index_0_id_2572e42b_lang_scss_scoped_true___WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_node_modules_css_loader_dist_cjs_js_ref_7_oneOf_1_0_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_postcss_loader_src_index_js_ref_7_oneOf_1_1_node_modules_sass_loader_dist_cjs_js_ref_7_oneOf_1_2_node_modules_nuxt_components_dist_loader_js_ref_0_0_node_modules_vue_loader_lib_index_js_vue_loader_options_join_vue_vue_type_style_index_0_id_2572e42b_lang_scss_scoped_true___WEBPACK_IMPORTED_MODULE_0__);
+/* harmony reexport (unknown) */ for(var __WEBPACK_IMPORT_KEY__ in _node_modules_css_loader_dist_cjs_js_ref_7_oneOf_1_0_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_postcss_loader_src_index_js_ref_7_oneOf_1_1_node_modules_sass_loader_dist_cjs_js_ref_7_oneOf_1_2_node_modules_nuxt_components_dist_loader_js_ref_0_0_node_modules_vue_loader_lib_index_js_vue_loader_options_join_vue_vue_type_style_index_0_id_2572e42b_lang_scss_scoped_true___WEBPACK_IMPORTED_MODULE_0__) if(["default"].indexOf(__WEBPACK_IMPORT_KEY__) < 0) (function(key) { __webpack_require__.d(__webpack_exports__, key, function() { return _node_modules_css_loader_dist_cjs_js_ref_7_oneOf_1_0_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_postcss_loader_src_index_js_ref_7_oneOf_1_1_node_modules_sass_loader_dist_cjs_js_ref_7_oneOf_1_2_node_modules_nuxt_components_dist_loader_js_ref_0_0_node_modules_vue_loader_lib_index_js_vue_loader_options_join_vue_vue_type_style_index_0_id_2572e42b_lang_scss_scoped_true___WEBPACK_IMPORTED_MODULE_0__[key]; }) }(__WEBPACK_IMPORT_KEY__));
 
 
 /***/ })

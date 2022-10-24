@@ -20,15 +20,9 @@ export default {
         en: "lifesvip",
         record: "20063673",
       },
-      "50024": {
-        name: "高光时刻",
-        en: "lifesvip",
-        record: "20063673",
-      },
     }
     const local = Object.keys(project).filter(r => location.href.includes(r));
     window.local = local[0] ? project[local[0]] : null;
-    console.log("layout:", window.local);
     this.show = true;
   }
 }

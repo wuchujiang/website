@@ -8,12 +8,16 @@ exports.modules = {
 // ESM COMPAT FLAG
 __webpack_require__.r(__webpack_exports__);
 
-// CONCATENATED MODULE: ./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/@nuxt/components/dist/loader.js??ref--0-0!./node_modules/vue-loader/lib??vue-loader-options!./pages/about.vue?vue&type=template&id=c8eb9e38&scoped=true&
-var render = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('div',{directives:[{name:"show",rawName:"v-show",value:(_vm.pageShow),expression:"pageShow"}],ref:"about"},[_c('oakHeader',{attrs:{"current":2,"sec_current":"nav_about"}}),_vm._ssrNode(" "),_vm._ssrNode("<main data-v-c8eb9e38>","</main>",[_vm._ssrNode(((_vm.project)?("<section class=\"about-banner2\" data-v-c8eb9e38></section>"):("<section class=\"about-banner\" data-v-c8eb9e38></section>"))+" "),_vm._ssrNode("<section class=\"mobile-second-nav\" data-v-c8eb9e38>","</section>",[_vm._ssrNode("<ul data-v-c8eb9e38>","</ul>",_vm._l((_vm.sec_list),function(item){return _vm._ssrNode("<li"+(_vm._ssrClass(null,{ active: item.type === 'about' }))+" data-v-c8eb9e38>","</li>",[_c('nuxt-link',{attrs:{"to":item.url}},[_vm._v(_vm._s(item.title))])],1)}),0)]),_vm._ssrNode(" <section class=\"about-section1\" data-v-c8eb9e38><div class=\"container\" data-v-c8eb9e38><div class=\"common-title\" data-v-c8eb9e38><div class=\"en\" data-v-c8eb9e38>about</div> <div class=\"name\" data-v-c8eb9e38>关于我们</div> <div class=\"desc\" data-v-c8eb9e38>助力企业构建会员体系实现活跃与创收</div></div> <div class=\"about-text\" data-v-c8eb9e38><p data-v-c8eb9e38>"+_vm._ssrEscape(_vm._s(_vm.project ? _vm.project.name : "橡树黑卡")+"成立于2018年，")+"</p> <p data-v-c8eb9e38>\n            是国内领先的付费会员制权益SaaS服务平台，是国家高新技术企业、“双软企业”\n            。\n          </p> <p data-v-c8eb9e38></p> <p data-v-c8eb9e38>\n            合作伙伴包括华润集团、微众银行、工商银行、浦发银行、招商银行、腾讯理财通、微信、滴滴出行、龙腾出行，创维，TCL等知名企业。\n          </p> <p data-v-c8eb9e38></p> <p data-v-c8eb9e38>\n            创始团队来自于腾讯、平安、乐信等，在会员服务领域拥有丰富的权益供应链整合、会员体系搭建运营成功经验，致力于打造领先的权益服务平台。\n          </p> <p data-v-c8eb9e38></p> <p data-v-c8eb9e38>\n            目前公司业务正处于高速发展中，求才若渴，有广阔的成长和发展空间，我们迫切的需要优秀的你来加入，与公司共同成长进步！\n          </p> <img"+(_vm._ssrAttr("src",__webpack_require__(62)))+" alt data-v-c8eb9e38> <img"+(_vm._ssrAttr("src",__webpack_require__(63)))+" alt class=\"mobile-img\" data-v-c8eb9e38></div></div></section> <section class=\"course\" data-v-c8eb9e38><div class=\"container\" data-v-c8eb9e38><div class=\"common-title\" data-v-c8eb9e38><div class=\"en\" data-v-c8eb9e38>history</div> <div class=\"name\" data-v-c8eb9e38>公司历程</div> <div class=\"desc\" data-v-c8eb9e38>\n            针对性地输出客户权益套餐，满足用户在不同生活场景下的需求，高频使用产品，增加用户黏性，提高用户留存率，进而提升LTV。\n          </div></div></div> <div class=\"course-main container\" data-v-c8eb9e38><div class=\"list\" data-v-c8eb9e38><div class=\"item\" data-v-c8eb9e38><div class=\"date\" data-v-c8eb9e38><span data-v-c8eb9e38>2018.11</span> <span data-v-c8eb9e38>"+_vm._ssrEscape("【"+_vm._s(_vm.project ? _vm.project.name : "橡树黑卡")+"小程序】")+"</span></div> <p data-v-c8eb9e38>\n              与龙腾出行、海南航空、希尔顿、洲际、凯悦、雅高、滴滴出行、易安保险等企业达成合作，整合权益资源，搭建会员系统，奠基ToB能力\n            </p> <b data-v-c8eb9e38></b></div> <div class=\"item\" data-v-c8eb9e38><div class=\"date\" data-v-c8eb9e38><span data-v-c8eb9e38>2019.09</span> <span data-v-c8eb9e38>【全面展开企业付费会员合作】</span></div> <p data-v-c8eb9e38>\n              面向银行、商业地产、金融科技、智慧屏等行业机构提供专业方案定制和跨场景权益务，助力企业业务拉新与促活\n            </p> <b data-v-c8eb9e38></b></div> <div class=\"item\" data-v-c8eb9e38><div class=\"date\" data-v-c8eb9e38><span data-v-c8eb9e38>2020.09</span> <span data-v-c8eb9e38>【华润通享卡】</span></div> <p data-v-c8eb9e38>\n              华润集团以”引领商业进步，共创美好生活”为使命。华润通为其线上美好生活的载体，通卡打造行业标杆\n            </p> <b data-v-c8eb9e38></b></div></div> <div class=\"list\" data-v-c8eb9e38><div class=\"item\" data-v-c8eb9e38><div class=\"date\" data-v-c8eb9e38><span data-v-c8eb9e38>2018.08</span> <span data-v-c8eb9e38>【公司成立】</span></div> <p data-v-c8eb9e38>\n              来自腾讯、携程、平安、乐信的初始团队成员，拥有百万级付费会员平台的操盘经验\n            </p> <b data-v-c8eb9e38></b></div> <div class=\"item\" data-v-c8eb9e38><div class=\"date\" data-v-c8eb9e38><span data-v-c8eb9e38>2019.03</span> <span data-v-c8eb9e38>【腾讯理财通、滴滴出行】</span></div> <p data-v-c8eb9e38>与腾讯理财通、滴滴出行等达成会员权益输出合作，夯实服务能力</p> <b data-v-c8eb9e38></b></div> <div class=\"item\" data-v-c8eb9e38><div class=\"date\" data-v-c8eb9e38><span data-v-c8eb9e38>2020.06</span> <span data-v-c8eb9e38>"+_vm._ssrEscape("【全新推出"+_vm._s(_vm.project ? _vm.project.name : "橡树")+"生活权益平台】")+"</span></div> <p data-v-c8eb9e38>"+_vm._ssrEscape("\n              "+_vm._s(_vm.project ? _vm.project.name : "橡树")+"生活权益平台，涵盖娱乐视听类、生活服务类、旅游出行、车主福利、阅读学习、医护健康等300余项权益服务\n            ")+"</p> <b data-v-c8eb9e38></b></div></div></div> <div class=\"mobile-course-main\" data-v-c8eb9e38><img"+(_vm._ssrAttr("src",__webpack_require__(64)))+" alt data-v-c8eb9e38></div></section> "),_c('oakForm')],2),_vm._ssrNode(" "),_c('oakFooter',{attrs:{"type":"about"}})],2)}
+// CONCATENATED MODULE: ./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/@nuxt/components/dist/loader.js??ref--0-0!./node_modules/vue-loader/lib??vue-loader-options!./pages/about.vue?vue&type=template&id=67a1619d&scoped=true&
+var render = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('div',{directives:[{name:"show",rawName:"v-show",value:(_vm.pageShow),expression:"pageShow"}],ref:"about"},[_c('oakHeader',{attrs:{"current":2,"sec_current":"nav_about"}}),_vm._ssrNode(" "),_vm._ssrNode("<main data-v-67a1619d>","</main>",[_vm._ssrNode("<section class=\"about-banner\""+(_vm._ssrStyle(null,{
+                                          'background': _vm.project ?
+                                          ("url(" + _vm.url + "about-banner-" + (_vm.project.en) + ".png) center center / auto 100% no-repeat") :
+                                          ("url(" + _vm.url + "about-banner.png) center center / auto 100% no-repeat")
+                                        }, null))+" data-v-67a1619d></section> "),_vm._ssrNode("<section class=\"mobile-second-nav\" data-v-67a1619d>","</section>",[_vm._ssrNode("<ul data-v-67a1619d>","</ul>",_vm._l((_vm.sec_list),function(item){return _vm._ssrNode("<li"+(_vm._ssrClass(null,{ active: item.type === 'about' }))+" data-v-67a1619d>","</li>",[_c('nuxt-link',{attrs:{"to":item.url}},[_vm._v(_vm._s(item.title))])],1)}),0)]),_vm._ssrNode(" <section class=\"about-section1\" data-v-67a1619d><div class=\"container\" data-v-67a1619d><div class=\"common-title\" data-v-67a1619d><div class=\"en\" data-v-67a1619d>about</div> <div class=\"name\" data-v-67a1619d>关于我们</div> <div class=\"desc\" data-v-67a1619d>助力企业构建会员体系实现活跃与创收</div></div> <div class=\"about-text\" data-v-67a1619d><p data-v-67a1619d>"+_vm._ssrEscape(_vm._s(_vm.project ? _vm.project.name : "橡树黑卡")+"成立于2018年，")+"</p> <p data-v-67a1619d>\n            是国内领先的付费会员制权益SaaS服务平台，是国家高新技术企业、“双软企业”\n            。\n          </p> <p data-v-67a1619d></p> <p data-v-67a1619d>\n            合作伙伴包括华润集团、微众银行、工商银行、浦发银行、招商银行、腾讯理财通、微信、滴滴出行、龙腾出行，创维，TCL等知名企业。\n          </p> <p data-v-67a1619d></p> <p data-v-67a1619d>\n            创始团队来自于腾讯、平安、乐信等，在会员服务领域拥有丰富的权益供应链整合、会员体系搭建运营成功经验，致力于打造领先的权益服务平台。\n          </p> <p data-v-67a1619d></p> <p data-v-67a1619d>\n            目前公司业务正处于高速发展中，求才若渴，有广阔的成长和发展空间，我们迫切的需要优秀的你来加入，与公司共同成长进步！\n          </p> <img"+(_vm._ssrAttr("src",__webpack_require__(62)))+" alt data-v-67a1619d> <img"+(_vm._ssrAttr("src",__webpack_require__(63)))+" alt class=\"mobile-img\" data-v-67a1619d></div></div></section> <section class=\"course\" data-v-67a1619d><div class=\"container\" data-v-67a1619d><div class=\"common-title\" data-v-67a1619d><div class=\"en\" data-v-67a1619d>history</div> <div class=\"name\" data-v-67a1619d>公司历程</div> <div class=\"desc\" data-v-67a1619d>\n            针对性地输出客户权益套餐，满足用户在不同生活场景下的需求，高频使用产品，增加用户黏性，提高用户留存率，进而提升LTV。\n          </div></div></div> <div class=\"course-main container\" data-v-67a1619d><div class=\"list\" data-v-67a1619d><div class=\"item\" data-v-67a1619d><div class=\"date\" data-v-67a1619d><span data-v-67a1619d>2018.11</span> <span data-v-67a1619d>"+_vm._ssrEscape("【"+_vm._s(_vm.project ? _vm.project.name : "橡树黑卡")+"小程序】")+"</span></div> <p data-v-67a1619d>\n              与龙腾出行、海南航空、希尔顿、洲际、凯悦、雅高、滴滴出行、易安保险等企业达成合作，整合权益资源，搭建会员系统，奠基ToB能力\n            </p> <b data-v-67a1619d></b></div> <div class=\"item\" data-v-67a1619d><div class=\"date\" data-v-67a1619d><span data-v-67a1619d>2019.09</span> <span data-v-67a1619d>【全面展开企业付费会员合作】</span></div> <p data-v-67a1619d>\n              面向银行、商业地产、金融科技、智慧屏等行业机构提供专业方案定制和跨场景权益务，助力企业业务拉新与促活\n            </p> <b data-v-67a1619d></b></div> <div class=\"item\" data-v-67a1619d><div class=\"date\" data-v-67a1619d><span data-v-67a1619d>2020.09</span> <span data-v-67a1619d>【华润通享卡】</span></div> <p data-v-67a1619d>\n              华润集团以”引领商业进步，共创美好生活”为使命。华润通为其线上美好生活的载体，通卡打造行业标杆\n            </p> <b data-v-67a1619d></b></div></div> <div class=\"list\" data-v-67a1619d><div class=\"item\" data-v-67a1619d><div class=\"date\" data-v-67a1619d><span data-v-67a1619d>2018.08</span> <span data-v-67a1619d>【公司成立】</span></div> <p data-v-67a1619d>\n              来自腾讯、携程、平安、乐信的初始团队成员，拥有百万级付费会员平台的操盘经验\n            </p> <b data-v-67a1619d></b></div> <div class=\"item\" data-v-67a1619d><div class=\"date\" data-v-67a1619d><span data-v-67a1619d>2019.03</span> <span data-v-67a1619d>【腾讯理财通、滴滴出行】</span></div> <p data-v-67a1619d>与腾讯理财通、滴滴出行等达成会员权益输出合作，夯实服务能力</p> <b data-v-67a1619d></b></div> <div class=\"item\" data-v-67a1619d><div class=\"date\" data-v-67a1619d><span data-v-67a1619d>2020.06</span> <span data-v-67a1619d>"+_vm._ssrEscape("【全新推出"+_vm._s(_vm.project ? _vm.project.name : "橡树")+"生活权益平台】")+"</span></div> <p data-v-67a1619d>"+_vm._ssrEscape("\n              "+_vm._s(_vm.project ? _vm.project.name : "橡树")+"生活权益平台，涵盖娱乐视听类、生活服务类、旅游出行、车主福利、阅读学习、医护健康等300余项权益服务\n            ")+"</p> <b data-v-67a1619d></b></div></div></div> <div class=\"mobile-course-main\" data-v-67a1619d><img"+(_vm._ssrAttr("src",__webpack_require__(64)))+" alt data-v-67a1619d></div></section> "),_c('oakForm')],2),_vm._ssrNode(" "),_c('oakFooter',{attrs:{"type":"about"}})],2)}
 var staticRenderFns = []
 
 
-// CONCATENATED MODULE: ./pages/about.vue?vue&type=template&id=c8eb9e38&scoped=true&
+// CONCATENATED MODULE: ./pages/about.vue?vue&type=template&id=67a1619d&scoped=true&
 
 // EXTERNAL MODULE: ./components/header/header.vue + 4 modules
 var header = __webpack_require__(35);
@@ -26,6 +30,9 @@ var form_form = __webpack_require__(48);
 
 // EXTERNAL MODULE: ./utils/ans.js
 var ans = __webpack_require__(28);
+
+// EXTERNAL MODULE: ./utils/config.js
+var config = __webpack_require__(23);
 
 // CONCATENATED MODULE: ./node_modules/babel-loader/lib??ref--2-0!./node_modules/@nuxt/components/dist/loader.js??ref--0-0!./node_modules/vue-loader/lib??vue-loader-options!./pages/about.vue?vue&type=script&lang=js&
 //
@@ -159,6 +166,10 @@ var ans = __webpack_require__(28);
 //
 //
 //
+//
+//
+//
+
 
 
 
@@ -173,6 +184,7 @@ var ans = __webpack_require__(28);
 
   data() {
     return {
+      url: config["d" /* url */],
       pageShow: false,
       sec_list: [{
         title: "公司介绍",
@@ -188,15 +200,25 @@ var ans = __webpack_require__(28);
   },
 
   head() {
+    const local = window.local;
+    let title = '橡树黑卡--公司介绍';
+    let description_content = "橡树黑卡成立于2018年，是国内领先的付费会员制权益SaaS服务平台，是国家高新技术企业、“双软企业” 。客户包含华润集团，微众银行，工商银行，浦发银行，招商银行，腾讯理财通、微信、滴滴出行、龙腾出行，创维，TCL等知名企业，400-150-9669。";
+    let keywords_content = "付费会员，会员权益，高新技术企业，提升活跃，带动营收，增加收入，客户关怀，用户画像，延长用户生命周期";
+
+    if (local) {
+      title = `${local.name}--公司介绍`;
+      description_content = `${local.name}成立于2018年，是国内领先的付费会员制权益SaaS服务平台，是国家高新技术企业、“双软企业” 。客户包含华润集团，微众银行，工商银行，浦发银行，招商银行，腾讯理财通、微信、滴滴出行、龙腾出行，创维，TCL等知名企业，400-150-9669。`;
+    }
+
     return {
-      title: "橡树黑卡--公司介绍",
+      title,
       meta: [{
         hid: "about",
         name: "description",
-        content: "橡树黑卡成立于2018年，是国内领先的付费会员制权益SaaS服务平台，是国家高新技术企业、“双软企业” 。客户包含华润集团，微众银行，工商银行，浦发银行，招商银行，腾讯理财通、微信、滴滴出行、龙腾出行，创维，TCL等知名企业，400-150-9669。"
+        content: description_content
       }, {
         name: "keywords",
-        content: "付费会员，会员权益，高新技术企业，提升活跃，带动营收，增加收入，客户关怀，用户画像，延长用户生命周期"
+        content: keywords_content
       }]
     };
   },
@@ -232,7 +254,7 @@ var component = Object(componentNormalizer["a" /* default */])(
   staticRenderFns,
   false,
   injectStyles,
-  "c8eb9e38",
+  "67a1619d",
   "b1a4dec4"
   
 )
@@ -3984,9 +4006,9 @@ module.exports = __webpack_require__.p + "img/img14.169348f.png";
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony import */ var _node_modules_css_loader_dist_cjs_js_ref_7_oneOf_1_0_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_postcss_loader_src_index_js_ref_7_oneOf_1_1_node_modules_sass_loader_dist_cjs_js_ref_7_oneOf_1_2_node_modules_nuxt_components_dist_loader_js_ref_0_0_node_modules_vue_loader_lib_index_js_vue_loader_options_about_vue_vue_type_style_index_0_id_c8eb9e38_lang_scss_scoped_true___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(55);
-/* harmony import */ var _node_modules_css_loader_dist_cjs_js_ref_7_oneOf_1_0_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_postcss_loader_src_index_js_ref_7_oneOf_1_1_node_modules_sass_loader_dist_cjs_js_ref_7_oneOf_1_2_node_modules_nuxt_components_dist_loader_js_ref_0_0_node_modules_vue_loader_lib_index_js_vue_loader_options_about_vue_vue_type_style_index_0_id_c8eb9e38_lang_scss_scoped_true___WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_node_modules_css_loader_dist_cjs_js_ref_7_oneOf_1_0_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_postcss_loader_src_index_js_ref_7_oneOf_1_1_node_modules_sass_loader_dist_cjs_js_ref_7_oneOf_1_2_node_modules_nuxt_components_dist_loader_js_ref_0_0_node_modules_vue_loader_lib_index_js_vue_loader_options_about_vue_vue_type_style_index_0_id_c8eb9e38_lang_scss_scoped_true___WEBPACK_IMPORTED_MODULE_0__);
-/* harmony reexport (unknown) */ for(var __WEBPACK_IMPORT_KEY__ in _node_modules_css_loader_dist_cjs_js_ref_7_oneOf_1_0_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_postcss_loader_src_index_js_ref_7_oneOf_1_1_node_modules_sass_loader_dist_cjs_js_ref_7_oneOf_1_2_node_modules_nuxt_components_dist_loader_js_ref_0_0_node_modules_vue_loader_lib_index_js_vue_loader_options_about_vue_vue_type_style_index_0_id_c8eb9e38_lang_scss_scoped_true___WEBPACK_IMPORTED_MODULE_0__) if(["default"].indexOf(__WEBPACK_IMPORT_KEY__) < 0) (function(key) { __webpack_require__.d(__webpack_exports__, key, function() { return _node_modules_css_loader_dist_cjs_js_ref_7_oneOf_1_0_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_postcss_loader_src_index_js_ref_7_oneOf_1_1_node_modules_sass_loader_dist_cjs_js_ref_7_oneOf_1_2_node_modules_nuxt_components_dist_loader_js_ref_0_0_node_modules_vue_loader_lib_index_js_vue_loader_options_about_vue_vue_type_style_index_0_id_c8eb9e38_lang_scss_scoped_true___WEBPACK_IMPORTED_MODULE_0__[key]; }) }(__WEBPACK_IMPORT_KEY__));
+/* harmony import */ var _node_modules_css_loader_dist_cjs_js_ref_7_oneOf_1_0_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_postcss_loader_src_index_js_ref_7_oneOf_1_1_node_modules_sass_loader_dist_cjs_js_ref_7_oneOf_1_2_node_modules_nuxt_components_dist_loader_js_ref_0_0_node_modules_vue_loader_lib_index_js_vue_loader_options_about_vue_vue_type_style_index_0_id_67a1619d_lang_scss_scoped_true___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(55);
+/* harmony import */ var _node_modules_css_loader_dist_cjs_js_ref_7_oneOf_1_0_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_postcss_loader_src_index_js_ref_7_oneOf_1_1_node_modules_sass_loader_dist_cjs_js_ref_7_oneOf_1_2_node_modules_nuxt_components_dist_loader_js_ref_0_0_node_modules_vue_loader_lib_index_js_vue_loader_options_about_vue_vue_type_style_index_0_id_67a1619d_lang_scss_scoped_true___WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_node_modules_css_loader_dist_cjs_js_ref_7_oneOf_1_0_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_postcss_loader_src_index_js_ref_7_oneOf_1_1_node_modules_sass_loader_dist_cjs_js_ref_7_oneOf_1_2_node_modules_nuxt_components_dist_loader_js_ref_0_0_node_modules_vue_loader_lib_index_js_vue_loader_options_about_vue_vue_type_style_index_0_id_67a1619d_lang_scss_scoped_true___WEBPACK_IMPORTED_MODULE_0__);
+/* harmony reexport (unknown) */ for(var __WEBPACK_IMPORT_KEY__ in _node_modules_css_loader_dist_cjs_js_ref_7_oneOf_1_0_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_postcss_loader_src_index_js_ref_7_oneOf_1_1_node_modules_sass_loader_dist_cjs_js_ref_7_oneOf_1_2_node_modules_nuxt_components_dist_loader_js_ref_0_0_node_modules_vue_loader_lib_index_js_vue_loader_options_about_vue_vue_type_style_index_0_id_67a1619d_lang_scss_scoped_true___WEBPACK_IMPORTED_MODULE_0__) if(["default"].indexOf(__WEBPACK_IMPORT_KEY__) < 0) (function(key) { __webpack_require__.d(__webpack_exports__, key, function() { return _node_modules_css_loader_dist_cjs_js_ref_7_oneOf_1_0_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_postcss_loader_src_index_js_ref_7_oneOf_1_1_node_modules_sass_loader_dist_cjs_js_ref_7_oneOf_1_2_node_modules_nuxt_components_dist_loader_js_ref_0_0_node_modules_vue_loader_lib_index_js_vue_loader_options_about_vue_vue_type_style_index_0_id_67a1619d_lang_scss_scoped_true___WEBPACK_IMPORTED_MODULE_0__[key]; }) }(__WEBPACK_IMPORT_KEY__));
 
 
 /***/ })

@@ -1701,12 +1701,12 @@ var nuxt_loading_component = Object(componentNormalizer["a" /* default */])(
 // EXTERNAL MODULE: ./style/index.scss
 var style = __webpack_require__(18);
 
-// CONCATENATED MODULE: ./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/@nuxt/components/dist/loader.js??ref--0-0!./node_modules/vue-loader/lib??vue-loader-options!./layouts/default.vue?vue&type=template&id=2578348d&
-var defaultvue_type_template_id_2578348d_render = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return (_vm.show)?_c('div',[_c('nuxt')],1):_vm._e()}
-var defaultvue_type_template_id_2578348d_staticRenderFns = []
+// CONCATENATED MODULE: ./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/@nuxt/components/dist/loader.js??ref--0-0!./node_modules/vue-loader/lib??vue-loader-options!./layouts/default.vue?vue&type=template&id=4d9578d4&
+var defaultvue_type_template_id_4d9578d4_render = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return (_vm.show)?_c('div',[_c('nuxt')],1):_vm._e()}
+var defaultvue_type_template_id_4d9578d4_staticRenderFns = []
 
 
-// CONCATENATED MODULE: ./layouts/default.vue?vue&type=template&id=2578348d&
+// CONCATENATED MODULE: ./layouts/default.vue?vue&type=template&id=4d9578d4&
 
 // CONCATENATED MODULE: ./node_modules/babel-loader/lib??ref--2-0!./node_modules/@nuxt/components/dist/loader.js??ref--0-0!./node_modules/vue-loader/lib??vue-loader-options!./layouts/default.vue?vue&type=script&lang=js&
 //
@@ -1729,16 +1729,10 @@ var defaultvue_type_template_id_2578348d_staticRenderFns = []
         name: "高光时刻",
         en: "lifesvip",
         record: "20063673"
-      },
-      "50024": {
-        name: "高光时刻",
-        en: "lifesvip",
-        record: "20063673"
       }
     };
     const local = Object.keys(project).filter(r => location.href.includes(r));
     window.local = local[0] ? project[local[0]] : null;
-    console.log("layout:", window.local);
     this.show = true;
   }
 
@@ -1760,8 +1754,8 @@ if (style0.__inject__) style0.__inject__(context)
 
 var default_component = Object(componentNormalizer["a" /* default */])(
   layouts_defaultvue_type_script_lang_js_,
-  defaultvue_type_template_id_2578348d_render,
-  defaultvue_type_template_id_2578348d_staticRenderFns,
+  defaultvue_type_template_id_4d9578d4_render,
+  defaultvue_type_template_id_4d9578d4_staticRenderFns,
   false,
   default_injectStyles,
   null,
