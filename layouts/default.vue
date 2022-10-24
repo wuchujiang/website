@@ -20,6 +20,11 @@ export default {
         en: "lifesvip",
         record: "20063673",
       },
+      // "xsvips": {
+      //   name: "橡树创新",
+      //   en: "xsvips",
+      //   record: "20003741",
+      // },
     }
     const local = Object.keys(project).filter(r => location.href.includes(r));
     window.local = local[0] ? project[local[0]] : null;

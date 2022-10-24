@@ -28,7 +28,7 @@
     <div class="copyright">
       <span
         ><a href="https://beian.miit.gov.cn/" target="_blank"
-          >粤ICP备{{project ? project.record : '18120172'}}号</a
+          >粤ICP备{{project ? project.record : location.href.includes('xsvips') ? '20003741' : '18120172'}}号</a
         >
       </span
       >
