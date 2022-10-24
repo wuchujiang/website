@@ -3759,44 +3759,39 @@ module.exports = __webpack_require__.p + "img/img2.af2f476.png";
 /* 81 */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__.p + "img/img2-2.b15c8ae.png";
+module.exports = __webpack_require__.p + "img/img3.37e23f2.png";
 
 /***/ }),
 /* 82 */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__.p + "img/img3.37e23f2.png";
+module.exports = __webpack_require__.p + "img/img6.810a033.png";
 
 /***/ }),
 /* 83 */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__.p + "img/img6.810a033.png";
+module.exports = __webpack_require__.p + "img/img4.7f4ea2e.png";
 
 /***/ }),
 /* 84 */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__.p + "img/img4.7f4ea2e.png";
-
-/***/ }),
-/* 85 */
-/***/ (function(module, exports, __webpack_require__) {
-
 module.exports = __webpack_require__.p + "img/img7.8b79086.png";
 
 /***/ }),
-/* 86 */
+/* 85 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony import */ var _node_modules_css_loader_dist_cjs_js_ref_7_oneOf_1_0_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_postcss_loader_src_index_js_ref_7_oneOf_1_1_node_modules_sass_loader_dist_cjs_js_ref_7_oneOf_1_2_node_modules_nuxt_components_dist_loader_js_ref_0_0_node_modules_vue_loader_lib_index_js_vue_loader_options_saas_vue_vue_type_style_index_0_id_25ed5825_lang_scss_scoped_true___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(59);
-/* harmony import */ var _node_modules_css_loader_dist_cjs_js_ref_7_oneOf_1_0_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_postcss_loader_src_index_js_ref_7_oneOf_1_1_node_modules_sass_loader_dist_cjs_js_ref_7_oneOf_1_2_node_modules_nuxt_components_dist_loader_js_ref_0_0_node_modules_vue_loader_lib_index_js_vue_loader_options_saas_vue_vue_type_style_index_0_id_25ed5825_lang_scss_scoped_true___WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_node_modules_css_loader_dist_cjs_js_ref_7_oneOf_1_0_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_postcss_loader_src_index_js_ref_7_oneOf_1_1_node_modules_sass_loader_dist_cjs_js_ref_7_oneOf_1_2_node_modules_nuxt_components_dist_loader_js_ref_0_0_node_modules_vue_loader_lib_index_js_vue_loader_options_saas_vue_vue_type_style_index_0_id_25ed5825_lang_scss_scoped_true___WEBPACK_IMPORTED_MODULE_0__);
-/* harmony reexport (unknown) */ for(var __WEBPACK_IMPORT_KEY__ in _node_modules_css_loader_dist_cjs_js_ref_7_oneOf_1_0_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_postcss_loader_src_index_js_ref_7_oneOf_1_1_node_modules_sass_loader_dist_cjs_js_ref_7_oneOf_1_2_node_modules_nuxt_components_dist_loader_js_ref_0_0_node_modules_vue_loader_lib_index_js_vue_loader_options_saas_vue_vue_type_style_index_0_id_25ed5825_lang_scss_scoped_true___WEBPACK_IMPORTED_MODULE_0__) if(["default"].indexOf(__WEBPACK_IMPORT_KEY__) < 0) (function(key) { __webpack_require__.d(__webpack_exports__, key, function() { return _node_modules_css_loader_dist_cjs_js_ref_7_oneOf_1_0_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_postcss_loader_src_index_js_ref_7_oneOf_1_1_node_modules_sass_loader_dist_cjs_js_ref_7_oneOf_1_2_node_modules_nuxt_components_dist_loader_js_ref_0_0_node_modules_vue_loader_lib_index_js_vue_loader_options_saas_vue_vue_type_style_index_0_id_25ed5825_lang_scss_scoped_true___WEBPACK_IMPORTED_MODULE_0__[key]; }) }(__WEBPACK_IMPORT_KEY__));
+/* harmony import */ var _node_modules_css_loader_dist_cjs_js_ref_7_oneOf_1_0_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_postcss_loader_src_index_js_ref_7_oneOf_1_1_node_modules_sass_loader_dist_cjs_js_ref_7_oneOf_1_2_node_modules_nuxt_components_dist_loader_js_ref_0_0_node_modules_vue_loader_lib_index_js_vue_loader_options_saas_vue_vue_type_style_index_0_id_2223d9e0_lang_scss_scoped_true___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(59);
+/* harmony import */ var _node_modules_css_loader_dist_cjs_js_ref_7_oneOf_1_0_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_postcss_loader_src_index_js_ref_7_oneOf_1_1_node_modules_sass_loader_dist_cjs_js_ref_7_oneOf_1_2_node_modules_nuxt_components_dist_loader_js_ref_0_0_node_modules_vue_loader_lib_index_js_vue_loader_options_saas_vue_vue_type_style_index_0_id_2223d9e0_lang_scss_scoped_true___WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_node_modules_css_loader_dist_cjs_js_ref_7_oneOf_1_0_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_postcss_loader_src_index_js_ref_7_oneOf_1_1_node_modules_sass_loader_dist_cjs_js_ref_7_oneOf_1_2_node_modules_nuxt_components_dist_loader_js_ref_0_0_node_modules_vue_loader_lib_index_js_vue_loader_options_saas_vue_vue_type_style_index_0_id_2223d9e0_lang_scss_scoped_true___WEBPACK_IMPORTED_MODULE_0__);
+/* harmony reexport (unknown) */ for(var __WEBPACK_IMPORT_KEY__ in _node_modules_css_loader_dist_cjs_js_ref_7_oneOf_1_0_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_postcss_loader_src_index_js_ref_7_oneOf_1_1_node_modules_sass_loader_dist_cjs_js_ref_7_oneOf_1_2_node_modules_nuxt_components_dist_loader_js_ref_0_0_node_modules_vue_loader_lib_index_js_vue_loader_options_saas_vue_vue_type_style_index_0_id_2223d9e0_lang_scss_scoped_true___WEBPACK_IMPORTED_MODULE_0__) if(["default"].indexOf(__WEBPACK_IMPORT_KEY__) < 0) (function(key) { __webpack_require__.d(__webpack_exports__, key, function() { return _node_modules_css_loader_dist_cjs_js_ref_7_oneOf_1_0_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_postcss_loader_src_index_js_ref_7_oneOf_1_1_node_modules_sass_loader_dist_cjs_js_ref_7_oneOf_1_2_node_modules_nuxt_components_dist_loader_js_ref_0_0_node_modules_vue_loader_lib_index_js_vue_loader_options_saas_vue_vue_type_style_index_0_id_2223d9e0_lang_scss_scoped_true___WEBPACK_IMPORTED_MODULE_0__[key]; }) }(__WEBPACK_IMPORT_KEY__));
 
 
 /***/ }),
+/* 86 */,
 /* 87 */,
 /* 88 */,
 /* 89 */,
@@ -3828,20 +3823,19 @@ __webpack_require__.r(__webpack_exports__);
 /* 115 */,
 /* 116 */,
 /* 117 */,
-/* 118 */,
-/* 119 */
+/* 118 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 // ESM COMPAT FLAG
 __webpack_require__.r(__webpack_exports__);
 
-// CONCATENATED MODULE: ./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/@nuxt/components/dist/loader.js??ref--0-0!./node_modules/vue-loader/lib??vue-loader-options!./pages/saas.vue?vue&type=template&id=25ed5825&scoped=true&
-var render = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('div',{directives:[{name:"show",rawName:"v-show",value:(_vm.pageShow),expression:"pageShow"}],ref:"saas"},[_c('oakHeader',{attrs:{"current":1,"sec_current":"nav_saas"}}),_vm._ssrNode(" "),_vm._ssrNode("<main data-v-25ed5825>","</main>",[_vm._ssrNode("<section class=\"saas-banner\" data-v-25ed5825></section> <section class=\"saas-tab\" data-v-25ed5825><div class=\"container\" data-v-25ed5825>"+(_vm._ssrList((_vm.tab),function(item,index){return ("<div"+(_vm._ssrClass(null,{ item: true, active: _vm.current === index }))+" data-v-25ed5825>"+_vm._ssrEscape("\n          "+_vm._s(item)+"\n        ")+"</div>")}))+"</div></section> "),_vm._ssrNode("<section class=\"mobile-second-nav\" data-v-25ed5825>","</section>",[_vm._ssrNode("<ul data-v-25ed5825>","</ul>",_vm._l((_vm.sec_list),function(item){return _vm._ssrNode("<li"+(_vm._ssrClass(null,{ active: item.type === 'saas' }))+" data-v-25ed5825>","</li>",[_c('nuxt-link',{attrs:{"to":item.url}},[_vm._v(_vm._s(item.title))])],1)}),0)]),_vm._ssrNode(" <section class=\"section1\" data-v-25ed5825><div class=\"container\" data-v-25ed5825><div class=\"common-title\" data-v-25ed5825><div class=\"en\" data-v-25ed5825>digitization</div> <div class=\"name\" data-v-25ed5825>数字化会员产品设计</div> <div class=\"desc\" data-v-25ed5825>"+_vm._ssrEscape("\n            "+_vm._s(_vm.project ? _vm.project.name : "橡树")+"支持对会员设计，及全链路的各项核心数据监控\n          ")+"</div></div> <section class=\"mobile-section1-main\" data-v-25ed5825><img"+(_vm._ssrAttr("src",__webpack_require__(77)))+" alt data-v-25ed5825> <h4 data-v-25ed5825>丰富的权益资源</h4> <p data-v-25ed5825>"+_vm._ssrEscape(_vm._s(_vm.project ? _vm.project.name : "橡树")+"整合内外部资源，拥有多平台数千个虚拟服务产品的权益资源。")+"</p> <img"+(_vm._ssrAttr("src",__webpack_require__(78)))+" alt data-v-25ed5825> <p data-v-25ed5825>\n            通过SasS运营赋能的方式快速、定制化输出，可广泛应用于用户生活的不同场景，发挥成本和规模交易的优势，助力客户促活，提升交易量。\n          </p></section> <div class=\"section1-main\" data-v-25ed5825><div class=\"left\" data-v-25ed5825><p data-v-25ed5825>"+_vm._ssrEscape(_vm._s(_vm.project ? _vm.project.name : "橡树")+"支持对会员设计")+"</p> <p data-v-25ed5825>及全链路的各项核心数据监控</p> <ul data-v-25ed5825><li data-v-25ed5825><img"+(_vm._ssrAttr("src",__webpack_require__(52)))+" alt data-v-25ed5825>交易数据</li> <li data-v-25ed5825><img"+(_vm._ssrAttr("src",__webpack_require__(53)))+" alt data-v-25ed5825>权益使用数据</li> <li data-v-25ed5825><img"+(_vm._ssrAttr("src",__webpack_require__(54)))+" alt data-v-25ed5825>用户生命周期</li></ul></div> <img"+(_vm._ssrAttr("src",__webpack_require__(79)))+" alt class=\"img1\" data-v-25ed5825></div></div></section> <div class=\"section1-2\" data-v-25ed5825><div class=\"container\" data-v-25ed5825>"+((!_vm.isGaoGuang)?("<img"+(_vm._ssrAttr("src",__webpack_require__(80)))+" alt class=\"img2\" data-v-25ed5825>"):"<!---->")+" "+((_vm.isGaoGuang)?("<img"+(_vm._ssrAttr("src",__webpack_require__(81)))+" alt class=\"img2\" data-v-25ed5825>"):"<!---->")+" <div class=\"text\" data-v-25ed5825><p data-v-25ed5825>"+_vm._ssrEscape("\n            "+_vm._s(_vm.project ? _vm.project.name : "橡树")+"整合内外部资源，拥有包括通信服务、娱乐充值、电商购物卡、网络工具、美食卡券、休闲生活、交通出行、车主服务等多平台数千个虚拟服务产品的权益资源。\n          ")+"</p> <p data-v-25ed5825></p> <p data-v-25ed5825>\n            通过SasS运营赋能的方式快速、定制化输出，可广泛应用于用户生活的不同场景，发挥成本和规模交易的优势，助力客户促活，提升交易量。\n          </p></div></div></div> <section class=\"section2\" data-v-25ed5825><div class=\"container\" data-v-25ed5825><div class=\"common-title\" data-v-25ed5825><div class=\"en\" data-v-25ed5825>backstage</div> <div class=\"name\" data-v-25ed5825>会员管理后台</div> <div class=\"desc\" data-v-25ed5825>"+_vm._ssrEscape("\n            "+_vm._s(_vm.project ? _vm.project.name : "橡树")+"支持对会员设计，及全链路的各项核心数据监控\n          ")+"</div></div> <div class=\"section2-main\" data-v-25ed5825><ul data-v-25ed5825><li data-v-25ed5825>· 支持快速配置会员上线</li> <li data-v-25ed5825>· 支持批量权益SKU管理</li> <li data-v-25ed5825>· 支持会员卡和权益管理</li> <li data-v-25ed5825>· 支持常见活动快速配置上线</li> <li data-v-25ed5825>· 支持支付方式灵活配置</li></ul> <img"+(_vm._ssrAttr("src",__webpack_require__(82)))+" alt data-v-25ed5825></div> <div class=\"mobile-section2-main\" data-v-25ed5825><img"+(_vm._ssrAttr("src",__webpack_require__(83)))+" alt data-v-25ed5825></div></div></section> <section class=\"section3\" data-v-25ed5825><div class=\"container\" data-v-25ed5825><div class=\"common-title\" data-v-25ed5825><div class=\"en\" data-v-25ed5825>Technical</div> <div class=\"name\" data-v-25ed5825>敏捷高效的技术能力</div> <div class=\"desc\" data-v-25ed5825>持续迭代 快速上线</div></div> <div class=\"section3-main\" data-v-25ed5825><img"+(_vm._ssrAttr("src",__webpack_require__(84)))+" alt data-v-25ed5825> <img"+(_vm._ssrAttr("src",__webpack_require__(85)))+" alt class=\"mobile-img\" data-v-25ed5825> <div class=\"right\" data-v-25ed5825><ul data-v-25ed5825><li data-v-25ed5825>快速上线</li> <li data-v-25ed5825>持续迭代</li></ul> <div class=\"jishu\" data-v-25ed5825><div data-v-25ed5825>3384次提交</div> <div data-v-25ed5825>306个分支</div> <div data-v-25ed5825>148个标签</div></div> <div class=\"item\" data-v-25ed5825>\n              开发团队经验丰富，累计开发上线50+项目，近一年上线20+项目\n            </div> <div class=\"item\" data-v-25ed5825>\n              项目采用敏捷开发流程，每周迭代发版次数达1-2次，近一年累计发版次数100+\n            </div> <div class=\"item\" data-v-25ed5825>\n              系统模块可复用性强，采用微服务模式+中台模式开发\n            </div></div></div></div></section> "),_c('oakForm')],2),_vm._ssrNode(" "),_c('oakFooter',{attrs:{"type":"saas"}})],2)}
+// CONCATENATED MODULE: ./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/@nuxt/components/dist/loader.js??ref--0-0!./node_modules/vue-loader/lib??vue-loader-options!./pages/saas.vue?vue&type=template&id=2223d9e0&scoped=true&
+var render = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('div',{directives:[{name:"show",rawName:"v-show",value:(_vm.pageShow),expression:"pageShow"}],ref:"saas"},[_c('oakHeader',{attrs:{"current":1,"sec_current":"nav_saas"}}),_vm._ssrNode(" "),_vm._ssrNode("<main data-v-2223d9e0>","</main>",[_vm._ssrNode("<section class=\"saas-banner\" data-v-2223d9e0></section> <section class=\"saas-tab\" data-v-2223d9e0><div class=\"container\" data-v-2223d9e0>"+(_vm._ssrList((_vm.tab),function(item,index){return ("<div"+(_vm._ssrClass(null,{ item: true, active: _vm.current === index }))+" data-v-2223d9e0>"+_vm._ssrEscape("\n          "+_vm._s(item)+"\n        ")+"</div>")}))+"</div></section> "),_vm._ssrNode("<section class=\"mobile-second-nav\" data-v-2223d9e0>","</section>",[_vm._ssrNode("<ul data-v-2223d9e0>","</ul>",_vm._l((_vm.sec_list),function(item){return _vm._ssrNode("<li"+(_vm._ssrClass(null,{ active: item.type === 'saas' }))+" data-v-2223d9e0>","</li>",[_c('nuxt-link',{attrs:{"to":item.url}},[_vm._v(_vm._s(item.title))])],1)}),0)]),_vm._ssrNode(" <section class=\"section1\" data-v-2223d9e0><div class=\"container\" data-v-2223d9e0><div class=\"common-title\" data-v-2223d9e0><div class=\"en\" data-v-2223d9e0>digitization</div> <div class=\"name\" data-v-2223d9e0>数字化会员产品设计</div> <div class=\"desc\" data-v-2223d9e0>"+_vm._ssrEscape("\n            "+_vm._s(_vm.project ? _vm.project.name : "橡树")+"支持对会员设计，及全链路的各项核心数据监控\n          ")+"</div></div> <section class=\"mobile-section1-main\" data-v-2223d9e0><img"+(_vm._ssrAttr("src",__webpack_require__(77)))+" alt data-v-2223d9e0> <h4 data-v-2223d9e0>丰富的权益资源</h4> <p data-v-2223d9e0>"+_vm._ssrEscape(_vm._s(_vm.project ? _vm.project.name : "橡树")+"整合内外部资源，拥有多平台数千个虚拟服务产品的权益资源。")+"</p> <img"+(_vm._ssrAttr("src",__webpack_require__(78)))+" alt data-v-2223d9e0> <p data-v-2223d9e0>\n            通过SasS运营赋能的方式快速、定制化输出，可广泛应用于用户生活的不同场景，发挥成本和规模交易的优势，助力客户促活，提升交易量。\n          </p></section> <div class=\"section1-main\" data-v-2223d9e0><div class=\"left\" data-v-2223d9e0><p data-v-2223d9e0>"+_vm._ssrEscape(_vm._s(_vm.project ? _vm.project.name : "橡树")+"支持对会员设计")+"</p> <p data-v-2223d9e0>及全链路的各项核心数据监控</p> <ul data-v-2223d9e0><li data-v-2223d9e0><img"+(_vm._ssrAttr("src",__webpack_require__(52)))+" alt data-v-2223d9e0>交易数据</li> <li data-v-2223d9e0><img"+(_vm._ssrAttr("src",__webpack_require__(53)))+" alt data-v-2223d9e0>权益使用数据</li> <li data-v-2223d9e0><img"+(_vm._ssrAttr("src",__webpack_require__(54)))+" alt data-v-2223d9e0>用户生命周期</li></ul></div> <img"+(_vm._ssrAttr("src",__webpack_require__(79)))+" alt class=\"img1\" data-v-2223d9e0></div></div></section> <div class=\"section1-2\" data-v-2223d9e0><div class=\"container\" data-v-2223d9e0>"+((!_vm.project)?("<img"+(_vm._ssrAttr("src",__webpack_require__(80)))+" alt class=\"img2\" data-v-2223d9e0>"):"<!---->")+" "+((_vm.project)?("<img"+(_vm._ssrAttr("src",(_vm.url + "img2-" + (_vm.project.en) + ".png")))+" alt class=\"img2\" data-v-2223d9e0>"):"<!---->")+" <div class=\"text\" data-v-2223d9e0><p data-v-2223d9e0>"+_vm._ssrEscape("\n            "+_vm._s(_vm.project ? _vm.project.name : "橡树")+"整合内外部资源，拥有包括通信服务、娱乐充值、电商购物卡、网络工具、美食卡券、休闲生活、交通出行、车主服务等多平台数千个虚拟服务产品的权益资源。\n          ")+"</p> <p data-v-2223d9e0></p> <p data-v-2223d9e0>\n            通过SasS运营赋能的方式快速、定制化输出，可广泛应用于用户生活的不同场景，发挥成本和规模交易的优势，助力客户促活，提升交易量。\n          </p></div></div></div> <section class=\"section2\" data-v-2223d9e0><div class=\"container\" data-v-2223d9e0><div class=\"common-title\" data-v-2223d9e0><div class=\"en\" data-v-2223d9e0>backstage</div> <div class=\"name\" data-v-2223d9e0>会员管理后台</div> <div class=\"desc\" data-v-2223d9e0>"+_vm._ssrEscape("\n            "+_vm._s(_vm.project ? _vm.project.name : "橡树")+"支持对会员设计，及全链路的各项核心数据监控\n          ")+"</div></div> <div class=\"section2-main\" data-v-2223d9e0><ul data-v-2223d9e0><li data-v-2223d9e0>· 支持快速配置会员上线</li> <li data-v-2223d9e0>· 支持批量权益SKU管理</li> <li data-v-2223d9e0>· 支持会员卡和权益管理</li> <li data-v-2223d9e0>· 支持常见活动快速配置上线</li> <li data-v-2223d9e0>· 支持支付方式灵活配置</li></ul> <img"+(_vm._ssrAttr("src",__webpack_require__(81)))+" alt data-v-2223d9e0></div> <div class=\"mobile-section2-main\" data-v-2223d9e0><img"+(_vm._ssrAttr("src",__webpack_require__(82)))+" alt data-v-2223d9e0></div></div></section> <section class=\"section3\" data-v-2223d9e0><div class=\"container\" data-v-2223d9e0><div class=\"common-title\" data-v-2223d9e0><div class=\"en\" data-v-2223d9e0>Technical</div> <div class=\"name\" data-v-2223d9e0>敏捷高效的技术能力</div> <div class=\"desc\" data-v-2223d9e0>持续迭代 快速上线</div></div> <div class=\"section3-main\" data-v-2223d9e0><img"+(_vm._ssrAttr("src",__webpack_require__(83)))+" alt data-v-2223d9e0> <img"+(_vm._ssrAttr("src",__webpack_require__(84)))+" alt class=\"mobile-img\" data-v-2223d9e0> <div class=\"right\" data-v-2223d9e0><ul data-v-2223d9e0><li data-v-2223d9e0>快速上线</li> <li data-v-2223d9e0>持续迭代</li></ul> <div class=\"jishu\" data-v-2223d9e0><div data-v-2223d9e0>3384次提交</div> <div data-v-2223d9e0>306个分支</div> <div data-v-2223d9e0>148个标签</div></div> <div class=\"item\" data-v-2223d9e0>\n              开发团队经验丰富，累计开发上线50+项目，近一年上线20+项目\n            </div> <div class=\"item\" data-v-2223d9e0>\n              项目采用敏捷开发流程，每周迭代发版次数达1-2次，近一年累计发版次数100+\n            </div> <div class=\"item\" data-v-2223d9e0>\n              系统模块可复用性强，采用微服务模式+中台模式开发\n            </div></div></div></div></section> "),_c('oakForm')],2),_vm._ssrNode(" "),_c('oakFooter',{attrs:{"type":"saas"}})],2)}
 var staticRenderFns = []
 
 
-// CONCATENATED MODULE: ./pages/saas.vue?vue&type=template&id=25ed5825&scoped=true&
+// CONCATENATED MODULE: ./pages/saas.vue?vue&type=template&id=2223d9e0&scoped=true&
 
 // EXTERNAL MODULE: ./components/header/header.vue + 4 modules
 var header = __webpack_require__(35);
@@ -3854,6 +3848,9 @@ var form_form = __webpack_require__(48);
 
 // EXTERNAL MODULE: ./utils/ans.js
 var ans = __webpack_require__(28);
+
+// EXTERNAL MODULE: ./utils/config.js
+var config = __webpack_require__(23);
 
 // CONCATENATED MODULE: ./node_modules/babel-loader/lib??ref--2-0!./node_modules/@nuxt/components/dist/loader.js??ref--0-0!./node_modules/vue-loader/lib??vue-loader-options!./pages/saas.vue?vue&type=script&lang=js&
 //
@@ -3998,6 +3995,7 @@ var ans = __webpack_require__(28);
 
 
 
+
 /* harmony default export */ var saasvue_type_script_lang_js_ = ({
   name: "saas",
   components: {
@@ -4008,6 +4006,7 @@ var ans = __webpack_require__(28);
 
   data() {
     return {
+      url: config["d" /* url */],
       tab: ["数字化会员产品设计", "会员管理后台", "敏捷高效的技术能力"],
       current: 0,
       pageShow: false,
@@ -4076,7 +4075,7 @@ var componentNormalizer = __webpack_require__(2);
 
 function injectStyles (context) {
   
-  var style0 = __webpack_require__(86)
+  var style0 = __webpack_require__(85)
 if (style0.__inject__) style0.__inject__(context)
 
 }
@@ -4089,7 +4088,7 @@ var component = Object(componentNormalizer["a" /* default */])(
   staticRenderFns,
   false,
   injectStyles,
-  "25ed5825",
+  "2223d9e0",
   "4003257f"
   
 )

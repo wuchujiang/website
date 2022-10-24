@@ -60,8 +60,8 @@
       </section>
       <div class="section1-2">
         <div class="container">
-          <img v-if="!isGaoGuang" class="img2" src="@/static/img2.png" alt="" />
-          <img v-if="isGaoGuang" class="img2" src="@/static/img2-2.png" alt="" />
+          <img v-if="!project" class="img2" src="@/static/img2.png" alt="" />
+          <img v-if="project" class="img2" :src="`${url}img2-${project.en}.png`" alt="" />
           <div class="text">
             <p>
               {{ project ? project.name : "橡树"}}整合内外部资源，拥有包括通信服务、娱乐充值、电商购物卡、网络工具、美食卡券、休闲生活、交通出行、车主服务等多平台数千个虚拟服务产品的权益资源。
@@ -141,6 +141,7 @@ import oakHeader from "../components/header/header";
 import oakFooter from "../components/footer/footer";
 import oakForm from "../components/form/form";
 import ans from "@/utils/ans";
+import { url } from '../utils/config'
 export default {
   name: "saas",
   components: {
@@ -150,6 +151,7 @@ export default {
   },
   data() {
     return {
+      url,
       tab: ["数字化会员产品设计", "会员管理后台", "敏捷高效的技术能力"],
       current: 0,
       pageShow: false,
