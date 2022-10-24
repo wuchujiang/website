@@ -28,7 +28,7 @@
     <div class="copyright">
       <span
         ><a href="https://beian.miit.gov.cn/" target="_blank"
-          >粤ICP备{{project ? project.record : location.href.includes('xsvips') ? '20003741' : '18120172'}}号</a
+          >粤ICP备{{project ? project.record : href.includes('xsvips') ? '20003741' : '18120172'}}号</a
         >
       </span
       >
@@ -198,6 +198,7 @@ export default {
       show_online: false,
       show_phone_consult: false,
       url,
+      href: '',
       nav: [
         {
           name: "产品服务",
@@ -223,6 +224,7 @@ export default {
   },
   mounted() {
     this.project = window.local;
+    this.href = window.location.href;
     document.addEventListener("scroll", () => {
       const scroll =
         document.documentElement.scrollTop || document.body.scrollTop;
