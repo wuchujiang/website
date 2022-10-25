@@ -5,7 +5,7 @@ export default {
      ** Headers of the page
      */
     head: {
-        title: '橡树黑卡',
+        title: '',
         htmlAttrs: {
             lang: 'en'
         },

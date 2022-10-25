@@ -20,7 +20,5 @@ nuxt.js简单的说是Vue.js的通用框架，最常用的就是用来作SSR（�
 </description>
 
 ## 代码部署
-1、npm run build
-2、git add .
-3、git commit
-4、git push origin --all
+### 先打包代码 npm run build
+### 再提交代码 
