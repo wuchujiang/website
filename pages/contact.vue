@@ -28,7 +28,7 @@
             >
               <img src="@/static/icon11.png" alt="" />
               <h4>在线客服</h4>
-              <p>周一到周五：<span>9：00～20：00</span> (在线和电话)</p>
+              <p>周一到周五：<span>8：00～20：00</span> (在线和电话)</p>
               <button @click="toAns('service')">立即联系</button>
             </a>
           </div>
@@ -36,7 +36,7 @@
             <a href="tel:400-150-9669">
               <img src="@/static/icon12.png" alt="" />
               <h4>电话咨询</h4>
-              <p>周末或节假日：<span>9：00～20：00</span> (电话)</p>
+              <p>周末或节假日：<span>8：00～20：00</span> (电话)</p>
               <button @click="toAns('phone')" class="btn">400-150-9669</button>
             </a>
           </div>
