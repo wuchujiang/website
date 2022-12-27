@@ -2,43 +2,43 @@
   {
     "name": "about",
     "path": "/about",
-    "component": "C:\\\\Users\\\\huawei\\\\Desktop\\\\oak\\\\OakNewWebsite\\\\pages\\\\about.vue",
+    "component": "C:\\\\Users\\\\Administrator\\\\Desktop\\\\橡树黑卡\\\\OakNewWebsite\\\\pages\\\\about.vue",
     "chunkName": "pages/about",
-    "_name": "_9e18e614"
+    "_name": "_3a73dfaa"
   },
   {
     "name": "contact",
     "path": "/contact",
-    "component": "C:\\\\Users\\\\huawei\\\\Desktop\\\\oak\\\\OakNewWebsite\\\\pages\\\\contact.vue",
+    "component": "C:\\\\Users\\\\Administrator\\\\Desktop\\\\橡树黑卡\\\\OakNewWebsite\\\\pages\\\\contact.vue",
     "chunkName": "pages/contact",
-    "_name": "_44c0fbc9"
+    "_name": "_4bff85be"
   },
   {
     "name": "join",
     "path": "/join",
-    "component": "C:\\\\Users\\\\huawei\\\\Desktop\\\\oak\\\\OakNewWebsite\\\\pages\\\\join.vue",
+    "component": "C:\\\\Users\\\\Administrator\\\\Desktop\\\\橡树黑卡\\\\OakNewWebsite\\\\pages\\\\join.vue",
     "chunkName": "pages/join",
-    "_name": "_8625915e"
+    "_name": "_305a0d08"
   },
   {
     "name": "operation",
     "path": "/operation",
-    "component": "C:\\\\Users\\\\huawei\\\\Desktop\\\\oak\\\\OakNewWebsite\\\\pages\\\\operation.vue",
+    "component": "C:\\\\Users\\\\Administrator\\\\Desktop\\\\橡树黑卡\\\\OakNewWebsite\\\\pages\\\\operation.vue",
     "chunkName": "pages/operation",
-    "_name": "_3813b150"
+    "_name": "_69d79205"
   },
   {
     "name": "saas",
     "path": "/saas",
-    "component": "C:\\\\Users\\\\huawei\\\\Desktop\\\\oak\\\\OakNewWebsite\\\\pages\\\\saas.vue",
+    "component": "C:\\\\Users\\\\Administrator\\\\Desktop\\\\橡树黑卡\\\\OakNewWebsite\\\\pages\\\\saas.vue",
     "chunkName": "pages/saas",
-    "_name": "_71e03e27"
+    "_name": "_c673ff5c"
   },
   {
     "name": "index",
     "path": "/",
-    "component": "C:\\\\Users\\\\huawei\\\\Desktop\\\\oak\\\\OakNewWebsite\\\\pages\\\\index.vue",
+    "component": "C:\\\\Users\\\\Administrator\\\\Desktop\\\\橡树黑卡\\\\OakNewWebsite\\\\pages\\\\index.vue",
     "chunkName": "pages/index",
-    "_name": "_5ea9308a"
+    "_name": "_027deaf0"
   }
 ]
