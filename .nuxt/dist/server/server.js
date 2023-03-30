@@ -115,7 +115,7 @@ module.exports =
 /******/
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = 14);
+/******/ 	return __webpack_require__(__webpack_require__.s = 15);
 /******/ })
 /************************************************************************/
 /******/ ([
@@ -240,41 +240,37 @@ function normalizeComponent (
 /* 3 */
 /***/ (function(module, exports) {
 
-module.exports = require("axios");
+module.exports = require("vuex");
 
 /***/ }),
 /* 4 */
 /***/ (function(module, exports) {
 
-module.exports = require("vue-no-ssr");
+module.exports = require("axios");
 
 /***/ }),
 /* 5 */
 /***/ (function(module, exports) {
 
-module.exports = require("vue-client-only");
+module.exports = require("vue-no-ssr");
 
 /***/ }),
 /* 6 */
 /***/ (function(module, exports) {
 
-module.exports = require("vue-router");
+module.exports = require("vue-client-only");
 
 /***/ }),
 /* 7 */
 /***/ (function(module, exports) {
 
-module.exports = require("vant");
+module.exports = require("vue-router");
 
 /***/ }),
 /* 8 */
 /***/ (function(module, exports) {
 
-// Exports
-module.exports = {
-
-};
-
+module.exports = require("vant");
 
 /***/ }),
 /* 9 */
@@ -300,30 +296,40 @@ module.exports = {
 /* 11 */
 /***/ (function(module, exports) {
 
-module.exports = require("node-fetch");
+// Exports
+module.exports = {
+
+};
+
 
 /***/ }),
 /* 12 */
 /***/ (function(module, exports) {
 
-module.exports = require("vue-meta");
+module.exports = require("node-fetch");
 
 /***/ }),
 /* 13 */
 /***/ (function(module, exports) {
 
-module.exports = require("defu");
+module.exports = require("vue-meta");
 
 /***/ }),
 /* 14 */
-/***/ (function(module, exports, __webpack_require__) {
+/***/ (function(module, exports) {
 
-__webpack_require__(15);
-module.exports = __webpack_require__(20);
-
+module.exports = require("defu");
 
 /***/ }),
 /* 15 */
+/***/ (function(module, exports, __webpack_require__) {
+
+__webpack_require__(16);
+module.exports = __webpack_require__(23);
+
+
+/***/ }),
+/* 16 */
 /***/ (function(module, exports) {
 
 global.installComponents = function (component, components) {
@@ -367,29 +373,57 @@ function provideFunctionalComponents(component, components) {
 
 
 /***/ }),
-/* 16 */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony import */ var _node_modules_css_loader_dist_cjs_js_ref_3_oneOf_1_0_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_postcss_loader_src_index_js_ref_3_oneOf_1_1_node_modules_nuxt_components_dist_loader_js_ref_0_0_node_modules_vue_loader_lib_index_js_vue_loader_options_nuxt_error_vue_vue_type_style_index_0_lang_css___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(8);
-/* harmony import */ var _node_modules_css_loader_dist_cjs_js_ref_3_oneOf_1_0_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_postcss_loader_src_index_js_ref_3_oneOf_1_1_node_modules_nuxt_components_dist_loader_js_ref_0_0_node_modules_vue_loader_lib_index_js_vue_loader_options_nuxt_error_vue_vue_type_style_index_0_lang_css___WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_node_modules_css_loader_dist_cjs_js_ref_3_oneOf_1_0_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_postcss_loader_src_index_js_ref_3_oneOf_1_1_node_modules_nuxt_components_dist_loader_js_ref_0_0_node_modules_vue_loader_lib_index_js_vue_loader_options_nuxt_error_vue_vue_type_style_index_0_lang_css___WEBPACK_IMPORTED_MODULE_0__);
-/* harmony reexport (unknown) */ for(var __WEBPACK_IMPORT_KEY__ in _node_modules_css_loader_dist_cjs_js_ref_3_oneOf_1_0_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_postcss_loader_src_index_js_ref_3_oneOf_1_1_node_modules_nuxt_components_dist_loader_js_ref_0_0_node_modules_vue_loader_lib_index_js_vue_loader_options_nuxt_error_vue_vue_type_style_index_0_lang_css___WEBPACK_IMPORTED_MODULE_0__) if(["default"].indexOf(__WEBPACK_IMPORT_KEY__) < 0) (function(key) { __webpack_require__.d(__webpack_exports__, key, function() { return _node_modules_css_loader_dist_cjs_js_ref_3_oneOf_1_0_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_postcss_loader_src_index_js_ref_3_oneOf_1_1_node_modules_nuxt_components_dist_loader_js_ref_0_0_node_modules_vue_loader_lib_index_js_vue_loader_options_nuxt_error_vue_vue_type_style_index_0_lang_css___WEBPACK_IMPORTED_MODULE_0__[key]; }) }(__WEBPACK_IMPORT_KEY__));
-
-
-/***/ }),
 /* 17 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony import */ var _node_modules_css_loader_dist_cjs_js_ref_3_oneOf_1_0_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_postcss_loader_src_index_js_ref_3_oneOf_1_1_node_modules_nuxt_components_dist_loader_js_ref_0_0_node_modules_vue_loader_lib_index_js_vue_loader_options_nuxt_loading_vue_vue_type_style_index_0_lang_css___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(9);
+/* harmony default export */ __webpack_exports__["default"] = (function ({
+  store,
+  req
+}) {
+  const project = {
+    lifesvip: {
+      name: "高光时刻",
+      en: "lifesvip",
+      record: "20063673"
+    },
+    xsvips: {
+      name: "橡树创新",
+      en: "xsvips",
+      record: "20003741"
+    }
+  };
+
+  if (true) {
+    store.commit('project', project[req.headers['fc-host'] || ''] || null);
+  }
+});
+
+/***/ }),
+/* 18 */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _node_modules_css_loader_dist_cjs_js_ref_3_oneOf_1_0_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_postcss_loader_src_index_js_ref_3_oneOf_1_1_node_modules_nuxt_components_dist_loader_js_ref_0_0_node_modules_vue_loader_lib_index_js_vue_loader_options_nuxt_error_vue_vue_type_style_index_0_lang_css___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(9);
+/* harmony import */ var _node_modules_css_loader_dist_cjs_js_ref_3_oneOf_1_0_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_postcss_loader_src_index_js_ref_3_oneOf_1_1_node_modules_nuxt_components_dist_loader_js_ref_0_0_node_modules_vue_loader_lib_index_js_vue_loader_options_nuxt_error_vue_vue_type_style_index_0_lang_css___WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_node_modules_css_loader_dist_cjs_js_ref_3_oneOf_1_0_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_postcss_loader_src_index_js_ref_3_oneOf_1_1_node_modules_nuxt_components_dist_loader_js_ref_0_0_node_modules_vue_loader_lib_index_js_vue_loader_options_nuxt_error_vue_vue_type_style_index_0_lang_css___WEBPACK_IMPORTED_MODULE_0__);
+/* harmony reexport (unknown) */ for(var __WEBPACK_IMPORT_KEY__ in _node_modules_css_loader_dist_cjs_js_ref_3_oneOf_1_0_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_postcss_loader_src_index_js_ref_3_oneOf_1_1_node_modules_nuxt_components_dist_loader_js_ref_0_0_node_modules_vue_loader_lib_index_js_vue_loader_options_nuxt_error_vue_vue_type_style_index_0_lang_css___WEBPACK_IMPORTED_MODULE_0__) if(["default"].indexOf(__WEBPACK_IMPORT_KEY__) < 0) (function(key) { __webpack_require__.d(__webpack_exports__, key, function() { return _node_modules_css_loader_dist_cjs_js_ref_3_oneOf_1_0_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_postcss_loader_src_index_js_ref_3_oneOf_1_1_node_modules_nuxt_components_dist_loader_js_ref_0_0_node_modules_vue_loader_lib_index_js_vue_loader_options_nuxt_error_vue_vue_type_style_index_0_lang_css___WEBPACK_IMPORTED_MODULE_0__[key]; }) }(__WEBPACK_IMPORT_KEY__));
+
+
+/***/ }),
+/* 19 */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _node_modules_css_loader_dist_cjs_js_ref_3_oneOf_1_0_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_postcss_loader_src_index_js_ref_3_oneOf_1_1_node_modules_nuxt_components_dist_loader_js_ref_0_0_node_modules_vue_loader_lib_index_js_vue_loader_options_nuxt_loading_vue_vue_type_style_index_0_lang_css___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(10);
 /* harmony import */ var _node_modules_css_loader_dist_cjs_js_ref_3_oneOf_1_0_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_postcss_loader_src_index_js_ref_3_oneOf_1_1_node_modules_nuxt_components_dist_loader_js_ref_0_0_node_modules_vue_loader_lib_index_js_vue_loader_options_nuxt_loading_vue_vue_type_style_index_0_lang_css___WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_node_modules_css_loader_dist_cjs_js_ref_3_oneOf_1_0_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_postcss_loader_src_index_js_ref_3_oneOf_1_1_node_modules_nuxt_components_dist_loader_js_ref_0_0_node_modules_vue_loader_lib_index_js_vue_loader_options_nuxt_loading_vue_vue_type_style_index_0_lang_css___WEBPACK_IMPORTED_MODULE_0__);
 /* harmony reexport (unknown) */ for(var __WEBPACK_IMPORT_KEY__ in _node_modules_css_loader_dist_cjs_js_ref_3_oneOf_1_0_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_postcss_loader_src_index_js_ref_3_oneOf_1_1_node_modules_nuxt_components_dist_loader_js_ref_0_0_node_modules_vue_loader_lib_index_js_vue_loader_options_nuxt_loading_vue_vue_type_style_index_0_lang_css___WEBPACK_IMPORTED_MODULE_0__) if(["default"].indexOf(__WEBPACK_IMPORT_KEY__) < 0) (function(key) { __webpack_require__.d(__webpack_exports__, key, function() { return _node_modules_css_loader_dist_cjs_js_ref_3_oneOf_1_0_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_postcss_loader_src_index_js_ref_3_oneOf_1_1_node_modules_nuxt_components_dist_loader_js_ref_0_0_node_modules_vue_loader_lib_index_js_vue_loader_options_nuxt_loading_vue_vue_type_style_index_0_lang_css___WEBPACK_IMPORTED_MODULE_0__[key]; }) }(__WEBPACK_IMPORT_KEY__));
 
 
 /***/ }),
-/* 18 */
+/* 20 */
 /***/ (function(module, exports) {
 
 // Exports
@@ -399,18 +433,38 @@ module.exports = {
 
 
 /***/ }),
-/* 19 */
+/* 21 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony import */ var _node_modules_css_loader_dist_cjs_js_ref_3_oneOf_1_0_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_postcss_loader_src_index_js_ref_3_oneOf_1_1_node_modules_nuxt_components_dist_loader_js_ref_0_0_node_modules_vue_loader_lib_index_js_vue_loader_options_default_vue_vue_type_style_index_0_lang_css___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(10);
+/* harmony import */ var _node_modules_css_loader_dist_cjs_js_ref_3_oneOf_1_0_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_postcss_loader_src_index_js_ref_3_oneOf_1_1_node_modules_nuxt_components_dist_loader_js_ref_0_0_node_modules_vue_loader_lib_index_js_vue_loader_options_default_vue_vue_type_style_index_0_lang_css___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(11);
 /* harmony import */ var _node_modules_css_loader_dist_cjs_js_ref_3_oneOf_1_0_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_postcss_loader_src_index_js_ref_3_oneOf_1_1_node_modules_nuxt_components_dist_loader_js_ref_0_0_node_modules_vue_loader_lib_index_js_vue_loader_options_default_vue_vue_type_style_index_0_lang_css___WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_node_modules_css_loader_dist_cjs_js_ref_3_oneOf_1_0_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_postcss_loader_src_index_js_ref_3_oneOf_1_1_node_modules_nuxt_components_dist_loader_js_ref_0_0_node_modules_vue_loader_lib_index_js_vue_loader_options_default_vue_vue_type_style_index_0_lang_css___WEBPACK_IMPORTED_MODULE_0__);
 /* harmony reexport (unknown) */ for(var __WEBPACK_IMPORT_KEY__ in _node_modules_css_loader_dist_cjs_js_ref_3_oneOf_1_0_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_postcss_loader_src_index_js_ref_3_oneOf_1_1_node_modules_nuxt_components_dist_loader_js_ref_0_0_node_modules_vue_loader_lib_index_js_vue_loader_options_default_vue_vue_type_style_index_0_lang_css___WEBPACK_IMPORTED_MODULE_0__) if(["default"].indexOf(__WEBPACK_IMPORT_KEY__) < 0) (function(key) { __webpack_require__.d(__webpack_exports__, key, function() { return _node_modules_css_loader_dist_cjs_js_ref_3_oneOf_1_0_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_postcss_loader_src_index_js_ref_3_oneOf_1_1_node_modules_nuxt_components_dist_loader_js_ref_0_0_node_modules_vue_loader_lib_index_js_vue_loader_options_default_vue_vue_type_style_index_0_lang_css___WEBPACK_IMPORTED_MODULE_0__[key]; }) }(__WEBPACK_IMPORT_KEY__));
 
 
 /***/ }),
-/* 20 */
+/* 22 */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "state", function() { return state; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "mutations", function() { return mutations; });
+const state = () => ({
+  state: {
+    project: null
+  }
+});
+const mutations = {
+  project(state, data) {
+    state.project = data;
+  }
+
+};
+
+/***/ }),
+/* 23 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -432,11 +486,13 @@ var external_vue_default = /*#__PURE__*/__webpack_require__.n(external_vue_);
 var external_ufo_ = __webpack_require__(1);
 
 // EXTERNAL MODULE: external "node-fetch"
-var external_node_fetch_ = __webpack_require__(11);
+var external_node_fetch_ = __webpack_require__(12);
 var external_node_fetch_default = /*#__PURE__*/__webpack_require__.n(external_node_fetch_);
 
 // CONCATENATED MODULE: ./.nuxt/middleware.js
 const middleware = {};
+middleware['source'] = __webpack_require__(17);
+middleware['source'] = middleware['source'].default || middleware['source'];
 /* harmony default export */ var _nuxt_middleware = (middleware);
 // CONCATENATED MODULE: ./.nuxt/utils.js
 
@@ -630,6 +686,7 @@ async function setContext(app, context) {
       isDev: false,
       isHMR: false,
       app,
+      store: app.store,
       payload: context.payload,
       error: context.error,
       base: app.router.options.base,
@@ -1118,20 +1175,24 @@ async function serverPrefetch() {
   }
 
 });
+// EXTERNAL MODULE: external "vuex"
+var external_vuex_ = __webpack_require__(3);
+var external_vuex_default = /*#__PURE__*/__webpack_require__.n(external_vuex_);
+
 // EXTERNAL MODULE: external "vue-meta"
-var external_vue_meta_ = __webpack_require__(12);
+var external_vue_meta_ = __webpack_require__(13);
 var external_vue_meta_default = /*#__PURE__*/__webpack_require__.n(external_vue_meta_);
 
 // EXTERNAL MODULE: external "vue-client-only"
-var external_vue_client_only_ = __webpack_require__(5);
+var external_vue_client_only_ = __webpack_require__(6);
 var external_vue_client_only_default = /*#__PURE__*/__webpack_require__.n(external_vue_client_only_);
 
 // EXTERNAL MODULE: external "vue-no-ssr"
-var external_vue_no_ssr_ = __webpack_require__(4);
+var external_vue_no_ssr_ = __webpack_require__(5);
 var external_vue_no_ssr_default = /*#__PURE__*/__webpack_require__.n(external_vue_no_ssr_);
 
 // EXTERNAL MODULE: external "vue-router"
-var external_vue_router_ = __webpack_require__(6);
+var external_vue_router_ = __webpack_require__(7);
 var external_vue_router_default = /*#__PURE__*/__webpack_require__.n(external_vue_router_);
 
 // CONCATENATED MODULE: ./.nuxt/router.scrollBehavior.js
@@ -1148,17 +1209,17 @@ var external_vue_router_default = /*#__PURE__*/__webpack_require__.n(external_vu
 
 
 
-const _d95cedf0 = () => interopDefault(__webpack_require__.e(/* import() | pages/about */ 4).then(__webpack_require__.bind(null, 114)));
+const _d95cedf0 = () => interopDefault(__webpack_require__.e(/* import() | pages/about */ 4).then(__webpack_require__.bind(null, 117)));
 
-const _07903b5b = () => interopDefault(__webpack_require__.e(/* import() | pages/contact */ 5).then(__webpack_require__.bind(null, 115)));
+const _07903b5b = () => interopDefault(__webpack_require__.e(/* import() | pages/contact */ 5).then(__webpack_require__.bind(null, 118)));
 
-const _98931e02 = () => interopDefault(__webpack_require__.e(/* import() | pages/join */ 7).then(__webpack_require__.bind(null, 116)));
+const _98931e02 = () => interopDefault(__webpack_require__.e(/* import() | pages/join */ 7).then(__webpack_require__.bind(null, 119)));
 
-const _f7dd573c = () => interopDefault(__webpack_require__.e(/* import() | pages/operation */ 8).then(__webpack_require__.bind(null, 117)));
+const _f7dd573c = () => interopDefault(__webpack_require__.e(/* import() | pages/operation */ 8).then(__webpack_require__.bind(null, 120)));
 
-const _68a977d5 = () => interopDefault(__webpack_require__.e(/* import() | pages/saas */ 9).then(__webpack_require__.bind(null, 118)));
+const _68a977d5 = () => interopDefault(__webpack_require__.e(/* import() | pages/saas */ 9).then(__webpack_require__.bind(null, 121)));
 
-const _99ed3866 = () => interopDefault(__webpack_require__.e(/* import() | pages/index */ 6).then(__webpack_require__.bind(null, 119)));
+const _99ed3866 = () => interopDefault(__webpack_require__.e(/* import() | pages/index */ 6).then(__webpack_require__.bind(null, 122)));
 
 const emptyFn = () => {};
 
@@ -1375,7 +1436,7 @@ var componentNormalizer = __webpack_require__(2);
 
 function injectStyles (context) {
   
-  var style0 = __webpack_require__(16)
+  var style0 = __webpack_require__(18)
 if (style0.__inject__) style0.__inject__(context)
 
 }
@@ -1679,7 +1740,7 @@ var nuxt_loading_render, nuxt_loading_staticRenderFns
 
 function nuxt_loading_injectStyles (context) {
   
-  var style0 = __webpack_require__(17)
+  var style0 = __webpack_require__(19)
 if (style0.__inject__) style0.__inject__(context)
 
 }
@@ -1699,18 +1760,16 @@ var nuxt_loading_component = Object(componentNormalizer["a" /* default */])(
 
 /* harmony default export */ var nuxt_loading = (nuxt_loading_component.exports);
 // EXTERNAL MODULE: ./style/index.scss
-var style = __webpack_require__(18);
+var style = __webpack_require__(20);
 
-// CONCATENATED MODULE: ./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/@nuxt/components/dist/loader.js??ref--0-0!./node_modules/vue-loader/lib??vue-loader-options!./layouts/default.vue?vue&type=template&id=02c67b51&
-var defaultvue_type_template_id_02c67b51_render = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return (_vm.show)?_c('div',[_c('nuxt')],1):_vm._e()}
-var defaultvue_type_template_id_02c67b51_staticRenderFns = []
+// CONCATENATED MODULE: ./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/@nuxt/components/dist/loader.js??ref--0-0!./node_modules/vue-loader/lib??vue-loader-options!./layouts/default.vue?vue&type=template&id=bf90af20&
+var defaultvue_type_template_id_bf90af20_render = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('nuxt')}
+var defaultvue_type_template_id_bf90af20_staticRenderFns = []
 
 
-// CONCATENATED MODULE: ./layouts/default.vue?vue&type=template&id=02c67b51&
+// CONCATENATED MODULE: ./layouts/default.vue?vue&type=template&id=bf90af20&
 
 // CONCATENATED MODULE: ./node_modules/babel-loader/lib??ref--2-0!./node_modules/@nuxt/components/dist/loader.js??ref--0-0!./node_modules/vue-loader/lib??vue-loader-options!./layouts/default.vue?vue&type=script&lang=js&
-//
-//
 //
 //
 //
@@ -1723,23 +1782,7 @@ var defaultvue_type_template_id_02c67b51_staticRenderFns = []
     };
   },
 
-  mounted() {
-    const project = {
-      "lifesvip": {
-        name: "高光时刻",
-        en: "lifesvip",
-        record: "20063673"
-      },
-      "xsvips": {
-        name: "橡树创新",
-        en: "xsvips",
-        record: "20003741"
-      }
-    };
-    const local = Object.keys(project).filter(r => location.href.includes(r));
-    window.local = local[0] ? project[local[0]] : null;
-    this.show = true;
-  }
+  mounted() {}
 
 });
 // CONCATENATED MODULE: ./layouts/default.vue?vue&type=script&lang=js&
@@ -1750,7 +1793,7 @@ var defaultvue_type_template_id_02c67b51_staticRenderFns = []
 
 function default_injectStyles (context) {
   
-  var style0 = __webpack_require__(19)
+  var style0 = __webpack_require__(21)
 if (style0.__inject__) style0.__inject__(context)
 
 }
@@ -1759,8 +1802,8 @@ if (style0.__inject__) style0.__inject__(context)
 
 var default_component = Object(componentNormalizer["a" /* default */])(
   layouts_defaultvue_type_script_lang_js_,
-  defaultvue_type_template_id_02c67b51_render,
-  defaultvue_type_template_id_02c67b51_staticRenderFns,
+  defaultvue_type_template_id_bf90af20_render,
+  defaultvue_type_template_id_bf90af20_staticRenderFns,
   false,
   default_injectStyles,
   null,
@@ -1950,10 +1993,57 @@ const layouts = {
     NuxtLoading: nuxt_loading
   }
 });
+// CONCATENATED MODULE: ./.nuxt/store.js
+
+
+external_vue_default.a.use(external_vuex_default.a);
+let store_store = {};
+
+(function updateModules() {
+  store_store = normalizeRoot(__webpack_require__(22), 'store/index.js'); // If store is an exported method = classic mode (deprecated)
+  // Enforce store modules
+
+  store_store.modules = store_store.modules || {}; // If the environment supports hot reloading...
+})(); // createStore
+
+
+const createStore = store_store instanceof Function ? store_store : () => {
+  return new external_vuex_default.a.Store(Object.assign({
+    strict: "production" !== 'production'
+  }, store_store));
+};
+
+function normalizeRoot(moduleData, filePath) {
+  moduleData = moduleData.default || moduleData;
+
+  if (moduleData.commit) {
+    throw new Error(`[nuxt] ${filePath} should export a method that returns a Vuex instance.`);
+  }
+
+  if (typeof moduleData !== 'function') {
+    // Avoid TypeError: setting a property that has only a getter when overwriting top level keys
+    moduleData = Object.assign({}, moduleData);
+  }
+
+  return normalizeModule(moduleData, filePath);
+}
+
+function normalizeModule(moduleData, filePath) {
+  if (moduleData.state && typeof moduleData.state !== 'function') {
+    console.warn(`'state' should be a method that returns an object in ${filePath}`);
+    const state = Object.assign({}, moduleData.state); // Avoid TypeError: setting a property that has only a getter when overwriting top level keys
+
+    moduleData = Object.assign({}, moduleData, {
+      state: () => state
+    });
+  }
+
+  return moduleData;
+}
 // CONCATENATED MODULE: ./.nuxt/components/index.js
-const Form = () => __webpack_require__.e(/* import() | components/form */ 2).then(__webpack_require__.bind(null, 48)).then(c => wrapFunctional(c.default || c));
-const Footer = () => __webpack_require__.e(/* import() | components/footer */ 1).then(__webpack_require__.bind(null, 36)).then(c => wrapFunctional(c.default || c));
-const Header = () => __webpack_require__.e(/* import() | components/header */ 3).then(__webpack_require__.bind(null, 35)).then(c => wrapFunctional(c.default || c)); // nuxt/nuxt.js#8607
+const Form = () => __webpack_require__.e(/* import() | components/form */ 2).then(__webpack_require__.bind(null, 51)).then(c => wrapFunctional(c.default || c));
+const Footer = () => __webpack_require__.e(/* import() | components/footer */ 1).then(__webpack_require__.bind(null, 39)).then(c => wrapFunctional(c.default || c));
+const Header = () => __webpack_require__.e(/* import() | components/header */ 3).then(__webpack_require__.bind(null, 38)).then(c => wrapFunctional(c.default || c)); // nuxt/nuxt.js#8607
 
 function wrapFunctional(options) {
   if (!options || !options.functional) {
@@ -1993,11 +2083,11 @@ for (const name in components_namespaceObject) {
   external_vue_default.a.component('Lazy' + name, components_namespaceObject[name]);
 }
 // EXTERNAL MODULE: external "axios"
-var external_axios_ = __webpack_require__(3);
+var external_axios_ = __webpack_require__(4);
 var external_axios_default = /*#__PURE__*/__webpack_require__.n(external_axios_);
 
 // EXTERNAL MODULE: external "defu"
-var external_defu_ = __webpack_require__(13);
+var external_defu_ = __webpack_require__(14);
 var external_defu_default = /*#__PURE__*/__webpack_require__.n(external_defu_);
 
 // CONCATENATED MODULE: ./.nuxt/axios.js
@@ -2205,7 +2295,7 @@ const setupProgress = axios => {
   if (false) {}
 });
 // EXTERNAL MODULE: external "vant"
-var external_vant_ = __webpack_require__(7);
+var external_vant_ = __webpack_require__(8);
 var external_vant_default = /*#__PURE__*/__webpack_require__.n(external_vant_);
 
 // CONCATENATED MODULE: ./plugins/vant-ui.js
@@ -2213,6 +2303,8 @@ var external_vant_default = /*#__PURE__*/__webpack_require__.n(external_vant_);
 
 external_vue_default.a.use(external_vant_default.a);
 // CONCATENATED MODULE: ./.nuxt/index.js
+
+
 
 
 
@@ -2276,9 +2368,23 @@ const defaultTransition = {
   "appearActiveClass": "appear-active",
   "appearToClass": "appear-to"
 };
+const originalRegisterModule = external_vuex_default.a.Store.prototype.registerModule;
+
+function registerModule(path, rawModule, options = {}) {
+  const preserveState =  false && (false);
+  return originalRegisterModule.call(this, path, rawModule, {
+    preserveState,
+    ...options
+  });
+}
 
 async function createApp(ssrContext, config = {}) {
-  const router = await createRouter(ssrContext, config); // Create Root instance
+  const router = await createRouter(ssrContext, config);
+  const store = createStore(ssrContext); // Add this.$router into store actions/mutations
+
+  store.$router = router; // Fix SSR caveat https://github.com/nuxt/nuxt.js/issues/3757#issuecomment-414689141
+
+  store.registerModule = registerModule; // Create Root instance
   // here we inject the router and store to all child components,
   // making them available everywhere as `this.$router` and `this.$store`.
 
@@ -2316,6 +2422,7 @@ async function createApp(ssrContext, config = {}) {
       }],
       "style": []
     },
+    store,
     router,
     nuxt: {
       defaultTransition,
@@ -2368,7 +2475,9 @@ async function createApp(ssrContext, config = {}) {
 
     },
     ...App
-  };
+  }; // Make app available into store via this.app
+
+  store.app = app;
   const next = ssrContext ? ssrContext.next : location => app.router.push(location); // Resolve route
 
   let route;
@@ -2382,6 +2491,7 @@ async function createApp(ssrContext, config = {}) {
 
 
   await setContext(app, {
+    store,
     route,
     next,
     error: app.nuxt.error.bind(app),
@@ -2407,8 +2517,10 @@ async function createApp(ssrContext, config = {}) {
 
     if (!app.context[key]) {
       app.context[key] = value;
-    } // Check if plugin not already installed
+    } // Add into store
 
+
+    store[key] = app[key]; // Check if plugin not already installed
 
     const installKey = '__nuxt_' + key + '_installed__';
 
@@ -2431,7 +2543,10 @@ async function createApp(ssrContext, config = {}) {
   } // Inject runtime config as $config
 
 
-  inject('config', config); // Add enablePreview(previewData = {}) in context for plugins
+  inject('config', config);
+
+  if (false) {} // Add enablePreview(previewData = {}) in context for plugins
+
 
   if (false) {} // Plugin execution
 
@@ -2481,6 +2596,7 @@ async function createApp(ssrContext, config = {}) {
     });
   });
   return {
+    store,
     app,
     router
   };
@@ -2583,6 +2699,7 @@ const createNext = ssrContext => opts => {
     data: [],
     fetch: {},
     error: null,
+    state: null,
     serverRendered: true,
     routePath: ''
   };
@@ -2598,7 +2715,8 @@ const createNext = ssrContext => opts => {
 
   const {
     app,
-    router
+    router,
+    store
   } = await createApp(ssrContext, ssrContext.runtimeConfig.private);
 
   const _app = new external_vue_default.a(app); // Add ssr route path to nuxt context so we can account for page navigation between ssr and csr
@@ -2616,6 +2734,11 @@ const createNext = ssrContext => opts => {
       Components,
       nuxtState: ssrContext.nuxt
     })));
+
+    ssrContext.rendered = () => {
+      // Add the state from the vuex store
+      ssrContext.nuxt.state = store.state;
+    };
   };
 
   const renderErrorPage = async () => {
@@ -2648,10 +2771,32 @@ const createNext = ssrContext => opts => {
 
   const Components = getMatchedComponents(app.context.route);
   /*
+  ** Dispatch store nuxtServerInit
+  */
+
+  if (store._actions && store._actions.nuxtServerInit) {
+    try {
+      await store.dispatch('nuxtServerInit', app.context);
+    } catch (err) {
+      console.debug('Error occurred when calling nuxtServerInit: ', err.message);
+      throw err;
+    }
+  } // ...If there is a redirect or an error, stop the process
+
+
+  if (ssrContext.redirected) {
+    return noopApp();
+  }
+
+  if (ssrContext.nuxt.error) {
+    return renderErrorPage();
+  }
+  /*
   ** Call global middleware (nuxt.config.js)
   */
 
-  let midd = [];
+
+  let midd = ["source"];
   midd = midd.map(name => {
     if (typeof name === 'function') {
       return name;
@@ -2814,13 +2959,13 @@ const createNext = ssrContext => opts => {
 });
 
 /***/ }),
-/* 21 */
+/* 24 */
 /***/ (function(module, exports) {
 
 module.exports = require("qs");
 
 /***/ }),
-/* 22 */
+/* 25 */
 /***/ (function(module, exports) {
 
 module.exports = require("jsrsasign");
