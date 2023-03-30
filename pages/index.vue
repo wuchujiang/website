@@ -358,6 +358,7 @@ export default {
     }
     return {
       title,
+      headers: {},
       meta: [
         {
           hid: "index",
@@ -370,6 +371,11 @@ export default {
         },
       ],
     };
+  },
+  async asyncData({ req }) {
+    if (process.server) {
+      return { headers: req.headers };
+    }
   },
   watch: {
     name: {
@@ -398,6 +404,7 @@ export default {
     },
   },
   mounted() {
+    console.log(this.headers);
     this.pageShow = true;
     this.project = this.$store.state.project;
     ans.pageView("oak_page");
