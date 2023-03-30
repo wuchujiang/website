@@ -126,14 +126,16 @@ export default {
     };
   },
   head() {
-    const local = window.local;
-    let title = '橡树黑卡--精细化运营服务';
-    let description_content = "橡树黑卡根据客户需求和产品属性，可针对性地定制输出多种会员体系方案。会员成长体系帮助平台累积忠诚用户，会员积分体系帮助平台提高留存及活跃，会员权益体系帮助客户增收变现，400-150-9669。";
-    let keywords_content = "橡树黑卡，会员体系，会员成长，会员权益，留存率，促活，用户生命周期管理，用户分层，用户画像";
+    const local = this.$store.state.project;
+    let title = "橡树黑卡--精细化运营服务";
+    let description_content =
+      "橡树黑卡根据客户需求和产品属性，可针对性地定制输出多种会员体系方案。会员成长体系帮助平台累积忠诚用户，会员积分体系帮助平台提高留存及活跃，会员权益体系帮助客户增收变现，400-150-9669。";
+    let keywords_content =
+      "橡树黑卡，会员体系，会员成长，会员权益，留存率，促活，用户生命周期管理，用户分层，用户画像";
     if (local) {
       title = `${local.name}--精细化运营服务`;
       description_content = `${local.name}为根据客户需求和产品属性，可针对性地定制输出多种会员体系方案。会员成长体系帮助平台累积忠诚用户，会员积分体系帮助平台提高留存及活跃，会员权益体系帮助客户增收变现，400-150-9669。`;
-      keywords_content = `${local.name}，会员体系，会员成长，会员权益，留存率，促活，用户生命周期管理，用户分层，用户画像`
+      keywords_content = `${local.name}，会员体系，会员成长，会员权益，留存率，促活，用户生命周期管理，用户分层，用户画像`;
     }
     return {
       title,

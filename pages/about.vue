@@ -2,11 +2,14 @@
   <div ref="about" v-show="pageShow">
     <oakHeader :current="2" sec_current="nav_about" />
     <main>
-      <section class="about-banner" :style="{
-                                            'background': project ?
-                                            `url(${url}about-banner-${project.en}.png) center center / auto 100% no-repeat` :
-                                            `url(${url}about-banner.png) center center / auto 100% no-repeat`
-                                          }"></section>
+      <section
+        class="about-banner"
+        :style="{
+          background: project
+            ? `url(${url}about-banner-${project.en}.png) center center / auto 100% no-repeat`
+            : `url(${url}about-banner.png) center center / auto 100% no-repeat`,
+        }"
+      ></section>
       <section class="mobile-second-nav">
         <ul>
           <li
@@ -26,7 +29,7 @@
             <div class="desc">助力企业构建会员体系实现活跃与创收</div>
           </div>
           <div class="about-text">
-            <p>{{ project ? project.name : "橡树黑卡"}}成立于2018年，</p>
+            <p>{{ project ? project.name : "橡树黑卡" }}成立于2018年，</p>
             <p>
               是国内领先的付费会员制权益SaaS服务平台，是国家高新技术企业、“双软企业”
               。
@@ -63,7 +66,7 @@
             <div class="item">
               <div class="date">
                 <span>2018.11</span>
-                <span>【{{ project ? project.name : "橡树黑卡"}}小程序】</span>
+                <span>【{{ project ? project.name : "橡树黑卡" }}小程序】</span>
               </div>
               <p>
                 与龙腾出行、海南航空、希尔顿、洲际、凯悦、雅高、滴滴出行、易安保险等企业达成合作，整合权益资源，搭建会员系统，奠基ToB能力
@@ -113,10 +116,16 @@
             <div class="item">
               <div class="date">
                 <span>2020.06</span>
-                <span>【全新推出{{ project ? project.name : "橡树"}}生活权益平台】</span>
+                <span
+                  >【全新推出{{
+                    project ? project.name : "橡树"
+                  }}生活权益平台】</span
+                >
               </div>
               <p>
-                {{ project ? project.name : "橡树"}}生活权益平台，涵盖娱乐视听类、生活服务类、旅游出行、车主福利、阅读学习、医护健康等300余项权益服务
+                {{
+                  project ? project.name : "橡树"
+                }}生活权益平台，涵盖娱乐视听类、生活服务类、旅游出行、车主福利、阅读学习、医护健康等300余项权益服务
               </p>
               <b></b>
             </div>
@@ -137,7 +146,7 @@ import oakHeader from "../components/header/header";
 import oakFooter from "../components/footer/footer";
 import oakForm from "../components/form/form";
 import ans from "@/utils/ans";
-import { url } from '../utils/config'
+import { url } from "../utils/config";
 export default {
   name: "about",
   components: {
@@ -157,10 +166,12 @@ export default {
     };
   },
   head() {
-    const local = window.local;
-    let title = '橡树黑卡--公司介绍';
-    let description_content = "橡树黑卡成立于2018年，是国内领先的付费会员制权益SaaS服务平台，是国家高新技术企业、“双软企业” 。客户包含华润集团，微众银行，工商银行，浦发银行，招商银行，腾讯理财通、微信、滴滴出行、龙腾出行，创维，TCL等知名企业，400-150-9669。";
-    let keywords_content = "付费会员，会员权益，高新技术企业，提升活跃，带动营收，增加收入，客户关怀，用户画像，延长用户生命周期";
+    const local = this.$store.state.project;
+    let title = "橡树黑卡--公司介绍";
+    let description_content =
+      "橡树黑卡成立于2018年，是国内领先的付费会员制权益SaaS服务平台，是国家高新技术企业、“双软企业” 。客户包含华润集团，微众银行，工商银行，浦发银行，招商银行，腾讯理财通、微信、滴滴出行、龙腾出行，创维，TCL等知名企业，400-150-9669。";
+    let keywords_content =
+      "付费会员，会员权益，高新技术企业，提升活跃，带动营收，增加收入，客户关怀，用户画像，延长用户生命周期";
     if (local) {
       title = `${local.name}--公司介绍`;
       description_content = `${local.name}成立于2018年，是国内领先的付费会员制权益SaaS服务平台，是国家高新技术企业、“双软企业” 。客户包含华润集团，微众银行，工商银行，浦发银行，招商银行，腾讯理财通、微信、滴滴出行、龙腾出行，创维，TCL等知名企业，400-150-9669。`;
@@ -182,7 +193,7 @@ export default {
   },
   mounted() {
     this.pageShow = true;
-    this.project = window.local;
+    this.project = this.$store.state.project;
     ans.pageView("oak_about_page");
   },
 };
@@ -365,34 +376,33 @@ export default {
 }
 @media screen and (max-width: 1024px) {
   .about-banner {
-      height: 300px;
-    }
-  
-    .about-text img {
-      width: 100%;
-    }
-  
-    .course-main {
-      padding: 0 26px;
-    }
-  
-    .course-main .item {
-      width: 244px;
-    }
-  
-    .course-main .item p {
-      font-size: 14px;
-      line-height: 22px;
-    }
-  
-    .course-main .list:first-child .item .date {
-      font-size: 14px;
-    }
+    height: 300px;
   }
-  
-  @media screen and (max-width: 640px) {
-  
-    .about-banner {
+
+  .about-text img {
+    width: 100%;
+  }
+
+  .course-main {
+    padding: 0 26px;
+  }
+
+  .course-main .item {
+    width: 244px;
+  }
+
+  .course-main .item p {
+    font-size: 14px;
+    line-height: 22px;
+  }
+
+  .course-main .list:first-child .item .date {
+    font-size: 14px;
+  }
+}
+
+@media screen and (max-width: 640px) {
+  .about-banner {
     display: none;
   }
   .common-title {

@@ -2,7 +2,11 @@
   <header class="header" id="header">
     <div class="container">
       <h1 class="logo">
-        <nuxt-link to="/"><img :src="project ? `${url}${project.en}_logo.png` : `${url}logo.png`" alt="" /></nuxt-link>
+        <nuxt-link to="/"
+          ><img
+            :src="project ? `${url}${project.en}_logo.png` : `${url}logo.png`"
+            alt=""
+        /></nuxt-link>
       </h1>
       <nav class="nav">
         <ul>
@@ -18,8 +22,11 @@
             <div :class="`sec_nav ${item.type}`" v-if="item.second">
               <div class="sec_nav-main">
                 <div
-                  :class="[{item: true, sec_active: sec_current === i.type}, `${i.type}`]"
-                  v-for="(i) in item.second"
+                  :class="[
+                    { item: true, sec_active: sec_current === i.type },
+                    `${i.type}`,
+                  ]"
+                  v-for="i in item.second"
                   :key="i.name"
                 >
                   <nuxt-link :to="i.url"><span></span>{{ i.name }}</nuxt-link>
@@ -35,11 +42,16 @@
           <img @click="showNav = !showNav" src="@/static/nav.png" alt="" />
           <div class="nav-shadow" v-if="showNav" @click="showNav = false"></div>
           <ul v-if="showNav">
-            <img @click="showNav = false" class="close2" src="@/static/close2.png" alt="">
+            <img
+              @click="showNav = false"
+              class="close2"
+              src="@/static/close2.png"
+              alt=""
+            />
             <li
               v-for="(item, index) in nav"
               :key="item.name"
-              :class="{ item: true, active: current === index && !item.second}"
+              :class="{ item: true, active: current === index && !item.second }"
             >
               <nuxt-link :to="item.url" :class="{ down: item.second }">{{
                 item.name
@@ -48,8 +60,11 @@
               <div :class="`sec_nav ${item.type}`" v-if="item.second">
                 <div class="sec_nav-main">
                   <div
-                    :class="[{item: true, sec_active: sec_current === i.type}, `${i.type}`]"
-                    v-for="(i) in item.second"
+                    :class="[
+                      { item: true, sec_active: sec_current === i.type },
+                      `${i.type}`,
+                    ]"
+                    v-for="i in item.second"
                     :key="i.name"
                   >
                     <nuxt-link :to="i.url"><span></span>{{ i.name }}</nuxt-link>
@@ -65,7 +80,7 @@
 </template>
 
 <script>
-import { url } from '../../utils/config'
+import { url } from "../../utils/config";
 export default {
   props: ["current", "sec_current"],
   data() {
@@ -122,8 +137,7 @@ export default {
     };
   },
   mounted() {
-    this.project = window.local;
-    console.log(this.project);
+    this.project = this.$store.state.project;
   },
 };
 </script>
@@ -305,7 +319,7 @@ export default {
     float: right;
     margin-left: 10px;
     position: relative;
-    ul{
+    ul {
       box-sizing: border-box;
       width: 170px;
       position: absolute;
@@ -318,40 +332,40 @@ export default {
   }
 }
 @media screen and (max-width: 640px) {
-  .header{
+  .header {
     height: 42px;
-    .container{
+    .container {
       height: 42px;
       padding: 0 12px;
     }
   }
-  .logo{
+  .logo {
     width: auto;
     height: 18px;
     margin-top: 12px;
-    img{
+    img {
       height: 18px;
     }
   }
-  .phone{
+  .phone {
     font-size: 12px;
   }
-  .mobile-nav{
+  .mobile-nav {
     width: 18px;
     position: relative;
     z-index: 59;
     ul {
-      border: 1PX solid #EBECF1;
+      border: 1px solid #ebecf1;
       border-radius: 4px;
       z-index: 56;
-      li{
-        border-bottom: 1PX solid #979797;
+      li {
+        border-bottom: 1px solid #979797;
         font-weight: bold;
         padding: 11px 0;
-        &:last-child{
+        &:last-child {
           border-bottom: none;
         }
-        a{
+        a {
           display: block;
         }
       }
@@ -359,21 +373,21 @@ export default {
         color: #ff5a27;
       }
     }
-    .sec_nav{
+    .sec_nav {
       margin-top: 8px;
       font-weight: normal;
-      .item{
+      .item {
         padding-left: 22px;
         position: relative;
         line-height: 24px;
-        &::before{
+        &::before {
           content: "·";
           position: absolute;
           left: 14px;
           top: 0;
           color: #666;
         }
-        a{
+        a {
           color: #666;
         }
       }
@@ -382,18 +396,18 @@ export default {
       color: #ff5a27;
     }
   }
-  .down{
+  .down {
     padding-right: 0;
     background: none;
   }
-  .close2{
+  .close2 {
     position: absolute;
     right: 6px;
     top: 6px;
     width: 20px;
     height: 20px;
   }
-  .nav-shadow{
+  .nav-shadow {
     position: fixed;
     width: 100%;
     height: 100%;

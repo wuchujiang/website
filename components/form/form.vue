@@ -5,7 +5,11 @@
     :style="{ zIndex: showForm ? 99 : 50 }"
   >
     <div class="container">
-      <img class="img" :src="project ? `${url}${project.en}_img12.png` : `${url}img12.png`" alt="" />
+      <img
+        class="img"
+        :src="project ? `${url}${project.en}_img12.png` : `${url}img12.png`"
+        alt=""
+      />
       <div class="free-get-plan" @click="showFormFn">免费获取方案</div>
       <img
         @click="hidePlan = true"
@@ -22,7 +26,11 @@
           src="@/static/close.png"
           alt=""
         />
-        <img class="b-img" :src="project ? `${url}${project.en}_img11.png` : `${url}img11.png`" alt="" />
+        <img
+          class="b-img"
+          :src="project ? `${url}${project.en}_img11.png` : `${url}img11.png`"
+          alt=""
+        />
         <div class="plan-form">
           <div class="mobile-top">
             <h4>这些企业都已免费获得定制会员方案</h4>
@@ -101,7 +109,7 @@
 import { register, officialWebsite } from "../../utils/api";
 import { Toast } from "vant";
 import ans from "@/utils/ans";
-import { url } from '../../utils/config'
+import { url } from "../../utils/config";
 export default {
   data() {
     return {
@@ -123,7 +131,7 @@ export default {
     };
   },
   mounted() {
-    this.project = window.local;
+    this.project = this.$store.state.project;
     let footer_height = 290;
     if (window.innerWidth < 641) {
       footer_height = 400;

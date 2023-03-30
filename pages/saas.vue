@@ -32,13 +32,19 @@
             <div class="en">digitization</div>
             <div class="name">数字化会员产品设计</div>
             <div class="desc">
-              {{ project ? project.name : "橡树"}}支持对会员设计，及全链路的各项核心数据监控
+              {{
+                project ? project.name : "橡树"
+              }}支持对会员设计，及全链路的各项核心数据监控
             </div>
           </div>
           <section class="mobile-section1-main">
             <img src="@/static/mobile/img4.png" alt="" />
             <h4>丰富的权益资源</h4>
-            <p>{{ project ? project.name : "橡树"}}整合内外部资源，拥有多平台数千个虚拟服务产品的权益资源。</p>
+            <p>
+              {{
+                project ? project.name : "橡树"
+              }}整合内外部资源，拥有多平台数千个虚拟服务产品的权益资源。
+            </p>
             <img src="@/static/mobile/img5.png" alt="" />
             <p>
               通过SasS运营赋能的方式快速、定制化输出，可广泛应用于用户生活的不同场景，发挥成本和规模交易的优势，助力客户促活，提升交易量。
@@ -46,7 +52,7 @@
           </section>
           <div class="section1-main">
             <div class="left">
-              <p>{{ project ? project.name : "橡树"}}支持对会员设计</p>
+              <p>{{ project ? project.name : "橡树" }}支持对会员设计</p>
               <p>及全链路的各项核心数据监控</p>
               <ul>
                 <li><img src="@/static/icon8.png" alt="" />交易数据</li>
@@ -61,10 +67,17 @@
       <div class="section1-2">
         <div class="container">
           <img v-if="!project" class="img2" src="@/static/img2.png" alt="" />
-          <img v-if="project" class="img2" :src="`${url}img2-${project.en}.png`" alt="" />
+          <img
+            v-if="project"
+            class="img2"
+            :src="`${url}img2-${project.en}.png`"
+            alt=""
+          />
           <div class="text">
             <p>
-              {{ project ? project.name : "橡树"}}整合内外部资源，拥有包括通信服务、娱乐充值、电商购物卡、网络工具、美食卡券、休闲生活、交通出行、车主服务等多平台数千个虚拟服务产品的权益资源。
+              {{
+                project ? project.name : "橡树"
+              }}整合内外部资源，拥有包括通信服务、娱乐充值、电商购物卡、网络工具、美食卡券、休闲生活、交通出行、车主服务等多平台数千个虚拟服务产品的权益资源。
             </p>
             <p></p>
             <p>
@@ -79,7 +92,9 @@
             <div class="en">backstage</div>
             <div class="name">会员管理后台</div>
             <div class="desc">
-              {{ project ? project.name : "橡树"}}支持对会员设计，及全链路的各项核心数据监控
+              {{
+                project ? project.name : "橡树"
+              }}支持对会员设计，及全链路的各项核心数据监控
             </div>
           </div>
           <div class="section2-main">
@@ -141,7 +156,7 @@ import oakHeader from "../components/header/header";
 import oakFooter from "../components/footer/footer";
 import oakForm from "../components/form/form";
 import ans from "@/utils/ans";
-import { url } from '../utils/config'
+import { url } from "../utils/config";
 export default {
   name: "saas",
   components: {
@@ -163,14 +178,16 @@ export default {
     };
   },
   head() {
-    const local = window.local;
-    let title = '橡树黑卡--会员SAAS服务';
-    let description_content = "橡树支持对会员设计，及全链路的各项核心数据（包括：交易数据、权益使用数据、用户生命周期等）监控，400-150-9669。";
-    let keywords_content = "橡树黑卡，会员SAAS服务，会员设计，配置会员，权益SKU管理，会员卡和权益管理，活动快速配置，敏捷开发";
+    const local = this.$store.state.project;
+    let title = "橡树黑卡--会员SAAS服务";
+    let description_content =
+      "橡树支持对会员设计，及全链路的各项核心数据（包括：交易数据、权益使用数据、用户生命周期等）监控，400-150-9669。";
+    let keywords_content =
+      "橡树黑卡，会员SAAS服务，会员设计，配置会员，权益SKU管理，会员卡和权益管理，活动快速配置，敏捷开发";
     if (local) {
       title = `${local.name}--会员SAAS服务`;
       description_content = `${local.name}支持对会员设计，及全链路的各项核心数据（包括：交易数据、权益使用数据、用户生命周期等）监控，400-150-9669。`;
-      keywords_content = `${local.name}，会员SAAS服务，会员设计，配置会员，权益SKU管理，会员卡和权益管理，活动快速配置，敏捷开发`
+      keywords_content = `${local.name}，会员SAAS服务，会员设计，配置会员，权益SKU管理，会员卡和权益管理，活动快速配置，敏捷开发`;
     }
     return {
       title,
@@ -189,7 +206,7 @@ export default {
   },
   mounted() {
     this.pageShow = true;
-    this.project = window.local;
+    this.project = this.$store.state.project;
     ans.pageView("oak_saas_page");
   },
   methods: {

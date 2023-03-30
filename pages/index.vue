@@ -2,21 +2,29 @@
   <div ref="index" v-show="pageShow">
     <oakHeader :current="0" />
     <main>
-      <section class="banner" :style="{
-                                      'background': project ?
-                                      `url(${url}banner-${project.en}.png) center center / auto 100% no-repeat` :
-                                      `url(${url}banner.png) center center / auto 100% no-repeat`
-                                    }"></section>
-      <section class="mobile-banner" :style="{
-                                      'background': project ?
-                                      `url(${url}mobile-banner-${project.en}.png) center center / auto 100% no-repeat` :
-                                      `url(${url}mobile-banner.png) center center / auto 100% no-repeat`
-                                    }"></section>
+      <section
+        class="banner"
+        :style="{
+          background: project
+            ? `url(${url}banner-${project.en}.png) center center / auto 100% no-repeat`
+            : `url(${url}banner.png) center center / auto 100% no-repeat`,
+        }"
+      ></section>
+      <section
+        class="mobile-banner"
+        :style="{
+          background: project
+            ? `url(${url}mobile-banner-${project.en}.png) center center / auto 100% no-repeat`
+            : `url(${url}mobile-banner.png) center center / auto 100% no-repeat`,
+        }"
+      ></section>
       <section class="why-select-oak">
         <div class="container">
           <div class="common-title">
             <div class="en">WHY</div>
-            <div class="name">为什么选择{{ project ? project.name : "橡树黑卡"}}</div>
+            <div class="name">
+              为什么选择{{ project ? project.name : "橡树黑卡" }}
+            </div>
             <div class="desc">
               专业团队根据合作方与用户诉求，设计定制产品，并提供专业运营支持服务
             </div>
@@ -122,7 +130,10 @@
       </section>
       <section class="plan">
         <div class="container">
-          <img :src="project ? `${url}${project.en}_img11.png` : `${url}img11.png`" alt="" />
+          <img
+            :src="project ? `${url}${project.en}_img11.png` : `${url}img11.png`"
+            alt=""
+          />
           <div class="mobile-top">
             <h4>这些企业都已免费获得定制会员方案</h4>
             <ul>
@@ -257,7 +268,7 @@ import oakForm from "../components/form/form";
 import { register, officialWebsite } from "../utils/api";
 import { Toast } from "vant";
 import ans from "@/utils/ans";
-import { url } from '../utils/config'
+import { url } from "../utils/config";
 export default {
   name: "IndexPage",
   components: {
@@ -334,14 +345,16 @@ export default {
     };
   },
   head() {
-    const local = window.local;
-    let title = '橡树黑卡--值得信赖的会员权益平台';
-    let description_content = "橡树黑卡为金融、互联网、电商、零售等行业提供强大的用户运营全周期服务，提供积分体系运营、会员营销运营、游戏化运营等方案，400-150-9669。";
-    let keywords_content = "橡树黑卡，会员权益，会员积分，视频会员，网站会员，app会员，用户运营，SaaS平台";
+    const local = this.$store.state.project;
+    let title = "橡树黑卡--值得信赖的会员权益平台";
+    let description_content =
+      "橡树黑卡为金融、互联网、电商、零售等行业提供强大的用户运营全周期服务，提供积分体系运营、会员营销运营、游戏化运营等方案，400-150-9669。";
+    let keywords_content =
+      "橡树黑卡，会员权益，会员积分，视频会员，网站会员，app会员，用户运营，SaaS平台";
     if (local) {
       title = `${local.name}--值得信赖的会员权益平台`;
       description_content = `${local.name}为金融、互联网、电商、零售等行业提供强大的用户运营全周期服务，提供积分体系运营、会员营销运营、游戏化运营等方案，400-150-9669。`;
-      keywords_content = `${local.name}，会员权益，会员积分，视频会员，网站会员，app会员，用户运营，SaaS平台`
+      keywords_content = `${local.name}，会员权益，会员积分，视频会员，网站会员，app会员，用户运营，SaaS平台`;
     }
     return {
       title,
@@ -386,7 +399,7 @@ export default {
   },
   mounted() {
     this.pageShow = true;
-    this.project = window.local;
+    this.project = this.$store.state.project;
     ans.pageView("oak_page");
   },
   methods: {
@@ -485,291 +498,289 @@ export default {
 .banner {
   width: 100%;
   height: 420px;
-  }
-  
-  .why-select-oak {
-    padding: 80px 0 72px 0;
-  }
-  
-  .common-title {
-    text-align: center;
-  
-    .name {
-      font-size: 30px;
-      color: #333;
-      font-weight: bold;
-    }
-  
-    .desc {
-      font-size: 20px;
-      color: #666;
-      margin-top: 10px;
-    }
-  }
-  
-  .why-select-oak .wrap {
-    margin-top: 72px;
-  }
-  
-  .capacity {
-    display: flex;
-    justify-content: space-between;
-  
-    .item {
-      box-sizing: border-box;
-      width: 32%;
-      border: 1px solid #ebecf1;
-      border-radius: 4px;
-      height: 225px;
-      text-align: center;
-      padding: 12px 20px 0;
-      font-size: 24px;
-      color: #333;
-      font-weight: bold;
-      transition: all 0.3s linear;
-  
-      img {
-        margin-bottom: 23px;
-      }
-    }
-  
-    .active {
-      border: 1px solid #ff5001;
-      box-shadow: 0px 0px 20px 0px rgba(153, 153, 153, 0.3);
-      color: #ff5001;
-    }
-  }
-  
-  .capacity-content1 {
-    margin-top: 32px;
-    height: 400px;
-    padding: 0 117px 0 94px;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-  
-    img {
-      width: 558px;
-    }
-  
-    .text {
-      line-height: 30px;
-      color: #666666;
-      font-size: 16px;
-  
-      .top {
-        font-size: 24px;
-        color: #222;
-        padding-bottom: 10px;
-  
-        span {
-          font-size: 14px;
-          color: #333;
-          line-height: 1;
-        }
-  
-        h5 {
-          font-size: 18px;
-          color: #ff5001;
-        }
-      }
-  
-      p {
-        padding: 15px 0;
-      }
-  
-      span {
-        display: block;
-      }
-    }
-  }
-  
-  .capacity-content2 {
-    padding: 0 94px;
-  
-    img {
-      width: 435px;
-    }
-  }
-  
-  .show-list {
-    margin-top: 70px;
-    display: flex;
-    justify-content: space-between;
-  }
-  
-  .show-list img {
-    width: 32%;
-  }
-  
-  .capacity-content3 {
-    padding: 0 76px 0 94px;
-  
-    img {
-      width: 640px;
-    }
-  }
-  
-  .plan {
-    background-color: #fbfbfb;
-  }
-  
-  .plan .container {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-  }
-  
-  .plan img {
-    width: 40%;
-  }
-  
-  .service-value {
-    padding: 72px 0;
-  
-    .list {
-      display: flex;
-      justify-content: space-between;
-      margin-top: 72px;
-  
-      .item {
-        width: 21.6%;
-        height: 320px;
-        border: 1px solid #333333;
-        border-radius: 5px;
-        text-align: center;
-        transition: all 0.3s linear;
-  
-        img {
-          display: block;
-          width: 62px;
-          height: 62px;
-          margin: 33px auto 0;
-        }
-  
-        .name {
-          font-size: 24px;
-          color: #ff5001;
-          font-weight: bold;
-          display: inline-block;
-          border-bottom: 1px solid #ff5001;
-          margin-top: 32px;
-        }
-  
-        ul {
-          display: inline-block;
-          text-align: left;
-          line-height: 30px;
-          color: #666666;
-          font-size: 15px;
-          margin-top: 27px;
-        }
-      }
-  
-      .active {
-        border: 1px solid #ff5001;
-      }
-    }
-  }
-  
-  .client {
-    padding: 72px 0;
-    background-color: #fbfbfb;
-  
-    .common-title {
-      .desc {
-        display: none;
-      }
-    }
-  }
-  
-  .client img {
-    margin-top: 72px;
-    width: 100%;
-  }
-  
-  .mobile-img,
-  .mobile-top,
-  .mobile-kh,
-  .mobile-item {
-    display: none;
+}
+
+.why-select-oak {
+  padding: 80px 0 72px 0;
+}
+
+.common-title {
+  text-align: center;
+
+  .name {
+    font-size: 30px;
+    color: #333;
+    font-weight: bold;
   }
 
-  .mobile-banner {
-    display: none;
+  .desc {
+    font-size: 20px;
+    color: #666;
+    margin-top: 10px;
   }
-  
-  @media screen and (max-width: 1200px) {
-  
-    .banner {
-      height: 400px;
-    }
-  
-    .service-value .list .item {
-      width: 23%;
-    }
-  
-    .capacity .item {
-      font-size: 18px;
-    }
-  
-    .capacity-content1 {
-      padding: 0 70px;
+}
+
+.why-select-oak .wrap {
+  margin-top: 72px;
+}
+
+.capacity {
+  display: flex;
+  justify-content: space-between;
+
+  .item {
+    box-sizing: border-box;
+    width: 32%;
+    border: 1px solid #ebecf1;
+    border-radius: 4px;
+    height: 225px;
+    text-align: center;
+    padding: 12px 20px 0;
+    font-size: 24px;
+    color: #333;
+    font-weight: bold;
+    transition: all 0.3s linear;
+
+    img {
+      margin-bottom: 23px;
     }
   }
-  
-  @media screen and (max-width: 1024px) {
-  
-    .banner {
+
+  .active {
+    border: 1px solid #ff5001;
+    box-shadow: 0px 0px 20px 0px rgba(153, 153, 153, 0.3);
+    color: #ff5001;
+  }
+}
+
+.capacity-content1 {
+  margin-top: 32px;
+  height: 400px;
+  padding: 0 117px 0 94px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  img {
+    width: 558px;
+  }
+
+  .text {
+    line-height: 30px;
+    color: #666666;
+    font-size: 16px;
+
+    .top {
+      font-size: 24px;
+      color: #222;
+      padding-bottom: 10px;
+
+      span {
+        font-size: 14px;
+        color: #333;
+        line-height: 1;
+      }
+
+      h5 {
+        font-size: 18px;
+        color: #ff5001;
+      }
+    }
+
+    p {
+      padding: 15px 0;
+    }
+
+    span {
+      display: block;
+    }
+  }
+}
+
+.capacity-content2 {
+  padding: 0 94px;
+
+  img {
+    width: 435px;
+  }
+}
+
+.show-list {
+  margin-top: 70px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.show-list img {
+  width: 32%;
+}
+
+.capacity-content3 {
+  padding: 0 76px 0 94px;
+
+  img {
+    width: 640px;
+  }
+}
+
+.plan {
+  background-color: #fbfbfb;
+}
+
+.plan .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.plan img {
+  width: 40%;
+}
+
+.service-value {
+  padding: 72px 0;
+
+  .list {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 72px;
+
+    .item {
+      width: 21.6%;
+      height: 320px;
+      border: 1px solid #333333;
+      border-radius: 5px;
+      text-align: center;
+      transition: all 0.3s linear;
+
+      img {
+        display: block;
+        width: 62px;
+        height: 62px;
+        margin: 33px auto 0;
+      }
+
+      .name {
+        font-size: 24px;
+        color: #ff5001;
+        font-weight: bold;
+        display: inline-block;
+        border-bottom: 1px solid #ff5001;
+        margin-top: 32px;
+      }
+
+      ul {
+        display: inline-block;
+        text-align: left;
+        line-height: 30px;
+        color: #666666;
+        font-size: 15px;
+        margin-top: 27px;
+      }
+    }
+
+    .active {
+      border: 1px solid #ff5001;
+    }
+  }
+}
+
+.client {
+  padding: 72px 0;
+  background-color: #fbfbfb;
+
+  .common-title {
+    .desc {
       display: none;
     }
+  }
+}
+
+.client img {
+  margin-top: 72px;
+  width: 100%;
+}
+
+.mobile-img,
+.mobile-top,
+.mobile-kh,
+.mobile-item {
+  display: none;
+}
+
+.mobile-banner {
+  display: none;
+}
+
+@media screen and (max-width: 1200px) {
+  .banner {
+    height: 400px;
+  }
+
+  .service-value .list .item {
+    width: 23%;
+  }
+
+  .capacity .item {
+    font-size: 18px;
+  }
+
+  .capacity-content1 {
+    padding: 0 70px;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .banner {
+    display: none;
+  }
   .mobile-banner {
     display: block;
     height: 200px;
   }
-  
-    .plan img {
-      display: none;
-    }
-  
-    .plan .container {
-      justify-content: center;
-      padding-bottom: 1rem;
-    }
-  
-    .why-select-oak {
-      padding: 50px 0 72px 0;
-    }
-  
-    .common-title .name {
-      font-size: 26px;
-    }
-  
-    .common-title .desc {
-      font-size: 18px;
-    }
-  
-    .capacity-content1 {
-      padding: 0 30px;
-    }
-  
-    .capacity-content1>img {
-      width: 50%;
-    }
-  
-    .service-value .list {
-      flex-wrap: wrap;
-    }
-  
-    .service-value .list .item {
-      width: 48%;
-      margin-bottom: 20px;
-    }
+
+  .plan img {
+    display: none;
   }
-  
-  @media screen and (max-width: 640px) {
-    .banner {
-      height: 200px;
+
+  .plan .container {
+    justify-content: center;
+    padding-bottom: 1rem;
+  }
+
+  .why-select-oak {
+    padding: 50px 0 72px 0;
+  }
+
+  .common-title .name {
+    font-size: 26px;
+  }
+
+  .common-title .desc {
+    font-size: 18px;
+  }
+
+  .capacity-content1 {
+    padding: 0 30px;
+  }
+
+  .capacity-content1 > img {
+    width: 50%;
+  }
+
+  .service-value .list {
+    flex-wrap: wrap;
+  }
+
+  .service-value .list .item {
+    width: 48%;
+    margin-bottom: 20px;
+  }
+}
+
+@media screen and (max-width: 640px) {
+  .banner {
+    height: 200px;
   }
   .why-select-oak {
     padding: 30px 0 40px;

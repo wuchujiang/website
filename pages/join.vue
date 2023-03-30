@@ -2,16 +2,22 @@
   <div v-show="pageShow">
     <oakHeader :current="3" />
     <main>
-      <section class="join-banner" :style="{
-                                      'background': project ?
-                                      `url(${url}join-banner-${project.en}.png) center center / auto 100% no-repeat` :
-                                      `url(${url}join-banner.png) center center / auto 100% no-repeat`
-                                    }"></section>
-      <section class="mobile-join-banner" :style="{
-                                      'background': project ?
-                                      `url(${url}mobile-join-banner-${project.en}.png) center center / auto 100% no-repeat` :
-                                      `url(${url}mobile-join-banner.png) center center / auto 100% no-repeat`
-                                    }"></section>
+      <section
+        class="join-banner"
+        :style="{
+          background: project
+            ? `url(${url}join-banner-${project.en}.png) center center / auto 100% no-repeat`
+            : `url(${url}join-banner.png) center center / auto 100% no-repeat`,
+        }"
+      ></section>
+      <section
+        class="mobile-join-banner"
+        :style="{
+          background: project
+            ? `url(${url}mobile-join-banner-${project.en}.png) center center / auto 100% no-repeat`
+            : `url(${url}mobile-join-banner.png) center center / auto 100% no-repeat`,
+        }"
+      ></section>
       <section class="join-main">
         <div class="container">
           <h2>社招岗位</h2>
@@ -83,7 +89,7 @@
 import oakHeader from "../components/header/header";
 import oakFooter from "../components/footer/footer";
 import ans from "@/utils/ans";
-import { url } from '../utils/config'
+import { url } from "../utils/config";
 export default {
   name: "join",
   components: {
@@ -209,10 +215,12 @@ export default {
     };
   },
   head() {
-    const local = window.local;
-    let title = '橡树黑卡--招聘职位，欢迎投递';
-    let description_content = "橡树黑卡正在招聘数据分析师，系统架构师，高级后端开发工程师，资深风控数据分析专家,400-150-9669。";
-    let keywords_content = "大数据，用户分析，用户运营，量化分析，指标监控，数据归因，数据挖掘，统计分析，统计建模，商业化，收益风险";
+    const local = this.$store.state.project;
+    let title = "橡树黑卡--招聘职位，欢迎投递";
+    let description_content =
+      "橡树黑卡正在招聘数据分析师，系统架构师，高级后端开发工程师，资深风控数据分析专家,400-150-9669。";
+    let keywords_content =
+      "大数据，用户分析，用户运营，量化分析，指标监控，数据归因，数据挖掘，统计分析，统计建模，商业化，收益风险";
     if (local) {
       title = `${local.name}--招聘职位，欢迎投递`;
       description_content = `${local.name}正在招聘数据分析师，系统架构师，高级后端开发工程师，资深风控数据分析专家,400-150-9669。`;
@@ -234,7 +242,7 @@ export default {
   },
   mounted() {
     this.pageShow = true;
-    this.project = window.local;
+    this.project = this.$store.state.project;
     ans.pageView("oak_join_page");
   },
   methods: {
@@ -345,7 +353,6 @@ export default {
 }
 
 @media screen and (max-width: 1200px) {
-
   .join-banner,
   .join-banner2 {
     height: 350px;
@@ -353,7 +360,6 @@ export default {
 }
 
 @media screen and (max-width: 1024px) {
-
   .join-banner,
   .join-banner2 {
     height: 300px;
@@ -369,7 +375,6 @@ export default {
 }
 
 @media screen and (max-width: 1024px) {
-
   .join-banner {
     display: none;
   }

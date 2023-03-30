@@ -2,7 +2,10 @@
   <footer class="footer">
     <div class="container">
       <div class="left">
-        <img :src="project ? `${url}${project.en}_logo2.png` : `${url}logo2.png`" alt="" />
+        <img
+          :src="project ? `${url}${project.en}_logo2.png` : `${url}logo2.png`"
+          alt=""
+        />
         <p>合作电话：400-150-9669</p>
         <p>业务合作：marketing@oakblack.com</p>
         <p>媒体合作：media@oakblack.com</p>
@@ -28,11 +31,16 @@
     <div class="copyright">
       <span
         ><a href="https://beian.miit.gov.cn/" target="_blank"
-          >粤ICP备{{project ? project.record : href.includes('xsvips') ? '20003741' : '18120172'}}号</a
+          >粤ICP备{{
+            project
+              ? project.record
+              : href.includes("xsvips")
+              ? "20003741"
+              : "18120172"
+          }}号</a
         >
-      </span
-      >
-      深圳市{{project ? project.name : "橡树黑卡"}}网络科技有限公司
+      </span>
+      深圳市{{ project ? project.name : "橡树黑卡" }}网络科技有限公司
     </div>
     <div class="suspend">
       <div class="item online-hover">
@@ -189,7 +197,7 @@
 
 <script>
 import ans from "@/utils/ans";
-import { url } from '../../utils/config'
+import { url } from "../../utils/config";
 export default {
   props: ["type"],
   data() {
@@ -198,7 +206,7 @@ export default {
       show_online: false,
       show_phone_consult: false,
       url,
-      href: '',
+      href: "",
       nav: [
         {
           name: "产品服务",
@@ -223,7 +231,7 @@ export default {
     };
   },
   mounted() {
-    this.project = window.local;
+    this.project = this.$store.state.project;
     this.href = window.location.href;
     document.addEventListener("scroll", () => {
       const scroll =
@@ -289,7 +297,7 @@ export default {
       this.show_phone_consult = false;
     },
     toAns(namespace) {
-      ans.track("button_service_click", {type: namespace});
+      ans.track("button_service_click", { type: namespace });
     },
   },
 };

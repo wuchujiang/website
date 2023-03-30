@@ -1,7 +1,5 @@
 <template>
-  <div v-if="show">
-    <nuxt />
-  </div>
+  <nuxt />
 </template>
 
 
@@ -9,34 +7,18 @@
 export default {
   data() {
     return {
-      show: false
-    }
+      show: false,
+    };
   },
 
-  mounted() {
-    const project = {
-      "lifesvip": {
-        name: "高光时刻",
-        en: "lifesvip",
-        record: "20063673",
-      },
-      "xsvips": {
-        name: "橡树创新",
-        en: "xsvips",
-        record: "20003741",
-      },
-    }
-    const local = Object.keys(project).filter(r => location.href.includes(r));
-    window.local = local[0] ? project[local[0]] : null;
-    this.show = true;
-  }
-}
+  mounted() {},
+};
 </script>
 
 <style>
 html {
-  font-family: 'Source Sans Pro', -apple-system, BlinkMacSystemFont, 'Segoe UI',
-    Roboto, 'Helvetica Neue', Arial, sans-serif;
+  font-family: "Source Sans Pro", -apple-system, BlinkMacSystemFont, "Segoe UI",
+    Roboto, "Helvetica Neue", Arial, sans-serif;
   font-size: 16px;
   word-spacing: 1px;
   -ms-text-size-adjust: 100%;

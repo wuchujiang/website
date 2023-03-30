@@ -32,7 +32,8 @@ export default {
     router: {
         scrollBehavior(to, from) {
             return { x: 0, y: 0 }
-        }
+        },
+        middleware: 'source'
     },
     html: {
         minify: {
@@ -80,5 +81,7 @@ export default {
                 remUnit: 23.4375
             })
         ],
-    }
+    },
+
+
 }

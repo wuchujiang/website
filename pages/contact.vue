@@ -28,7 +28,7 @@
             >
               <img src="@/static/icon11.png" alt="" />
               <h4>在线客服</h4>
-              <p>周一到周五：<span>8：00～20：00</span> (在线和电话)</p> 
+              <p>周一到周五：<span>8：00～20：00</span> (在线和电话)</p>
               <button @click="toAns('service')">立即联系</button>
             </a>
           </div>
@@ -52,7 +52,10 @@
       </section>
       <section class="contact-form">
         <div class="container">
-          <img :src="project ? `${url}${project.en}_img11.png` : `${url}img11.png`" alt="" />
+          <img
+            :src="project ? `${url}${project.en}_img11.png` : `${url}img11.png`"
+            alt=""
+          />
           <div class="mobile-top">
             <h4>这些企业都已免费获得定制会员方案</h4>
             <ul>
@@ -135,7 +138,7 @@ import oakFooter from "../components/footer/footer";
 import { register, officialWebsite } from "../utils/api";
 import { Toast } from "vant";
 import ans from "@/utils/ans";
-import { url } from '../utils/config'
+import { url } from "../utils/config";
 export default {
   name: "contact",
   components: {
@@ -164,10 +167,12 @@ export default {
     };
   },
   head() {
-    const local = window.local;
-    let title = '橡树黑卡--联系我们';
-    let description_content = "完善您的信息后，橡树黑卡会有专门的商务人员与您对接，400-150-9669。";
-    let keywords_content = "付费会员，会员权益，高新技术企业，提升活跃，带动营收，增加收入，客户关怀，用户画像，延长用户生命周期";
+    const local = this.$store.state.project;
+    let title = "橡树黑卡--联系我们";
+    let description_content =
+      "完善您的信息后，橡树黑卡会有专门的商务人员与您对接，400-150-9669。";
+    let keywords_content =
+      "付费会员，会员权益，高新技术企业，提升活跃，带动营收，增加收入，客户关怀，用户画像，延长用户生命周期";
     if (local) {
       title = `${local.name}--联系我们`;
       description_content = `完善您的信息后，${local.name}会有专门的商务人员与您对接，400-150-9669。`;
@@ -189,7 +194,7 @@ export default {
   },
   mounted() {
     this.pageShow = true;
-    this.project = window.local;
+    this.project = this.$store.state.project;
     ans.pageView("oak_connect_page");
   },
   watch: {
@@ -307,12 +312,12 @@ export default {
       }, 1000);
     },
     toAns(type) {
-      if(type === 'service') {
-        ans.track("button_service_click", {type: 'contact'});
-      };
-      if(type === 'phone') {
+      if (type === "service") {
+        ans.track("button_service_click", { type: "contact" });
+      }
+      if (type === "phone") {
         ans.track("button_phone_click");
-      };
+      }
     },
   },
 };
