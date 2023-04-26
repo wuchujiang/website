@@ -50,7 +50,7 @@
                 <div v-html="item"></div>
               </div>
             </div>
-            <div v-show="current === 0" class="capacity-content1">
+            <!-- <div v-show="current === 0" class="capacity-content1">
               <div class="text">
                 <div class="top">
                   <h4>一站式权益</h4>
@@ -102,9 +102,9 @@
               </div>
               <img src="@/static/img14.png" alt="" />
               <img class="mobile-img" src="@/static/mobile/img1.png" alt="" />
-            </div>
+            </div> -->
             <div
-              v-show="current === 2"
+              v-show="current === 0"
               class="capacity-content1 capacity-content3"
             >
               <div class="text">
@@ -291,13 +291,13 @@ export default {
       code: "",
       code_error: "",
       list: [
-        "<span>一站式权益</span> 低成本 高价值",
-        "<span>独家稀缺权益</span> 提升产品竞争力",
+        // "<span>一站式权益</span> 低成本 高价值",
+        // "<span>独家稀缺权益</span> 提升产品竞争力",
         "<span>专业服务</span>   灵活定制",
       ],
       list2: [
-        "<span style='display:block'>一站式权益</span> 低成本 高价值",
-        "<span style='display:block'>独家稀缺权益</span> 提升产品竞争力",
+        // "<span style='display:block'>一站式权益</span> 低成本 高价值",
+        // "<span style='display:block'>独家稀缺权益</span> 提升产品竞争力",
         "<span style='display:block'>专业服务</span>   灵活定制",
       ],
       current: 0,

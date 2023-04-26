@@ -2,43 +2,37 @@
   {
     "name": "about",
     "path": "/about",
-    "component": "D:\\\\oak\\\\OakNewWebsite\\\\pages\\\\about.vue",
-    "chunkName": "pages/about",
-    "_name": "_d95cedf0"
+    "component": "C:\\\\Users\\\\huawei\\\\Desktop\\\\oak\\\\OakNewWebsite\\\\pages\\\\about.vue",
+    "chunkName": "pages/about"
   },
   {
     "name": "contact",
     "path": "/contact",
-    "component": "D:\\\\oak\\\\OakNewWebsite\\\\pages\\\\contact.vue",
-    "chunkName": "pages/contact",
-    "_name": "_07903b5b"
+    "component": "C:\\\\Users\\\\huawei\\\\Desktop\\\\oak\\\\OakNewWebsite\\\\pages\\\\contact.vue",
+    "chunkName": "pages/contact"
   },
   {
     "name": "join",
     "path": "/join",
-    "component": "D:\\\\oak\\\\OakNewWebsite\\\\pages\\\\join.vue",
-    "chunkName": "pages/join",
-    "_name": "_98931e02"
+    "component": "C:\\\\Users\\\\huawei\\\\Desktop\\\\oak\\\\OakNewWebsite\\\\pages\\\\join.vue",
+    "chunkName": "pages/join"
   },
   {
     "name": "operation",
     "path": "/operation",
-    "component": "D:\\\\oak\\\\OakNewWebsite\\\\pages\\\\operation.vue",
-    "chunkName": "pages/operation",
-    "_name": "_f7dd573c"
+    "component": "C:\\\\Users\\\\huawei\\\\Desktop\\\\oak\\\\OakNewWebsite\\\\pages\\\\operation.vue",
+    "chunkName": "pages/operation"
   },
   {
     "name": "saas",
     "path": "/saas",
-    "component": "D:\\\\oak\\\\OakNewWebsite\\\\pages\\\\saas.vue",
-    "chunkName": "pages/saas",
-    "_name": "_68a977d5"
+    "component": "C:\\\\Users\\\\huawei\\\\Desktop\\\\oak\\\\OakNewWebsite\\\\pages\\\\saas.vue",
+    "chunkName": "pages/saas"
   },
   {
     "name": "index",
     "path": "/",
-    "component": "D:\\\\oak\\\\OakNewWebsite\\\\pages\\\\index.vue",
-    "chunkName": "pages/index",
-    "_name": "_99ed3866"
+    "component": "C:\\\\Users\\\\huawei\\\\Desktop\\\\oak\\\\OakNewWebsite\\\\pages\\\\index.vue",
+    "chunkName": "pages/index"
   }
 ]

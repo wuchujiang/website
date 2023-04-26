@@ -329,7 +329,7 @@ var component = Object(componentNormalizer["a" /* default */])(
   false,
   injectStyles,
   "4682af23",
-  "69632cc9"
+  "4cb1509d"
   
 )
 
@@ -716,7 +716,7 @@ var component = Object(componentNormalizer["a" /* default */])(
   false,
   injectStyles,
   "2ea32340",
-  "7e6c2109"
+  "61ba44dd"
   
 )
 
@@ -3713,7 +3713,7 @@ var component = Object(componentNormalizer["a" /* default */])(
   false,
   injectStyles,
   "555e720d",
-  "56f52969"
+  "c6135186"
   
 )
 
@@ -3908,138 +3908,114 @@ module.exports = "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAMAAADX
 /* 100 */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__.p + "img/benefit.acf5f44.png";
+module.exports = __webpack_require__.p + "img/img13.b08fd33.png";
 
 /***/ }),
 /* 101 */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__.p + "img/benefit.5be60b1.png";
+module.exports = __webpack_require__.p + "img/img2.810c149.png";
 
 /***/ }),
 /* 102 */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__.p + "img/img14.960986e.png";
+module.exports = __webpack_require__.p + "img/client.1b13543.png";
 
 /***/ }),
 /* 103 */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__.p + "img/img1.977646d.png";
+module.exports = __webpack_require__.p + "img/img3.ce1de95.png";
 
 /***/ }),
 /* 104 */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__.p + "img/img13.b08fd33.png";
+module.exports = __webpack_require__.p + "img/sv_icon0.1b5036a.png";
 
 /***/ }),
 /* 105 */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__.p + "img/img2.810c149.png";
+module.exports = __webpack_require__.p + "img/sv_icon0_selected.f9c7a95.png";
 
 /***/ }),
 /* 106 */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__.p + "img/client.1b13543.png";
+module.exports = __webpack_require__.p + "img/sv_icon1.e7fffa7.png";
 
 /***/ }),
 /* 107 */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__.p + "img/img3.ce1de95.png";
+module.exports = __webpack_require__.p + "img/sv_icon1_selected.430f651.png";
 
 /***/ }),
 /* 108 */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__.p + "img/sv_icon0.1b5036a.png";
+module.exports = __webpack_require__.p + "img/sv_icon2.28b72e1.png";
 
 /***/ }),
 /* 109 */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__.p + "img/sv_icon0_selected.f9c7a95.png";
+module.exports = __webpack_require__.p + "img/sv_icon2_selected.3568af8.png";
 
 /***/ }),
 /* 110 */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__.p + "img/sv_icon1.e7fffa7.png";
+module.exports = __webpack_require__.p + "img/sv_icon3.a2846bd.png";
 
 /***/ }),
 /* 111 */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__.p + "img/sv_icon1_selected.430f651.png";
-
-/***/ }),
-/* 112 */
-/***/ (function(module, exports, __webpack_require__) {
-
-module.exports = __webpack_require__.p + "img/sv_icon2.28b72e1.png";
-
-/***/ }),
-/* 113 */
-/***/ (function(module, exports, __webpack_require__) {
-
-module.exports = __webpack_require__.p + "img/sv_icon2_selected.3568af8.png";
-
-/***/ }),
-/* 114 */
-/***/ (function(module, exports, __webpack_require__) {
-
-module.exports = __webpack_require__.p + "img/sv_icon3.a2846bd.png";
-
-/***/ }),
-/* 115 */
-/***/ (function(module, exports, __webpack_require__) {
-
 module.exports = __webpack_require__.p + "img/sv_icon3_selected.2e0fe43.png";
 
 /***/ }),
-/* 116 */
+/* 112 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony import */ var _node_modules_css_loader_dist_cjs_js_ref_7_oneOf_1_0_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_postcss_loader_src_index_js_ref_7_oneOf_1_1_node_modules_sass_loader_dist_cjs_js_ref_7_oneOf_1_2_node_modules_nuxt_components_dist_loader_js_ref_0_0_node_modules_vue_loader_lib_index_js_vue_loader_options_index_vue_vue_type_style_index_0_id_44b889d7_lang_scss_scoped_true___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(64);
-/* harmony import */ var _node_modules_css_loader_dist_cjs_js_ref_7_oneOf_1_0_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_postcss_loader_src_index_js_ref_7_oneOf_1_1_node_modules_sass_loader_dist_cjs_js_ref_7_oneOf_1_2_node_modules_nuxt_components_dist_loader_js_ref_0_0_node_modules_vue_loader_lib_index_js_vue_loader_options_index_vue_vue_type_style_index_0_id_44b889d7_lang_scss_scoped_true___WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_node_modules_css_loader_dist_cjs_js_ref_7_oneOf_1_0_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_postcss_loader_src_index_js_ref_7_oneOf_1_1_node_modules_sass_loader_dist_cjs_js_ref_7_oneOf_1_2_node_modules_nuxt_components_dist_loader_js_ref_0_0_node_modules_vue_loader_lib_index_js_vue_loader_options_index_vue_vue_type_style_index_0_id_44b889d7_lang_scss_scoped_true___WEBPACK_IMPORTED_MODULE_0__);
-/* harmony reexport (unknown) */ for(var __WEBPACK_IMPORT_KEY__ in _node_modules_css_loader_dist_cjs_js_ref_7_oneOf_1_0_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_postcss_loader_src_index_js_ref_7_oneOf_1_1_node_modules_sass_loader_dist_cjs_js_ref_7_oneOf_1_2_node_modules_nuxt_components_dist_loader_js_ref_0_0_node_modules_vue_loader_lib_index_js_vue_loader_options_index_vue_vue_type_style_index_0_id_44b889d7_lang_scss_scoped_true___WEBPACK_IMPORTED_MODULE_0__) if(["default"].indexOf(__WEBPACK_IMPORT_KEY__) < 0) (function(key) { __webpack_require__.d(__webpack_exports__, key, function() { return _node_modules_css_loader_dist_cjs_js_ref_7_oneOf_1_0_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_postcss_loader_src_index_js_ref_7_oneOf_1_1_node_modules_sass_loader_dist_cjs_js_ref_7_oneOf_1_2_node_modules_nuxt_components_dist_loader_js_ref_0_0_node_modules_vue_loader_lib_index_js_vue_loader_options_index_vue_vue_type_style_index_0_id_44b889d7_lang_scss_scoped_true___WEBPACK_IMPORTED_MODULE_0__[key]; }) }(__WEBPACK_IMPORT_KEY__));
+/* harmony import */ var _node_modules_css_loader_dist_cjs_js_ref_7_oneOf_1_0_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_postcss_loader_src_index_js_ref_7_oneOf_1_1_node_modules_sass_loader_dist_cjs_js_ref_7_oneOf_1_2_node_modules_nuxt_components_dist_loader_js_ref_0_0_node_modules_vue_loader_lib_index_js_vue_loader_options_index_vue_vue_type_style_index_0_id_9f447500_lang_scss_scoped_true___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(64);
+/* harmony import */ var _node_modules_css_loader_dist_cjs_js_ref_7_oneOf_1_0_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_postcss_loader_src_index_js_ref_7_oneOf_1_1_node_modules_sass_loader_dist_cjs_js_ref_7_oneOf_1_2_node_modules_nuxt_components_dist_loader_js_ref_0_0_node_modules_vue_loader_lib_index_js_vue_loader_options_index_vue_vue_type_style_index_0_id_9f447500_lang_scss_scoped_true___WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_node_modules_css_loader_dist_cjs_js_ref_7_oneOf_1_0_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_postcss_loader_src_index_js_ref_7_oneOf_1_1_node_modules_sass_loader_dist_cjs_js_ref_7_oneOf_1_2_node_modules_nuxt_components_dist_loader_js_ref_0_0_node_modules_vue_loader_lib_index_js_vue_loader_options_index_vue_vue_type_style_index_0_id_9f447500_lang_scss_scoped_true___WEBPACK_IMPORTED_MODULE_0__);
+/* harmony reexport (unknown) */ for(var __WEBPACK_IMPORT_KEY__ in _node_modules_css_loader_dist_cjs_js_ref_7_oneOf_1_0_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_postcss_loader_src_index_js_ref_7_oneOf_1_1_node_modules_sass_loader_dist_cjs_js_ref_7_oneOf_1_2_node_modules_nuxt_components_dist_loader_js_ref_0_0_node_modules_vue_loader_lib_index_js_vue_loader_options_index_vue_vue_type_style_index_0_id_9f447500_lang_scss_scoped_true___WEBPACK_IMPORTED_MODULE_0__) if(["default"].indexOf(__WEBPACK_IMPORT_KEY__) < 0) (function(key) { __webpack_require__.d(__webpack_exports__, key, function() { return _node_modules_css_loader_dist_cjs_js_ref_7_oneOf_1_0_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_postcss_loader_src_index_js_ref_7_oneOf_1_1_node_modules_sass_loader_dist_cjs_js_ref_7_oneOf_1_2_node_modules_nuxt_components_dist_loader_js_ref_0_0_node_modules_vue_loader_lib_index_js_vue_loader_options_index_vue_vue_type_style_index_0_id_9f447500_lang_scss_scoped_true___WEBPACK_IMPORTED_MODULE_0__[key]; }) }(__WEBPACK_IMPORT_KEY__));
 
 
 /***/ }),
+/* 113 */,
+/* 114 */,
+/* 115 */,
+/* 116 */,
 /* 117 */,
-/* 118 */,
-/* 119 */,
-/* 120 */,
-/* 121 */,
-/* 122 */
+/* 118 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 // ESM COMPAT FLAG
 __webpack_require__.r(__webpack_exports__);
 
-// CONCATENATED MODULE: ./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/@nuxt/components/dist/loader.js??ref--0-0!./node_modules/vue-loader/lib??vue-loader-options!./pages/index.vue?vue&type=template&id=44b889d7&scoped=true&
-var render = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('div',{directives:[{name:"show",rawName:"v-show",value:(_vm.pageShow),expression:"pageShow"}],ref:"index"},[_c('oakHeader',{attrs:{"current":0}}),_vm._ssrNode(" "),_vm._ssrNode("<main data-v-44b889d7>","</main>",[_vm._ssrNode("<section class=\"banner\""+(_vm._ssrStyle(null,{
+// CONCATENATED MODULE: ./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/@nuxt/components/dist/loader.js??ref--0-0!./node_modules/vue-loader/lib??vue-loader-options!./pages/index.vue?vue&type=template&id=9f447500&scoped=true&
+var render = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('div',{directives:[{name:"show",rawName:"v-show",value:(_vm.pageShow),expression:"pageShow"}],ref:"index"},[_c('oakHeader',{attrs:{"current":0}}),_vm._ssrNode(" "),_vm._ssrNode("<main data-v-9f447500>","</main>",[_vm._ssrNode("<section class=\"banner\""+(_vm._ssrStyle(null,{
         background: _vm.project
           ? ("url(" + _vm.url + "banner-" + (_vm.project.en) + ".png) center center / auto 100% no-repeat")
           : ("url(" + _vm.url + "banner.png) center center / auto 100% no-repeat"),
-      }, null))+" data-v-44b889d7></section> <section class=\"mobile-banner\""+(_vm._ssrStyle(null,{
+      }, null))+" data-v-9f447500></section> <section class=\"mobile-banner\""+(_vm._ssrStyle(null,{
         background: _vm.project
           ? ("url(" + _vm.url + "mobile-banner-" + (_vm.project.en) + ".png) center center / auto 100% no-repeat")
           : ("url(" + _vm.url + "mobile-banner.png) center center / auto 100% no-repeat"),
-      }, null))+" data-v-44b889d7></section> <section class=\"why-select-oak\" data-v-44b889d7><div class=\"container\" data-v-44b889d7><div class=\"common-title\" data-v-44b889d7><div class=\"en\" data-v-44b889d7>WHY</div> <div class=\"name\" data-v-44b889d7>"+_vm._ssrEscape("\n            为什么选择"+_vm._s(_vm.project ? _vm.project.name : "橡树黑卡")+"\n          ")+"</div> <div class=\"desc\" data-v-44b889d7>\n            专业团队根据合作方与用户诉求，设计定制产品，并提供专业运营支持服务\n          </div></div> <div class=\"wrap\" data-v-44b889d7><div class=\"capacity\" data-v-44b889d7>"+(_vm._ssrList((_vm.list),function(item,index){return ("<div"+(_vm._ssrClass(null,("item " + (_vm.current === index && 'active'))))+" data-v-44b889d7><img"+(_vm._ssrAttr("src",__webpack_require__(63)("./icon" + (index + 1) + ".png")))+" alt data-v-44b889d7> <div data-v-44b889d7>"+(_vm._s(item))+"</div></div>")}))+" "+(_vm._ssrList((_vm.list2),function(item,index){return ("<div"+(_vm._ssrClass(null,("item mobile-item " + (_vm.current === index && 'active'))))+" data-v-44b889d7><img"+(_vm._ssrAttr("src",__webpack_require__(63)("./icon" + (index + 1) + ".png")))+" alt data-v-44b889d7> <div data-v-44b889d7>"+(_vm._s(item))+"</div></div>")}))+"</div> <div class=\"capacity-content1\""+(_vm._ssrStyle(null,null, { display: (_vm.current === 0) ? '' : 'none' }))+" data-v-44b889d7><div class=\"text\" data-v-44b889d7><div class=\"top\" data-v-44b889d7><h4 data-v-44b889d7>一站式权益</h4> <span data-v-44b889d7>Equity one stop</span> <h5 data-v-44b889d7>低成本 高价值</h5></div> <p data-v-44b889d7><span data-v-44b889d7> - 整合食住行用等全流程权益，</span>\n                覆盖类目广，满足用户大部分生活需求。\n              </p> <p data-v-44b889d7><span data-v-44b889d7> - 权益具有高频、强流量、高价值属性，</span>\n                利于吸引新用户，提升用户忠诚度。\n              </p> <p data-v-44b889d7>- 权益成本更低。</p></div> <img"+(_vm._ssrAttr("src",__webpack_require__(100)))+" alt data-v-44b889d7> <img"+(_vm._ssrAttr("src",__webpack_require__(101)))+" alt class=\"mobile-img\" data-v-44b889d7></div> <div class=\"capacity-content1 capacity-content2\""+(_vm._ssrStyle(null,null, { display: (_vm.current === 1) ? '' : 'none' }))+" data-v-44b889d7><div class=\"text\" data-v-44b889d7><div class=\"top\" data-v-44b889d7><h4 data-v-44b889d7>独家权益</h4> <span data-v-44b889d7>Flexible customization</span> <h5 data-v-44b889d7>权益保障 出行无忧</h5></div> <p data-v-44b889d7><span data-v-44b889d7>\n                  -\n                  与多家酒店集团、贵宾出行服务商合作，可为用户提供高级酒</span> <span data-v-44b889d7>店会籍匹配，及全球贵宾休息室、快速安检等高端服务。</span></p> <p data-v-44b889d7><span data-v-44b889d7>\n                  -\n                  与航空公司合作，支持积分兑换里程、充话费送里程等权益。</span></p></div> <img"+(_vm._ssrAttr("src",__webpack_require__(102)))+" alt data-v-44b889d7> <img"+(_vm._ssrAttr("src",__webpack_require__(103)))+" alt class=\"mobile-img\" data-v-44b889d7></div> <div class=\"capacity-content1 capacity-content3\""+(_vm._ssrStyle(null,null, { display: (_vm.current === 2) ? '' : 'none' }))+" data-v-44b889d7><div class=\"text\" data-v-44b889d7><div class=\"top\" data-v-44b889d7><h4 data-v-44b889d7>灵活定制</h4> <span data-v-44b889d7>Flexible customized</span> <h5 data-v-44b889d7>专业服务 一键接入</h5></div> <p data-v-44b889d7><span data-v-44b889d7> - 拥有多家银行服务专业经验，无仓储，无物</span> <span data-v-44b889d7>流，交付快，成本低。</span></p> <p data-v-44b889d7><span data-v-44b889d7> - 产品介入支持多种H5/API、兑换码等方</span> <span data-v-44b889d7>式，可一键接入，权益可灵活配置。</span></p></div> <img"+(_vm._ssrAttr("src",__webpack_require__(104)))+" alt data-v-44b889d7> <img"+(_vm._ssrAttr("src",__webpack_require__(105)))+" alt class=\"mobile-img\" data-v-44b889d7></div></div></div></section> <section class=\"plan\" data-v-44b889d7><div class=\"container\" data-v-44b889d7><img"+(_vm._ssrAttr("src",_vm.project ? ("" + _vm.url + (_vm.project.en) + "_img11.png") : (_vm.url + "img11.png")))+" alt data-v-44b889d7> <div class=\"mobile-top\" data-v-44b889d7><h4 data-v-44b889d7>这些企业都已免费获得定制会员方案</h4> <ul data-v-44b889d7><li data-v-44b889d7><img"+(_vm._ssrAttr("src",__webpack_require__(27)))+" alt data-v-44b889d7>省呗</li> <li data-v-44b889d7><img"+(_vm._ssrAttr("src",__webpack_require__(30)))+" alt data-v-44b889d7>我来数科</li> <li data-v-44b889d7><img"+(_vm._ssrAttr("src",__webpack_require__(28)))+" alt data-v-44b889d7>keep</li> <li data-v-44b889d7><img"+(_vm._ssrAttr("src",__webpack_require__(29)))+" alt data-v-44b889d7>榕树贷款</li> <li data-v-44b889d7><img"+(_vm._ssrAttr("src",__webpack_require__(46)))+" alt data-v-44b889d7>新橙优品</li></ul></div> <div class=\"plan-form\" data-v-44b889d7><h2 data-v-44b889d7>完善信息后 48小时内会有专门的商务人员与您对接</h2> <div class=\"item\" data-v-44b889d7><div class=\"text\" data-v-44b889d7><span data-v-44b889d7>*</span>您的姓名：</div> <input type=\"text\" maxlength=\"10\" placeholder=\"请输入姓名\" name id=\"name\" autocomplete=\"off\""+(_vm._ssrAttr("value",(_vm.name)))+" data-v-44b889d7> <div class=\"input-error\" data-v-44b889d7>"+_vm._ssrEscape(_vm._s(_vm.name_error))+"</div></div> <div class=\"item\" data-v-44b889d7><div class=\"text\" data-v-44b889d7><span data-v-44b889d7>*</span>公司名称：</div> <input type=\"text\" placeholder=\"请输入公司名称\" maxlength=\"100\" name id=\"companyName\" autocomplete=\"off\""+(_vm._ssrAttr("value",(_vm.company_name)))+" data-v-44b889d7> <div class=\"input-error\" data-v-44b889d7>"+_vm._ssrEscape(_vm._s(_vm.company_name_error))+"</div></div> <div class=\"item\" data-v-44b889d7><div class=\"text\" data-v-44b889d7><span data-v-44b889d7>*</span>联系电话：</div> <input type=\"text\" placeholder=\"请输入联系电话\" maxlength=\"30\" name id=\"phone\" autocomplete=\"off\""+(_vm._ssrAttr("value",(_vm.phone)))+" data-v-44b889d7> <div class=\"input-error\" data-v-44b889d7>"+_vm._ssrEscape(_vm._s(_vm.phone_error))+"</div></div> <div class=\"item\" data-v-44b889d7><div class=\"text\" data-v-44b889d7><span data-v-44b889d7>*</span>验证码：</div> <input type=\"text\" placeholder=\"请输入验证码\" name id=\"code\" autocomplete=\"off\""+(_vm._ssrAttr("value",(_vm.code)))+" data-v-44b889d7> "+((!_vm.codeText)?("<div class=\"get-code\" data-v-44b889d7>\n              获取验证码\n            </div>"):("<div class=\"get-code code-disable\" data-v-44b889d7>"+_vm._ssrEscape(_vm._s(_vm.codeText))+"</div>"))+" <div class=\"input-error\" data-v-44b889d7>"+_vm._ssrEscape(_vm._s(_vm.code_error))+"</div></div> <div class=\"plan-btn\" data-v-44b889d7>免费获取方案</div></div></div></section> <section class=\"service-value\" data-v-44b889d7><div class=\"container\" data-v-44b889d7><div class=\"common-title\" data-v-44b889d7><div class=\"en\" data-v-44b889d7>VALUE</div> <div class=\"name\" data-v-44b889d7>服务价值</div> <div class=\"desc\" data-v-44b889d7>\n            助力企业满足用户对高品质服务的需求，提升拉新促活能力与品牌忠诚度\n          </div></div> <div class=\"list\" data-v-44b889d7>"+(_vm._ssrList((_vm.service_value),function(item,index){return ("<div"+(_vm._ssrClass(null,{ item: true, active: _vm.service_value_current === index }))+" data-v-44b889d7><img"+(_vm._ssrAttr("src",_vm.service_value_current === index
+      }, null))+" data-v-9f447500></section> <section class=\"why-select-oak\" data-v-9f447500><div class=\"container\" data-v-9f447500><div class=\"common-title\" data-v-9f447500><div class=\"en\" data-v-9f447500>WHY</div> <div class=\"name\" data-v-9f447500>"+_vm._ssrEscape("\n            为什么选择"+_vm._s(_vm.project ? _vm.project.name : "橡树黑卡")+"\n          ")+"</div> <div class=\"desc\" data-v-9f447500>\n            专业团队根据合作方与用户诉求，设计定制产品，并提供专业运营支持服务\n          </div></div> <div class=\"wrap\" data-v-9f447500><div class=\"capacity\" data-v-9f447500>"+(_vm._ssrList((_vm.list),function(item,index){return ("<div"+(_vm._ssrClass(null,("item " + (_vm.current === index && 'active'))))+" data-v-9f447500><img"+(_vm._ssrAttr("src",__webpack_require__(63)("./icon" + (index + 1) + ".png")))+" alt data-v-9f447500> <div data-v-9f447500>"+(_vm._s(item))+"</div></div>")}))+" "+(_vm._ssrList((_vm.list2),function(item,index){return ("<div"+(_vm._ssrClass(null,("item mobile-item " + (_vm.current === index && 'active'))))+" data-v-9f447500><img"+(_vm._ssrAttr("src",__webpack_require__(63)("./icon" + (index + 1) + ".png")))+" alt data-v-9f447500> <div data-v-9f447500>"+(_vm._s(item))+"</div></div>")}))+"</div> <div class=\"capacity-content1 capacity-content3\""+(_vm._ssrStyle(null,null, { display: (_vm.current === 0) ? '' : 'none' }))+" data-v-9f447500><div class=\"text\" data-v-9f447500><div class=\"top\" data-v-9f447500><h4 data-v-9f447500>灵活定制</h4> <span data-v-9f447500>Flexible customized</span> <h5 data-v-9f447500>专业服务 一键接入</h5></div> <p data-v-9f447500><span data-v-9f447500> - 拥有多家银行服务专业经验，无仓储，无物</span> <span data-v-9f447500>流，交付快，成本低。</span></p> <p data-v-9f447500><span data-v-9f447500> - 产品介入支持多种H5/API、兑换码等方</span> <span data-v-9f447500>式，可一键接入，权益可灵活配置。</span></p></div> <img"+(_vm._ssrAttr("src",__webpack_require__(100)))+" alt data-v-9f447500> <img"+(_vm._ssrAttr("src",__webpack_require__(101)))+" alt class=\"mobile-img\" data-v-9f447500></div></div></div></section> <section class=\"plan\" data-v-9f447500><div class=\"container\" data-v-9f447500><img"+(_vm._ssrAttr("src",_vm.project ? ("" + _vm.url + (_vm.project.en) + "_img11.png") : (_vm.url + "img11.png")))+" alt data-v-9f447500> <div class=\"mobile-top\" data-v-9f447500><h4 data-v-9f447500>这些企业都已免费获得定制会员方案</h4> <ul data-v-9f447500><li data-v-9f447500><img"+(_vm._ssrAttr("src",__webpack_require__(27)))+" alt data-v-9f447500>省呗</li> <li data-v-9f447500><img"+(_vm._ssrAttr("src",__webpack_require__(30)))+" alt data-v-9f447500>我来数科</li> <li data-v-9f447500><img"+(_vm._ssrAttr("src",__webpack_require__(28)))+" alt data-v-9f447500>keep</li> <li data-v-9f447500><img"+(_vm._ssrAttr("src",__webpack_require__(29)))+" alt data-v-9f447500>榕树贷款</li> <li data-v-9f447500><img"+(_vm._ssrAttr("src",__webpack_require__(46)))+" alt data-v-9f447500>新橙优品</li></ul></div> <div class=\"plan-form\" data-v-9f447500><h2 data-v-9f447500>完善信息后 48小时内会有专门的商务人员与您对接</h2> <div class=\"item\" data-v-9f447500><div class=\"text\" data-v-9f447500><span data-v-9f447500>*</span>您的姓名：</div> <input type=\"text\" maxlength=\"10\" placeholder=\"请输入姓名\" name id=\"name\" autocomplete=\"off\""+(_vm._ssrAttr("value",(_vm.name)))+" data-v-9f447500> <div class=\"input-error\" data-v-9f447500>"+_vm._ssrEscape(_vm._s(_vm.name_error))+"</div></div> <div class=\"item\" data-v-9f447500><div class=\"text\" data-v-9f447500><span data-v-9f447500>*</span>公司名称：</div> <input type=\"text\" placeholder=\"请输入公司名称\" maxlength=\"100\" name id=\"companyName\" autocomplete=\"off\""+(_vm._ssrAttr("value",(_vm.company_name)))+" data-v-9f447500> <div class=\"input-error\" data-v-9f447500>"+_vm._ssrEscape(_vm._s(_vm.company_name_error))+"</div></div> <div class=\"item\" data-v-9f447500><div class=\"text\" data-v-9f447500><span data-v-9f447500>*</span>联系电话：</div> <input type=\"text\" placeholder=\"请输入联系电话\" maxlength=\"30\" name id=\"phone\" autocomplete=\"off\""+(_vm._ssrAttr("value",(_vm.phone)))+" data-v-9f447500> <div class=\"input-error\" data-v-9f447500>"+_vm._ssrEscape(_vm._s(_vm.phone_error))+"</div></div> <div class=\"item\" data-v-9f447500><div class=\"text\" data-v-9f447500><span data-v-9f447500>*</span>验证码：</div> <input type=\"text\" placeholder=\"请输入验证码\" name id=\"code\" autocomplete=\"off\""+(_vm._ssrAttr("value",(_vm.code)))+" data-v-9f447500> "+((!_vm.codeText)?("<div class=\"get-code\" data-v-9f447500>\n              获取验证码\n            </div>"):("<div class=\"get-code code-disable\" data-v-9f447500>"+_vm._ssrEscape(_vm._s(_vm.codeText))+"</div>"))+" <div class=\"input-error\" data-v-9f447500>"+_vm._ssrEscape(_vm._s(_vm.code_error))+"</div></div> <div class=\"plan-btn\" data-v-9f447500>免费获取方案</div></div></div></section> <section class=\"service-value\" data-v-9f447500><div class=\"container\" data-v-9f447500><div class=\"common-title\" data-v-9f447500><div class=\"en\" data-v-9f447500>VALUE</div> <div class=\"name\" data-v-9f447500>服务价值</div> <div class=\"desc\" data-v-9f447500>\n            助力企业满足用户对高品质服务的需求，提升拉新促活能力与品牌忠诚度\n          </div></div> <div class=\"list\" data-v-9f447500>"+(_vm._ssrList((_vm.service_value),function(item,index){return ("<div"+(_vm._ssrClass(null,{ item: true, active: _vm.service_value_current === index }))+" data-v-9f447500><img"+(_vm._ssrAttr("src",_vm.service_value_current === index
                   ? item.icon_selected
-                  : item.icon))+" alt data-v-44b889d7> <div class=\"name\" data-v-44b889d7>"+_vm._ssrEscape(_vm._s(item.title))+"</div> <div data-v-44b889d7><ul data-v-44b889d7>"+(_vm._ssrList((item.list),function(i){return ("<li data-v-44b889d7>"+_vm._ssrEscape("\n                  "+_vm._s(i)+"\n                ")+"</li>")}))+"</ul></div></div>")}))+"</div></div></section> <section class=\"client\" data-v-44b889d7><div class=\"container\" data-v-44b889d7><div class=\"common-title\" data-v-44b889d7><div class=\"en\" data-v-44b889d7>CLIENT</div> <div class=\"name\" data-v-44b889d7>我们服务的行业客户</div> <div class=\"desc\" data-v-44b889d7>\n            助力企业满足用户对高品质服务的需求，提升拉新促活能力与品牌忠诚度\n          </div></div> <img"+(_vm._ssrAttr("src",__webpack_require__(106)))+" alt data-v-44b889d7> <img"+(_vm._ssrAttr("src",__webpack_require__(107)))+" alt class=\"mobile-kh\" data-v-44b889d7></div></section> "),_c('oakForm')],2),_vm._ssrNode(" "),_c('oakFooter')],2)}
+                  : item.icon))+" alt data-v-9f447500> <div class=\"name\" data-v-9f447500>"+_vm._ssrEscape(_vm._s(item.title))+"</div> <div data-v-9f447500><ul data-v-9f447500>"+(_vm._ssrList((item.list),function(i){return ("<li data-v-9f447500>"+_vm._ssrEscape("\n                  "+_vm._s(i)+"\n                ")+"</li>")}))+"</ul></div></div>")}))+"</div></div></section> <section class=\"client\" data-v-9f447500><div class=\"container\" data-v-9f447500><div class=\"common-title\" data-v-9f447500><div class=\"en\" data-v-9f447500>CLIENT</div> <div class=\"name\" data-v-9f447500>我们服务的行业客户</div> <div class=\"desc\" data-v-9f447500>\n            助力企业满足用户对高品质服务的需求，提升拉新促活能力与品牌忠诚度\n          </div></div> <img"+(_vm._ssrAttr("src",__webpack_require__(102)))+" alt data-v-9f447500> <img"+(_vm._ssrAttr("src",__webpack_require__(103)))+" alt class=\"mobile-kh\" data-v-9f447500></div></section> "),_c('oakForm')],2),_vm._ssrNode(" "),_c('oakFooter')],2)}
 var staticRenderFns = []
 
 
-// CONCATENATED MODULE: ./pages/index.vue?vue&type=template&id=44b889d7&scoped=true&
+// CONCATENATED MODULE: ./pages/index.vue?vue&type=template&id=9f447500&scoped=true&
 
 // EXTERNAL MODULE: ./components/header/header.vue + 4 modules
 var header = __webpack_require__(38);
@@ -4355,27 +4331,31 @@ var config = __webpack_require__(26);
       phone_error: "",
       code: "",
       code_error: "",
-      list: ["<span>一站式权益</span> 低成本 高价值", "<span>独家稀缺权益</span> 提升产品竞争力", "<span>专业服务</span>   灵活定制"],
-      list2: ["<span style='display:block'>一站式权益</span> 低成本 高价值", "<span style='display:block'>独家稀缺权益</span> 提升产品竞争力", "<span style='display:block'>专业服务</span>   灵活定制"],
+      list: [// "<span>一站式权益</span> 低成本 高价值",
+      // "<span>独家稀缺权益</span> 提升产品竞争力",
+      "<span>专业服务</span>   灵活定制"],
+      list2: [// "<span style='display:block'>一站式权益</span> 低成本 高价值",
+      // "<span style='display:block'>独家稀缺权益</span> 提升产品竞争力",
+      "<span style='display:block'>专业服务</span>   灵活定制"],
       current: 0,
       service_value: [{
-        icon: __webpack_require__(108),
-        icon_selected: __webpack_require__(109),
+        icon: __webpack_require__(104),
+        icon_selected: __webpack_require__(105),
         title: "活跃",
         list: ["• 提升用户行为活跃", "• 提升用户交易活跃", "• 延长用户生命周期"]
       }, {
-        icon: __webpack_require__(110),
-        icon_selected: __webpack_require__(111),
+        icon: __webpack_require__(106),
+        icon_selected: __webpack_require__(107),
         title: "创收",
         list: ["• 获得会员费营收", "• 带动主营业务增收"]
       }, {
-        icon: __webpack_require__(112),
-        icon_selected: __webpack_require__(113),
+        icon: __webpack_require__(108),
+        icon_selected: __webpack_require__(109),
         title: "客户关怀",
         list: ["• 通过会员礼，提升品牌价值", "• 提升用户尊贵感", "• 提升用户归属感"]
       }, {
-        icon: __webpack_require__(114),
-        icon_selected: __webpack_require__(115),
+        icon: __webpack_require__(110),
+        icon_selected: __webpack_require__(111),
         title: "用户画像",
         list: ["• 整合多平台消费者数据", "• 构建画像与标签体系", "• 数据驱动精细化会员运营"]
       }],
@@ -4556,7 +4536,7 @@ var componentNormalizer = __webpack_require__(2);
 
 function injectStyles (context) {
   
-  var style0 = __webpack_require__(116)
+  var style0 = __webpack_require__(112)
 if (style0.__inject__) style0.__inject__(context)
 
 }
@@ -4569,8 +4549,8 @@ var component = Object(componentNormalizer["a" /* default */])(
   staticRenderFns,
   false,
   injectStyles,
-  "44b889d7",
-  "4e0537b7"
+  "9f447500",
+  "7235293a"
   
 )
 
