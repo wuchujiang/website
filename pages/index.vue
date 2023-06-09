@@ -365,7 +365,7 @@ export default {
   },
   head() {
     const local = this.$store.state.project;
-    let title = "橡树黑卡公司首页";
+    let title = "橡树黑卡公司主页";
     let description_content =
       "橡树黑卡为金融、互联网、电商、零售等行业提供强大的用户运营全周期服务，提供积分体系运营、会员营销运营、游戏化运营等方案，400-150-9669。";
     let keywords_content =
@@ -374,6 +374,12 @@ export default {
       title = `${local.name}公司首页`;
       description_content = `${local.name}为金融、互联网、电商、零售等行业提供强大的用户运营全周期服务，提供积分体系运营、会员营销运营、游戏化运营等方案，400-150-9669。`;
       keywords_content = `${local.name}，会员权益，会员积分，视频会员，网站会员，app会员，用户运营，SaaS平台`;
+    }
+    if (local.en === "xshkvip") {
+      title = "橡树黑卡公司首页";
+    }
+    if (local.en === "oakvip") {
+      title = "橡树黑卡公司网站";
     }
     return {
       title,
