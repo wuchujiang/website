@@ -406,6 +406,7 @@ __webpack_require__.r(__webpack_exports__);
   };
 
   if (true) {
+    console.log(req.headers['fc-host']);
     store.commit('project', project[req.headers['fc-host'] || ''] || null);
   }
 });

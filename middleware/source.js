@@ -22,6 +22,7 @@ export default function ({ store, req }) {
     },
   };
   if (process.server) {
+    console.log(req.headers['fc-host']);
     store.commit('project', project[req.headers['fc-host'] || ''] || null)
   }
 }
