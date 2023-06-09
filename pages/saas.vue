@@ -2,7 +2,14 @@
   <div ref="saas" v-show="pageShow">
     <oakHeader :current="1" sec_current="nav_saas" />
     <main>
-      <section class="saas-banner"></section>
+      <section
+        class="saas-banner"
+        :style="{
+          background: project
+            ? `url(${url}saas-banner-${project.en}.png) center center / auto 100% no-repeat`
+            : `url(${url}saas-banner.png) center center / auto 100% no-repeat`,
+        }"
+      ></section>
       <section class="saas-tab">
         <div class="container">
           <div

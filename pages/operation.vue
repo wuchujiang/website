@@ -2,7 +2,14 @@
   <div ref="operation" v-show="pageShow">
     <oakHeader :current="1" sec_current="nav_service" />
     <main>
-      <section class="operation-banner"></section>
+      <section
+        class="operation-banner"
+        :style="{
+          background: project
+            ? `url(${url}operation-banner-${project.en}.png) center center / auto 100% no-repeat`
+            : `url(${url}operation-banner.png) center center / auto 100% no-repeat`,
+        }"
+      ></section>
       <section class="saas-tab">
         <div class="container">
           <div

@@ -3723,29 +3723,8 @@ var component = Object(componentNormalizer["a" /* default */])(
 /* 52 */,
 /* 53 */,
 /* 54 */,
-/* 55 */
-/***/ (function(module, exports, __webpack_require__) {
-
-module.exports = __webpack_require__.p + "img/icon8.c222e88.png";
-
-/***/ }),
+/* 55 */,
 /* 56 */
-/***/ (function(module, exports, __webpack_require__) {
-
-module.exports = __webpack_require__.p + "img/icon9.eae265b.png";
-
-/***/ }),
-/* 57 */
-/***/ (function(module, exports, __webpack_require__) {
-
-module.exports = __webpack_require__.p + "img/icon10.5d2ceba.png";
-
-/***/ }),
-/* 58 */,
-/* 59 */,
-/* 60 */,
-/* 61 */,
-/* 62 */
 /***/ (function(module, exports) {
 
 // Exports
@@ -3755,6 +3734,12 @@ module.exports = {
 
 
 /***/ }),
+/* 57 */,
+/* 58 */,
+/* 59 */,
+/* 60 */,
+/* 61 */,
+/* 62 */,
 /* 63 */,
 /* 64 */,
 /* 65 */,
@@ -3768,69 +3753,84 @@ module.exports = {
 /* 73 */,
 /* 74 */,
 /* 75 */,
-/* 76 */,
-/* 77 */,
-/* 78 */,
-/* 79 */,
-/* 80 */
+/* 76 */
 /***/ (function(module, exports, __webpack_require__) {
 
 module.exports = __webpack_require__.p + "img/img4.e5234fa.png";
 
 /***/ }),
-/* 81 */
+/* 77 */
 /***/ (function(module, exports, __webpack_require__) {
 
 module.exports = __webpack_require__.p + "img/img5.a4b311f.png";
 
 /***/ }),
-/* 82 */
+/* 78 */
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports = __webpack_require__.p + "img/icon8.c222e88.png";
+
+/***/ }),
+/* 79 */
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports = __webpack_require__.p + "img/icon9.eae265b.png";
+
+/***/ }),
+/* 80 */
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports = __webpack_require__.p + "img/icon10.5d2ceba.png";
+
+/***/ }),
+/* 81 */
 /***/ (function(module, exports, __webpack_require__) {
 
 module.exports = __webpack_require__.p + "img/img1.4e3364d.png";
 
 /***/ }),
-/* 83 */
+/* 82 */
 /***/ (function(module, exports, __webpack_require__) {
 
 module.exports = __webpack_require__.p + "img/img2.af2f476.png";
 
 /***/ }),
-/* 84 */
+/* 83 */
 /***/ (function(module, exports, __webpack_require__) {
 
 module.exports = __webpack_require__.p + "img/img3.37e23f2.png";
 
 /***/ }),
-/* 85 */
+/* 84 */
 /***/ (function(module, exports, __webpack_require__) {
 
 module.exports = __webpack_require__.p + "img/img6.810a033.png";
 
 /***/ }),
-/* 86 */
+/* 85 */
 /***/ (function(module, exports, __webpack_require__) {
 
 module.exports = __webpack_require__.p + "img/img4.7f4ea2e.png";
 
 /***/ }),
-/* 87 */
+/* 86 */
 /***/ (function(module, exports, __webpack_require__) {
 
 module.exports = __webpack_require__.p + "img/img7.8b79086.png";
 
 /***/ }),
-/* 88 */
+/* 87 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony import */ var _node_modules_css_loader_dist_cjs_js_ref_7_oneOf_1_0_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_postcss_loader_src_index_js_ref_7_oneOf_1_1_node_modules_sass_loader_dist_cjs_js_ref_7_oneOf_1_2_node_modules_nuxt_components_dist_loader_js_ref_0_0_node_modules_vue_loader_lib_index_js_vue_loader_options_saas_vue_vue_type_style_index_0_id_4678e0c0_lang_scss_scoped_true___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(62);
-/* harmony import */ var _node_modules_css_loader_dist_cjs_js_ref_7_oneOf_1_0_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_postcss_loader_src_index_js_ref_7_oneOf_1_1_node_modules_sass_loader_dist_cjs_js_ref_7_oneOf_1_2_node_modules_nuxt_components_dist_loader_js_ref_0_0_node_modules_vue_loader_lib_index_js_vue_loader_options_saas_vue_vue_type_style_index_0_id_4678e0c0_lang_scss_scoped_true___WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_node_modules_css_loader_dist_cjs_js_ref_7_oneOf_1_0_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_postcss_loader_src_index_js_ref_7_oneOf_1_1_node_modules_sass_loader_dist_cjs_js_ref_7_oneOf_1_2_node_modules_nuxt_components_dist_loader_js_ref_0_0_node_modules_vue_loader_lib_index_js_vue_loader_options_saas_vue_vue_type_style_index_0_id_4678e0c0_lang_scss_scoped_true___WEBPACK_IMPORTED_MODULE_0__);
-/* harmony reexport (unknown) */ for(var __WEBPACK_IMPORT_KEY__ in _node_modules_css_loader_dist_cjs_js_ref_7_oneOf_1_0_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_postcss_loader_src_index_js_ref_7_oneOf_1_1_node_modules_sass_loader_dist_cjs_js_ref_7_oneOf_1_2_node_modules_nuxt_components_dist_loader_js_ref_0_0_node_modules_vue_loader_lib_index_js_vue_loader_options_saas_vue_vue_type_style_index_0_id_4678e0c0_lang_scss_scoped_true___WEBPACK_IMPORTED_MODULE_0__) if(["default"].indexOf(__WEBPACK_IMPORT_KEY__) < 0) (function(key) { __webpack_require__.d(__webpack_exports__, key, function() { return _node_modules_css_loader_dist_cjs_js_ref_7_oneOf_1_0_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_postcss_loader_src_index_js_ref_7_oneOf_1_1_node_modules_sass_loader_dist_cjs_js_ref_7_oneOf_1_2_node_modules_nuxt_components_dist_loader_js_ref_0_0_node_modules_vue_loader_lib_index_js_vue_loader_options_saas_vue_vue_type_style_index_0_id_4678e0c0_lang_scss_scoped_true___WEBPACK_IMPORTED_MODULE_0__[key]; }) }(__WEBPACK_IMPORT_KEY__));
+/* harmony import */ var _node_modules_css_loader_dist_cjs_js_ref_7_oneOf_1_0_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_postcss_loader_src_index_js_ref_7_oneOf_1_1_node_modules_sass_loader_dist_cjs_js_ref_7_oneOf_1_2_node_modules_nuxt_components_dist_loader_js_ref_0_0_node_modules_vue_loader_lib_index_js_vue_loader_options_saas_vue_vue_type_style_index_0_id_649a2ae3_lang_scss_scoped_true___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(56);
+/* harmony import */ var _node_modules_css_loader_dist_cjs_js_ref_7_oneOf_1_0_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_postcss_loader_src_index_js_ref_7_oneOf_1_1_node_modules_sass_loader_dist_cjs_js_ref_7_oneOf_1_2_node_modules_nuxt_components_dist_loader_js_ref_0_0_node_modules_vue_loader_lib_index_js_vue_loader_options_saas_vue_vue_type_style_index_0_id_649a2ae3_lang_scss_scoped_true___WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_node_modules_css_loader_dist_cjs_js_ref_7_oneOf_1_0_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_postcss_loader_src_index_js_ref_7_oneOf_1_1_node_modules_sass_loader_dist_cjs_js_ref_7_oneOf_1_2_node_modules_nuxt_components_dist_loader_js_ref_0_0_node_modules_vue_loader_lib_index_js_vue_loader_options_saas_vue_vue_type_style_index_0_id_649a2ae3_lang_scss_scoped_true___WEBPACK_IMPORTED_MODULE_0__);
+/* harmony reexport (unknown) */ for(var __WEBPACK_IMPORT_KEY__ in _node_modules_css_loader_dist_cjs_js_ref_7_oneOf_1_0_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_postcss_loader_src_index_js_ref_7_oneOf_1_1_node_modules_sass_loader_dist_cjs_js_ref_7_oneOf_1_2_node_modules_nuxt_components_dist_loader_js_ref_0_0_node_modules_vue_loader_lib_index_js_vue_loader_options_saas_vue_vue_type_style_index_0_id_649a2ae3_lang_scss_scoped_true___WEBPACK_IMPORTED_MODULE_0__) if(["default"].indexOf(__WEBPACK_IMPORT_KEY__) < 0) (function(key) { __webpack_require__.d(__webpack_exports__, key, function() { return _node_modules_css_loader_dist_cjs_js_ref_7_oneOf_1_0_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_postcss_loader_src_index_js_ref_7_oneOf_1_1_node_modules_sass_loader_dist_cjs_js_ref_7_oneOf_1_2_node_modules_nuxt_components_dist_loader_js_ref_0_0_node_modules_vue_loader_lib_index_js_vue_loader_options_saas_vue_vue_type_style_index_0_id_649a2ae3_lang_scss_scoped_true___WEBPACK_IMPORTED_MODULE_0__[key]; }) }(__WEBPACK_IMPORT_KEY__));
 
 
 /***/ }),
+/* 88 */,
 /* 89 */,
 /* 90 */,
 /* 91 */,
@@ -3846,32 +3846,23 @@ __webpack_require__.r(__webpack_exports__);
 /* 101 */,
 /* 102 */,
 /* 103 */,
-/* 104 */,
-/* 105 */,
-/* 106 */,
-/* 107 */,
-/* 108 */,
-/* 109 */,
-/* 110 */,
-/* 111 */,
-/* 112 */,
-/* 113 */,
-/* 114 */,
-/* 115 */,
-/* 116 */,
-/* 117 */
+/* 104 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 // ESM COMPAT FLAG
 __webpack_require__.r(__webpack_exports__);
 
-// CONCATENATED MODULE: ./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/@nuxt/components/dist/loader.js??ref--0-0!./node_modules/vue-loader/lib??vue-loader-options!./pages/saas.vue?vue&type=template&id=4678e0c0&scoped=true&
-var render = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('div',{directives:[{name:"show",rawName:"v-show",value:(_vm.pageShow),expression:"pageShow"}],ref:"saas"},[_c('oakHeader',{attrs:{"current":1,"sec_current":"nav_saas"}}),_vm._ssrNode(" "),_vm._ssrNode("<main data-v-4678e0c0>","</main>",[_vm._ssrNode("<section class=\"saas-banner\" data-v-4678e0c0></section> <section class=\"saas-tab\" data-v-4678e0c0><div class=\"container\" data-v-4678e0c0>"+(_vm._ssrList((_vm.tab),function(item,index){return ("<div"+(_vm._ssrClass(null,{ item: true, active: _vm.current === index }))+" data-v-4678e0c0>"+_vm._ssrEscape("\n          "+_vm._s(item)+"\n        ")+"</div>")}))+"</div></section> "),_vm._ssrNode("<section class=\"mobile-second-nav\" data-v-4678e0c0>","</section>",[_vm._ssrNode("<ul data-v-4678e0c0>","</ul>",_vm._l((_vm.sec_list),function(item){return _vm._ssrNode("<li"+(_vm._ssrClass(null,{ active: item.type === 'saas' }))+" data-v-4678e0c0>","</li>",[_c('nuxt-link',{attrs:{"to":item.url}},[_vm._v(_vm._s(item.title))])],1)}),0)]),_vm._ssrNode(" <section class=\"section1\" data-v-4678e0c0><div class=\"container\" data-v-4678e0c0><div class=\"common-title\" data-v-4678e0c0><div class=\"en\" data-v-4678e0c0>digitization</div> <div class=\"name\" data-v-4678e0c0>数字化会员产品设计</div> <div class=\"desc\" data-v-4678e0c0>"+_vm._ssrEscape("\n            "+_vm._s(_vm.project ? _vm.project.name : "橡树")+"支持对会员设计，及全链路的各项核心数据监控\n          ")+"</div></div> <section class=\"mobile-section1-main\" data-v-4678e0c0><img"+(_vm._ssrAttr("src",__webpack_require__(80)))+" alt data-v-4678e0c0> <h4 data-v-4678e0c0>丰富的权益资源</h4> <p data-v-4678e0c0>"+_vm._ssrEscape("\n            "+_vm._s(_vm.project ? _vm.project.name : "橡树")+"整合内外部资源，拥有多平台数千个虚拟服务产品的权益资源。\n          ")+"</p> <img"+(_vm._ssrAttr("src",__webpack_require__(81)))+" alt data-v-4678e0c0> <p data-v-4678e0c0>\n            通过SasS运营赋能的方式快速、定制化输出，可广泛应用于用户生活的不同场景，发挥成本和规模交易的优势，助力客户促活，提升交易量。\n          </p></section> <div class=\"section1-main\" data-v-4678e0c0><div class=\"left\" data-v-4678e0c0><p data-v-4678e0c0>"+_vm._ssrEscape(_vm._s(_vm.project ? _vm.project.name : "橡树")+"支持对会员设计")+"</p> <p data-v-4678e0c0>及全链路的各项核心数据监控</p> <ul data-v-4678e0c0><li data-v-4678e0c0><img"+(_vm._ssrAttr("src",__webpack_require__(55)))+" alt data-v-4678e0c0>交易数据</li> <li data-v-4678e0c0><img"+(_vm._ssrAttr("src",__webpack_require__(56)))+" alt data-v-4678e0c0>权益使用数据</li> <li data-v-4678e0c0><img"+(_vm._ssrAttr("src",__webpack_require__(57)))+" alt data-v-4678e0c0>用户生命周期</li></ul></div> <img"+(_vm._ssrAttr("src",__webpack_require__(82)))+" alt class=\"img1\" data-v-4678e0c0></div></div></section> <div class=\"section1-2\" data-v-4678e0c0><div class=\"container\" data-v-4678e0c0>"+((!_vm.project)?("<img"+(_vm._ssrAttr("src",__webpack_require__(83)))+" alt class=\"img2\" data-v-4678e0c0>"):"<!---->")+" "+((_vm.project)?("<img"+(_vm._ssrAttr("src",(_vm.url + "img2-" + (_vm.project.en) + ".png")))+" alt class=\"img2\" data-v-4678e0c0>"):"<!---->")+" <div class=\"text\" data-v-4678e0c0><p data-v-4678e0c0>"+_vm._ssrEscape("\n            "+_vm._s(_vm.project ? _vm.project.name : "橡树")+"整合内外部资源，拥有包括通信服务、娱乐充值、电商购物卡、网络工具、美食卡券、休闲生活、交通出行、车主服务等多平台数千个虚拟服务产品的权益资源。\n          ")+"</p> <p data-v-4678e0c0></p> <p data-v-4678e0c0>\n            通过SasS运营赋能的方式快速、定制化输出，可广泛应用于用户生活的不同场景，发挥成本和规模交易的优势，助力客户促活，提升交易量。\n          </p></div></div></div> <section class=\"section2\" data-v-4678e0c0><div class=\"container\" data-v-4678e0c0><div class=\"common-title\" data-v-4678e0c0><div class=\"en\" data-v-4678e0c0>backstage</div> <div class=\"name\" data-v-4678e0c0>会员管理后台</div> <div class=\"desc\" data-v-4678e0c0>"+_vm._ssrEscape("\n            "+_vm._s(_vm.project ? _vm.project.name : "橡树")+"支持对会员设计，及全链路的各项核心数据监控\n          ")+"</div></div> <div class=\"section2-main\" data-v-4678e0c0><ul data-v-4678e0c0><li data-v-4678e0c0>· 支持快速配置会员上线</li> <li data-v-4678e0c0>· 支持批量权益SKU管理</li> <li data-v-4678e0c0>· 支持会员卡和权益管理</li> <li data-v-4678e0c0>· 支持常见活动快速配置上线</li> <li data-v-4678e0c0>· 支持支付方式灵活配置</li></ul> <img"+(_vm._ssrAttr("src",__webpack_require__(84)))+" alt data-v-4678e0c0></div> <div class=\"mobile-section2-main\" data-v-4678e0c0><img"+(_vm._ssrAttr("src",__webpack_require__(85)))+" alt data-v-4678e0c0></div></div></section> <section class=\"section3\" data-v-4678e0c0><div class=\"container\" data-v-4678e0c0><div class=\"common-title\" data-v-4678e0c0><div class=\"en\" data-v-4678e0c0>Technical</div> <div class=\"name\" data-v-4678e0c0>敏捷高效的技术能力</div> <div class=\"desc\" data-v-4678e0c0>持续迭代 快速上线</div></div> <div class=\"section3-main\" data-v-4678e0c0><img"+(_vm._ssrAttr("src",__webpack_require__(86)))+" alt data-v-4678e0c0> <img"+(_vm._ssrAttr("src",__webpack_require__(87)))+" alt class=\"mobile-img\" data-v-4678e0c0> <div class=\"right\" data-v-4678e0c0><ul data-v-4678e0c0><li data-v-4678e0c0>快速上线</li> <li data-v-4678e0c0>持续迭代</li></ul> <div class=\"jishu\" data-v-4678e0c0><div data-v-4678e0c0>3384次提交</div> <div data-v-4678e0c0>306个分支</div> <div data-v-4678e0c0>148个标签</div></div> <div class=\"item\" data-v-4678e0c0>\n              开发团队经验丰富，累计开发上线50+项目，近一年上线20+项目\n            </div> <div class=\"item\" data-v-4678e0c0>\n              项目采用敏捷开发流程，每周迭代发版次数达1-2次，近一年累计发版次数100+\n            </div> <div class=\"item\" data-v-4678e0c0>\n              系统模块可复用性强，采用微服务模式+中台模式开发\n            </div></div></div></div></section> "),_c('oakForm')],2),_vm._ssrNode(" "),_c('oakFooter',{attrs:{"type":"saas"}})],2)}
+// CONCATENATED MODULE: ./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/@nuxt/components/dist/loader.js??ref--0-0!./node_modules/vue-loader/lib??vue-loader-options!./pages/saas.vue?vue&type=template&id=649a2ae3&scoped=true&
+var render = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('div',{directives:[{name:"show",rawName:"v-show",value:(_vm.pageShow),expression:"pageShow"}],ref:"saas"},[_c('oakHeader',{attrs:{"current":1,"sec_current":"nav_saas"}}),_vm._ssrNode(" "),_vm._ssrNode("<main data-v-649a2ae3>","</main>",[_vm._ssrNode("<section class=\"saas-banner\""+(_vm._ssrStyle(null,{
+        background: _vm.project
+          ? ("url(" + _vm.url + "saas-banner-" + (_vm.project.en) + ".png) center center / auto 100% no-repeat")
+          : ("url(" + _vm.url + "saas-banner.png) center center / auto 100% no-repeat"),
+      }, null))+" data-v-649a2ae3></section> <section class=\"saas-tab\" data-v-649a2ae3><div class=\"container\" data-v-649a2ae3>"+(_vm._ssrList((_vm.tab),function(item,index){return ("<div"+(_vm._ssrClass(null,{ item: true, active: _vm.current === index }))+" data-v-649a2ae3>"+_vm._ssrEscape("\n          "+_vm._s(item)+"\n        ")+"</div>")}))+"</div></section> "),_vm._ssrNode("<section class=\"mobile-second-nav\" data-v-649a2ae3>","</section>",[_vm._ssrNode("<ul data-v-649a2ae3>","</ul>",_vm._l((_vm.sec_list),function(item){return _vm._ssrNode("<li"+(_vm._ssrClass(null,{ active: item.type === 'saas' }))+" data-v-649a2ae3>","</li>",[_c('nuxt-link',{attrs:{"to":item.url}},[_vm._v(_vm._s(item.title))])],1)}),0)]),_vm._ssrNode(" <section class=\"section1\" data-v-649a2ae3><div class=\"container\" data-v-649a2ae3><div class=\"common-title\" data-v-649a2ae3><div class=\"en\" data-v-649a2ae3>digitization</div> <div class=\"name\" data-v-649a2ae3>数字化会员产品设计</div> <div class=\"desc\" data-v-649a2ae3>"+_vm._ssrEscape("\n            "+_vm._s(_vm.project ? _vm.project.name : "橡树")+"支持对会员设计，及全链路的各项核心数据监控\n          ")+"</div></div> <section class=\"mobile-section1-main\" data-v-649a2ae3><img"+(_vm._ssrAttr("src",__webpack_require__(76)))+" alt data-v-649a2ae3> <h4 data-v-649a2ae3>丰富的权益资源</h4> <p data-v-649a2ae3>"+_vm._ssrEscape("\n            "+_vm._s(_vm.project ? _vm.project.name : "橡树")+"整合内外部资源，拥有多平台数千个虚拟服务产品的权益资源。\n          ")+"</p> <img"+(_vm._ssrAttr("src",__webpack_require__(77)))+" alt data-v-649a2ae3> <p data-v-649a2ae3>\n            通过SasS运营赋能的方式快速、定制化输出，可广泛应用于用户生活的不同场景，发挥成本和规模交易的优势，助力客户促活，提升交易量。\n          </p></section> <div class=\"section1-main\" data-v-649a2ae3><div class=\"left\" data-v-649a2ae3><p data-v-649a2ae3>"+_vm._ssrEscape(_vm._s(_vm.project ? _vm.project.name : "橡树")+"支持对会员设计")+"</p> <p data-v-649a2ae3>及全链路的各项核心数据监控</p> <ul data-v-649a2ae3><li data-v-649a2ae3><img"+(_vm._ssrAttr("src",__webpack_require__(78)))+" alt data-v-649a2ae3>交易数据</li> <li data-v-649a2ae3><img"+(_vm._ssrAttr("src",__webpack_require__(79)))+" alt data-v-649a2ae3>权益使用数据</li> <li data-v-649a2ae3><img"+(_vm._ssrAttr("src",__webpack_require__(80)))+" alt data-v-649a2ae3>用户生命周期</li></ul></div> <img"+(_vm._ssrAttr("src",__webpack_require__(81)))+" alt class=\"img1\" data-v-649a2ae3></div></div></section> <div class=\"section1-2\" data-v-649a2ae3><div class=\"container\" data-v-649a2ae3>"+((!_vm.project)?("<img"+(_vm._ssrAttr("src",__webpack_require__(82)))+" alt class=\"img2\" data-v-649a2ae3>"):"<!---->")+" "+((_vm.project)?("<img"+(_vm._ssrAttr("src",(_vm.url + "img2-" + (_vm.project.en) + ".png")))+" alt class=\"img2\" data-v-649a2ae3>"):"<!---->")+" <div class=\"text\" data-v-649a2ae3><p data-v-649a2ae3>"+_vm._ssrEscape("\n            "+_vm._s(_vm.project ? _vm.project.name : "橡树")+"整合内外部资源，拥有包括通信服务、娱乐充值、电商购物卡、网络工具、美食卡券、休闲生活、交通出行、车主服务等多平台数千个虚拟服务产品的权益资源。\n          ")+"</p> <p data-v-649a2ae3></p> <p data-v-649a2ae3>\n            通过SasS运营赋能的方式快速、定制化输出，可广泛应用于用户生活的不同场景，发挥成本和规模交易的优势，助力客户促活，提升交易量。\n          </p></div></div></div> <section class=\"section2\" data-v-649a2ae3><div class=\"container\" data-v-649a2ae3><div class=\"common-title\" data-v-649a2ae3><div class=\"en\" data-v-649a2ae3>backstage</div> <div class=\"name\" data-v-649a2ae3>会员管理后台</div> <div class=\"desc\" data-v-649a2ae3>"+_vm._ssrEscape("\n            "+_vm._s(_vm.project ? _vm.project.name : "橡树")+"支持对会员设计，及全链路的各项核心数据监控\n          ")+"</div></div> <div class=\"section2-main\" data-v-649a2ae3><ul data-v-649a2ae3><li data-v-649a2ae3>· 支持快速配置会员上线</li> <li data-v-649a2ae3>· 支持批量权益SKU管理</li> <li data-v-649a2ae3>· 支持会员卡和权益管理</li> <li data-v-649a2ae3>· 支持常见活动快速配置上线</li> <li data-v-649a2ae3>· 支持支付方式灵活配置</li></ul> <img"+(_vm._ssrAttr("src",__webpack_require__(83)))+" alt data-v-649a2ae3></div> <div class=\"mobile-section2-main\" data-v-649a2ae3><img"+(_vm._ssrAttr("src",__webpack_require__(84)))+" alt data-v-649a2ae3></div></div></section> <section class=\"section3\" data-v-649a2ae3><div class=\"container\" data-v-649a2ae3><div class=\"common-title\" data-v-649a2ae3><div class=\"en\" data-v-649a2ae3>Technical</div> <div class=\"name\" data-v-649a2ae3>敏捷高效的技术能力</div> <div class=\"desc\" data-v-649a2ae3>持续迭代 快速上线</div></div> <div class=\"section3-main\" data-v-649a2ae3><img"+(_vm._ssrAttr("src",__webpack_require__(85)))+" alt data-v-649a2ae3> <img"+(_vm._ssrAttr("src",__webpack_require__(86)))+" alt class=\"mobile-img\" data-v-649a2ae3> <div class=\"right\" data-v-649a2ae3><ul data-v-649a2ae3><li data-v-649a2ae3>快速上线</li> <li data-v-649a2ae3>持续迭代</li></ul> <div class=\"jishu\" data-v-649a2ae3><div data-v-649a2ae3>3384次提交</div> <div data-v-649a2ae3>306个分支</div> <div data-v-649a2ae3>148个标签</div></div> <div class=\"item\" data-v-649a2ae3>\n              开发团队经验丰富，累计开发上线50+项目，近一年上线20+项目\n            </div> <div class=\"item\" data-v-649a2ae3>\n              项目采用敏捷开发流程，每周迭代发版次数达1-2次，近一年累计发版次数100+\n            </div> <div class=\"item\" data-v-649a2ae3>\n              系统模块可复用性强，采用微服务模式+中台模式开发\n            </div></div></div></div></section> "),_c('oakForm')],2),_vm._ssrNode(" "),_c('oakFooter',{attrs:{"type":"saas"}})],2)}
 var staticRenderFns = []
 
 
-// CONCATENATED MODULE: ./pages/saas.vue?vue&type=template&id=4678e0c0&scoped=true&
+// CONCATENATED MODULE: ./pages/saas.vue?vue&type=template&id=649a2ae3&scoped=true&
 
 // EXTERNAL MODULE: ./components/header/header.vue + 4 modules
 var header = __webpack_require__(38);
@@ -3889,6 +3880,13 @@ var ans = __webpack_require__(31);
 var config = __webpack_require__(26);
 
 // CONCATENATED MODULE: ./node_modules/babel-loader/lib??ref--2-0!./node_modules/@nuxt/components/dist/loader.js??ref--0-0!./node_modules/vue-loader/lib??vue-loader-options!./pages/saas.vue?vue&type=script&lang=js&
+//
+//
+//
+//
+//
+//
+//
 //
 //
 //
@@ -4126,7 +4124,7 @@ var componentNormalizer = __webpack_require__(2);
 
 function injectStyles (context) {
   
-  var style0 = __webpack_require__(88)
+  var style0 = __webpack_require__(87)
 if (style0.__inject__) style0.__inject__(context)
 
 }
@@ -4139,7 +4137,7 @@ var component = Object(componentNormalizer["a" /* default */])(
   staticRenderFns,
   false,
   injectStyles,
-  "4678e0c0",
+  "649a2ae3",
   "4003257f"
   
 )

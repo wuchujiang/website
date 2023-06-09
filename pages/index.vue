@@ -37,7 +37,14 @@
                 :class="`item ${current === index && 'active'}`"
                 @mouseenter="current = index"
               >
-                <img :src="require(`@/static/icon${index + 1}.png`)" alt="" />
+                <img
+                  :src="
+                    project
+                      ? `${url}icon${index + 1}-${project.en}.png`
+                      : `${url}icon${index + 1}.png`
+                  "
+                  alt=""
+                />
                 <div v-html="item"></div>
               </div>
               <div
@@ -46,7 +53,14 @@
                 :class="`item mobile-item ${current === index && 'active'}`"
                 @mouseenter="current = index"
               >
-                <img :src="require(`@/static/icon${index + 1}.png`)" alt="" />
+                <img
+                  :src="
+                    project
+                      ? `${url}icon${index + 1}-${project.en}.png`
+                      : `${url}icon${index + 1}.png`
+                  "
+                  alt=""
+                />
                 <div v-html="item"></div>
               </div>
             </div>
@@ -122,7 +136,12 @@
                   <span>式，可一键接入，权益可灵活配置。</span>
                 </p>
               </div>
-              <img src="@/static/img13.png" alt="" />
+              <img
+                :src="
+                  project ? `${url}img13-${project.en}.png` : `${url}img13.png`
+                "
+                alt=""
+              />
               <img class="mobile-img" src="@/static/mobile/img2.png" alt="" />
             </div>
           </div>

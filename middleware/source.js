@@ -10,6 +10,16 @@ export default function ({ store, req }) {
       en: "xsvips",
       record: "20003741",
     },
+    xshkvip: {
+      name: "橡树黑卡",
+      en: "xshkvip",
+      record: "18120172",
+    },
+    oakvip: {
+      name: "橡树黑卡",
+      en: "oakvip",
+      record: "18120172",
+    },
   };
   if (process.server) {
     store.commit('project', project[req.headers['fc-host'] || ''] || null)

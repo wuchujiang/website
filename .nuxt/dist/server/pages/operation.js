@@ -3723,13 +3723,7 @@ var component = Object(componentNormalizer["a" /* default */])(
 /* 52 */,
 /* 53 */,
 /* 54 */,
-/* 55 */,
-/* 56 */,
-/* 57 */,
-/* 58 */,
-/* 59 */,
-/* 60 */,
-/* 61 */
+/* 55 */
 /***/ (function(module, exports) {
 
 // Exports
@@ -3739,74 +3733,80 @@ module.exports = {
 
 
 /***/ }),
+/* 56 */,
+/* 57 */,
+/* 58 */,
+/* 59 */,
+/* 60 */,
+/* 61 */,
 /* 62 */,
 /* 63 */,
 /* 64 */,
 /* 65 */,
 /* 66 */,
-/* 67 */,
-/* 68 */,
-/* 69 */,
-/* 70 */,
-/* 71 */
+/* 67 */
 /***/ (function(module, exports, __webpack_require__) {
 
 module.exports = __webpack_require__.p + "img/img5.dbb3f11.png";
 
 /***/ }),
-/* 72 */
+/* 68 */
 /***/ (function(module, exports, __webpack_require__) {
 
 module.exports = __webpack_require__.p + "img/img6.2be77d3.png";
 
 /***/ }),
-/* 73 */
+/* 69 */
 /***/ (function(module, exports, __webpack_require__) {
 
 module.exports = __webpack_require__.p + "img/img7.55b9f14.png";
 
 /***/ }),
-/* 74 */
+/* 70 */
 /***/ (function(module, exports, __webpack_require__) {
 
 module.exports = __webpack_require__.p + "img/img8.60b1fd6.png";
 
 /***/ }),
-/* 75 */
+/* 71 */
 /***/ (function(module, exports, __webpack_require__) {
 
 module.exports = __webpack_require__.p + "img/img8.399b779.png";
 
 /***/ }),
-/* 76 */
+/* 72 */
 /***/ (function(module, exports, __webpack_require__) {
 
 module.exports = __webpack_require__.p + "img/img11.a1d9940.png";
 
 /***/ }),
-/* 77 */
+/* 73 */
 /***/ (function(module, exports, __webpack_require__) {
 
 module.exports = __webpack_require__.p + "img/img9.3c7692c.png";
 
 /***/ }),
-/* 78 */
+/* 74 */
 /***/ (function(module, exports, __webpack_require__) {
 
 module.exports = __webpack_require__.p + "img/img12.5a10688.png";
 
 /***/ }),
-/* 79 */
+/* 75 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony import */ var _node_modules_css_loader_dist_cjs_js_ref_7_oneOf_1_0_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_postcss_loader_src_index_js_ref_7_oneOf_1_1_node_modules_sass_loader_dist_cjs_js_ref_7_oneOf_1_2_node_modules_nuxt_components_dist_loader_js_ref_0_0_node_modules_vue_loader_lib_index_js_vue_loader_options_operation_vue_vue_type_style_index_0_id_77ac044e_lang_scss_scoped_true___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(61);
-/* harmony import */ var _node_modules_css_loader_dist_cjs_js_ref_7_oneOf_1_0_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_postcss_loader_src_index_js_ref_7_oneOf_1_1_node_modules_sass_loader_dist_cjs_js_ref_7_oneOf_1_2_node_modules_nuxt_components_dist_loader_js_ref_0_0_node_modules_vue_loader_lib_index_js_vue_loader_options_operation_vue_vue_type_style_index_0_id_77ac044e_lang_scss_scoped_true___WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_node_modules_css_loader_dist_cjs_js_ref_7_oneOf_1_0_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_postcss_loader_src_index_js_ref_7_oneOf_1_1_node_modules_sass_loader_dist_cjs_js_ref_7_oneOf_1_2_node_modules_nuxt_components_dist_loader_js_ref_0_0_node_modules_vue_loader_lib_index_js_vue_loader_options_operation_vue_vue_type_style_index_0_id_77ac044e_lang_scss_scoped_true___WEBPACK_IMPORTED_MODULE_0__);
-/* harmony reexport (unknown) */ for(var __WEBPACK_IMPORT_KEY__ in _node_modules_css_loader_dist_cjs_js_ref_7_oneOf_1_0_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_postcss_loader_src_index_js_ref_7_oneOf_1_1_node_modules_sass_loader_dist_cjs_js_ref_7_oneOf_1_2_node_modules_nuxt_components_dist_loader_js_ref_0_0_node_modules_vue_loader_lib_index_js_vue_loader_options_operation_vue_vue_type_style_index_0_id_77ac044e_lang_scss_scoped_true___WEBPACK_IMPORTED_MODULE_0__) if(["default"].indexOf(__WEBPACK_IMPORT_KEY__) < 0) (function(key) { __webpack_require__.d(__webpack_exports__, key, function() { return _node_modules_css_loader_dist_cjs_js_ref_7_oneOf_1_0_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_postcss_loader_src_index_js_ref_7_oneOf_1_1_node_modules_sass_loader_dist_cjs_js_ref_7_oneOf_1_2_node_modules_nuxt_components_dist_loader_js_ref_0_0_node_modules_vue_loader_lib_index_js_vue_loader_options_operation_vue_vue_type_style_index_0_id_77ac044e_lang_scss_scoped_true___WEBPACK_IMPORTED_MODULE_0__[key]; }) }(__WEBPACK_IMPORT_KEY__));
+/* harmony import */ var _node_modules_css_loader_dist_cjs_js_ref_7_oneOf_1_0_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_postcss_loader_src_index_js_ref_7_oneOf_1_1_node_modules_sass_loader_dist_cjs_js_ref_7_oneOf_1_2_node_modules_nuxt_components_dist_loader_js_ref_0_0_node_modules_vue_loader_lib_index_js_vue_loader_options_operation_vue_vue_type_style_index_0_id_536882f1_lang_scss_scoped_true___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(55);
+/* harmony import */ var _node_modules_css_loader_dist_cjs_js_ref_7_oneOf_1_0_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_postcss_loader_src_index_js_ref_7_oneOf_1_1_node_modules_sass_loader_dist_cjs_js_ref_7_oneOf_1_2_node_modules_nuxt_components_dist_loader_js_ref_0_0_node_modules_vue_loader_lib_index_js_vue_loader_options_operation_vue_vue_type_style_index_0_id_536882f1_lang_scss_scoped_true___WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_node_modules_css_loader_dist_cjs_js_ref_7_oneOf_1_0_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_postcss_loader_src_index_js_ref_7_oneOf_1_1_node_modules_sass_loader_dist_cjs_js_ref_7_oneOf_1_2_node_modules_nuxt_components_dist_loader_js_ref_0_0_node_modules_vue_loader_lib_index_js_vue_loader_options_operation_vue_vue_type_style_index_0_id_536882f1_lang_scss_scoped_true___WEBPACK_IMPORTED_MODULE_0__);
+/* harmony reexport (unknown) */ for(var __WEBPACK_IMPORT_KEY__ in _node_modules_css_loader_dist_cjs_js_ref_7_oneOf_1_0_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_postcss_loader_src_index_js_ref_7_oneOf_1_1_node_modules_sass_loader_dist_cjs_js_ref_7_oneOf_1_2_node_modules_nuxt_components_dist_loader_js_ref_0_0_node_modules_vue_loader_lib_index_js_vue_loader_options_operation_vue_vue_type_style_index_0_id_536882f1_lang_scss_scoped_true___WEBPACK_IMPORTED_MODULE_0__) if(["default"].indexOf(__WEBPACK_IMPORT_KEY__) < 0) (function(key) { __webpack_require__.d(__webpack_exports__, key, function() { return _node_modules_css_loader_dist_cjs_js_ref_7_oneOf_1_0_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_postcss_loader_src_index_js_ref_7_oneOf_1_1_node_modules_sass_loader_dist_cjs_js_ref_7_oneOf_1_2_node_modules_nuxt_components_dist_loader_js_ref_0_0_node_modules_vue_loader_lib_index_js_vue_loader_options_operation_vue_vue_type_style_index_0_id_536882f1_lang_scss_scoped_true___WEBPACK_IMPORTED_MODULE_0__[key]; }) }(__WEBPACK_IMPORT_KEY__));
 
 
 /***/ }),
+/* 76 */,
+/* 77 */,
+/* 78 */,
+/* 79 */,
 /* 80 */,
 /* 81 */,
 /* 82 */,
@@ -3830,32 +3830,23 @@ __webpack_require__.r(__webpack_exports__);
 /* 100 */,
 /* 101 */,
 /* 102 */,
-/* 103 */,
-/* 104 */,
-/* 105 */,
-/* 106 */,
-/* 107 */,
-/* 108 */,
-/* 109 */,
-/* 110 */,
-/* 111 */,
-/* 112 */,
-/* 113 */,
-/* 114 */,
-/* 115 */,
-/* 116 */
+/* 103 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 // ESM COMPAT FLAG
 __webpack_require__.r(__webpack_exports__);
 
-// CONCATENATED MODULE: ./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/@nuxt/components/dist/loader.js??ref--0-0!./node_modules/vue-loader/lib??vue-loader-options!./pages/operation.vue?vue&type=template&id=77ac044e&scoped=true&
-var render = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('div',{directives:[{name:"show",rawName:"v-show",value:(_vm.pageShow),expression:"pageShow"}],ref:"operation"},[_c('oakHeader',{attrs:{"current":1,"sec_current":"nav_service"}}),_vm._ssrNode(" "),_vm._ssrNode("<main data-v-77ac044e>","</main>",[_vm._ssrNode("<section class=\"operation-banner\" data-v-77ac044e></section> <section class=\"saas-tab\" data-v-77ac044e><div class=\"container\" data-v-77ac044e>"+(_vm._ssrList((_vm.tab),function(item,index){return ("<div"+(_vm._ssrClass(null,("item " + (_vm.current === index && 'active'))))+" data-v-77ac044e>"+_vm._ssrEscape("\n          "+_vm._s(item)+"\n        ")+"</div>")}))+"</div></section> "),_vm._ssrNode("<section class=\"mobile-second-nav\" data-v-77ac044e>","</section>",[_vm._ssrNode("<ul data-v-77ac044e>","</ul>",_vm._l((_vm.sec_list),function(item){return _vm._ssrNode("<li"+(_vm._ssrClass(null,{ active: item.type === 'operation' }))+" data-v-77ac044e>","</li>",[_c('nuxt-link',{attrs:{"to":item.url}},[_vm._v(_vm._s(item.title))])],1)}),0)]),_vm._ssrNode(" <section class=\"section1\" data-v-77ac044e><div class=\"common-title\" data-v-77ac044e><div class=\"en\" data-v-77ac044e>system</div> <div class=\"name\" data-v-77ac044e>全方位会员体系制定</div> <div class=\"desc\" data-v-77ac044e>\n          根据客户需求和产品属性，可针对性地定制输出多种会员体系方案\n        </div></div> <div class=\"operation-list container\" data-v-77ac044e><div class=\"item\" data-v-77ac044e><img"+(_vm._ssrAttr("src",__webpack_require__(71)))+" alt data-v-77ac044e> <p data-v-77ac044e>会员成长体系<br data-v-77ac044e>帮助平台累积忠诚用户</p></div> <div class=\"item\" data-v-77ac044e><img"+(_vm._ssrAttr("src",__webpack_require__(72)))+" alt data-v-77ac044e> <p data-v-77ac044e>会员积分体系<br data-v-77ac044e>帮助平台提高留存及活跃</p></div> <div class=\"item\" data-v-77ac044e><img"+(_vm._ssrAttr("src",__webpack_require__(73)))+" alt data-v-77ac044e> <p data-v-77ac044e>会员权益体系<br data-v-77ac044e>帮助客户增收变现</p></div></div> <div class=\"mobile-operation-list\" data-v-77ac044e><img"+(_vm._ssrAttr("src",__webpack_require__(74)))+" alt data-v-77ac044e></div></section> <section class=\"section2 period\" data-v-77ac044e><div class=\"common-title\" data-v-77ac044e><div class=\"en\" data-v-77ac044e>life cycle</div> <div class=\"name\" data-v-77ac044e>用户生命周期管理</div> <div class=\"desc\" data-v-77ac044e>\n          针对性地输出客户权益套餐，满足用户在不同生活场景下的需求，高频使用产品，增加用户黏性，提高用户留存率，进而提升LTV。\n        </div></div> <div class=\"container\" data-v-77ac044e><div class=\"text\" data-v-77ac044e><p data-v-77ac044e>\n            针对性地输出客户权益套餐，满足用户在不同生活场景下的需求，高频使用产品，增加用户黏性，提高用户留存率，进而提升LTV。\n          </p> <p data-v-77ac044e></p> <p data-v-77ac044e>\n            针对客户需要，可以制定的分级式套餐组合，拉动向上销售，提高购买率，从而实现ARPU值提升。\n          </p></div> <img"+(_vm._ssrAttr("src",__webpack_require__(75)))+" alt data-v-77ac044e></div> <div class=\"mobile-section2-main\" data-v-77ac044e><img"+(_vm._ssrAttr("src",__webpack_require__(76)))+" alt data-v-77ac044e> <p data-v-77ac044e>\n          针对客户需要，可以制定的分级式套餐组合，拉动向上销售，提高购买率，从而实现ARPU值提升。\n        </p></div></section> <section class=\"formulate\" data-v-77ac044e><div class=\"common-title\" data-v-77ac044e><div class=\"en\" data-v-77ac044e>Technical</div> <div class=\"name\" data-v-77ac044e>用户分层及策略制定</div> <div class=\"desc\" data-v-77ac044e>\n          多平台整合的销售数据和专业的运营团队，可帮助客户构建用户画像，结合用户标签和消费场景，对用户进行科学化、系统化的分层并制定相应策略。\n        </div></div> <div class=\"container\" data-v-77ac044e><img"+(_vm._ssrAttr("src",__webpack_require__(77)))+" alt class=\"formulate-img\" data-v-77ac044e> <img"+(_vm._ssrAttr("src",__webpack_require__(78)))+" alt class=\"mobile-formulate-img\" data-v-77ac044e></div></section> "),_c('oakForm')],2),_vm._ssrNode(" "),_c('oakFooter',{attrs:{"type":"operation"}})],2)}
+// CONCATENATED MODULE: ./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/@nuxt/components/dist/loader.js??ref--0-0!./node_modules/vue-loader/lib??vue-loader-options!./pages/operation.vue?vue&type=template&id=536882f1&scoped=true&
+var render = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('div',{directives:[{name:"show",rawName:"v-show",value:(_vm.pageShow),expression:"pageShow"}],ref:"operation"},[_c('oakHeader',{attrs:{"current":1,"sec_current":"nav_service"}}),_vm._ssrNode(" "),_vm._ssrNode("<main data-v-536882f1>","</main>",[_vm._ssrNode("<section class=\"operation-banner\""+(_vm._ssrStyle(null,{
+        background: _vm.project
+          ? ("url(" + _vm.url + "operation-banner-" + (_vm.project.en) + ".png) center center / auto 100% no-repeat")
+          : ("url(" + _vm.url + "operation-banner.png) center center / auto 100% no-repeat"),
+      }, null))+" data-v-536882f1></section> <section class=\"saas-tab\" data-v-536882f1><div class=\"container\" data-v-536882f1>"+(_vm._ssrList((_vm.tab),function(item,index){return ("<div"+(_vm._ssrClass(null,("item " + (_vm.current === index && 'active'))))+" data-v-536882f1>"+_vm._ssrEscape("\n          "+_vm._s(item)+"\n        ")+"</div>")}))+"</div></section> "),_vm._ssrNode("<section class=\"mobile-second-nav\" data-v-536882f1>","</section>",[_vm._ssrNode("<ul data-v-536882f1>","</ul>",_vm._l((_vm.sec_list),function(item){return _vm._ssrNode("<li"+(_vm._ssrClass(null,{ active: item.type === 'operation' }))+" data-v-536882f1>","</li>",[_c('nuxt-link',{attrs:{"to":item.url}},[_vm._v(_vm._s(item.title))])],1)}),0)]),_vm._ssrNode(" <section class=\"section1\" data-v-536882f1><div class=\"common-title\" data-v-536882f1><div class=\"en\" data-v-536882f1>system</div> <div class=\"name\" data-v-536882f1>全方位会员体系制定</div> <div class=\"desc\" data-v-536882f1>\n          根据客户需求和产品属性，可针对性地定制输出多种会员体系方案\n        </div></div> <div class=\"operation-list container\" data-v-536882f1><div class=\"item\" data-v-536882f1><img"+(_vm._ssrAttr("src",__webpack_require__(67)))+" alt data-v-536882f1> <p data-v-536882f1>会员成长体系<br data-v-536882f1>帮助平台累积忠诚用户</p></div> <div class=\"item\" data-v-536882f1><img"+(_vm._ssrAttr("src",__webpack_require__(68)))+" alt data-v-536882f1> <p data-v-536882f1>会员积分体系<br data-v-536882f1>帮助平台提高留存及活跃</p></div> <div class=\"item\" data-v-536882f1><img"+(_vm._ssrAttr("src",__webpack_require__(69)))+" alt data-v-536882f1> <p data-v-536882f1>会员权益体系<br data-v-536882f1>帮助客户增收变现</p></div></div> <div class=\"mobile-operation-list\" data-v-536882f1><img"+(_vm._ssrAttr("src",__webpack_require__(70)))+" alt data-v-536882f1></div></section> <section class=\"section2 period\" data-v-536882f1><div class=\"common-title\" data-v-536882f1><div class=\"en\" data-v-536882f1>life cycle</div> <div class=\"name\" data-v-536882f1>用户生命周期管理</div> <div class=\"desc\" data-v-536882f1>\n          针对性地输出客户权益套餐，满足用户在不同生活场景下的需求，高频使用产品，增加用户黏性，提高用户留存率，进而提升LTV。\n        </div></div> <div class=\"container\" data-v-536882f1><div class=\"text\" data-v-536882f1><p data-v-536882f1>\n            针对性地输出客户权益套餐，满足用户在不同生活场景下的需求，高频使用产品，增加用户黏性，提高用户留存率，进而提升LTV。\n          </p> <p data-v-536882f1></p> <p data-v-536882f1>\n            针对客户需要，可以制定的分级式套餐组合，拉动向上销售，提高购买率，从而实现ARPU值提升。\n          </p></div> <img"+(_vm._ssrAttr("src",__webpack_require__(71)))+" alt data-v-536882f1></div> <div class=\"mobile-section2-main\" data-v-536882f1><img"+(_vm._ssrAttr("src",__webpack_require__(72)))+" alt data-v-536882f1> <p data-v-536882f1>\n          针对客户需要，可以制定的分级式套餐组合，拉动向上销售，提高购买率，从而实现ARPU值提升。\n        </p></div></section> <section class=\"formulate\" data-v-536882f1><div class=\"common-title\" data-v-536882f1><div class=\"en\" data-v-536882f1>Technical</div> <div class=\"name\" data-v-536882f1>用户分层及策略制定</div> <div class=\"desc\" data-v-536882f1>\n          多平台整合的销售数据和专业的运营团队，可帮助客户构建用户画像，结合用户标签和消费场景，对用户进行科学化、系统化的分层并制定相应策略。\n        </div></div> <div class=\"container\" data-v-536882f1><img"+(_vm._ssrAttr("src",__webpack_require__(73)))+" alt class=\"formulate-img\" data-v-536882f1> <img"+(_vm._ssrAttr("src",__webpack_require__(74)))+" alt class=\"mobile-formulate-img\" data-v-536882f1></div></section> "),_c('oakForm')],2),_vm._ssrNode(" "),_c('oakFooter',{attrs:{"type":"operation"}})],2)}
 var staticRenderFns = []
 
 
-// CONCATENATED MODULE: ./pages/operation.vue?vue&type=template&id=77ac044e&scoped=true&
+// CONCATENATED MODULE: ./pages/operation.vue?vue&type=template&id=536882f1&scoped=true&
 
 // EXTERNAL MODULE: ./components/header/header.vue + 4 modules
 var header = __webpack_require__(38);
@@ -3870,6 +3861,13 @@ var form_form = __webpack_require__(51);
 var ans = __webpack_require__(31);
 
 // CONCATENATED MODULE: ./node_modules/babel-loader/lib??ref--2-0!./node_modules/@nuxt/components/dist/loader.js??ref--0-0!./node_modules/vue-loader/lib??vue-loader-options!./pages/operation.vue?vue&type=script&lang=js&
+//
+//
+//
+//
+//
+//
+//
 //
 //
 //
@@ -4054,7 +4052,7 @@ var componentNormalizer = __webpack_require__(2);
 
 function injectStyles (context) {
   
-  var style0 = __webpack_require__(79)
+  var style0 = __webpack_require__(75)
 if (style0.__inject__) style0.__inject__(context)
 
 }
@@ -4067,7 +4065,7 @@ var component = Object(componentNormalizer["a" /* default */])(
   staticRenderFns,
   false,
   injectStyles,
-  "77ac044e",
+  "536882f1",
   "9658be10"
   
 )

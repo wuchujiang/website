@@ -392,6 +392,16 @@ __webpack_require__.r(__webpack_exports__);
       name: "橡树创新",
       en: "xsvips",
       record: "20003741"
+    },
+    xshkvip: {
+      name: "橡树黑卡",
+      en: "xshkvip",
+      record: "18120172"
+    },
+    oakvip: {
+      name: "橡树黑卡",
+      en: "oakvip",
+      record: "18120172"
     }
   };
 
@@ -1209,17 +1219,17 @@ var external_vue_router_default = /*#__PURE__*/__webpack_require__.n(external_vu
 
 
 
-const _9e18e614 = () => interopDefault(__webpack_require__.e(/* import() | pages/about */ 4).then(__webpack_require__.bind(null, 113)));
+const _9e18e614 = () => interopDefault(__webpack_require__.e(/* import() | pages/about */ 4).then(__webpack_require__.bind(null, 100)));
 
-const _44c0fbc9 = () => interopDefault(__webpack_require__.e(/* import() | pages/contact */ 5).then(__webpack_require__.bind(null, 114)));
+const _44c0fbc9 = () => interopDefault(__webpack_require__.e(/* import() | pages/contact */ 5).then(__webpack_require__.bind(null, 101)));
 
-const _8625915e = () => interopDefault(__webpack_require__.e(/* import() | pages/join */ 7).then(__webpack_require__.bind(null, 115)));
+const _8625915e = () => interopDefault(__webpack_require__.e(/* import() | pages/join */ 7).then(__webpack_require__.bind(null, 102)));
 
-const _3813b150 = () => interopDefault(__webpack_require__.e(/* import() | pages/operation */ 8).then(__webpack_require__.bind(null, 116)));
+const _3813b150 = () => interopDefault(__webpack_require__.e(/* import() | pages/operation */ 8).then(__webpack_require__.bind(null, 103)));
 
-const _71e03e27 = () => interopDefault(__webpack_require__.e(/* import() | pages/saas */ 9).then(__webpack_require__.bind(null, 117)));
+const _71e03e27 = () => interopDefault(__webpack_require__.e(/* import() | pages/saas */ 9).then(__webpack_require__.bind(null, 104)));
 
-const _5ea9308a = () => interopDefault(__webpack_require__.e(/* import() | pages/index */ 6).then(__webpack_require__.bind(null, 118)));
+const _5ea9308a = () => interopDefault(__webpack_require__.e(/* import() | pages/index */ 6).then(__webpack_require__.bind(null, 105)));
 
 const emptyFn = () => {};
 
