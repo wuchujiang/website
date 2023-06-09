@@ -365,7 +365,9 @@ export default {
   },
   head() {
     const local = this.$store.state.project;
+    const en = this.$store.state.en;
     console.log("local:", local);
+    console.log("en:", en);
     let title = "橡树黑卡--值得信赖的会员权益平台";
     let description_content =
       "橡树黑卡为金融、互联网、电商、零售等行业提供强大的用户运营全周期服务，提供积分体系运营、会员营销运营、游戏化运营等方案，400-150-9669。";
