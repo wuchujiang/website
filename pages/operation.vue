@@ -137,6 +137,7 @@ export default {
         { title: "会员SaaS服务", url: "/saas", type: "saas" },
         { title: "精细化运营服务", url: "/operation", type: "operation" },
       ],
+      project: null,
     };
   },
   head() {
@@ -168,6 +169,7 @@ export default {
   },
   mounted() {
     this.pageShow = true;
+    this.project = this.$store.state.project;
     ans.pageView("oak_operation_page");
   },
   methods: {
