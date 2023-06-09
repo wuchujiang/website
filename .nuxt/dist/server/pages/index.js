@@ -3764,74 +3764,73 @@ module.exports = {
 /* 84 */,
 /* 85 */,
 /* 86 */,
-/* 87 */,
-/* 88 */
+/* 87 */
 /***/ (function(module, exports, __webpack_require__) {
 
 module.exports = __webpack_require__.p + "img/img2.810c149.png";
 
 /***/ }),
-/* 89 */
+/* 88 */
 /***/ (function(module, exports, __webpack_require__) {
 
 module.exports = __webpack_require__.p + "img/client.1b13543.png";
 
 /***/ }),
-/* 90 */
+/* 89 */
 /***/ (function(module, exports, __webpack_require__) {
 
 module.exports = __webpack_require__.p + "img/img3.ce1de95.png";
 
 /***/ }),
-/* 91 */
+/* 90 */
 /***/ (function(module, exports, __webpack_require__) {
 
 module.exports = __webpack_require__.p + "img/sv_icon0.1b5036a.png";
 
 /***/ }),
-/* 92 */
+/* 91 */
 /***/ (function(module, exports, __webpack_require__) {
 
 module.exports = __webpack_require__.p + "img/sv_icon0_selected.f9c7a95.png";
 
 /***/ }),
-/* 93 */
+/* 92 */
 /***/ (function(module, exports, __webpack_require__) {
 
 module.exports = __webpack_require__.p + "img/sv_icon1.e7fffa7.png";
 
 /***/ }),
-/* 94 */
+/* 93 */
 /***/ (function(module, exports, __webpack_require__) {
 
 module.exports = __webpack_require__.p + "img/sv_icon1_selected.430f651.png";
 
 /***/ }),
-/* 95 */
+/* 94 */
 /***/ (function(module, exports, __webpack_require__) {
 
 module.exports = __webpack_require__.p + "img/sv_icon2.28b72e1.png";
 
 /***/ }),
-/* 96 */
+/* 95 */
 /***/ (function(module, exports, __webpack_require__) {
 
 module.exports = __webpack_require__.p + "img/sv_icon2_selected.3568af8.png";
 
 /***/ }),
-/* 97 */
+/* 96 */
 /***/ (function(module, exports, __webpack_require__) {
 
 module.exports = __webpack_require__.p + "img/sv_icon3.a2846bd.png";
 
 /***/ }),
-/* 98 */
+/* 97 */
 /***/ (function(module, exports, __webpack_require__) {
 
 module.exports = __webpack_require__.p + "img/sv_icon3_selected.2e0fe43.png";
 
 /***/ }),
-/* 99 */
+/* 98 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -3842,12 +3841,12 @@ __webpack_require__.r(__webpack_exports__);
 
 
 /***/ }),
+/* 99 */,
 /* 100 */,
 /* 101 */,
 /* 102 */,
 /* 103 */,
-/* 104 */,
-/* 105 */
+/* 104 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -3867,9 +3866,9 @@ var render = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._sel
                     ? (_vm.url + "icon" + (index + 1) + "-" + (_vm.project.en) + ".png")
                     : (_vm.url + "icon" + (index + 1) + ".png")))+" alt data-v-38622a40> <div data-v-38622a40>"+(_vm._s(item))+"</div></div>")}))+" "+(_vm._ssrList((_vm.list2),function(item,index){return ("<div"+(_vm._ssrClass(null,("item mobile-item " + (_vm.current === index && 'active'))))+" data-v-38622a40><img"+(_vm._ssrAttr("src",_vm.project
                     ? (_vm.url + "icon" + (index + 1) + "-" + (_vm.project.en) + ".png")
-                    : (_vm.url + "icon" + (index + 1) + ".png")))+" alt data-v-38622a40> <div data-v-38622a40>"+(_vm._s(item))+"</div></div>")}))+"</div> <div class=\"capacity-content1 capacity-content3\""+(_vm._ssrStyle(null,null, { display: (_vm.current === 0) ? '' : 'none' }))+" data-v-38622a40><div class=\"text\" data-v-38622a40><div class=\"top\" data-v-38622a40><h4 data-v-38622a40>灵活定制</h4> <span data-v-38622a40>Flexible customized</span> <h5 data-v-38622a40>专业服务 一键接入</h5></div> <p data-v-38622a40><span data-v-38622a40> - 拥有多家银行服务专业经验，无仓储，无物</span> <span data-v-38622a40>流，交付快，成本低。</span></p> <p data-v-38622a40><span data-v-38622a40> - 产品介入支持多种H5/API、兑换码等方</span> <span data-v-38622a40>式，可一键接入，权益可灵活配置。</span></p></div> <img"+(_vm._ssrAttr("src",_vm.project ? (_vm.url + "img13-" + (_vm.project.en) + ".png") : (_vm.url + "img13.png")))+" alt data-v-38622a40> <img"+(_vm._ssrAttr("src",__webpack_require__(88)))+" alt class=\"mobile-img\" data-v-38622a40></div></div></div></section> <section class=\"plan\" data-v-38622a40><div class=\"container\" data-v-38622a40><img"+(_vm._ssrAttr("src",_vm.project ? ("" + _vm.url + (_vm.project.en) + "_img11.png") : (_vm.url + "img11.png")))+" alt data-v-38622a40> <div class=\"mobile-top\" data-v-38622a40><h4 data-v-38622a40>这些企业都已免费获得定制会员方案</h4> <ul data-v-38622a40><li data-v-38622a40><img"+(_vm._ssrAttr("src",__webpack_require__(27)))+" alt data-v-38622a40>省呗</li> <li data-v-38622a40><img"+(_vm._ssrAttr("src",__webpack_require__(30)))+" alt data-v-38622a40>我来数科</li> <li data-v-38622a40><img"+(_vm._ssrAttr("src",__webpack_require__(28)))+" alt data-v-38622a40>keep</li> <li data-v-38622a40><img"+(_vm._ssrAttr("src",__webpack_require__(29)))+" alt data-v-38622a40>榕树贷款</li> <li data-v-38622a40><img"+(_vm._ssrAttr("src",__webpack_require__(46)))+" alt data-v-38622a40>新橙优品</li></ul></div> <div class=\"plan-form\" data-v-38622a40><h2 data-v-38622a40>完善信息后 48小时内会有专门的商务人员与您对接</h2> <div class=\"item\" data-v-38622a40><div class=\"text\" data-v-38622a40><span data-v-38622a40>*</span>您的姓名：</div> <input type=\"text\" maxlength=\"10\" placeholder=\"请输入姓名\" name id=\"name\" autocomplete=\"off\""+(_vm._ssrAttr("value",(_vm.name)))+" data-v-38622a40> <div class=\"input-error\" data-v-38622a40>"+_vm._ssrEscape(_vm._s(_vm.name_error))+"</div></div> <div class=\"item\" data-v-38622a40><div class=\"text\" data-v-38622a40><span data-v-38622a40>*</span>公司名称：</div> <input type=\"text\" placeholder=\"请输入公司名称\" maxlength=\"100\" name id=\"companyName\" autocomplete=\"off\""+(_vm._ssrAttr("value",(_vm.company_name)))+" data-v-38622a40> <div class=\"input-error\" data-v-38622a40>"+_vm._ssrEscape(_vm._s(_vm.company_name_error))+"</div></div> <div class=\"item\" data-v-38622a40><div class=\"text\" data-v-38622a40><span data-v-38622a40>*</span>联系电话：</div> <input type=\"text\" placeholder=\"请输入联系电话\" maxlength=\"30\" name id=\"phone\" autocomplete=\"off\""+(_vm._ssrAttr("value",(_vm.phone)))+" data-v-38622a40> <div class=\"input-error\" data-v-38622a40>"+_vm._ssrEscape(_vm._s(_vm.phone_error))+"</div></div> <div class=\"item\" data-v-38622a40><div class=\"text\" data-v-38622a40><span data-v-38622a40>*</span>验证码：</div> <input type=\"text\" placeholder=\"请输入验证码\" name id=\"code\" autocomplete=\"off\""+(_vm._ssrAttr("value",(_vm.code)))+" data-v-38622a40> "+((!_vm.codeText)?("<div class=\"get-code\" data-v-38622a40>\n              获取验证码\n            </div>"):("<div class=\"get-code code-disable\" data-v-38622a40>"+_vm._ssrEscape(_vm._s(_vm.codeText))+"</div>"))+" <div class=\"input-error\" data-v-38622a40>"+_vm._ssrEscape(_vm._s(_vm.code_error))+"</div></div> <div class=\"plan-btn\" data-v-38622a40>免费获取方案</div></div></div></section> <section class=\"service-value\" data-v-38622a40><div class=\"container\" data-v-38622a40><div class=\"common-title\" data-v-38622a40><div class=\"en\" data-v-38622a40>VALUE</div> <div class=\"name\" data-v-38622a40>服务价值</div> <div class=\"desc\" data-v-38622a40>\n            助力企业满足用户对高品质服务的需求，提升拉新促活能力与品牌忠诚度\n          </div></div> <div class=\"list\" data-v-38622a40>"+(_vm._ssrList((_vm.service_value),function(item,index){return ("<div"+(_vm._ssrClass(null,{ item: true, active: _vm.service_value_current === index }))+" data-v-38622a40><img"+(_vm._ssrAttr("src",_vm.service_value_current === index
+                    : (_vm.url + "icon" + (index + 1) + ".png")))+" alt data-v-38622a40> <div data-v-38622a40>"+(_vm._s(item))+"</div></div>")}))+"</div> <div class=\"capacity-content1 capacity-content3\""+(_vm._ssrStyle(null,null, { display: (_vm.current === 0) ? '' : 'none' }))+" data-v-38622a40><div class=\"text\" data-v-38622a40><div class=\"top\" data-v-38622a40><h4 data-v-38622a40>灵活定制</h4> <span data-v-38622a40>Flexible customized</span> <h5 data-v-38622a40>专业服务 一键接入</h5></div> <p data-v-38622a40><span data-v-38622a40> - 拥有多家银行服务专业经验，无仓储，无物</span> <span data-v-38622a40>流，交付快，成本低。</span></p> <p data-v-38622a40><span data-v-38622a40> - 产品介入支持多种H5/API、兑换码等方</span> <span data-v-38622a40>式，可一键接入，权益可灵活配置。</span></p></div> <img"+(_vm._ssrAttr("src",_vm.project ? (_vm.url + "img13-" + (_vm.project.en) + ".png") : (_vm.url + "img13.png")))+" alt data-v-38622a40> <img"+(_vm._ssrAttr("src",__webpack_require__(87)))+" alt class=\"mobile-img\" data-v-38622a40></div></div></div></section> <section class=\"plan\" data-v-38622a40><div class=\"container\" data-v-38622a40><img"+(_vm._ssrAttr("src",_vm.project ? ("" + _vm.url + (_vm.project.en) + "_img11.png") : (_vm.url + "img11.png")))+" alt data-v-38622a40> <div class=\"mobile-top\" data-v-38622a40><h4 data-v-38622a40>这些企业都已免费获得定制会员方案</h4> <ul data-v-38622a40><li data-v-38622a40><img"+(_vm._ssrAttr("src",__webpack_require__(27)))+" alt data-v-38622a40>省呗</li> <li data-v-38622a40><img"+(_vm._ssrAttr("src",__webpack_require__(30)))+" alt data-v-38622a40>我来数科</li> <li data-v-38622a40><img"+(_vm._ssrAttr("src",__webpack_require__(28)))+" alt data-v-38622a40>keep</li> <li data-v-38622a40><img"+(_vm._ssrAttr("src",__webpack_require__(29)))+" alt data-v-38622a40>榕树贷款</li> <li data-v-38622a40><img"+(_vm._ssrAttr("src",__webpack_require__(46)))+" alt data-v-38622a40>新橙优品</li></ul></div> <div class=\"plan-form\" data-v-38622a40><h2 data-v-38622a40>完善信息后 48小时内会有专门的商务人员与您对接</h2> <div class=\"item\" data-v-38622a40><div class=\"text\" data-v-38622a40><span data-v-38622a40>*</span>您的姓名：</div> <input type=\"text\" maxlength=\"10\" placeholder=\"请输入姓名\" name id=\"name\" autocomplete=\"off\""+(_vm._ssrAttr("value",(_vm.name)))+" data-v-38622a40> <div class=\"input-error\" data-v-38622a40>"+_vm._ssrEscape(_vm._s(_vm.name_error))+"</div></div> <div class=\"item\" data-v-38622a40><div class=\"text\" data-v-38622a40><span data-v-38622a40>*</span>公司名称：</div> <input type=\"text\" placeholder=\"请输入公司名称\" maxlength=\"100\" name id=\"companyName\" autocomplete=\"off\""+(_vm._ssrAttr("value",(_vm.company_name)))+" data-v-38622a40> <div class=\"input-error\" data-v-38622a40>"+_vm._ssrEscape(_vm._s(_vm.company_name_error))+"</div></div> <div class=\"item\" data-v-38622a40><div class=\"text\" data-v-38622a40><span data-v-38622a40>*</span>联系电话：</div> <input type=\"text\" placeholder=\"请输入联系电话\" maxlength=\"30\" name id=\"phone\" autocomplete=\"off\""+(_vm._ssrAttr("value",(_vm.phone)))+" data-v-38622a40> <div class=\"input-error\" data-v-38622a40>"+_vm._ssrEscape(_vm._s(_vm.phone_error))+"</div></div> <div class=\"item\" data-v-38622a40><div class=\"text\" data-v-38622a40><span data-v-38622a40>*</span>验证码：</div> <input type=\"text\" placeholder=\"请输入验证码\" name id=\"code\" autocomplete=\"off\""+(_vm._ssrAttr("value",(_vm.code)))+" data-v-38622a40> "+((!_vm.codeText)?("<div class=\"get-code\" data-v-38622a40>\n              获取验证码\n            </div>"):("<div class=\"get-code code-disable\" data-v-38622a40>"+_vm._ssrEscape(_vm._s(_vm.codeText))+"</div>"))+" <div class=\"input-error\" data-v-38622a40>"+_vm._ssrEscape(_vm._s(_vm.code_error))+"</div></div> <div class=\"plan-btn\" data-v-38622a40>免费获取方案</div></div></div></section> <section class=\"service-value\" data-v-38622a40><div class=\"container\" data-v-38622a40><div class=\"common-title\" data-v-38622a40><div class=\"en\" data-v-38622a40>VALUE</div> <div class=\"name\" data-v-38622a40>服务价值</div> <div class=\"desc\" data-v-38622a40>\n            助力企业满足用户对高品质服务的需求，提升拉新促活能力与品牌忠诚度\n          </div></div> <div class=\"list\" data-v-38622a40>"+(_vm._ssrList((_vm.service_value),function(item,index){return ("<div"+(_vm._ssrClass(null,{ item: true, active: _vm.service_value_current === index }))+" data-v-38622a40><img"+(_vm._ssrAttr("src",_vm.service_value_current === index
                   ? item.icon_selected
-                  : item.icon))+" alt data-v-38622a40> <div class=\"name\" data-v-38622a40>"+_vm._ssrEscape(_vm._s(item.title))+"</div> <div data-v-38622a40><ul data-v-38622a40>"+(_vm._ssrList((item.list),function(i){return ("<li data-v-38622a40>"+_vm._ssrEscape("\n                  "+_vm._s(i)+"\n                ")+"</li>")}))+"</ul></div></div>")}))+"</div></div></section> <section class=\"client\" data-v-38622a40><div class=\"container\" data-v-38622a40><div class=\"common-title\" data-v-38622a40><div class=\"en\" data-v-38622a40>CLIENT</div> <div class=\"name\" data-v-38622a40>我们服务的行业客户</div> <div class=\"desc\" data-v-38622a40>\n            助力企业满足用户对高品质服务的需求，提升拉新促活能力与品牌忠诚度\n          </div></div> <img"+(_vm._ssrAttr("src",__webpack_require__(89)))+" alt data-v-38622a40> <img"+(_vm._ssrAttr("src",__webpack_require__(90)))+" alt class=\"mobile-kh\" data-v-38622a40></div></section> "),_c('oakForm')],2),_vm._ssrNode(" "),_c('oakFooter')],2)}
+                  : item.icon))+" alt data-v-38622a40> <div class=\"name\" data-v-38622a40>"+_vm._ssrEscape(_vm._s(item.title))+"</div> <div data-v-38622a40><ul data-v-38622a40>"+(_vm._ssrList((item.list),function(i){return ("<li data-v-38622a40>"+_vm._ssrEscape("\n                  "+_vm._s(i)+"\n                ")+"</li>")}))+"</ul></div></div>")}))+"</div></div></section> <section class=\"client\" data-v-38622a40><div class=\"container\" data-v-38622a40><div class=\"common-title\" data-v-38622a40><div class=\"en\" data-v-38622a40>CLIENT</div> <div class=\"name\" data-v-38622a40>我们服务的行业客户</div> <div class=\"desc\" data-v-38622a40>\n            助力企业满足用户对高品质服务的需求，提升拉新促活能力与品牌忠诚度\n          </div></div> <img"+(_vm._ssrAttr("src",__webpack_require__(88)))+" alt data-v-38622a40> <img"+(_vm._ssrAttr("src",__webpack_require__(89)))+" alt class=\"mobile-kh\" data-v-38622a40></div></section> "),_c('oakForm')],2),_vm._ssrNode(" "),_c('oakFooter')],2)}
 var staticRenderFns = []
 
 
@@ -4216,23 +4215,23 @@ var config = __webpack_require__(26);
       "<span style='display:block'>专业服务</span>   灵活定制"],
       current: 0,
       service_value: [{
-        icon: __webpack_require__(91),
-        icon_selected: __webpack_require__(92),
+        icon: __webpack_require__(90),
+        icon_selected: __webpack_require__(91),
         title: "活跃",
         list: ["• 提升用户行为活跃", "• 提升用户交易活跃", "• 延长用户生命周期"]
       }, {
-        icon: __webpack_require__(93),
-        icon_selected: __webpack_require__(94),
+        icon: __webpack_require__(92),
+        icon_selected: __webpack_require__(93),
         title: "创收",
         list: ["• 获得会员费营收", "• 带动主营业务增收"]
       }, {
-        icon: __webpack_require__(95),
-        icon_selected: __webpack_require__(96),
+        icon: __webpack_require__(94),
+        icon_selected: __webpack_require__(95),
         title: "客户关怀",
         list: ["• 通过会员礼，提升品牌价值", "• 提升用户尊贵感", "• 提升用户归属感"]
       }, {
-        icon: __webpack_require__(97),
-        icon_selected: __webpack_require__(98),
+        icon: __webpack_require__(96),
+        icon_selected: __webpack_require__(97),
         title: "用户画像",
         list: ["• 整合多平台消费者数据", "• 构建画像与标签体系", "• 数据驱动精细化会员运营"]
       }],
@@ -4414,7 +4413,7 @@ var componentNormalizer = __webpack_require__(2);
 
 function injectStyles (context) {
   
-  var style0 = __webpack_require__(99)
+  var style0 = __webpack_require__(98)
 if (style0.__inject__) style0.__inject__(context)
 
 }

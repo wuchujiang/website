@@ -2,7 +2,14 @@
   <div v-show="pageShow">
     <oakHeader :current="2" sec_current="nav_contact" />
     <main>
-      <section class="contact-banner"></section>
+      <section
+        class="contact-banner"
+        :style="{
+          background: project
+            ? `url(${url}contact-banner-${project.en}.png) center center / auto 100% no-repeat`
+            : `url(${url}contact-banner.png) center center / auto 100% no-repeat`,
+        }"
+      ></section>
       <section class="mobile-second-nav">
         <ul>
           <li

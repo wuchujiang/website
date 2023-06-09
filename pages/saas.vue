@@ -67,7 +67,11 @@
                 <li><img src="@/static/icon10.png" alt="" />用户生命周期</li>
               </ul>
             </div>
-            <img class="img1" src="@/static/img1.png" alt="" />
+            <img
+              class="img1"
+              :src="project ? `${url}img1-${project.en}.png` : `${url}img1.png`"
+              alt=""
+            />
           </div>
         </div>
       </section>
@@ -112,7 +116,8 @@
               <li>· 支持常见活动快速配置上线</li>
               <li>· 支持支付方式灵活配置</li>
             </ul>
-            <img src="@/static/img3.png" alt="" />
+            <img v-if="!project" src="@/static/img3.png" alt="" />
+            <img v-if="project" :src="`${url}img3-${project.en}.png`" alt="" />
           </div>
           <div class="mobile-section2-main">
             <img src="@/static/mobile/img6.png" alt="" />
@@ -127,7 +132,8 @@
             <div class="desc">持续迭代 快速上线</div>
           </div>
           <div class="section3-main">
-            <img src="@/static/img4.png" alt="" />
+            <img v-if="!project" src="@/static/img4.png" alt="" />
+            <img v-if="project" :src="`${url}img4-${project.en}.png`" alt="" />
             <img class="mobile-img" src="@/static/mobile/img7.png" alt="" />
             <div class="right">
               <ul>

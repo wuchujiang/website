@@ -43,15 +43,18 @@
         </div>
         <div class="operation-list container">
           <div class="item">
-            <img src="@/static/img5.png" alt="" />
+            <img v-if="!project" src="@/static/img5.png" alt="" />
+            <img v-if="project" :src="`${url}img5-${project.en}.png`" alt="" />
             <p>会员成长体系<br />帮助平台累积忠诚用户</p>
           </div>
           <div class="item">
-            <img src="@/static/img6.png" alt="" />
+            <img v-if="!project" src="@/static/img6.png" alt="" />
+            <img v-if="project" :src="`${url}img6-${project.en}.png`" alt="" />
             <p>会员积分体系<br />帮助平台提高留存及活跃</p>
           </div>
           <div class="item">
-            <img src="@/static/img7.png" alt="" />
+            <img v-if="!project" src="@/static/img7.png" alt="" />
+            <img v-if="project" :src="`${url}img7-${project.en}.png`" alt="" />
             <p>会员权益体系<br />帮助客户增收变现</p>
           </div>
         </div>
@@ -77,7 +80,8 @@
               针对客户需要，可以制定的分级式套餐组合，拉动向上销售，提高购买率，从而实现ARPU值提升。
             </p>
           </div>
-          <img src="@/static/img8.png" alt="" />
+          <img v-if="!project" src="@/static/img8.png" alt="" />
+          <img v-if="project" :src="`${url}img8-${project.en}.png`" alt="" />
         </div>
         <div class="mobile-section2-main">
           <img src="@/static/mobile/img11.png" alt="" />
@@ -95,7 +99,8 @@
           </div>
         </div>
         <div class="container">
-          <img class="formulate-img" src="@/static/img9.png" alt="" />
+          <img v-if="!project" class="formulate-img" src="@/static/img9.png" alt="" />
+          <img v-if="project" class="formulate-img" :src="`${url}img9-${project.en}.png`" alt="" />
           <img
             class="mobile-formulate-img"
             src="@/static/mobile/img12.png"
@@ -114,6 +119,7 @@ import oakHeader from "../components/header/header";
 import oakFooter from "../components/footer/footer";
 import oakForm from "../components/form/form";
 import ans from "@/utils/ans";
+import { url } from "../utils/config";
 export default {
   name: "operation",
   components: {
@@ -123,6 +129,7 @@ export default {
   },
   data() {
     return {
+      url,
       tab: ["全方位会员体系制定", "用户生命周期管理", "用户分层及策略制定"],
       current: 0,
       pageShow: false,
