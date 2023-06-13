@@ -3,36 +3,42 @@
     "name": "about",
     "path": "/about",
     "component": "C:\\\\Users\\\\huawei\\\\Desktop\\\\oak\\\\OakNewWebsite\\\\pages\\\\about.vue",
-    "chunkName": "pages/about"
+    "chunkName": "pages/about",
+    "_name": "_9e18e614"
   },
   {
     "name": "contact",
     "path": "/contact",
     "component": "C:\\\\Users\\\\huawei\\\\Desktop\\\\oak\\\\OakNewWebsite\\\\pages\\\\contact.vue",
-    "chunkName": "pages/contact"
+    "chunkName": "pages/contact",
+    "_name": "_44c0fbc9"
   },
   {
     "name": "join",
     "path": "/join",
     "component": "C:\\\\Users\\\\huawei\\\\Desktop\\\\oak\\\\OakNewWebsite\\\\pages\\\\join.vue",
-    "chunkName": "pages/join"
+    "chunkName": "pages/join",
+    "_name": "_8625915e"
   },
   {
     "name": "operation",
     "path": "/operation",
     "component": "C:\\\\Users\\\\huawei\\\\Desktop\\\\oak\\\\OakNewWebsite\\\\pages\\\\operation.vue",
-    "chunkName": "pages/operation"
+    "chunkName": "pages/operation",
+    "_name": "_3813b150"
   },
   {
     "name": "saas",
     "path": "/saas",
     "component": "C:\\\\Users\\\\huawei\\\\Desktop\\\\oak\\\\OakNewWebsite\\\\pages\\\\saas.vue",
-    "chunkName": "pages/saas"
+    "chunkName": "pages/saas",
+    "_name": "_71e03e27"
   },
   {
     "name": "index",
     "path": "/",
     "component": "C:\\\\Users\\\\huawei\\\\Desktop\\\\oak\\\\OakNewWebsite\\\\pages\\\\index.vue",
-    "chunkName": "pages/index"
+    "chunkName": "pages/index",
+    "_name": "_5ea9308a"
   }
 ]
