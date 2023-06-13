@@ -1,0 +1,31 @@
+{
+  "entry": "server.js",
+  "files": {
+    "components/footer.js": "components/footer.js",
+    "components/form.js": "components/form.js",
+    "components/header.js": "components/header.js",
+    "components/index-oakvip.js": "components/index-oakvip.js",
+    "components/index-xshkvip.js": "components/index-xshkvip.js",
+    "pages/about.js": "pages/about.js",
+    "pages/contact.js": "pages/contact.js",
+    "pages/index.js": "pages/index.js",
+    "pages/join.js": "pages/join.js",
+    "pages/operation.js": "pages/operation.js",
+    "pages/saas.js": "pages/saas.js",
+    "server.js": "server.js"
+  },
+  "maps": {
+    "components/footer.js": "components/footer.js.map",
+    "components/form.js": "components/form.js.map",
+    "components/header.js": "components/header.js.map",
+    "components/index-oakvip.js": "components/index-oakvip.js.map",
+    "components/index-xshkvip.js": "components/index-xshkvip.js.map",
+    "pages/about.js": "pages/about.js.map",
+    "pages/contact.js": "pages/contact.js.map",
+    "pages/index.js": "pages/index.js.map",
+    "pages/join.js": "pages/join.js.map",
+    "pages/operation.js": "pages/operation.js.map",
+    "pages/saas.js": "pages/saas.js.map",
+    "server.js": "server.js.map"
+  }
+}
