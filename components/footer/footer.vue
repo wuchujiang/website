@@ -3,7 +3,9 @@
     <div class="container">
       <div class="left">
         <img
-          :src="project ? `${url}${project.en}_logo2.png` : `${url}logo2.png`"
+          :src="
+            project.en ? `${url}${project.en}_logo2.png` : `${url}logo2.png`
+          "
           alt=""
         />
         <p>合作电话：400-150-9669</p>
@@ -18,21 +20,26 @@
       </div>
       <div class="r-nav">
         <div class="item" v-for="item in nav" :key="item.name">
-          <h2>{{ item.name }}</h2>
-          <ul>
-            <li v-for="i in item.sec_list" :key="i.name">
-              <nuxt-link :to="i.url">{{ i.name }}</nuxt-link>
-              <div class="shadow" @click="toTop" v-if="type === i.type"></div>
-            </li>
-          </ul>
+          <div class="nav-wrap" v-if="item.use === project.en">
+            <h2>{{ item.name }}</h2>
+            <ul>
+              <li v-for="i in item.sec_list" :key="i.name">
+                <nuxt-link :to="i.url">{{ i.name }}</nuxt-link>
+                <div class="shadow" @click="toTop" v-if="type === i.type"></div>
+              </li>
+            </ul>
+          </div>
         </div>
+      </div>
+      <div class="qr-code" v-if="project.en === 'xshkvip'">
+        <img :src="`${url}code.png`" alt="" />
       </div>
     </div>
     <div class="copyright">
       <span
         ><a href="https://beian.miit.gov.cn/" target="_blank"
           >粤ICP备{{
-            project
+            project.record
               ? project.record
               : href.includes("xsvips")
               ? "20003741"
@@ -40,7 +47,9 @@
           }}号</a
         >
       </span>
-      深圳市{{ project ? project.name : "橡树黑卡" }}网络科技有限公司
+      版权所有 深圳市{{
+        project.name ? project.name : "橡树黑卡"
+      }}网络科技有限公司
     </div>
     <div class="suspend">
       <div class="item online-hover">
@@ -210,6 +219,7 @@ export default {
       nav: [
         {
           name: "产品服务",
+          use: "xshk",
           sec_list: [
             { name: "会员SAAS服务", type: "saas", url: "/saas" },
             { name: "精细化运营服务", type: "operation", url: "/operation" },
@@ -217,6 +227,7 @@ export default {
         },
         {
           name: "关于我们",
+          use: "xshkvip",
           sec_list: [
             { name: "公司介绍", type: "about", url: "/about" },
             { name: "联系我们", type: "contact", url: "/contact" },
@@ -224,10 +235,11 @@ export default {
         },
         {
           name: "加入我们",
+          use: "oakvip",
           sec_list: [{ name: "招聘职位", type: "join", url: "/join" }],
         },
       ],
-      project: null,
+      project: {},
     };
   },
   mounted() {
@@ -325,7 +337,9 @@ export default {
   display: flex;
   color: #fff;
   .item {
-    margin-left: 170px;
+    .nav-wrap {
+      margin-left: 170px;
+    }
     h2 {
       font-size: 20px;
     }
@@ -647,5 +661,9 @@ export default {
   .show-phone-consult {
     display: block;
   }
+}
+.qr-code {
+  width: 205px;
+  transform: translateY(-30px);
 }
 </style>

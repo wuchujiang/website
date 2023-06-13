@@ -1,11 +1,11 @@
 <template>
   <div ref="index" v-show="pageShow">
     <oakHeader :current="0" />
-    <main>
+    <main v-if="!project.en || project.en === 'xshk'">
       <section
         class="banner"
         :style="{
-          background: project
+          background: project.en
             ? `url(${url}banner-${project.en}.png) center center / auto 100% no-repeat`
             : `url(${url}banner.png) center center / auto 100% no-repeat`,
         }"
@@ -13,7 +13,7 @@
       <section
         class="mobile-banner"
         :style="{
-          background: project
+          background: project.en
             ? `url(${url}mobile-banner-${project.en}.png) center center / auto 100% no-repeat`
             : `url(${url}mobile-banner.png) center center / auto 100% no-repeat`,
         }"
@@ -23,7 +23,7 @@
           <div class="common-title">
             <div class="en">WHY</div>
             <div class="name">
-              为什么选择{{ project ? project.name : "橡树黑卡" }}
+              为什么选择{{ project.name ? project.name : "橡树黑卡" }}
             </div>
             <div class="desc">
               专业团队根据合作方与用户诉求，设计定制产品，并提供专业运营支持服务
@@ -39,7 +39,7 @@
               >
                 <img
                   :src="
-                    project
+                    project.en
                       ? `${url}icon${index + 1}-${project.en}.png`
                       : `${url}icon${index + 1}.png`
                   "
@@ -55,7 +55,7 @@
               >
                 <img
                   :src="
-                    project
+                    project.en
                       ? `${url}icon${index + 1}-${project.en}.png`
                       : `${url}icon${index + 1}.png`
                   "
@@ -138,7 +138,9 @@
               </div>
               <img
                 :src="
-                  project ? `${url}img13-${project.en}.png` : `${url}img13.png`
+                  project.en
+                    ? `${url}img13-${project.en}.png`
+                    : `${url}img13.png`
                 "
                 alt=""
               />
@@ -150,7 +152,9 @@
       <section class="plan">
         <div class="container">
           <img
-            :src="project ? `${url}${project.en}_img11.png` : `${url}img11.png`"
+            :src="
+              project.en ? `${url}${project.en}_img11.png` : `${url}img11.png`
+            "
             alt=""
           />
           <div class="mobile-top">
@@ -276,6 +280,8 @@
       </section>
       <oakForm />
     </main>
+    <xshkvipIndex v-if="project.en === 'xshkvip'" />
+    <oakvipIndex v-if="project.en === 'oakvip'" />
     <oakFooter />
   </div>
 </template>
@@ -283,6 +289,8 @@
 <script>
 import oakHeader from "../components/header/header";
 import oakFooter from "../components/footer/footer";
+import xshkvipIndex from "../components/index/index_xshkvip";
+import oakvipIndex from "../components/index/index_oakvip";
 import oakForm from "../components/form/form";
 import { register, officialWebsite } from "../utils/api";
 import { Toast } from "vant";
@@ -294,6 +302,8 @@ export default {
     oakHeader,
     oakFooter,
     oakForm,
+    xshkvipIndex,
+    oakvipIndex,
   },
   data() {
     return {
@@ -360,7 +370,7 @@ export default {
       ],
       service_value_current: -1,
       showDialog: false,
-      project: null,
+      project: {},
     };
   },
   head() {

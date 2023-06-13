@@ -4,7 +4,9 @@
       <h1 class="logo">
         <nuxt-link to="/"
           ><img
-            :src="project ? `${url}${project.en}_logo.png` : `${url}logo.png`"
+            :src="
+              project.en ? `${url}${project.en}_logo.png` : `${url}logo.png`
+            "
             alt=""
         /></nuxt-link>
       </h1>
@@ -15,21 +17,26 @@
             :key="item.name"
             :class="{ item: true, active: current === index }"
           >
-            <nuxt-link :to="item.url" :class="{ down: item.second }">{{
-              item.name
-            }}</nuxt-link>
-            <!-- 二级菜单 -->
-            <div :class="`sec_nav ${item.type}`" v-if="item.second">
-              <div class="sec_nav-main">
-                <div
-                  :class="[
-                    { item: true, sec_active: sec_current === i.type },
-                    `${i.type}`,
-                  ]"
-                  v-for="i in item.second"
-                  :key="i.name"
-                >
-                  <nuxt-link :to="i.url"><span></span>{{ i.name }}</nuxt-link>
+            <div
+              class="nav-wrap"
+              v-if="item.use === project.en || item.use === '*'"
+            >
+              <nuxt-link :to="item.url" :class="{ down: item.second }">{{
+                item.name
+              }}</nuxt-link>
+              <!-- 二级菜单 -->
+              <div :class="`sec_nav ${item.type}`" v-if="item.second">
+                <div class="sec_nav-main">
+                  <div
+                    :class="[
+                      { item: true, sec_active: sec_current === i.type },
+                      `${i.type}`,
+                    ]"
+                    v-for="i in item.second"
+                    :key="i.name"
+                  >
+                    <nuxt-link :to="i.url"><span></span>{{ i.name }}</nuxt-link>
+                  </div>
                 </div>
               </div>
             </div>
@@ -86,18 +93,20 @@ export default {
   data() {
     return {
       showNav: false,
-      project: null,
+      project: {},
       url,
       nav: [
         {
           name: "首页",
           type: "index",
           url: "/",
+          use: "*",
         },
         {
           name: "产品服务",
           type: "product",
           url: "",
+          use: "xshk",
           second: [
             {
               name: "会员SaaS服务",
@@ -115,6 +124,7 @@ export default {
           name: "关于我们",
           type: "about",
           url: "",
+          use: "xshkvip",
           second: [
             {
               name: "公司介绍",
@@ -132,6 +142,7 @@ export default {
           name: "加入我们",
           type: "join",
           url: "/join",
+          use: "oakvip",
         },
       ],
     };
@@ -168,12 +179,14 @@ export default {
       line-height: 67px;
       font-size: 16px;
       color: #666;
-      padding: 0 50px;
       position: relative;
       display: flex;
       align-items: center;
       a {
         transition: all 0.3s linear;
+      }
+      .nav-wrap {
+        padding: 0 50px;
       }
     }
   }
@@ -267,13 +280,13 @@ export default {
   padding-right: 14px;
   background: url("@/static/down.png") no-repeat right center;
 }
-.nav ul li.active > a {
+.nav ul li.active .nav-wrap > a {
   color: #ff5a27;
 }
-.nav ul li.active > a.down {
+.nav ul li.active .nav-wrap > a.down {
   background: url("@/static/down2.png") no-repeat right center;
 }
-.nav ul li:hover > a {
+.nav ul li:hover .nav-wrap > a {
   color: #ff5a27;
 }
 .nav ul li:hover .sec_nav {
@@ -369,7 +382,7 @@ export default {
           display: block;
         }
       }
-      .active > a {
+      .active .nav-wrap > a {
         color: #ff5a27;
       }
     }

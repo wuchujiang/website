@@ -43,7 +43,7 @@ module.exports =
 /******/
 /******/ 		// "0" is the signal for "already loaded"
 /******/ 		if(installedChunks[chunkId] !== 0) {
-/******/ 			var chunk = require("./" + ({"1":"components/footer","2":"components/form","3":"components/header","4":"pages/about","5":"pages/contact","6":"pages/index","7":"pages/join","8":"pages/operation","9":"pages/saas"}[chunkId]||chunkId) + ".js");
+/******/ 			var chunk = require("./" + ({"1":"components/footer","2":"components/form","3":"components/header","4":"components/index-oakvip","5":"components/index-xshkvip","6":"pages/about","7":"pages/contact","8":"pages/index","9":"pages/join","10":"pages/operation","11":"pages/saas"}[chunkId]||chunkId) + ".js");
 /******/ 			var moreModules = chunk.modules, chunkIds = chunk.ids;
 /******/ 			for(var moduleId in moreModules) {
 /******/ 				modules[moduleId] = moreModules[moduleId];
@@ -402,11 +402,17 @@ __webpack_require__.r(__webpack_exports__);
       name: "橡树黑卡",
       en: "oakvip",
       record: "18120172"
+    },
+    xshk: {
+      name: "橡树黑卡",
+      en: "xshk",
+      record: "18120172"
     }
   };
 
   if (true) {
-    store.commit('project', project[req.headers['fc-host'] || ''] || null);
+    store.commit('project', project[req.headers['fc-host'] || ''] || null); //store.commit('project', project['xshkvip' || ''] || null)
+
     store.commit('setEn', req.headers['fc-host'] || null);
   }
 });
@@ -493,6 +499,8 @@ __webpack_require__.r(components_namespaceObject);
 __webpack_require__.d(components_namespaceObject, "Footer", function() { return Footer; });
 __webpack_require__.d(components_namespaceObject, "Form", function() { return Form; });
 __webpack_require__.d(components_namespaceObject, "Header", function() { return Header; });
+__webpack_require__.d(components_namespaceObject, "IndexOakvip", function() { return IndexOakvip; });
+__webpack_require__.d(components_namespaceObject, "IndexXshkvip", function() { return IndexXshkvip; });
 
 // EXTERNAL MODULE: external "vue"
 var external_vue_ = __webpack_require__(0);
@@ -1225,17 +1233,17 @@ var external_vue_router_default = /*#__PURE__*/__webpack_require__.n(external_vu
 
 
 
-const _9e18e614 = () => interopDefault(__webpack_require__.e(/* import() | pages/about */ 4).then(__webpack_require__.bind(null, 99)));
+const _9e18e614 = () => interopDefault(__webpack_require__.e(/* import() | pages/about */ 6).then(__webpack_require__.bind(null, 105)));
 
-const _44c0fbc9 = () => interopDefault(__webpack_require__.e(/* import() | pages/contact */ 5).then(__webpack_require__.bind(null, 100)));
+const _44c0fbc9 = () => interopDefault(__webpack_require__.e(/* import() | pages/contact */ 7).then(__webpack_require__.bind(null, 106)));
 
-const _8625915e = () => interopDefault(__webpack_require__.e(/* import() | pages/join */ 7).then(__webpack_require__.bind(null, 101)));
+const _8625915e = () => interopDefault(__webpack_require__.e(/* import() | pages/join */ 9).then(__webpack_require__.bind(null, 107)));
 
-const _3813b150 = () => interopDefault(__webpack_require__.e(/* import() | pages/operation */ 8).then(__webpack_require__.bind(null, 102)));
+const _3813b150 = () => interopDefault(__webpack_require__.e(/* import() | pages/operation */ 10).then(__webpack_require__.bind(null, 108)));
 
-const _71e03e27 = () => interopDefault(__webpack_require__.e(/* import() | pages/saas */ 9).then(__webpack_require__.bind(null, 103)));
+const _71e03e27 = () => interopDefault(__webpack_require__.e(/* import() | pages/saas */ 11).then(__webpack_require__.bind(null, 109)));
 
-const _5ea9308a = () => interopDefault(__webpack_require__.e(/* import() | pages/index */ 6).then(__webpack_require__.bind(null, 104)));
+const _5ea9308a = () => interopDefault(__webpack_require__.e(/* import() | pages/index */ 8).then(__webpack_require__.bind(null, 110)));
 
 const emptyFn = () => {};
 
@@ -2059,7 +2067,13 @@ function normalizeModule(moduleData, filePath) {
 // CONCATENATED MODULE: ./.nuxt/components/index.js
 const Footer = () => __webpack_require__.e(/* import() | components/footer */ 1).then(__webpack_require__.bind(null, 39)).then(c => wrapFunctional(c.default || c));
 const Form = () => __webpack_require__.e(/* import() | components/form */ 2).then(__webpack_require__.bind(null, 51)).then(c => wrapFunctional(c.default || c));
+<<<<<<< HEAD
 const Header = () => __webpack_require__.e(/* import() | components/header */ 3).then(__webpack_require__.bind(null, 38)).then(c => wrapFunctional(c.default || c)); // nuxt/nuxt.js#8607
+=======
+const Header = () => __webpack_require__.e(/* import() | components/header */ 3).then(__webpack_require__.bind(null, 38)).then(c => wrapFunctional(c.default || c));
+const IndexOakvip = () => __webpack_require__.e(/* import() | components/index-oakvip */ 4).then(__webpack_require__.bind(null, 63)).then(c => wrapFunctional(c.default || c));
+const IndexXshkvip = () => __webpack_require__.e(/* import() | components/index-xshkvip */ 5).then(__webpack_require__.bind(null, 62)).then(c => wrapFunctional(c.default || c)); // nuxt/nuxt.js#8607
+>>>>>>> feat-0612
 
 function wrapFunctional(options) {
   if (!options || !options.functional) {

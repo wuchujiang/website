@@ -9,3 +9,5 @@ You can directly use them in pages and other components without the need to impo
 - `<Footer>` | `<footer>` (components/footer/footer.vue)
 - `<Form>` | `<form>` (components/form/form.vue)
 - `<Header>` | `<header>` (components/header/header.vue)
+- `<IndexOakvip>` | `<index-oakvip>` (components/index/index_oakvip.vue)
+- `<IndexXshkvip>` | `<index-xshkvip>` (components/index/index_xshkvip.vue)
