@@ -391,6 +391,9 @@ export default {
       if (local.en === "oakvip") {
         title = "橡树黑卡公司网站";
       }
+      if (local.en === "xshk") {
+        title = "橡树黑卡公司主页";
+      }
     }
     return {
       title,
