@@ -411,7 +411,7 @@ __webpack_require__.r(__webpack_exports__);
   };
 
   if (true) {
-    store.commit('project', project[req.headers['fc-host'] || 'oakvip'] || ''); //store.commit('project', project['xshkvip' || ''] || null)
+    store.commit('project', project[req.headers['fc-host'] || ''] || null); //store.commit('project', project['xshkvip' || ''] || null)
 
     store.commit('setEn', req.headers['fc-host'] || null);
   }
@@ -496,9 +496,9 @@ __webpack_require__.r(__webpack_exports__);
 // NAMESPACE OBJECT: ./.nuxt/components/index.js
 var components_namespaceObject = {};
 __webpack_require__.r(components_namespaceObject);
+__webpack_require__.d(components_namespaceObject, "Footer", function() { return Footer; });
 __webpack_require__.d(components_namespaceObject, "Form", function() { return Form; });
 __webpack_require__.d(components_namespaceObject, "Header", function() { return Header; });
-__webpack_require__.d(components_namespaceObject, "Footer", function() { return Footer; });
 __webpack_require__.d(components_namespaceObject, "IndexOakvip", function() { return IndexOakvip; });
 __webpack_require__.d(components_namespaceObject, "IndexXshkvip", function() { return IndexXshkvip; });
 
@@ -2065,9 +2065,9 @@ function normalizeModule(moduleData, filePath) {
   return moduleData;
 }
 // CONCATENATED MODULE: ./.nuxt/components/index.js
+const Footer = () => __webpack_require__.e(/* import() | components/footer */ 1).then(__webpack_require__.bind(null, 39)).then(c => wrapFunctional(c.default || c));
 const Form = () => __webpack_require__.e(/* import() | components/form */ 2).then(__webpack_require__.bind(null, 51)).then(c => wrapFunctional(c.default || c));
 const Header = () => __webpack_require__.e(/* import() | components/header */ 3).then(__webpack_require__.bind(null, 38)).then(c => wrapFunctional(c.default || c));
-const Footer = () => __webpack_require__.e(/* import() | components/footer */ 1).then(__webpack_require__.bind(null, 39)).then(c => wrapFunctional(c.default || c));
 const IndexOakvip = () => __webpack_require__.e(/* import() | components/index-oakvip */ 4).then(__webpack_require__.bind(null, 63)).then(c => wrapFunctional(c.default || c));
 const IndexXshkvip = () => __webpack_require__.e(/* import() | components/index-xshkvip */ 5).then(__webpack_require__.bind(null, 62)).then(c => wrapFunctional(c.default || c)); // nuxt/nuxt.js#8607
 

@@ -441,7 +441,6 @@ export default {
     this.pageShow = true;
     this.project = this.$store.state.project;
     ans.pageView("oak_page");
-    console.log(this.project)
   },
   methods: {
     getCode() {
