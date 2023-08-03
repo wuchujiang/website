@@ -26,7 +26,7 @@
               为什么选择{{ project.name ? project.name : "橡树黑卡" }}
             </div>
             <div class="desc">
-              专业团队根据合作方与用户诉求，设计定制产品，并提供专业运营支持服务
+              专业团队根据合作方与用户诉求 ，设计定制产品，并提供专业运营支持服务
             </div>
           </div>
           <div class="wrap">
