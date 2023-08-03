@@ -106,7 +106,7 @@ export default {
           name: "产品服务",
           type: "product",
           url: "",
-          use: "xshk",
+          use: "*",
           second: [
             {
               name: "会员SaaS服务",
@@ -124,7 +124,7 @@ export default {
           name: "关于我们",
           type: "about",
           url: "",
-          use: "xshkvip",
+          use: "*",
           second: [
             {
               name: "公司介绍",
@@ -142,7 +142,7 @@ export default {
           name: "加入我们",
           type: "join",
           url: "/join",
-          use: "oakvip",
+          use: "*",
         },
       ],
     };

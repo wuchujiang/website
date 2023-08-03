@@ -1233,17 +1233,17 @@ var external_vue_router_default = /*#__PURE__*/__webpack_require__.n(external_vu
 
 
 
-const _9e18e614 = () => interopDefault(__webpack_require__.e(/* import() | pages/about */ 6).then(__webpack_require__.bind(null, 105)));
+const _770a7b7c = () => interopDefault(__webpack_require__.e(/* import() | pages/about */ 6).then(__webpack_require__.bind(null, 109)));
 
-const _44c0fbc9 = () => interopDefault(__webpack_require__.e(/* import() | pages/contact */ 7).then(__webpack_require__.bind(null, 106)));
+const _3e533e62 = () => interopDefault(__webpack_require__.e(/* import() | pages/contact */ 7).then(__webpack_require__.bind(null, 110)));
 
-const _8625915e = () => interopDefault(__webpack_require__.e(/* import() | pages/join */ 9).then(__webpack_require__.bind(null, 107)));
+const _26c93fea = () => interopDefault(__webpack_require__.e(/* import() | pages/join */ 9).then(__webpack_require__.bind(null, 111)));
 
-const _3813b150 = () => interopDefault(__webpack_require__.e(/* import() | pages/operation */ 10).then(__webpack_require__.bind(null, 108)));
+const _2463ecd6 = () => interopDefault(__webpack_require__.e(/* import() | pages/operation */ 10).then(__webpack_require__.bind(null, 112)));
 
-const _71e03e27 = () => interopDefault(__webpack_require__.e(/* import() | pages/saas */ 11).then(__webpack_require__.bind(null, 109)));
+const _bce3323e = () => interopDefault(__webpack_require__.e(/* import() | pages/saas */ 11).then(__webpack_require__.bind(null, 113)));
 
-const _5ea9308a = () => interopDefault(__webpack_require__.e(/* import() | pages/index */ 8).then(__webpack_require__.bind(null, 110)));
+const _d27b537e = () => interopDefault(__webpack_require__.e(/* import() | pages/index */ 8).then(__webpack_require__.bind(null, 114)));
 
 const emptyFn = () => {};
 
@@ -1256,27 +1256,27 @@ const routerOptions = {
   scrollBehavior: router_scrollBehavior,
   routes: [{
     path: "/about",
-    component: _9e18e614,
+    component: _770a7b7c,
     name: "about"
   }, {
     path: "/contact",
-    component: _44c0fbc9,
+    component: _3e533e62,
     name: "contact"
   }, {
     path: "/join",
-    component: _8625915e,
+    component: _26c93fea,
     name: "join"
   }, {
     path: "/operation",
-    component: _3813b150,
+    component: _2463ecd6,
     name: "operation"
   }, {
     path: "/saas",
-    component: _71e03e27,
+    component: _bce3323e,
     name: "saas"
   }, {
     path: "/",
-    component: _5ea9308a,
+    component: _d27b537e,
     name: "index"
   }],
   fallback: false
@@ -1474,7 +1474,7 @@ var nuxt_error_component = Object(componentNormalizer["a" /* default */])(
   false,
   injectStyles,
   null,
-  "7941edfc"
+  "6ab143d0"
   
 )
 
@@ -1778,7 +1778,7 @@ var nuxt_loading_component = Object(componentNormalizer["a" /* default */])(
   false,
   nuxt_loading_injectStyles,
   null,
-  "43d06494"
+  "349f354c"
   
 )
 
@@ -1831,7 +1831,7 @@ var default_component = Object(componentNormalizer["a" /* default */])(
   false,
   default_injectStyles,
   null,
-  "b9070bd2"
+  "3d097fa6"
   
 )
 

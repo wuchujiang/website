@@ -1,7 +1,7 @@
 <template>
   <div ref="index" v-show="pageShow">
     <oakHeader :current="0" />
-    <main v-if="!project.en || project.en === 'xshk'">
+    <main v-if="true">
       <section
         class="banner"
         :style="{
@@ -64,7 +64,7 @@
                 <div v-html="item"></div>
               </div>
             </div>
-            <!-- <div v-show="current === 0" class="capacity-content1">
+            <div v-show="current === 0" class="capacity-content1">
               <div class="text">
                 <div class="top">
                   <h4>一站式权益</h4>
@@ -89,7 +89,7 @@
               />
             </div>
             <div
-              v-show="current === 1"
+              v-show="current === 0"
               class="capacity-content1 capacity-content2"
             >
               <div class="text">
@@ -116,7 +116,7 @@
               </div>
               <img src="@/static/img14.png" alt="" />
               <img class="mobile-img" src="@/static/mobile/img1.png" alt="" />
-            </div> -->
+            </div> 
             <div
               v-show="current === 0"
               class="capacity-content1 capacity-content3"
@@ -320,13 +320,13 @@ export default {
       code: "",
       code_error: "",
       list: [
-        // "<span>一站式权益</span> 低成本 高价值",
-        // "<span>独家稀缺权益</span> 提升产品竞争力",
+         "<span>一站式权益</span> 低成本 高价值",
+         "<span>独家稀缺权益</span> 提升产品竞争力",
         "<span>专业服务</span>   灵活定制",
       ],
       list2: [
-        // "<span style='display:block'>一站式权益</span> 低成本 高价值",
-        // "<span style='display:block'>独家稀缺权益</span> 提升产品竞争力",
+         "<span style='display:block'>一站式权益</span> 低成本 高价值",
+         "<span style='display:block'>独家稀缺权益</span> 提升产品竞争力",
         "<span style='display:block'>专业服务</span>   灵活定制",
       ],
       current: 0,
@@ -507,7 +507,7 @@ export default {
         name: this.name,
         phone_number: this.phone,
         company: this.company_name,
-        otp: this.code,
+      otp: this.code,
         session_code: this.session_code,
       }).then(() => {
         Toast.clear();
@@ -575,7 +575,7 @@ export default {
     border-radius: 4px;
     height: 225px;
     text-align: center;
-    padding: 12px 20px 0;
+    padding: 12px 20px;
     font-size: 24px;
     color: #333;
     font-weight: bold;
