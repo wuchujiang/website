@@ -156,16 +156,16 @@ module.exports = {
 // ESM COMPAT FLAG
 __webpack_require__.r(__webpack_exports__);
 
-// CONCATENATED MODULE: ./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/@nuxt/components/dist/loader.js??ref--0-0!./node_modules/vue-loader/lib??vue-loader-options!./components/header/header.vue?vue&type=template&id=7eac051a&scoped=true&
-var render = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('header',{staticClass:"header",attrs:{"id":"header"}},[_vm._ssrNode("<div class=\"container\" data-v-7eac051a>","</div>",[_vm._ssrNode("<h1 class=\"logo\" data-v-7eac051a>","</h1>",[_c('nuxt-link',{attrs:{"to":"/"}},[_c('img',{attrs:{"src":_vm.project.en ? ("" + _vm.url + (_vm.project.en) + "_logo.png") : (_vm.url + "logo.png"),"alt":""}})])],1),_vm._ssrNode(" "),_vm._ssrNode("<nav class=\"nav\" data-v-7eac051a>","</nav>",[_vm._ssrNode("<ul data-v-7eac051a>","</ul>",_vm._l((_vm.nav),function(item,index){return _vm._ssrNode("<li"+(_vm._ssrClass(null,{ item: true, active: _vm.current === index }))+" data-v-7eac051a>","</li>",[(item.use === _vm.project.en || item.use === '*')?_vm._ssrNode("<div class=\"nav-wrap\" data-v-7eac051a>","</div>",[_c('nuxt-link',{class:{ down: item.second },attrs:{"to":item.url}},[_vm._v(_vm._s(item.name))]),_vm._ssrNode(" "),(item.second)?_vm._ssrNode("<div"+(_vm._ssrClass(null,("sec_nav " + (item.type))))+" data-v-7eac051a>","</div>",[_vm._ssrNode("<div class=\"sec_nav-main\" data-v-7eac051a>","</div>",_vm._l((item.second),function(i){return _vm._ssrNode("<div"+(_vm._ssrClass(null,[
+// CONCATENATED MODULE: ./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/@nuxt/components/dist/loader.js??ref--0-0!./node_modules/vue-loader/lib??vue-loader-options!./components/header/header.vue?vue&type=template&id=6b0f1aec&scoped=true&
+var render = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('header',{staticClass:"header",attrs:{"id":"header"}},[_vm._ssrNode("<div class=\"container\" data-v-6b0f1aec>","</div>",[_vm._ssrNode("<h1 class=\"logo\" data-v-6b0f1aec>","</h1>",[_c('nuxt-link',{attrs:{"to":"/"}},[_c('img',{attrs:{"src":_vm.project.en ? ("" + _vm.url + (_vm.project.en) + "_logo.png") : (_vm.url + "logo.png"),"alt":""}})])],1),_vm._ssrNode(" "),_vm._ssrNode("<nav class=\"nav\" data-v-6b0f1aec>","</nav>",[_vm._ssrNode("<ul data-v-6b0f1aec>","</ul>",_vm._l((_vm.nav),function(item,index){return _vm._ssrNode("<li"+(_vm._ssrClass(null,{ item: true, active: _vm.current === index }))+" data-v-6b0f1aec>","</li>",[(item.use === _vm.project.en || item.use === '*')?_vm._ssrNode("<div class=\"nav-wrap\" data-v-6b0f1aec>","</div>",[_c('nuxt-link',{class:{ down: item.second },attrs:{"to":item.url}},[_vm._v(_vm._s(item.name))]),_vm._ssrNode(" "),(item.second)?_vm._ssrNode("<div"+(_vm._ssrClass(null,("sec_nav " + (item.type))))+" data-v-6b0f1aec>","</div>",[_vm._ssrNode("<div class=\"sec_nav-main\" data-v-6b0f1aec>","</div>",_vm._l((item.second),function(i){return _vm._ssrNode("<div"+(_vm._ssrClass(null,[
                     { item: true, sec_active: _vm.sec_current === i.type },
-                    ("" + (i.type)) ]))+" data-v-7eac051a>","</div>",[_c('nuxt-link',{attrs:{"to":i.url}},[_c('span'),_vm._v(_vm._s(i.name))])],1)}),0)]):_vm._e()],2):_vm._e()])}),0)]),_vm._ssrNode(" "),_vm._ssrNode("<div class=\"heaedr-r\" data-v-7eac051a>","</div>",[_vm._ssrNode("<div class=\"phone\" data-v-7eac051a>400-150-9669</div> "),_vm._ssrNode("<div class=\"mobile-nav\" data-v-7eac051a>","</div>",[_vm._ssrNode("<img"+(_vm._ssrAttr("src",__webpack_require__(42)))+" alt data-v-7eac051a> "+((_vm.showNav)?("<div class=\"nav-shadow\" data-v-7eac051a></div>"):"<!---->")+" "),(_vm.showNav)?_vm._ssrNode("<ul data-v-7eac051a>","</ul>",[_vm._ssrNode("<img"+(_vm._ssrAttr("src",__webpack_require__(43)))+" alt class=\"close2\" data-v-7eac051a> "),_vm._l((_vm.nav),function(item,index){return _vm._ssrNode("<li"+(_vm._ssrClass(null,{ item: true, active: _vm.current === index && !item.second }))+" data-v-7eac051a>","</li>",[_c('nuxt-link',{class:{ down: item.second },attrs:{"to":item.url}},[_vm._v(_vm._s(item.name))]),_vm._ssrNode(" "),(item.second)?_vm._ssrNode("<div"+(_vm._ssrClass(null,("sec_nav " + (item.type))))+" data-v-7eac051a>","</div>",[_vm._ssrNode("<div class=\"sec_nav-main\" data-v-7eac051a>","</div>",_vm._l((item.second),function(i){return _vm._ssrNode("<div"+(_vm._ssrClass(null,[
+                    ("" + (i.type)) ]))+" data-v-6b0f1aec>","</div>",[_c('nuxt-link',{attrs:{"to":i.url}},[_c('span'),_vm._v(_vm._s(i.name))])],1)}),0)]):_vm._e()],2):_vm._e()])}),0)]),_vm._ssrNode(" "),_vm._ssrNode("<div class=\"heaedr-r\" data-v-6b0f1aec>","</div>",[_vm._ssrNode("<div class=\"phone\" data-v-6b0f1aec>400-150-9669</div> "),_vm._ssrNode("<div class=\"mobile-nav\" data-v-6b0f1aec>","</div>",[_vm._ssrNode("<img"+(_vm._ssrAttr("src",__webpack_require__(42)))+" alt data-v-6b0f1aec> "+((_vm.showNav)?("<div class=\"nav-shadow\" data-v-6b0f1aec></div>"):"<!---->")+" "),(_vm.showNav)?_vm._ssrNode("<ul data-v-6b0f1aec>","</ul>",[_vm._ssrNode("<img"+(_vm._ssrAttr("src",__webpack_require__(43)))+" alt class=\"close2\" data-v-6b0f1aec> "),_vm._l((_vm.nav),function(item,index){return _vm._ssrNode("<li"+(_vm._ssrClass(null,{ item: true, active: _vm.current === index && !item.second }))+" data-v-6b0f1aec>","</li>",[_c('nuxt-link',{class:{ down: item.second },attrs:{"to":item.url}},[_vm._v(_vm._s(item.name))]),_vm._ssrNode(" "),(item.second)?_vm._ssrNode("<div"+(_vm._ssrClass(null,("sec_nav " + (item.type))))+" data-v-6b0f1aec>","</div>",[_vm._ssrNode("<div class=\"sec_nav-main\" data-v-6b0f1aec>","</div>",_vm._l((item.second),function(i){return _vm._ssrNode("<div"+(_vm._ssrClass(null,[
                     { item: true, sec_active: _vm.sec_current === i.type },
-                    ("" + (i.type)) ]))+" data-v-7eac051a>","</div>",[_c('nuxt-link',{attrs:{"to":i.url}},[_c('span'),_vm._v(_vm._s(i.name))])],1)}),0)]):_vm._e()],2)})],2):_vm._e()],2)],2)],2)])}
+                    ("" + (i.type)) ]))+" data-v-6b0f1aec>","</div>",[_c('nuxt-link',{attrs:{"to":i.url}},[_c('span'),_vm._v(_vm._s(i.name))])],1)}),0)]):_vm._e()],2)})],2):_vm._e()],2)],2)],2)])}
 var staticRenderFns = []
 
 
-// CONCATENATED MODULE: ./components/header/header.vue?vue&type=template&id=7eac051a&scoped=true&
+// CONCATENATED MODULE: ./components/header/header.vue?vue&type=template&id=6b0f1aec&scoped=true&
 
 // EXTERNAL MODULE: ./utils/config.js
 var config = __webpack_require__(26);
@@ -277,7 +277,7 @@ var config = __webpack_require__(26);
         name: "产品服务",
         type: "product",
         url: "",
-        use: "xshk",
+        use: "*",
         second: [{
           name: "会员SaaS服务",
           type: "nav_saas",
@@ -291,7 +291,7 @@ var config = __webpack_require__(26);
         name: "关于我们",
         type: "about",
         url: "",
-        use: "xshkvip",
+        use: "*",
         second: [{
           name: "公司介绍",
           type: "nav_about",
@@ -305,7 +305,7 @@ var config = __webpack_require__(26);
         name: "加入我们",
         type: "join",
         url: "/join",
-        use: "oakvip"
+        use: "*"
       }]
     };
   },
@@ -339,8 +339,8 @@ var component = Object(componentNormalizer["a" /* default */])(
   staticRenderFns,
   false,
   injectStyles,
-  "7eac051a",
-  "4cb1509d"
+  "6b0f1aec",
+  "8f7df972"
   
 )
 
@@ -358,16 +358,16 @@ installComponents(component, {Header: __webpack_require__(38).default})
 // ESM COMPAT FLAG
 __webpack_require__.r(__webpack_exports__);
 
-// CONCATENATED MODULE: ./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/@nuxt/components/dist/loader.js??ref--0-0!./node_modules/vue-loader/lib??vue-loader-options!./components/footer/footer.vue?vue&type=template&id=c624d028&scoped=true&
-var render = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('footer',{staticClass:"footer"},[_vm._ssrNode("<div class=\"container\" data-v-c624d028>","</div>",[_vm._ssrNode("<div class=\"left\" data-v-c624d028><img"+(_vm._ssrAttr("src",_vm.project.en ? ("" + _vm.url + (_vm.project.en) + "_logo2.png") : (_vm.url + "logo2.png")))+" alt data-v-c624d028> <p data-v-c624d028>合作电话：400-150-9669</p> <p data-v-c624d028>业务合作：marketing@oakblack.com</p> <p data-v-c624d028>媒体合作：media@oakblack.com</p> <a target=\"_blank\" href=\"http://wpa.qq.com/msgrd?v=3&uin=&site=qq&menu=yes\" class=\"qqkf\" data-v-c624d028>QQ咨询</a></div> "),_vm._ssrNode("<div class=\"r-nav\" data-v-c624d028>","</div>",_vm._l((_vm.nav),function(item){return _vm._ssrNode("<div class=\"item\" data-v-c624d028>","</div>",[(item.use === _vm.project.en)?_vm._ssrNode("<div class=\"nav-wrap\" data-v-c624d028>","</div>",[_vm._ssrNode("<h2 data-v-c624d028>"+_vm._ssrEscape(_vm._s(item.name))+"</h2> "),_vm._ssrNode("<ul data-v-c624d028>","</ul>",_vm._l((item.sec_list),function(i){return _vm._ssrNode("<li data-v-c624d028>","</li>",[_c('nuxt-link',{attrs:{"to":i.url}},[_vm._v(_vm._s(i.name))]),_vm._ssrNode(" "+((_vm.type === i.type)?("<div class=\"shadow\" data-v-c624d028></div>"):"<!---->"))],2)}),0)],2):_vm._e()])}),0),_vm._ssrNode(" "+((_vm.project.en === 'xshkvip')?("<div class=\"qr-code\" data-v-c624d028><img"+(_vm._ssrAttr("src",(_vm.url + "code.png")))+" alt data-v-c624d028></div>"):"<!---->"))],2),_vm._ssrNode(" <div class=\"copyright\" data-v-c624d028><span data-v-c624d028><a href=\"https://beian.miit.gov.cn/\" target=\"_blank\" data-v-c624d028>"+_vm._ssrEscape("粤ICP备"+_vm._s(_vm.project.record
+// CONCATENATED MODULE: ./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/@nuxt/components/dist/loader.js??ref--0-0!./node_modules/vue-loader/lib??vue-loader-options!./components/footer/footer.vue?vue&type=template&id=50fe5c5d&scoped=true&
+var render = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('footer',{staticClass:"footer"},[_vm._ssrNode("<div class=\"container\" data-v-50fe5c5d>","</div>",[_vm._ssrNode("<div class=\"left\" data-v-50fe5c5d><img"+(_vm._ssrAttr("src",_vm.project.en ? ("" + _vm.url + (_vm.project.en) + "_logo2.png") : (_vm.url + "logo2.png")))+" alt data-v-50fe5c5d> <p data-v-50fe5c5d>合作电话：400-150-9669</p> <p data-v-50fe5c5d>业务合作：marketing@oakblack.com</p> <p data-v-50fe5c5d>媒体合作：media@oakblack.com</p> <a target=\"_blank\" href=\"http://wpa.qq.com/msgrd?v=3&uin=&site=qq&menu=yes\" class=\"qqkf\" data-v-50fe5c5d>QQ咨询</a></div> "),_vm._ssrNode("<div class=\"r-nav\" data-v-50fe5c5d>","</div>",_vm._l((_vm.nav),function(item){return _vm._ssrNode("<div class=\"item\" data-v-50fe5c5d>","</div>",[(true)?_vm._ssrNode("<div class=\"nav-wrap\" data-v-50fe5c5d>","</div>",[_vm._ssrNode("<h2 data-v-50fe5c5d>"+_vm._ssrEscape(_vm._s(item.name))+"</h2> "),_vm._ssrNode("<ul data-v-50fe5c5d>","</ul>",_vm._l((item.sec_list),function(i){return _vm._ssrNode("<li data-v-50fe5c5d>","</li>",[_c('nuxt-link',{attrs:{"to":i.url}},[_vm._v(_vm._s(i.name))]),_vm._ssrNode(" "+((_vm.type === i.type)?("<div class=\"shadow\" data-v-50fe5c5d></div>"):"<!---->"))],2)}),0)],2):undefined])}),0),_vm._ssrNode(" "+((true)?("<div class=\"qr-code\" data-v-50fe5c5d><img"+(_vm._ssrAttr("src",(_vm.url + "code.png")))+" alt data-v-50fe5c5d></div>"):undefined))],2),_vm._ssrNode(" <div class=\"copyright\" data-v-50fe5c5d><span data-v-50fe5c5d><a href=\"https://beian.miit.gov.cn/\" target=\"_blank\" data-v-50fe5c5d>"+_vm._ssrEscape("粤ICP备"+_vm._s(_vm.project.record
             ? _vm.project.record
             : _vm.href.includes("xsvips")
             ? "20003741"
-            : "18120172")+"号")+"</a></span>"+_vm._ssrEscape("\n    版权所有 深圳市"+_vm._s(_vm.project.name ? _vm.project.name : "橡树黑卡")+"网络科技有限公司\n  ")+"</div> <div class=\"suspend\" data-v-c624d028><div class=\"item online-hover\" data-v-c624d028><img"+(_vm._ssrAttr("src",__webpack_require__(33)))+" alt data-v-c624d028> <div class=\"online-consult\" data-v-c624d028><div class=\"online-consult-main\" data-v-c624d028><h3 data-v-c624d028>亲爱的用户</h3> <p data-v-c624d028>为了更好的帮您解决问题，请选择您要咨询的会员类型</p> <ul data-v-c624d028><li data-v-c624d028><a href=\"https://oakvip.s2.udesk.cn/im_client/?web_plugin_id=24433\" target=\"_blank\" data-v-c624d028><img"+(_vm._ssrAttr("src",__webpack_require__(27)))+" alt data-v-c624d028><span data-v-c624d028>省呗</span></a></li> <li data-v-c624d028><a href=\"https://oakvip.s2.udesk.cn/im_client/?web_plugin_id=30020\" target=\"_blank\" data-v-c624d028><img"+(_vm._ssrAttr("src",__webpack_require__(28)))+" alt data-v-c624d028><span data-v-c624d028>keep</span></a></li> <li data-v-c624d028><a href=\"https://oakvip.s2.udesk.cn/im_client/?web_plugin_id=29924\" target=\"_blank\" data-v-c624d028><img"+(_vm._ssrAttr("src",__webpack_require__(29)))+" alt data-v-c624d028><span data-v-c624d028>榕树贷款</span></a></li> <li data-v-c624d028><a href=\"https://oakvip.s2.udesk.cn/im_client/?web_plugin_id=29354\" target=\"_blank\" data-v-c624d028><img"+(_vm._ssrAttr("src",__webpack_require__(30)))+" alt data-v-c624d028><span data-v-c624d028>我来数科</span></a></li> <li data-v-c624d028><a href=\"https://oakvip.s2.udesk.cn/im_client/?web_plugin_id=28877\" target=\"_blank\" data-v-c624d028><img"+(_vm._ssrAttr("src",__webpack_require__(34)))+" alt data-v-c624d028><span data-v-c624d028>其他</span></a></li></ul> <p data-v-c624d028>\n            如您需要商务合作请联络邮箱：<a href=\"mailto:marketing@oakblack.com\" target=\"_blank\" data-v-c624d028><span data-v-c624d028>marketing@oakblack.com</span></a></p> <p data-v-c624d028>电话：400-150-9669</p></div></div></div> <div class=\"item item2\" data-v-c624d028><img"+(_vm._ssrAttr("src",__webpack_require__(35)))+" alt data-v-c624d028> <div class=\"phone-consult\" data-v-c624d028><div class=\"phone-consult-main\" data-v-c624d028><h4 data-v-c624d028><a href=\"tel:400-150-9669\" data-v-c624d028>客服电话<span data-v-c624d028>400-150-9669</span></a></h4> <h4 data-v-c624d028>客服工作时间</h4> <p data-v-c624d028>周一到周五：9：00～20：00（在线和电话）</p> <p data-v-c624d028>周末或节假日：9：00～20：00（电话）</p></div></div></div> "+((_vm.showBackTop)?("<div class=\"item\" data-v-c624d028><img"+(_vm._ssrAttr("src",__webpack_require__(36)))+" alt data-v-c624d028></div>"):"<!---->")+"</div> <div class=\"suspend mobile-suspend\" data-v-c624d028><div class=\"item\" data-v-c624d028><img"+(_vm._ssrAttr("src",__webpack_require__(33)))+" alt data-v-c624d028> "+((_vm.show_online)?("<div class=\"online-consult show-online-consult\" data-v-c624d028><div class=\"online-consult-main\" data-v-c624d028><h3 data-v-c624d028>亲爱的用户</h3> <p data-v-c624d028>为了更好的帮您解决问题，请选择您要咨询的会员类型</p> <ul data-v-c624d028><li data-v-c624d028><a href=\"https://oakvip.s2.udesk.cn/im_client/?web_plugin_id=24433\" target=\"_blank\" data-v-c624d028><img"+(_vm._ssrAttr("src",__webpack_require__(27)))+" alt data-v-c624d028><span data-v-c624d028>省呗</span></a></li> <li data-v-c624d028><a href=\"https://oakvip.s2.udesk.cn/im_client/?web_plugin_id=30020\" target=\"_blank\" data-v-c624d028><img"+(_vm._ssrAttr("src",__webpack_require__(28)))+" alt data-v-c624d028><span data-v-c624d028>keep</span></a></li> <li data-v-c624d028><a href=\"https://oakvip.s2.udesk.cn/im_client/?web_plugin_id=29924\" target=\"_blank\" data-v-c624d028><img"+(_vm._ssrAttr("src",__webpack_require__(29)))+" alt data-v-c624d028><span data-v-c624d028>榕树贷款</span></a></li> <li data-v-c624d028><a href=\"https://oakvip.s2.udesk.cn/im_client/?web_plugin_id=29354\" target=\"_blank\" data-v-c624d028><img"+(_vm._ssrAttr("src",__webpack_require__(30)))+" alt data-v-c624d028><span data-v-c624d028>我来数科</span></a></li> <li data-v-c624d028><a href=\"https://oakvip.s2.udesk.cn/im_client/?web_plugin_id=28877\" target=\"_blank\" data-v-c624d028><img"+(_vm._ssrAttr("src",__webpack_require__(34)))+" alt data-v-c624d028><span data-v-c624d028>其他</span></a></li></ul> <p data-v-c624d028>\n            如您需要商务合作请联络邮箱：<a href=\"mailto:marketing@oakblack.com\" target=\"_blank\" data-v-c624d028><span data-v-c624d028>marketing@oakblack.com</span></a></p> <p data-v-c624d028>电话：400-150-9669</p></div></div>"):"<!---->")+"</div> <div class=\"item\" data-v-c624d028><img"+(_vm._ssrAttr("src",__webpack_require__(35)))+" alt data-v-c624d028> "+((_vm.show_phone_consult)?("<div class=\"phone-consult show-phone-consult\" data-v-c624d028><div class=\"phone-consult-main\" data-v-c624d028><h4 data-v-c624d028><a href=\"tel:400-150-9669\" data-v-c624d028>客服电话<span data-v-c624d028>400-150-9669</span></a></h4> <h4 data-v-c624d028>客服工作时间</h4> <p data-v-c624d028>周一到周五：9：00～20：00（在线和电话）</p> <p data-v-c624d028>周末或节假日：9：00～20：00（电话）</p></div></div>"):"<!---->")+"</div> "+((_vm.showBackTop)?("<div class=\"item\" data-v-c624d028><img"+(_vm._ssrAttr("src",__webpack_require__(36)))+" alt data-v-c624d028></div>"):"<!---->")+"</div> "+((_vm.show_online)?("<div class=\"shadow\" data-v-c624d028></div>"):"<!---->")+" "+((_vm.show_phone_consult)?("<div class=\"shadow2\" data-v-c624d028></div>"):"<!---->"))],2)}
+            : "18120172")+"号")+"</a></span>"+_vm._ssrEscape("\n    版权所有 深圳市"+_vm._s(_vm.project.name ? _vm.project.name : "橡树黑卡")+"网络科技有限公司\n  ")+"</div> <div class=\"suspend\" data-v-50fe5c5d><div class=\"item online-hover\" data-v-50fe5c5d><img"+(_vm._ssrAttr("src",__webpack_require__(33)))+" alt data-v-50fe5c5d> <div class=\"online-consult\" data-v-50fe5c5d><div class=\"online-consult-main\" data-v-50fe5c5d><h3 data-v-50fe5c5d>亲爱的用户</h3> <p data-v-50fe5c5d>为了更好的帮您解决问题，请选择您要咨询的会员类型</p> <ul data-v-50fe5c5d><li data-v-50fe5c5d><a href=\"https://.s2.udesk.cn/im_client/?web_plugin_id=24433\" target=\"_blank\" data-v-50fe5c5d><img"+(_vm._ssrAttr("src",__webpack_require__(27)))+" alt data-v-50fe5c5d><span data-v-50fe5c5d>省呗</span></a></li> <li data-v-50fe5c5d><a href=\"https://oakvip.s2.udesk.cn/im_client/?web_plugin_id=30020\" target=\"_blank\" data-v-50fe5c5d><img"+(_vm._ssrAttr("src",__webpack_require__(28)))+" alt data-v-50fe5c5d><span data-v-50fe5c5d>keep</span></a></li> <li data-v-50fe5c5d><a href=\"https://oakvip.s2.udesk.cn/im_client/?web_plugin_id=29924\" target=\"_blank\" data-v-50fe5c5d><img"+(_vm._ssrAttr("src",__webpack_require__(29)))+" alt data-v-50fe5c5d><span data-v-50fe5c5d>榕树贷款</span></a></li> <li data-v-50fe5c5d><a href=\"https://oakvip.s2.udesk.cn/im_client/?web_plugin_id=29354\" target=\"_blank\" data-v-50fe5c5d><img"+(_vm._ssrAttr("src",__webpack_require__(30)))+" alt data-v-50fe5c5d><span data-v-50fe5c5d>我来数科</span></a></li> <li data-v-50fe5c5d><a href=\"https://oakvip.s2.udesk.cn/im_client/?web_plugin_id=28877\" target=\"_blank\" data-v-50fe5c5d><img"+(_vm._ssrAttr("src",__webpack_require__(34)))+" alt data-v-50fe5c5d><span data-v-50fe5c5d>其他</span></a></li></ul> <p data-v-50fe5c5d>\n            如您需要商务合作请联络邮箱：<a href=\"mailto:marketing@oakblack.com\" target=\"_blank\" data-v-50fe5c5d><span data-v-50fe5c5d>marketing@oakblack.com</span></a></p> <p data-v-50fe5c5d>电话：400-150-9669</p></div></div></div> <div class=\"item item2\" data-v-50fe5c5d><img"+(_vm._ssrAttr("src",__webpack_require__(35)))+" alt data-v-50fe5c5d> <div class=\"phone-consult\" data-v-50fe5c5d><div class=\"phone-consult-main\" data-v-50fe5c5d><h4 data-v-50fe5c5d><a href=\"tel:400-150-9669\" data-v-50fe5c5d>客服电话<span data-v-50fe5c5d>400-150-9669</span></a></h4> <h4 data-v-50fe5c5d>客服工作时间</h4> <p data-v-50fe5c5d>周一到周五：9：00～20：00（在线和电话）</p> <p data-v-50fe5c5d>周末或节假日：9：00～20：00（电话）</p></div></div></div> "+((_vm.showBackTop)?("<div class=\"item\" data-v-50fe5c5d><img"+(_vm._ssrAttr("src",__webpack_require__(36)))+" alt data-v-50fe5c5d></div>"):"<!---->")+"</div> <div class=\"suspend mobile-suspend\" data-v-50fe5c5d><div class=\"item\" data-v-50fe5c5d><img"+(_vm._ssrAttr("src",__webpack_require__(33)))+" alt data-v-50fe5c5d> "+((_vm.show_online)?("<div class=\"online-consult show-online-consult\" data-v-50fe5c5d><div class=\"online-consult-main\" data-v-50fe5c5d><h3 data-v-50fe5c5d>亲爱的用户</h3> <p data-v-50fe5c5d>为了更好的帮您解决问题，请选择您要咨询的会员类型</p> <ul data-v-50fe5c5d><li data-v-50fe5c5d><a href=\"https://oakvip.s2.udesk.cn/im_client/?web_plugin_id=24433\" target=\"_blank\" data-v-50fe5c5d><img"+(_vm._ssrAttr("src",__webpack_require__(27)))+" alt data-v-50fe5c5d><span data-v-50fe5c5d>省呗</span></a></li> <li data-v-50fe5c5d><a href=\"https://oakvip.s2.udesk.cn/im_client/?web_plugin_id=30020\" target=\"_blank\" data-v-50fe5c5d><img"+(_vm._ssrAttr("src",__webpack_require__(28)))+" alt data-v-50fe5c5d><span data-v-50fe5c5d>keep</span></a></li> <li data-v-50fe5c5d><a href=\"https://oakvip.s2.udesk.cn/im_client/?web_plugin_id=29924\" target=\"_blank\" data-v-50fe5c5d><img"+(_vm._ssrAttr("src",__webpack_require__(29)))+" alt data-v-50fe5c5d><span data-v-50fe5c5d>榕树贷款</span></a></li> <li data-v-50fe5c5d><a href=\"https://oakvip.s2.udesk.cn/im_client/?web_plugin_id=29354\" target=\"_blank\" data-v-50fe5c5d><img"+(_vm._ssrAttr("src",__webpack_require__(30)))+" alt data-v-50fe5c5d><span data-v-50fe5c5d>我来数科</span></a></li> <li data-v-50fe5c5d><a href=\"https://oakvip.s2.udesk.cn/im_client/?web_plugin_id=28877\" target=\"_blank\" data-v-50fe5c5d><img"+(_vm._ssrAttr("src",__webpack_require__(34)))+" alt data-v-50fe5c5d><span data-v-50fe5c5d>其他</span></a></li></ul> <p data-v-50fe5c5d>\n            如您需要商务合作请联络邮箱：<a href=\"mailto:marketing@oakblack.com\" target=\"_blank\" data-v-50fe5c5d><span data-v-50fe5c5d>marketing@oakblack.com</span></a></p> <p data-v-50fe5c5d>电话：400-150-9669</p></div></div>"):"<!---->")+"</div> <div class=\"item\" data-v-50fe5c5d><img"+(_vm._ssrAttr("src",__webpack_require__(35)))+" alt data-v-50fe5c5d> "+((_vm.show_phone_consult)?("<div class=\"phone-consult show-phone-consult\" data-v-50fe5c5d><div class=\"phone-consult-main\" data-v-50fe5c5d><h4 data-v-50fe5c5d><a href=\"tel:400-150-9669\" data-v-50fe5c5d>客服电话<span data-v-50fe5c5d>400-150-9669</span></a></h4> <h4 data-v-50fe5c5d>客服工作时间</h4> <p data-v-50fe5c5d>周一到周五：9：00～20：00（在线和电话）</p> <p data-v-50fe5c5d>周末或节假日：9：00～20：00（电话）</p></div></div>"):"<!---->")+"</div> "+((_vm.showBackTop)?("<div class=\"item\" data-v-50fe5c5d><img"+(_vm._ssrAttr("src",__webpack_require__(36)))+" alt data-v-50fe5c5d></div>"):"<!---->")+"</div> "+((_vm.show_online)?("<div class=\"shadow\" data-v-50fe5c5d></div>"):"<!---->")+" "+((_vm.show_phone_consult)?("<div class=\"shadow2\" data-v-50fe5c5d></div>"):"<!---->"))],2)}
 var staticRenderFns = []
 
 
-// CONCATENATED MODULE: ./components/footer/footer.vue?vue&type=template&id=c624d028&scoped=true&
+// CONCATENATED MODULE: ./components/footer/footer.vue?vue&type=template&id=50fe5c5d&scoped=true&
 
 // EXTERNAL MODULE: ./utils/ans.js
 var ans = __webpack_require__(31);
@@ -608,7 +608,7 @@ var config = __webpack_require__(26);
         }]
       }, {
         name: "关于我们",
-        use: "xshkvip",
+        use: "xshk",
         sec_list: [{
           name: "公司介绍",
           type: "about",
@@ -620,7 +620,7 @@ var config = __webpack_require__(26);
         }]
       }, {
         name: "加入我们",
-        use: "oakvip",
+        use: "xshk",
         sec_list: [{
           name: "招聘职位",
           type: "join",
@@ -738,8 +738,8 @@ var component = Object(componentNormalizer["a" /* default */])(
   staticRenderFns,
   false,
   injectStyles,
-  "c624d028",
-  "61ba44dd"
+  "50fe5c5d",
+  "656c10f2"
   
 )
 
@@ -783,9 +783,9 @@ module.exports = "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACgAAAAoCAYAAACM
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony import */ var _node_modules_css_loader_dist_cjs_js_ref_7_oneOf_1_0_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_postcss_loader_src_index_js_ref_7_oneOf_1_1_node_modules_sass_loader_dist_cjs_js_ref_7_oneOf_1_2_node_modules_nuxt_components_dist_loader_js_ref_0_0_node_modules_vue_loader_lib_index_js_vue_loader_options_header_vue_vue_type_style_index_0_id_7eac051a_lang_scss_scoped_true___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(32);
-/* harmony import */ var _node_modules_css_loader_dist_cjs_js_ref_7_oneOf_1_0_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_postcss_loader_src_index_js_ref_7_oneOf_1_1_node_modules_sass_loader_dist_cjs_js_ref_7_oneOf_1_2_node_modules_nuxt_components_dist_loader_js_ref_0_0_node_modules_vue_loader_lib_index_js_vue_loader_options_header_vue_vue_type_style_index_0_id_7eac051a_lang_scss_scoped_true___WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_node_modules_css_loader_dist_cjs_js_ref_7_oneOf_1_0_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_postcss_loader_src_index_js_ref_7_oneOf_1_1_node_modules_sass_loader_dist_cjs_js_ref_7_oneOf_1_2_node_modules_nuxt_components_dist_loader_js_ref_0_0_node_modules_vue_loader_lib_index_js_vue_loader_options_header_vue_vue_type_style_index_0_id_7eac051a_lang_scss_scoped_true___WEBPACK_IMPORTED_MODULE_0__);
-/* harmony reexport (unknown) */ for(var __WEBPACK_IMPORT_KEY__ in _node_modules_css_loader_dist_cjs_js_ref_7_oneOf_1_0_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_postcss_loader_src_index_js_ref_7_oneOf_1_1_node_modules_sass_loader_dist_cjs_js_ref_7_oneOf_1_2_node_modules_nuxt_components_dist_loader_js_ref_0_0_node_modules_vue_loader_lib_index_js_vue_loader_options_header_vue_vue_type_style_index_0_id_7eac051a_lang_scss_scoped_true___WEBPACK_IMPORTED_MODULE_0__) if(["default"].indexOf(__WEBPACK_IMPORT_KEY__) < 0) (function(key) { __webpack_require__.d(__webpack_exports__, key, function() { return _node_modules_css_loader_dist_cjs_js_ref_7_oneOf_1_0_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_postcss_loader_src_index_js_ref_7_oneOf_1_1_node_modules_sass_loader_dist_cjs_js_ref_7_oneOf_1_2_node_modules_nuxt_components_dist_loader_js_ref_0_0_node_modules_vue_loader_lib_index_js_vue_loader_options_header_vue_vue_type_style_index_0_id_7eac051a_lang_scss_scoped_true___WEBPACK_IMPORTED_MODULE_0__[key]; }) }(__WEBPACK_IMPORT_KEY__));
+/* harmony import */ var _node_modules_css_loader_dist_cjs_js_ref_7_oneOf_1_0_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_postcss_loader_src_index_js_ref_7_oneOf_1_1_node_modules_sass_loader_dist_cjs_js_ref_7_oneOf_1_2_node_modules_nuxt_components_dist_loader_js_ref_0_0_node_modules_vue_loader_lib_index_js_vue_loader_options_header_vue_vue_type_style_index_0_id_6b0f1aec_lang_scss_scoped_true___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(32);
+/* harmony import */ var _node_modules_css_loader_dist_cjs_js_ref_7_oneOf_1_0_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_postcss_loader_src_index_js_ref_7_oneOf_1_1_node_modules_sass_loader_dist_cjs_js_ref_7_oneOf_1_2_node_modules_nuxt_components_dist_loader_js_ref_0_0_node_modules_vue_loader_lib_index_js_vue_loader_options_header_vue_vue_type_style_index_0_id_6b0f1aec_lang_scss_scoped_true___WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_node_modules_css_loader_dist_cjs_js_ref_7_oneOf_1_0_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_postcss_loader_src_index_js_ref_7_oneOf_1_1_node_modules_sass_loader_dist_cjs_js_ref_7_oneOf_1_2_node_modules_nuxt_components_dist_loader_js_ref_0_0_node_modules_vue_loader_lib_index_js_vue_loader_options_header_vue_vue_type_style_index_0_id_6b0f1aec_lang_scss_scoped_true___WEBPACK_IMPORTED_MODULE_0__);
+/* harmony reexport (unknown) */ for(var __WEBPACK_IMPORT_KEY__ in _node_modules_css_loader_dist_cjs_js_ref_7_oneOf_1_0_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_postcss_loader_src_index_js_ref_7_oneOf_1_1_node_modules_sass_loader_dist_cjs_js_ref_7_oneOf_1_2_node_modules_nuxt_components_dist_loader_js_ref_0_0_node_modules_vue_loader_lib_index_js_vue_loader_options_header_vue_vue_type_style_index_0_id_6b0f1aec_lang_scss_scoped_true___WEBPACK_IMPORTED_MODULE_0__) if(["default"].indexOf(__WEBPACK_IMPORT_KEY__) < 0) (function(key) { __webpack_require__.d(__webpack_exports__, key, function() { return _node_modules_css_loader_dist_cjs_js_ref_7_oneOf_1_0_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_postcss_loader_src_index_js_ref_7_oneOf_1_1_node_modules_sass_loader_dist_cjs_js_ref_7_oneOf_1_2_node_modules_nuxt_components_dist_loader_js_ref_0_0_node_modules_vue_loader_lib_index_js_vue_loader_options_header_vue_vue_type_style_index_0_id_6b0f1aec_lang_scss_scoped_true___WEBPACK_IMPORTED_MODULE_0__[key]; }) }(__WEBPACK_IMPORT_KEY__));
 
 
 /***/ }),
@@ -794,9 +794,9 @@ __webpack_require__.r(__webpack_exports__);
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony import */ var _node_modules_css_loader_dist_cjs_js_ref_7_oneOf_1_0_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_postcss_loader_src_index_js_ref_7_oneOf_1_1_node_modules_sass_loader_dist_cjs_js_ref_7_oneOf_1_2_node_modules_nuxt_components_dist_loader_js_ref_0_0_node_modules_vue_loader_lib_index_js_vue_loader_options_footer_vue_vue_type_style_index_0_id_c624d028_lang_scss_scoped_true___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(37);
-/* harmony import */ var _node_modules_css_loader_dist_cjs_js_ref_7_oneOf_1_0_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_postcss_loader_src_index_js_ref_7_oneOf_1_1_node_modules_sass_loader_dist_cjs_js_ref_7_oneOf_1_2_node_modules_nuxt_components_dist_loader_js_ref_0_0_node_modules_vue_loader_lib_index_js_vue_loader_options_footer_vue_vue_type_style_index_0_id_c624d028_lang_scss_scoped_true___WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_node_modules_css_loader_dist_cjs_js_ref_7_oneOf_1_0_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_postcss_loader_src_index_js_ref_7_oneOf_1_1_node_modules_sass_loader_dist_cjs_js_ref_7_oneOf_1_2_node_modules_nuxt_components_dist_loader_js_ref_0_0_node_modules_vue_loader_lib_index_js_vue_loader_options_footer_vue_vue_type_style_index_0_id_c624d028_lang_scss_scoped_true___WEBPACK_IMPORTED_MODULE_0__);
-/* harmony reexport (unknown) */ for(var __WEBPACK_IMPORT_KEY__ in _node_modules_css_loader_dist_cjs_js_ref_7_oneOf_1_0_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_postcss_loader_src_index_js_ref_7_oneOf_1_1_node_modules_sass_loader_dist_cjs_js_ref_7_oneOf_1_2_node_modules_nuxt_components_dist_loader_js_ref_0_0_node_modules_vue_loader_lib_index_js_vue_loader_options_footer_vue_vue_type_style_index_0_id_c624d028_lang_scss_scoped_true___WEBPACK_IMPORTED_MODULE_0__) if(["default"].indexOf(__WEBPACK_IMPORT_KEY__) < 0) (function(key) { __webpack_require__.d(__webpack_exports__, key, function() { return _node_modules_css_loader_dist_cjs_js_ref_7_oneOf_1_0_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_postcss_loader_src_index_js_ref_7_oneOf_1_1_node_modules_sass_loader_dist_cjs_js_ref_7_oneOf_1_2_node_modules_nuxt_components_dist_loader_js_ref_0_0_node_modules_vue_loader_lib_index_js_vue_loader_options_footer_vue_vue_type_style_index_0_id_c624d028_lang_scss_scoped_true___WEBPACK_IMPORTED_MODULE_0__[key]; }) }(__WEBPACK_IMPORT_KEY__));
+/* harmony import */ var _node_modules_css_loader_dist_cjs_js_ref_7_oneOf_1_0_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_postcss_loader_src_index_js_ref_7_oneOf_1_1_node_modules_sass_loader_dist_cjs_js_ref_7_oneOf_1_2_node_modules_nuxt_components_dist_loader_js_ref_0_0_node_modules_vue_loader_lib_index_js_vue_loader_options_footer_vue_vue_type_style_index_0_id_50fe5c5d_lang_scss_scoped_true___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(37);
+/* harmony import */ var _node_modules_css_loader_dist_cjs_js_ref_7_oneOf_1_0_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_postcss_loader_src_index_js_ref_7_oneOf_1_1_node_modules_sass_loader_dist_cjs_js_ref_7_oneOf_1_2_node_modules_nuxt_components_dist_loader_js_ref_0_0_node_modules_vue_loader_lib_index_js_vue_loader_options_footer_vue_vue_type_style_index_0_id_50fe5c5d_lang_scss_scoped_true___WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_node_modules_css_loader_dist_cjs_js_ref_7_oneOf_1_0_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_postcss_loader_src_index_js_ref_7_oneOf_1_1_node_modules_sass_loader_dist_cjs_js_ref_7_oneOf_1_2_node_modules_nuxt_components_dist_loader_js_ref_0_0_node_modules_vue_loader_lib_index_js_vue_loader_options_footer_vue_vue_type_style_index_0_id_50fe5c5d_lang_scss_scoped_true___WEBPACK_IMPORTED_MODULE_0__);
+/* harmony reexport (unknown) */ for(var __WEBPACK_IMPORT_KEY__ in _node_modules_css_loader_dist_cjs_js_ref_7_oneOf_1_0_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_postcss_loader_src_index_js_ref_7_oneOf_1_1_node_modules_sass_loader_dist_cjs_js_ref_7_oneOf_1_2_node_modules_nuxt_components_dist_loader_js_ref_0_0_node_modules_vue_loader_lib_index_js_vue_loader_options_footer_vue_vue_type_style_index_0_id_50fe5c5d_lang_scss_scoped_true___WEBPACK_IMPORTED_MODULE_0__) if(["default"].indexOf(__WEBPACK_IMPORT_KEY__) < 0) (function(key) { __webpack_require__.d(__webpack_exports__, key, function() { return _node_modules_css_loader_dist_cjs_js_ref_7_oneOf_1_0_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_postcss_loader_src_index_js_ref_7_oneOf_1_1_node_modules_sass_loader_dist_cjs_js_ref_7_oneOf_1_2_node_modules_nuxt_components_dist_loader_js_ref_0_0_node_modules_vue_loader_lib_index_js_vue_loader_options_footer_vue_vue_type_style_index_0_id_50fe5c5d_lang_scss_scoped_true___WEBPACK_IMPORTED_MODULE_0__[key]; }) }(__WEBPACK_IMPORT_KEY__));
 
 
 /***/ }),
@@ -3736,7 +3736,7 @@ var component = Object(componentNormalizer["a" /* default */])(
   false,
   injectStyles,
   "555e720d",
-  "c6135186"
+  "72cdeee7"
   
 )
 
@@ -3928,7 +3928,7 @@ var component = Object(componentNormalizer["a" /* default */])(
   false,
   injectStyles,
   "80070398",
-  "f7b6616e"
+  "02eb4b1a"
   
 )
 
@@ -4074,7 +4074,7 @@ var component = Object(componentNormalizer["a" /* default */])(
   false,
   injectStyles,
   "22ba0a66",
-  "aae47e2c"
+  "01152880"
   
 )
 
@@ -4113,114 +4113,138 @@ var component = Object(componentNormalizer["a" /* default */])(
 /* 93 */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__.p + "img/img2.810c149.png";
+module.exports = __webpack_require__.p + "img/benefit.acf5f44.png";
 
 /***/ }),
 /* 94 */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__.p + "img/client.1b13543.png";
+module.exports = __webpack_require__.p + "img/benefit.5be60b1.png";
 
 /***/ }),
 /* 95 */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__.p + "img/img3.ce1de95.png";
+module.exports = __webpack_require__.p + "img/img14.960986e.png";
 
 /***/ }),
 /* 96 */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__.p + "img/sv_icon0.1b5036a.png";
+module.exports = __webpack_require__.p + "img/img1.977646d.png";
 
 /***/ }),
 /* 97 */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__.p + "img/sv_icon0_selected.f9c7a95.png";
+module.exports = __webpack_require__.p + "img/img2.810c149.png";
 
 /***/ }),
 /* 98 */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__.p + "img/sv_icon1.e7fffa7.png";
+module.exports = __webpack_require__.p + "img/client.1b13543.png";
 
 /***/ }),
 /* 99 */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__.p + "img/sv_icon1_selected.430f651.png";
+module.exports = __webpack_require__.p + "img/img3.ce1de95.png";
 
 /***/ }),
 /* 100 */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__.p + "img/sv_icon2.28b72e1.png";
+module.exports = __webpack_require__.p + "img/sv_icon0.1b5036a.png";
 
 /***/ }),
 /* 101 */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__.p + "img/sv_icon2_selected.3568af8.png";
+module.exports = __webpack_require__.p + "img/sv_icon0_selected.f9c7a95.png";
 
 /***/ }),
 /* 102 */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__.p + "img/sv_icon3.a2846bd.png";
+module.exports = __webpack_require__.p + "img/sv_icon1.e7fffa7.png";
 
 /***/ }),
 /* 103 */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__.p + "img/sv_icon3_selected.2e0fe43.png";
+module.exports = __webpack_require__.p + "img/sv_icon1_selected.430f651.png";
 
 /***/ }),
 /* 104 */
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports = __webpack_require__.p + "img/sv_icon2.28b72e1.png";
+
+/***/ }),
+/* 105 */
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports = __webpack_require__.p + "img/sv_icon2_selected.3568af8.png";
+
+/***/ }),
+/* 106 */
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports = __webpack_require__.p + "img/sv_icon3.a2846bd.png";
+
+/***/ }),
+/* 107 */
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports = __webpack_require__.p + "img/sv_icon3_selected.2e0fe43.png";
+
+/***/ }),
+/* 108 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony import */ var _node_modules_css_loader_dist_cjs_js_ref_7_oneOf_1_0_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_postcss_loader_src_index_js_ref_7_oneOf_1_1_node_modules_sass_loader_dist_cjs_js_ref_7_oneOf_1_2_node_modules_nuxt_components_dist_loader_js_ref_0_0_node_modules_vue_loader_lib_index_js_vue_loader_options_index_vue_vue_type_style_index_0_id_26d334b3_lang_scss_scoped_true___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(61);
-/* harmony import */ var _node_modules_css_loader_dist_cjs_js_ref_7_oneOf_1_0_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_postcss_loader_src_index_js_ref_7_oneOf_1_1_node_modules_sass_loader_dist_cjs_js_ref_7_oneOf_1_2_node_modules_nuxt_components_dist_loader_js_ref_0_0_node_modules_vue_loader_lib_index_js_vue_loader_options_index_vue_vue_type_style_index_0_id_26d334b3_lang_scss_scoped_true___WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_node_modules_css_loader_dist_cjs_js_ref_7_oneOf_1_0_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_postcss_loader_src_index_js_ref_7_oneOf_1_1_node_modules_sass_loader_dist_cjs_js_ref_7_oneOf_1_2_node_modules_nuxt_components_dist_loader_js_ref_0_0_node_modules_vue_loader_lib_index_js_vue_loader_options_index_vue_vue_type_style_index_0_id_26d334b3_lang_scss_scoped_true___WEBPACK_IMPORTED_MODULE_0__);
-/* harmony reexport (unknown) */ for(var __WEBPACK_IMPORT_KEY__ in _node_modules_css_loader_dist_cjs_js_ref_7_oneOf_1_0_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_postcss_loader_src_index_js_ref_7_oneOf_1_1_node_modules_sass_loader_dist_cjs_js_ref_7_oneOf_1_2_node_modules_nuxt_components_dist_loader_js_ref_0_0_node_modules_vue_loader_lib_index_js_vue_loader_options_index_vue_vue_type_style_index_0_id_26d334b3_lang_scss_scoped_true___WEBPACK_IMPORTED_MODULE_0__) if(["default"].indexOf(__WEBPACK_IMPORT_KEY__) < 0) (function(key) { __webpack_require__.d(__webpack_exports__, key, function() { return _node_modules_css_loader_dist_cjs_js_ref_7_oneOf_1_0_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_postcss_loader_src_index_js_ref_7_oneOf_1_1_node_modules_sass_loader_dist_cjs_js_ref_7_oneOf_1_2_node_modules_nuxt_components_dist_loader_js_ref_0_0_node_modules_vue_loader_lib_index_js_vue_loader_options_index_vue_vue_type_style_index_0_id_26d334b3_lang_scss_scoped_true___WEBPACK_IMPORTED_MODULE_0__[key]; }) }(__WEBPACK_IMPORT_KEY__));
+/* harmony import */ var _node_modules_css_loader_dist_cjs_js_ref_7_oneOf_1_0_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_postcss_loader_src_index_js_ref_7_oneOf_1_1_node_modules_sass_loader_dist_cjs_js_ref_7_oneOf_1_2_node_modules_nuxt_components_dist_loader_js_ref_0_0_node_modules_vue_loader_lib_index_js_vue_loader_options_index_vue_vue_type_style_index_0_id_8b0c5924_lang_scss_scoped_true___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(61);
+/* harmony import */ var _node_modules_css_loader_dist_cjs_js_ref_7_oneOf_1_0_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_postcss_loader_src_index_js_ref_7_oneOf_1_1_node_modules_sass_loader_dist_cjs_js_ref_7_oneOf_1_2_node_modules_nuxt_components_dist_loader_js_ref_0_0_node_modules_vue_loader_lib_index_js_vue_loader_options_index_vue_vue_type_style_index_0_id_8b0c5924_lang_scss_scoped_true___WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_node_modules_css_loader_dist_cjs_js_ref_7_oneOf_1_0_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_postcss_loader_src_index_js_ref_7_oneOf_1_1_node_modules_sass_loader_dist_cjs_js_ref_7_oneOf_1_2_node_modules_nuxt_components_dist_loader_js_ref_0_0_node_modules_vue_loader_lib_index_js_vue_loader_options_index_vue_vue_type_style_index_0_id_8b0c5924_lang_scss_scoped_true___WEBPACK_IMPORTED_MODULE_0__);
+/* harmony reexport (unknown) */ for(var __WEBPACK_IMPORT_KEY__ in _node_modules_css_loader_dist_cjs_js_ref_7_oneOf_1_0_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_postcss_loader_src_index_js_ref_7_oneOf_1_1_node_modules_sass_loader_dist_cjs_js_ref_7_oneOf_1_2_node_modules_nuxt_components_dist_loader_js_ref_0_0_node_modules_vue_loader_lib_index_js_vue_loader_options_index_vue_vue_type_style_index_0_id_8b0c5924_lang_scss_scoped_true___WEBPACK_IMPORTED_MODULE_0__) if(["default"].indexOf(__WEBPACK_IMPORT_KEY__) < 0) (function(key) { __webpack_require__.d(__webpack_exports__, key, function() { return _node_modules_css_loader_dist_cjs_js_ref_7_oneOf_1_0_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_postcss_loader_src_index_js_ref_7_oneOf_1_1_node_modules_sass_loader_dist_cjs_js_ref_7_oneOf_1_2_node_modules_nuxt_components_dist_loader_js_ref_0_0_node_modules_vue_loader_lib_index_js_vue_loader_options_index_vue_vue_type_style_index_0_id_8b0c5924_lang_scss_scoped_true___WEBPACK_IMPORTED_MODULE_0__[key]; }) }(__WEBPACK_IMPORT_KEY__));
 
 
 /***/ }),
-/* 105 */,
-/* 106 */,
-/* 107 */,
-/* 108 */,
 /* 109 */,
-/* 110 */
+/* 110 */,
+/* 111 */,
+/* 112 */,
+/* 113 */,
+/* 114 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 // ESM COMPAT FLAG
 __webpack_require__.r(__webpack_exports__);
 
-// CONCATENATED MODULE: ./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/@nuxt/components/dist/loader.js??ref--0-0!./node_modules/vue-loader/lib??vue-loader-options!./pages/index.vue?vue&type=template&id=26d334b3&scoped=true&
-var render = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('div',{directives:[{name:"show",rawName:"v-show",value:(_vm.pageShow),expression:"pageShow"}],ref:"index"},[_c('oakHeader',{attrs:{"current":0}}),_vm._ssrNode(" "),(!_vm.project.en || _vm.project.en === 'xshk')?_vm._ssrNode("<main data-v-26d334b3>","</main>",[_vm._ssrNode("<section class=\"banner\""+(_vm._ssrStyle(null,{
+// CONCATENATED MODULE: ./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/@nuxt/components/dist/loader.js??ref--0-0!./node_modules/vue-loader/lib??vue-loader-options!./pages/index.vue?vue&type=template&id=8b0c5924&scoped=true&
+var render = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('div',{directives:[{name:"show",rawName:"v-show",value:(_vm.pageShow),expression:"pageShow"}],ref:"index"},[_c('oakHeader',{attrs:{"current":0}}),_vm._ssrNode(" "),(true)?_vm._ssrNode("<main data-v-8b0c5924>","</main>",[_vm._ssrNode("<section class=\"banner\""+(_vm._ssrStyle(null,{
         background: _vm.project.en
           ? ("url(" + _vm.url + "banner-" + (_vm.project.en) + ".png) center center / auto 100% no-repeat")
           : ("url(" + _vm.url + "banner.png) center center / auto 100% no-repeat"),
-      }, null))+" data-v-26d334b3></section> <section class=\"mobile-banner\""+(_vm._ssrStyle(null,{
+      }, null))+" data-v-8b0c5924></section> <section class=\"mobile-banner\""+(_vm._ssrStyle(null,{
         background: _vm.project.en
           ? ("url(" + _vm.url + "mobile-banner-" + (_vm.project.en) + ".png) center center / auto 100% no-repeat")
           : ("url(" + _vm.url + "mobile-banner.png) center center / auto 100% no-repeat"),
-      }, null))+" data-v-26d334b3></section> <section class=\"why-select-oak\" data-v-26d334b3><div class=\"container\" data-v-26d334b3><div class=\"common-title\" data-v-26d334b3><div class=\"en\" data-v-26d334b3>WHY</div> <div class=\"name\" data-v-26d334b3>"+_vm._ssrEscape("\n            为什么选择"+_vm._s(_vm.project.name ? _vm.project.name : "橡树黑卡")+"\n          ")+"</div> <div class=\"desc\" data-v-26d334b3>\n            专业团队根据合作方与用户诉求，设计定制产品，并提供专业运营支持服务\n          </div></div> <div class=\"wrap\" data-v-26d334b3><div class=\"capacity\" data-v-26d334b3>"+(_vm._ssrList((_vm.list),function(item,index){return ("<div"+(_vm._ssrClass(null,("item " + (_vm.current === index && 'active'))))+" data-v-26d334b3><img"+(_vm._ssrAttr("src",_vm.project.en
+      }, null))+" data-v-8b0c5924></section> <section class=\"why-select-oak\" data-v-8b0c5924><div class=\"container\" data-v-8b0c5924><div class=\"common-title\" data-v-8b0c5924><div class=\"en\" data-v-8b0c5924>WHY</div> <div class=\"name\" data-v-8b0c5924>"+_vm._ssrEscape("\n            为什么选择"+_vm._s(_vm.project.name ? _vm.project.name : "橡树黑卡")+"\n          ")+"</div> <div class=\"desc\" data-v-8b0c5924>\n            专业团队根据合作方与用户诉求，设计定制产品，并提供专业运营支持服务\n          </div></div> <div class=\"wrap\" data-v-8b0c5924><div class=\"capacity\" data-v-8b0c5924>"+(_vm._ssrList((_vm.list),function(item,index){return ("<div"+(_vm._ssrClass(null,("item " + (_vm.current === index && 'active'))))+" data-v-8b0c5924><img"+(_vm._ssrAttr("src",_vm.project.en
                     ? (_vm.url + "icon" + (index + 1) + "-" + (_vm.project.en) + ".png")
-                    : (_vm.url + "icon" + (index + 1) + ".png")))+" alt data-v-26d334b3> <div data-v-26d334b3>"+(_vm._s(item))+"</div></div>")}))+" "+(_vm._ssrList((_vm.list2),function(item,index){return ("<div"+(_vm._ssrClass(null,("item mobile-item " + (_vm.current === index && 'active'))))+" data-v-26d334b3><img"+(_vm._ssrAttr("src",_vm.project.en
+                    : (_vm.url + "icon" + (index + 1) + ".png")))+" alt data-v-8b0c5924> <div data-v-8b0c5924>"+(_vm._s(item))+"</div></div>")}))+" "+(_vm._ssrList((_vm.list2),function(item,index){return ("<div"+(_vm._ssrClass(null,("item mobile-item " + (_vm.current === index && 'active'))))+" data-v-8b0c5924><img"+(_vm._ssrAttr("src",_vm.project.en
                     ? (_vm.url + "icon" + (index + 1) + "-" + (_vm.project.en) + ".png")
-                    : (_vm.url + "icon" + (index + 1) + ".png")))+" alt data-v-26d334b3> <div data-v-26d334b3>"+(_vm._s(item))+"</div></div>")}))+"</div> <div class=\"capacity-content1 capacity-content3\""+(_vm._ssrStyle(null,null, { display: (_vm.current === 0) ? '' : 'none' }))+" data-v-26d334b3><div class=\"text\" data-v-26d334b3><div class=\"top\" data-v-26d334b3><h4 data-v-26d334b3>灵活定制</h4> <span data-v-26d334b3>Flexible customized</span> <h5 data-v-26d334b3>专业服务 一键接入</h5></div> <p data-v-26d334b3><span data-v-26d334b3> - 拥有多家银行服务专业经验，无仓储，无物</span> <span data-v-26d334b3>流，交付快，成本低。</span></p> <p data-v-26d334b3><span data-v-26d334b3> - 产品介入支持多种H5/API、兑换码等方</span> <span data-v-26d334b3>式，可一键接入，权益可灵活配置。</span></p></div> <img"+(_vm._ssrAttr("src",_vm.project.en
+                    : (_vm.url + "icon" + (index + 1) + ".png")))+" alt data-v-8b0c5924> <div data-v-8b0c5924>"+(_vm._s(item))+"</div></div>")}))+"</div> <div class=\"capacity-content1\""+(_vm._ssrStyle(null,null, { display: (_vm.current === 0) ? '' : 'none' }))+" data-v-8b0c5924><div class=\"text\" data-v-8b0c5924><div class=\"top\" data-v-8b0c5924><h4 data-v-8b0c5924>一站式权益</h4> <span data-v-8b0c5924>Equity one stop</span> <h5 data-v-8b0c5924>低成本 高价值</h5></div> <p data-v-8b0c5924><span data-v-8b0c5924> - 整合食住行用等全流程权益，</span>\n                覆盖类目广，满足用户大部分生活需求。\n              </p> <p data-v-8b0c5924><span data-v-8b0c5924> - 权益具有高频、强流量、高价值属性，</span>\n                利于吸引新用户，提升用户忠诚度。\n              </p> <p data-v-8b0c5924>- 权益成本更低。</p></div> <img"+(_vm._ssrAttr("src",__webpack_require__(93)))+" alt data-v-8b0c5924> <img"+(_vm._ssrAttr("src",__webpack_require__(94)))+" alt class=\"mobile-img\" data-v-8b0c5924></div> <div class=\"capacity-content1 capacity-content2\""+(_vm._ssrStyle(null,null, { display: (_vm.current === 0) ? '' : 'none' }))+" data-v-8b0c5924><div class=\"text\" data-v-8b0c5924><div class=\"top\" data-v-8b0c5924><h4 data-v-8b0c5924>独家权益</h4> <span data-v-8b0c5924>Flexible customization</span> <h5 data-v-8b0c5924>权益保障 出行无忧</h5></div> <p data-v-8b0c5924><span data-v-8b0c5924>\n                  -\n                  与多家酒店集团、贵宾出行服务商合作，可为用户提供高级酒</span> <span data-v-8b0c5924>店会籍匹配，及全球贵宾休息室、快速安检等高端服务。</span></p> <p data-v-8b0c5924><span data-v-8b0c5924>\n                  -\n                  与航空公司合作，支持积分兑换里程、充话费送里程等权益。</span></p></div> <img"+(_vm._ssrAttr("src",__webpack_require__(95)))+" alt data-v-8b0c5924> <img"+(_vm._ssrAttr("src",__webpack_require__(96)))+" alt class=\"mobile-img\" data-v-8b0c5924></div> <div class=\"capacity-content1 capacity-content3\""+(_vm._ssrStyle(null,null, { display: (_vm.current === 0) ? '' : 'none' }))+" data-v-8b0c5924><div class=\"text\" data-v-8b0c5924><div class=\"top\" data-v-8b0c5924><h4 data-v-8b0c5924>灵活定制</h4> <span data-v-8b0c5924>Flexible customized</span> <h5 data-v-8b0c5924>专业服务 一键接入</h5></div> <p data-v-8b0c5924><span data-v-8b0c5924> - 拥有多家银行服务专业经验，无仓储，无物</span> <span data-v-8b0c5924>流，交付快，成本低。</span></p> <p data-v-8b0c5924><span data-v-8b0c5924> - 产品介入支持多种H5/API、兑换码等方</span> <span data-v-8b0c5924>式，可一键接入，权益可灵活配置。</span></p></div> <img"+(_vm._ssrAttr("src",_vm.project.en
                   ? (_vm.url + "img13-" + (_vm.project.en) + ".png")
-                  : (_vm.url + "img13.png")))+" alt data-v-26d334b3> <img"+(_vm._ssrAttr("src",__webpack_require__(93)))+" alt class=\"mobile-img\" data-v-26d334b3></div></div></div></section> <section class=\"plan\" data-v-26d334b3><div class=\"container\" data-v-26d334b3><img"+(_vm._ssrAttr("src",_vm.project.en ? ("" + _vm.url + (_vm.project.en) + "_img11.png") : (_vm.url + "img11.png")))+" alt data-v-26d334b3> <div class=\"mobile-top\" data-v-26d334b3><h4 data-v-26d334b3>这些企业都已免费获得定制会员方案</h4> <ul data-v-26d334b3><li data-v-26d334b3><img"+(_vm._ssrAttr("src",__webpack_require__(27)))+" alt data-v-26d334b3>省呗</li> <li data-v-26d334b3><img"+(_vm._ssrAttr("src",__webpack_require__(30)))+" alt data-v-26d334b3>我来数科</li> <li data-v-26d334b3><img"+(_vm._ssrAttr("src",__webpack_require__(28)))+" alt data-v-26d334b3>keep</li> <li data-v-26d334b3><img"+(_vm._ssrAttr("src",__webpack_require__(29)))+" alt data-v-26d334b3>榕树贷款</li> <li data-v-26d334b3><img"+(_vm._ssrAttr("src",__webpack_require__(46)))+" alt data-v-26d334b3>新橙优品</li></ul></div> <div class=\"plan-form\" data-v-26d334b3><h2 data-v-26d334b3>完善信息后 48小时内会有专门的商务人员与您对接</h2> <div class=\"item\" data-v-26d334b3><div class=\"text\" data-v-26d334b3><span data-v-26d334b3>*</span>您的姓名：</div> <input type=\"text\" maxlength=\"10\" placeholder=\"请输入姓名\" name id=\"name\" autocomplete=\"off\""+(_vm._ssrAttr("value",(_vm.name)))+" data-v-26d334b3> <div class=\"input-error\" data-v-26d334b3>"+_vm._ssrEscape(_vm._s(_vm.name_error))+"</div></div> <div class=\"item\" data-v-26d334b3><div class=\"text\" data-v-26d334b3><span data-v-26d334b3>*</span>公司名称：</div> <input type=\"text\" placeholder=\"请输入公司名称\" maxlength=\"100\" name id=\"companyName\" autocomplete=\"off\""+(_vm._ssrAttr("value",(_vm.company_name)))+" data-v-26d334b3> <div class=\"input-error\" data-v-26d334b3>"+_vm._ssrEscape(_vm._s(_vm.company_name_error))+"</div></div> <div class=\"item\" data-v-26d334b3><div class=\"text\" data-v-26d334b3><span data-v-26d334b3>*</span>联系电话：</div> <input type=\"text\" placeholder=\"请输入联系电话\" maxlength=\"30\" name id=\"phone\" autocomplete=\"off\""+(_vm._ssrAttr("value",(_vm.phone)))+" data-v-26d334b3> <div class=\"input-error\" data-v-26d334b3>"+_vm._ssrEscape(_vm._s(_vm.phone_error))+"</div></div> <div class=\"item\" data-v-26d334b3><div class=\"text\" data-v-26d334b3><span data-v-26d334b3>*</span>验证码：</div> <input type=\"text\" placeholder=\"请输入验证码\" name id=\"code\" autocomplete=\"off\""+(_vm._ssrAttr("value",(_vm.code)))+" data-v-26d334b3> "+((!_vm.codeText)?("<div class=\"get-code\" data-v-26d334b3>\n              获取验证码\n            </div>"):("<div class=\"get-code code-disable\" data-v-26d334b3>"+_vm._ssrEscape(_vm._s(_vm.codeText))+"</div>"))+" <div class=\"input-error\" data-v-26d334b3>"+_vm._ssrEscape(_vm._s(_vm.code_error))+"</div></div> <div class=\"plan-btn\" data-v-26d334b3>免费获取方案</div></div></div></section> <section class=\"service-value\" data-v-26d334b3><div class=\"container\" data-v-26d334b3><div class=\"common-title\" data-v-26d334b3><div class=\"en\" data-v-26d334b3>VALUE</div> <div class=\"name\" data-v-26d334b3>服务价值</div> <div class=\"desc\" data-v-26d334b3>\n            助力企业满足用户对高品质服务的需求，提升拉新促活能力与品牌忠诚度\n          </div></div> <div class=\"list\" data-v-26d334b3>"+(_vm._ssrList((_vm.service_value),function(item,index){return ("<div"+(_vm._ssrClass(null,{ item: true, active: _vm.service_value_current === index }))+" data-v-26d334b3><img"+(_vm._ssrAttr("src",_vm.service_value_current === index
+                  : (_vm.url + "img13.png")))+" alt data-v-8b0c5924> <img"+(_vm._ssrAttr("src",__webpack_require__(97)))+" alt class=\"mobile-img\" data-v-8b0c5924></div></div></div></section> <section class=\"plan\" data-v-8b0c5924><div class=\"container\" data-v-8b0c5924><img"+(_vm._ssrAttr("src",_vm.project.en ? ("" + _vm.url + (_vm.project.en) + "_img11.png") : (_vm.url + "img11.png")))+" alt data-v-8b0c5924> <div class=\"mobile-top\" data-v-8b0c5924><h4 data-v-8b0c5924>这些企业都已免费获得定制会员方案</h4> <ul data-v-8b0c5924><li data-v-8b0c5924><img"+(_vm._ssrAttr("src",__webpack_require__(27)))+" alt data-v-8b0c5924>省呗</li> <li data-v-8b0c5924><img"+(_vm._ssrAttr("src",__webpack_require__(30)))+" alt data-v-8b0c5924>我来数科</li> <li data-v-8b0c5924><img"+(_vm._ssrAttr("src",__webpack_require__(28)))+" alt data-v-8b0c5924>keep</li> <li data-v-8b0c5924><img"+(_vm._ssrAttr("src",__webpack_require__(29)))+" alt data-v-8b0c5924>榕树贷款</li> <li data-v-8b0c5924><img"+(_vm._ssrAttr("src",__webpack_require__(46)))+" alt data-v-8b0c5924>新橙优品</li></ul></div> <div class=\"plan-form\" data-v-8b0c5924><h2 data-v-8b0c5924>完善信息后 48小时内会有专门的商务人员与您对接</h2> <div class=\"item\" data-v-8b0c5924><div class=\"text\" data-v-8b0c5924><span data-v-8b0c5924>*</span>您的姓名：</div> <input type=\"text\" maxlength=\"10\" placeholder=\"请输入姓名\" name id=\"name\" autocomplete=\"off\""+(_vm._ssrAttr("value",(_vm.name)))+" data-v-8b0c5924> <div class=\"input-error\" data-v-8b0c5924>"+_vm._ssrEscape(_vm._s(_vm.name_error))+"</div></div> <div class=\"item\" data-v-8b0c5924><div class=\"text\" data-v-8b0c5924><span data-v-8b0c5924>*</span>公司名称：</div> <input type=\"text\" placeholder=\"请输入公司名称\" maxlength=\"100\" name id=\"companyName\" autocomplete=\"off\""+(_vm._ssrAttr("value",(_vm.company_name)))+" data-v-8b0c5924> <div class=\"input-error\" data-v-8b0c5924>"+_vm._ssrEscape(_vm._s(_vm.company_name_error))+"</div></div> <div class=\"item\" data-v-8b0c5924><div class=\"text\" data-v-8b0c5924><span data-v-8b0c5924>*</span>联系电话：</div> <input type=\"text\" placeholder=\"请输入联系电话\" maxlength=\"30\" name id=\"phone\" autocomplete=\"off\""+(_vm._ssrAttr("value",(_vm.phone)))+" data-v-8b0c5924> <div class=\"input-error\" data-v-8b0c5924>"+_vm._ssrEscape(_vm._s(_vm.phone_error))+"</div></div> <div class=\"item\" data-v-8b0c5924><div class=\"text\" data-v-8b0c5924><span data-v-8b0c5924>*</span>验证码：</div> <input type=\"text\" placeholder=\"请输入验证码\" name id=\"code\" autocomplete=\"off\""+(_vm._ssrAttr("value",(_vm.code)))+" data-v-8b0c5924> "+((!_vm.codeText)?("<div class=\"get-code\" data-v-8b0c5924>\n              获取验证码\n            </div>"):("<div class=\"get-code code-disable\" data-v-8b0c5924>"+_vm._ssrEscape(_vm._s(_vm.codeText))+"</div>"))+" <div class=\"input-error\" data-v-8b0c5924>"+_vm._ssrEscape(_vm._s(_vm.code_error))+"</div></div> <div class=\"plan-btn\" data-v-8b0c5924>免费获取方案</div></div></div></section> <section class=\"service-value\" data-v-8b0c5924><div class=\"container\" data-v-8b0c5924><div class=\"common-title\" data-v-8b0c5924><div class=\"en\" data-v-8b0c5924>VALUE</div> <div class=\"name\" data-v-8b0c5924>服务价值</div> <div class=\"desc\" data-v-8b0c5924>\n            助力企业满足用户对高品质服务的需求，提升拉新促活能力与品牌忠诚度\n          </div></div> <div class=\"list\" data-v-8b0c5924>"+(_vm._ssrList((_vm.service_value),function(item,index){return ("<div"+(_vm._ssrClass(null,{ item: true, active: _vm.service_value_current === index }))+" data-v-8b0c5924><img"+(_vm._ssrAttr("src",_vm.service_value_current === index
                   ? item.icon_selected
-                  : item.icon))+" alt data-v-26d334b3> <div class=\"name\" data-v-26d334b3>"+_vm._ssrEscape(_vm._s(item.title))+"</div> <div data-v-26d334b3><ul data-v-26d334b3>"+(_vm._ssrList((item.list),function(i){return ("<li data-v-26d334b3>"+_vm._ssrEscape("\n                  "+_vm._s(i)+"\n                ")+"</li>")}))+"</ul></div></div>")}))+"</div></div></section> <section class=\"client\" data-v-26d334b3><div class=\"container\" data-v-26d334b3><div class=\"common-title\" data-v-26d334b3><div class=\"en\" data-v-26d334b3>CLIENT</div> <div class=\"name\" data-v-26d334b3>我们服务的行业客户</div> <div class=\"desc\" data-v-26d334b3>\n            助力企业满足用户对高品质服务的需求，提升拉新促活能力与品牌忠诚度\n          </div></div> <img"+(_vm._ssrAttr("src",__webpack_require__(94)))+" alt data-v-26d334b3> <img"+(_vm._ssrAttr("src",__webpack_require__(95)))+" alt class=\"mobile-kh\" data-v-26d334b3></div></section> "),_c('oakForm')],2):_vm._e(),_vm._ssrNode(" "),(_vm.project.en === 'xshkvip')?_c('xshkvipIndex'):_vm._e(),_vm._ssrNode(" "),(_vm.project.en === 'oakvip')?_c('oakvipIndex'):_vm._e(),_vm._ssrNode(" "),_c('oakFooter')],2)}
+                  : item.icon))+" alt data-v-8b0c5924> <div class=\"name\" data-v-8b0c5924>"+_vm._ssrEscape(_vm._s(item.title))+"</div> <div data-v-8b0c5924><ul data-v-8b0c5924>"+(_vm._ssrList((item.list),function(i){return ("<li data-v-8b0c5924>"+_vm._ssrEscape("\n                  "+_vm._s(i)+"\n                ")+"</li>")}))+"</ul></div></div>")}))+"</div></div></section> <section class=\"client\" data-v-8b0c5924><div class=\"container\" data-v-8b0c5924><div class=\"common-title\" data-v-8b0c5924><div class=\"en\" data-v-8b0c5924>CLIENT</div> <div class=\"name\" data-v-8b0c5924>我们服务的行业客户</div> <div class=\"desc\" data-v-8b0c5924>\n            助力企业满足用户对高品质服务的需求，提升拉新促活能力与品牌忠诚度\n          </div></div> <img"+(_vm._ssrAttr("src",__webpack_require__(98)))+" alt data-v-8b0c5924> <img"+(_vm._ssrAttr("src",__webpack_require__(99)))+" alt class=\"mobile-kh\" data-v-8b0c5924></div></section> "),_c('oakForm')],2):undefined,_vm._ssrNode(" "),(_vm.project.en === 'xshkvip')?_c('xshkvipIndex'):_vm._e(),_vm._ssrNode(" "),(_vm.project.en === 'oakvip')?_c('oakvipIndex'):_vm._e(),_vm._ssrNode(" "),_c('oakFooter')],2)}
 var staticRenderFns = []
 
 
-// CONCATENATED MODULE: ./pages/index.vue?vue&type=template&id=26d334b3&scoped=true&
+// CONCATENATED MODULE: ./pages/index.vue?vue&type=template&id=8b0c5924&scoped=true&
 
 // EXTERNAL MODULE: ./components/header/header.vue + 4 modules
 var header = __webpack_require__(38);
@@ -4571,31 +4595,27 @@ var config = __webpack_require__(26);
       phone_error: "",
       code: "",
       code_error: "",
-      list: [// "<span>一站式权益</span> 低成本 高价值",
-      // "<span>独家稀缺权益</span> 提升产品竞争力",
-      "<span>专业服务</span>   灵活定制"],
-      list2: [// "<span style='display:block'>一站式权益</span> 低成本 高价值",
-      // "<span style='display:block'>独家稀缺权益</span> 提升产品竞争力",
-      "<span style='display:block'>专业服务</span>   灵活定制"],
+      list: ["<span>一站式权益</span> 低成本 高价值", "<span>独家稀缺权益</span> 提升产品竞争力", "<span>专业服务</span>   灵活定制"],
+      list2: ["<span style='display:block'>一站式权益</span> 低成本 高价值", "<span style='display:block'>独家稀缺权益</span> 提升产品竞争力", "<span style='display:block'>专业服务</span>   灵活定制"],
       current: 0,
       service_value: [{
-        icon: __webpack_require__(96),
-        icon_selected: __webpack_require__(97),
+        icon: __webpack_require__(100),
+        icon_selected: __webpack_require__(101),
         title: "活跃",
         list: ["• 提升用户行为活跃", "• 提升用户交易活跃", "• 延长用户生命周期"]
       }, {
-        icon: __webpack_require__(98),
-        icon_selected: __webpack_require__(99),
+        icon: __webpack_require__(102),
+        icon_selected: __webpack_require__(103),
         title: "创收",
         list: ["• 获得会员费营收", "• 带动主营业务增收"]
       }, {
-        icon: __webpack_require__(100),
-        icon_selected: __webpack_require__(101),
+        icon: __webpack_require__(104),
+        icon_selected: __webpack_require__(105),
         title: "客户关怀",
         list: ["• 通过会员礼，提升品牌价值", "• 提升用户尊贵感", "• 提升用户归属感"]
       }, {
-        icon: __webpack_require__(102),
-        icon_selected: __webpack_require__(103),
+        icon: __webpack_require__(106),
+        icon_selected: __webpack_require__(107),
         title: "用户画像",
         list: ["• 整合多平台消费者数据", "• 构建画像与标签体系", "• 数据驱动精细化会员运营"]
       }],
@@ -4673,6 +4693,7 @@ var config = __webpack_require__(26);
     this.pageShow = true;
     this.project = this.$store.state.project;
     ans["a" /* default */].pageView("oak_page");
+    console.log(this.project);
   },
 
   methods: {
@@ -4788,7 +4809,7 @@ var componentNormalizer = __webpack_require__(2);
 
 function injectStyles (context) {
   
-  var style0 = __webpack_require__(104)
+  var style0 = __webpack_require__(108)
 if (style0.__inject__) style0.__inject__(context)
 
 }
@@ -4801,8 +4822,8 @@ var component = Object(componentNormalizer["a" /* default */])(
   staticRenderFns,
   false,
   injectStyles,
-  "26d334b3",
-  "7235293a"
+  "8b0c5924",
+  "ff92a70e"
   
 )
 

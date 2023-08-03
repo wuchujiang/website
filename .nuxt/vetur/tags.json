@@ -1,12 +1,12 @@
 {
-  "Footer": {
-    "description": "Auto imported from components/footer/footer.vue"
-  },
   "Form": {
     "description": "Auto imported from components/form/form.vue"
   },
   "Header": {
     "description": "Auto imported from components/header/header.vue"
+  },
+  "Footer": {
+    "description": "Auto imported from components/footer/footer.vue"
   },
   "IndexOakvip": {
     "description": "Auto imported from components/index/index_oakvip.vue"

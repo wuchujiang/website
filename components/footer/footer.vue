@@ -20,7 +20,7 @@
       </div>
       <div class="r-nav">
         <div class="item" v-for="item in nav" :key="item.name">
-          <div class="nav-wrap" v-if="item.use === project.en">
+          <div class="nav-wrap" v-if="true">
             <h2>{{ item.name }}</h2>
             <ul>
               <li v-for="i in item.sec_list" :key="i.name">
@@ -31,7 +31,7 @@
           </div>
         </div>
       </div>
-      <div class="qr-code" v-if="project.en === 'xshkvip'">
+      <div class="qr-code" v-if="true"><!--project.en === 'xshkvip'-->
         <img :src="`${url}code.png`" alt="" />
       </div>
     </div>
@@ -61,7 +61,7 @@
             <ul>
               <li @click="toAns('sy')">
                 <a
-                  href="https://oakvip.s2.udesk.cn/im_client/?web_plugin_id=24433"
+                  href="https://.s2.udesk.cn/im_client/?web_plugin_id=24433"
                   target="_blank"
                   ><img src="@/static/kh1.png" alt="" /><span>省呗</span></a
                 >
@@ -227,7 +227,7 @@ export default {
         },
         {
           name: "关于我们",
-          use: "xshkvip",
+          use: "xshk",
           sec_list: [
             { name: "公司介绍", type: "about", url: "/about" },
             { name: "联系我们", type: "contact", url: "/contact" },
@@ -235,7 +235,7 @@ export default {
         },
         {
           name: "加入我们",
-          use: "oakvip",
+          use: "xshk",
           sec_list: [{ name: "招聘职位", type: "join", url: "/join" }],
         },
       ],
@@ -338,7 +338,7 @@ export default {
   color: #fff;
   .item {
     .nav-wrap {
-      margin-left: 170px;
+      margin-left: 150px;
     }
     h2 {
       font-size: 20px;
