@@ -107,7 +107,7 @@
         </div>
       </div>
       <div class="item item2">
-        <img src="@/static/suspend2.png" alt="" />
+        <img src="@/static/suspend2.png" alt="suspend2" />
         <div class="phone-consult">
           <div class="phone-consult-main">
             <h4>
