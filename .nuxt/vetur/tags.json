@@ -1,7 +1,4 @@
 {
-  "Footer": {
-    "description": "Auto imported from components/footer/footer.vue"
-  },
   "Form": {
     "description": "Auto imported from components/form/form.vue"
   },
@@ -13,5 +10,8 @@
   },
   "IndexXshkvip": {
     "description": "Auto imported from components/index/index_xshkvip.vue"
+  },
+  "Footer": {
+    "description": "Auto imported from components/footer/footer.vue"
   }
 }
