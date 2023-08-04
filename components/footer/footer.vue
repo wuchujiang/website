@@ -18,7 +18,7 @@
           >QQ咨询</a
         >
       </div>
-      <div class="r-nav">
+      <div class="r-nav ">
         <div class="item" v-for="item in nav" :key="item.name">
           <div class="nav-wrap" v-if="true">
             <h2>{{ item.name }}</h2>
@@ -31,7 +31,7 @@
           </div>
         </div>
       </div>
-      <div class="qr-code" v-if="true"><!--project.en === 'xshkvip'-->
+      <div class="qr-code hide-on-mobile" v-if="true"><!--project.en === 'xshkvip'-->
         <img :src="`${url}code.png`" alt="" />
       </div>
     </div>
@@ -333,6 +333,15 @@ export default {
     }
   }
 }
+.hide-on-mobile {
+  display: none;
+}
+
+@media screen and (min-width: 769px) {
+  .hide-on-mobile {
+    display: block;
+  }
+}
 .r-nav {
   display: flex;
   color: #fff;
@@ -408,6 +417,18 @@ export default {
       height: 45px;
     }
   }
+  /* 其他样式 */
+
+.hide-on-mobile {
+  display: none;
+}
+
+@media screen and (min-width: 769px) {
+  .hide-on-mobile {
+    display: block;
+  }
+}
+
 }
 .online-consult,
 .phone-consult {
@@ -557,6 +578,9 @@ export default {
     padding-bottom: 30px;
     border-bottom: 1px solid #666;
     .item {
+      .nav-wrap {
+        margin-left: 0px;
+      }
       h2 {
         font-size: 15px;
       }

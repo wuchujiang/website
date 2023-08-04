@@ -26,7 +26,7 @@
               为什么选择{{ project.name ? project.name : "橡树黑卡" }}
             </div>
             <div class="desc">
-              专业团队根据合作方与用户诉求，设计定制产品，并提供专业运营支持服务
+              专业团队根据合作方与用户诉求 ，设计定制产品，并提供专业运营支持服务
             </div>
           </div>
           <div class="wrap">
@@ -89,7 +89,7 @@
               />
             </div>
             <div
-              v-show="current === 0"
+              v-show="current === 1"
               class="capacity-content1 capacity-content2"
             >
               <div class="text">
@@ -118,7 +118,7 @@
               <img class="mobile-img" src="@/static/mobile/img1.png" alt="" />
             </div> 
             <div
-              v-show="current === 0"
+              v-show="current === 1"
               class="capacity-content1 capacity-content3"
             >
               <div class="text">
@@ -280,8 +280,6 @@
       </section>
       <oakForm />
     </main>
-    <xshkvipIndex v-if="project.en === 'xshkvip'" />
-    <oakvipIndex v-if="project.en === 'oakvip'" />
     <oakFooter />
   </div>
 </template>
